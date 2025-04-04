@@ -49,6 +49,10 @@ namespace QuanLyRapChieu
                 return _instance;
             }
         }
+
+        public int TongTien { get => tongTien; set => tongTien = value; }
+        public static frmTheatre Instance1 { get => _instance; set => _instance = value; }
+
         private void txtDiscount_Click(object sender, EventArgs e)
         {
 
@@ -129,38 +133,6 @@ namespace QuanLyRapChieu
 
                 flpSeat.Controls.Add(rowPanel); // Thêm hàng ghế vào flpSeat
             }
-            //------------ticket seat 
-
-            //int count = 0;
-            //List<Ve> danhSachVe = VeBUS.Instance.hienthiVe(maCaChieu);
-
-            //if (danhSachVe != null)
-            //{
-            //    foreach (Ve ve in danhSachVe)
-            //    {
-            //        int col = count % 10 + 1;
-            //        int row = (count / 10) + 65;
-            //        Button btn = new Button() { Width = 80, Height = 30 };
-            //        btn.Text = ve.MaGheNgoi;
-            //        btn.Font = new Font("Monserrat", (float)10.5);
-            //        btn.Click += BtnSeat_Click;
-            //        btn.Tag = ve;
-
-            //        if (ve.TrangThai == 0)
-            //        {
-            //            btn.BackColor = Color.LightGoldenrodYellow;
-            //        }
-            //        else
-            //        {
-            //            btn.Enabled = false;
-            //            btn.BackColor = Color.Gray;
-            //            btn.ForeColor = Color.White;
-            //        }
-
-            //        flpSeat.Controls.Add(btn);
-            //        count++;
-            //    }
-            //}
         }
 
         // Xử lý khi click vào ghế: Đổi màu ghế + Ktra loại vé + Tinh gia ve
@@ -397,39 +369,6 @@ namespace QuanLyRapChieu
 
         }
 
-        //public void hienThiDanhSachChoNgoiTheoMaCaChieu(string maCaChieu) //*
-        //{
-        //    int count = 0;
-        //    List<Ve> danhSachVe = VeBUS.Instance.hienthiVe(maCaChieu);
-
-        //    if (danhSachVe != null)
-        //    {
-        //        foreach (Ve ve in danhSachVe)
-        //        {
-        //            int col = count % 10 + 1;
-        //            int row = (count / 10) + 65;
-        //            Button btn = new Button() { Width = 80, Height = 30 };
-        //            btn.Text = ve.MaGheNgoi;
-        //            btn.Font = new Font("Arial", (float)10.5);
-        //            btn.Click += btn_Click;
-        //            btn.Tag = ve;
-
-        //            if (ve.TrangThai == 0)
-        //            {
-        //                btn.BackColor = Color.LightGoldenrodYellow;
-        //            }
-        //            else
-        //            {
-        //                btn.Enabled = false;
-        //                btn.BackColor = Color.Gray;
-        //                btn.ForeColor = Color.White;
-        //            }
-
-        //            flpSeat.Controls.Add(btn);
-        //            count++;
-        //        }
-        //    }
-        //}
         private void updatePoint(string phoneNumber, int bonus) //*
         {
 
