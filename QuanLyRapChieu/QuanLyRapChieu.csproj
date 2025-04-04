@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
@@ -70,7 +73,12 @@
     <Compile Include="frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,7 +90,6 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-
     </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
@@ -90,12 +97,19 @@
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTheatre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheatre.Designer.cs">
+      <DependentUpon>frmTheatre.cs</DependentUpon>
+    </Compile>
 
     <Compile Include="frmStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmStaff.Designer.cs">
       <DependentUpon>frmStaff.cs</DependentUpon>
+    </Compile>
 
     <Compile Include="frmTheatre.cs">
       <SubType>Form</SubType>
