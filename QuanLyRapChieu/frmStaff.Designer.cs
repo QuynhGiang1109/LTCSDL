@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.el_TestLichChieu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pn_LichChieuPhim = new Guna.UI2.WinForms.Guna2Panel();
             this.labelX = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             this.gn_Backgr = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
             this.cboPhongChieu = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_PhongChieu = new System.Windows.Forms.Label();
             this.cboSuatChieu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gn_boxxuatchieu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_SuatChieu = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             this.gn_Backgr.BorderRadius = 20;
             this.gn_Backgr.Controls.Add(this.dtpThoiGian);
             this.gn_Backgr.Controls.Add(this.cboPhongChieu);
-            this.gn_Backgr.Controls.Add(this.label1);
+            this.gn_Backgr.Controls.Add(this.lbl_PhongChieu);
             this.gn_Backgr.Controls.Add(this.cboSuatChieu);
             this.gn_Backgr.Controls.Add(this.gn_boxxuatchieu);
             this.gn_Backgr.Controls.Add(this.lbl_SuatChieu);
@@ -147,15 +147,15 @@
             this.cboPhongChieu.Size = new System.Drawing.Size(199, 36);
             this.cboPhongChieu.TabIndex = 5;
             // 
-            // label1
+            // lbl_PhongChieu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 306);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Phòng chiếu🏢";
+            this.lbl_PhongChieu.AutoSize = true;
+            this.lbl_PhongChieu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PhongChieu.Location = new System.Drawing.Point(7, 306);
+            this.lbl_PhongChieu.Name = "lbl_PhongChieu";
+            this.lbl_PhongChieu.Size = new System.Drawing.Size(144, 25);
+            this.lbl_PhongChieu.TabIndex = 7;
+            this.lbl_PhongChieu.Text = "Phòng chiếu🏢";
             // 
             // cboSuatChieu
             // 
@@ -271,16 +271,16 @@
             // 
             // dtv_CaChieu
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtv_CaChieu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_CaChieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtv_CaChieu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_CaChieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtv_CaChieu.ColumnHeadersHeight = 22;
             this.dtv_CaChieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtv_CaChieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -288,14 +288,14 @@
             this.Phòng,
             this.SuatChieu,
             this.Tinhtrangve});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtv_CaChieu.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_CaChieu.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtv_CaChieu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtv_CaChieu.Location = new System.Drawing.Point(251, 60);
             this.dtv_CaChieu.Name = "dtv_CaChieu";
@@ -356,7 +356,7 @@
         private Guna.UI2.WinForms.Guna2Panel gn_Backgr;
         private System.Windows.Forms.DateTimePicker dtpThoiGian;
         private Guna.UI2.WinForms.Guna2ComboBox cboPhongChieu;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_PhongChieu;
         private Guna.UI2.WinForms.Guna2ComboBox cboSuatChieu;
         private Guna.UI2.WinForms.Guna2ComboBox gn_boxxuatchieu;
         private System.Windows.Forms.Label lbl_SuatChieu;
