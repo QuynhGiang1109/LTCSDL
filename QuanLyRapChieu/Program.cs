@@ -16,10 +16,10 @@ namespace QuanLyRapChieu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmTheatre());
+            Application.Run(new frmTheatre());
             //Application.Run(new frmCustomer());
             //Application.Run(new frmDashboard());
-            Application.Run(new frmStaff());
+            //Application.Run(new frmStaff());
         }
     }
 }
