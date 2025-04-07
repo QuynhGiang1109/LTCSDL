@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnAdmin = new System.Windows.Forms.Panel();
             this.btnThongke = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaffUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnDataUC = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnAdmin = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -57,6 +58,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 652);
             this.panel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(41, 147);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Admin";
+            // 
+            // pnAdmin
+            // 
+            this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnAdmin.Location = new System.Drawing.Point(200, 0);
+            this.pnAdmin.Name = "pnAdmin";
+            this.pnAdmin.Size = new System.Drawing.Size(862, 539);
+            this.pnAdmin.TabIndex = 6;
             // 
             // btnThongke
             // 
