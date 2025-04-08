@@ -18,18 +18,18 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         {
             InitializeComponent();
         }
-        void LoadCaChieu()
-        {
-            //CaChieuBUS.Instance.GetCaChieu(showtimeList);
-            LoadmovieNameIntoComboBox();
-            //AddShowtimeBinding();
+        //void LoadCaChieu()
+        //{
+        //    //CaChieuBUS.Instance.GetCaChieu(showtimeList);
+        //    LoadmovieNameIntoComboBox();
+        //    AddShowtimeBinding();
 
-        }
+        //}
 
         //add Binding 
         //void AddShowtimeBinding()
         //{
-        //    txtShowtimeID.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "MaCaChieu", true, DataSourceUpdateMode.Never));
+        //   // txtShowtimeID.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "MaCaChieu", true, DataSourceUpdateMode.Never));
         //    dtmShowtimeDate.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
         //    dtmShowtimeTime.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
         //    dateTimeDay.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianKetThuc", true, DataSourceUpdateMode.Never));
@@ -37,7 +37,6 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         //    txtTicketPrice_Showtime.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "GiaVe", true, DataSourceUpdateMode.Never));
         //    cboCinemaID_Showtime.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaPhong", true, DataSourceUpdateMode.Never));
         //    cboRap.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaRap", true, DataSourceUpdateMode.Never));
-
         //}
         void LoadmovieNameIntoComboBox()
         {
@@ -77,7 +76,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         //    float ticketPrice = float.Parse(txtTicketPrice_Showtime.Text);
         //    CaChieuBUS.Instance.themCaChieu(maCaChieu, time, time2, maPhongChieu, maPhim, ticketPrice, maRapChieu);
         //    CaChieuBUS.Instance.GetCaChieu(showtimeList);
-            LoadCaChieu();
+        //    LoadCaChieu();
         }
 
         private void btnDeleteShowtime_Click(object sender, EventArgs e)
@@ -104,7 +103,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         private void ShowTimesUC_Load(object sender, EventArgs e)
         {
             //dtgvShowtime.DataSource = showtimeList;
-            LoadCaChieu();
+            //LoadCaChieu();
         }
 
     }

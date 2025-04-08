@@ -63,10 +63,5 @@ namespace QuanLyRapChieu.frmAdminUserControl
         {
             //LoadRevenue(cboSelectMovie.SelectedValue.ToString(), dtmFromDate.Value, dtmToDate.Value);
         }
-
-        private void dtgvRevenue_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

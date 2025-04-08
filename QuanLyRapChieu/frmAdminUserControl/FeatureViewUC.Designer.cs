@@ -54,7 +54,7 @@
             this.guna2Panel1.Controls.Add(this.guna2ImageRadioButton1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1149, 110);
             this.guna2Panel1.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.btnTicketsUC.ForeColor = System.Drawing.Color.White;
             this.btnTicketsUC.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketsUC.Image")));
             this.btnTicketsUC.Location = new System.Drawing.Point(971, 0);
-            this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTicketsUC.Name = "btnTicketsUC";
             this.btnTicketsUC.Size = new System.Drawing.Size(175, 110);
             this.btnTicketsUC.TabIndex = 6;
@@ -89,7 +89,7 @@
             this.btnRap.ForeColor = System.Drawing.Color.White;
             this.btnRap.Image = ((System.Drawing.Image)(resources.GetObject("btnRap.Image")));
             this.btnRap.Location = new System.Drawing.Point(0, 0);
-            this.btnRap.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRap.Name = "btnRap";
             this.btnRap.Size = new System.Drawing.Size(160, 110);
             this.btnRap.TabIndex = 1;
@@ -107,7 +107,7 @@
             this.btnShowTimesUC.ForeColor = System.Drawing.Color.White;
             this.btnShowTimesUC.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTimesUC.Image")));
             this.btnShowTimesUC.Location = new System.Drawing.Point(777, 0);
-            this.btnShowTimesUC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowTimesUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShowTimesUC.Name = "btnShowTimesUC";
             this.btnShowTimesUC.Size = new System.Drawing.Size(192, 110);
             this.btnShowTimesUC.TabIndex = 2;
@@ -126,7 +126,7 @@
             this.btnMovieUC.ForeColor = System.Drawing.Color.White;
             this.btnMovieUC.Image = ((System.Drawing.Image)(resources.GetObject("btnMovieUC.Image")));
             this.btnMovieUC.Location = new System.Drawing.Point(603, 0);
-            this.btnMovieUC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMovieUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMovieUC.Name = "btnMovieUC";
             this.btnMovieUC.Size = new System.Drawing.Size(175, 110);
             this.btnMovieUC.TabIndex = 3;
@@ -145,7 +145,7 @@
             this.btnGenreUC.ForeColor = System.Drawing.Color.White;
             this.btnGenreUC.Image = ((System.Drawing.Image)(resources.GetObject("btnGenreUC.Image")));
             this.btnGenreUC.Location = new System.Drawing.Point(407, 0);
-            this.btnGenreUC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenreUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenreUC.Name = "btnGenreUC";
             this.btnGenreUC.Size = new System.Drawing.Size(195, 110);
             this.btnGenreUC.TabIndex = 4;
@@ -163,7 +163,7 @@
             this.btnCinema.ForeColor = System.Drawing.Color.White;
             this.btnCinema.Image = ((System.Drawing.Image)(resources.GetObject("btnCinema.Image")));
             this.btnCinema.Location = new System.Drawing.Point(157, 0);
-            this.btnCinema.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCinema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCinema.Name = "btnCinema";
             this.btnCinema.Size = new System.Drawing.Size(251, 110);
             this.btnCinema.TabIndex = 5;
@@ -176,7 +176,7 @@
             this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageRadioButton1.ImageRotate = 0F;
             this.guna2ImageRadioButton1.Location = new System.Drawing.Point(92, 92);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
             this.guna2ImageRadioButton1.Size = new System.Drawing.Size(131, 78);
             this.guna2ImageRadioButton1.TabIndex = 0;
@@ -185,7 +185,7 @@
             // 
             this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnData.Location = new System.Drawing.Point(0, 110);
-            this.pnData.Margin = new System.Windows.Forms.Padding(4);
+            this.pnData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnData.Name = "pnData";
             this.pnData.Size = new System.Drawing.Size(1149, 553);
             this.pnData.TabIndex = 1;
@@ -196,7 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnData);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FeatureViewUC";
             this.Size = new System.Drawing.Size(1149, 663);
             this.guna2Panel1.ResumeLayout(false);

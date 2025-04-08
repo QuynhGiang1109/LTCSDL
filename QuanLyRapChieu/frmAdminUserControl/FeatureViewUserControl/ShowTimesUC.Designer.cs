@@ -452,7 +452,6 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ShowTimesUC";
             this.Size = new System.Drawing.Size(1097, 663);
-            this.Load += new System.EventHandler(this.ShowTimesUC_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -464,6 +463,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ShowTimesUC_Load);
 
         }
 

@@ -20,7 +20,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
 
         private void btnMovieUC_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnShowTimesUC_Click(object sender, EventArgs e)
