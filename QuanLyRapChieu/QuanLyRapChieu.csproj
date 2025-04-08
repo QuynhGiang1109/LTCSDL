@@ -66,6 +66,18 @@
     <Compile Include="frmAdminUserControl\CustomerUC.Designer.cs">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.Designer.cs">
+      <DependentUpon>MovieUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.Designer.cs">
+      <DependentUpon>TicketsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +90,9 @@
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
@@ -88,7 +102,9 @@
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTheatre.cs" />
+    <Compile Include="frmTheatre.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTheatre.Designer.cs">
       <DependentUpon>frmTheatre.cs</DependentUpon>
     </Compile>
@@ -100,11 +116,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resource1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource1.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -123,6 +134,12 @@
     <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
+      <DependentUpon>MovieUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx">
+      <DependentUpon>TicketsUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,10 +157,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -155,9 +168,7 @@
     <None Include="Resources\z6456795631442_3a79be7e00fb0cafa0195e156f586c54.jpg" />
     <None Include="Resources\z6456875295756_4ec7ef9c0465c60e3e178b5b2aea2b3f.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="frmAdminUserControl\FeatureViewUserControl\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{b55033c0-7392-465b-b7e8-6ae2b0dd1956}</Project>

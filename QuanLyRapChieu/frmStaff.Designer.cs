@@ -40,7 +40,7 @@
             this.gn_Backgr = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
             this.cboPhongChieu = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lbl_PhongChieu = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.cboSuatChieu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gn_boxxuatchieu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_SuatChieu = new System.Windows.Forms.Label();
@@ -72,14 +72,14 @@
             this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_LichChieuPhim.Location = new System.Drawing.Point(0, 0);
             this.pn_LichChieuPhim.Name = "pn_LichChieuPhim";
-            this.pn_LichChieuPhim.Size = new System.Drawing.Size(898, 60);
+            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1186, 60);
             this.pn_LichChieuPhim.TabIndex = 6;
             // 
             // labelX
             // 
             this.labelX.AutoSize = true;
             this.labelX.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX.Location = new System.Drawing.Point(311, 9);
+            this.labelX.Location = new System.Drawing.Point(451, 9);
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(344, 45);
             this.labelX.TabIndex = 0;
@@ -93,13 +93,13 @@
             this.gn_Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.gn_Sidebar.Location = new System.Drawing.Point(0, 60);
             this.gn_Sidebar.Name = "gn_Sidebar";
-            this.gn_Sidebar.Size = new System.Drawing.Size(250, 540);
+            this.gn_Sidebar.Size = new System.Drawing.Size(337, 533);
             this.gn_Sidebar.TabIndex = 7;
             // 
             // btn_ChonVe
             // 
-            this.btn_ChonVe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ChonVe.Location = new System.Drawing.Point(160, 451);
+            this.btn_ChonVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChonVe.Location = new System.Drawing.Point(226, 454);
             this.btn_ChonVe.Name = "btn_ChonVe";
             this.btn_ChonVe.Size = new System.Drawing.Size(75, 36);
             this.btn_ChonVe.TabIndex = 1;
@@ -112,23 +112,25 @@
             this.gn_Backgr.BorderRadius = 20;
             this.gn_Backgr.Controls.Add(this.dtpThoiGian);
             this.gn_Backgr.Controls.Add(this.cboPhongChieu);
-            this.gn_Backgr.Controls.Add(this.lbl_PhongChieu);
+            this.gn_Backgr.Controls.Add(this.label1);
             this.gn_Backgr.Controls.Add(this.cboSuatChieu);
             this.gn_Backgr.Controls.Add(this.gn_boxxuatchieu);
             this.gn_Backgr.Controls.Add(this.lbl_SuatChieu);
             this.gn_Backgr.Controls.Add(this.cboFilmName);
             this.gn_Backgr.Controls.Add(this.lbl_Phim);
             this.gn_Backgr.Controls.Add(this.lbl_Tgian);
-            this.gn_Backgr.Location = new System.Drawing.Point(14, 29);
+            this.gn_Backgr.Location = new System.Drawing.Point(26, 29);
             this.gn_Backgr.Name = "gn_Backgr";
-            this.gn_Backgr.Size = new System.Drawing.Size(221, 398);
+            this.gn_Backgr.Size = new System.Drawing.Size(275, 398);
             this.gn_Backgr.TabIndex = 0;
             // 
             // dtpThoiGian
             // 
-            this.dtpThoiGian.Location = new System.Drawing.Point(13, 69);
+            this.dtpThoiGian.CalendarFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Location = new System.Drawing.Point(9, 64);
             this.dtpThoiGian.Name = "dtpThoiGian";
-            this.dtpThoiGian.Size = new System.Drawing.Size(200, 26);
+            this.dtpThoiGian.Size = new System.Drawing.Size(256, 33);
             this.dtpThoiGian.TabIndex = 8;
             // 
             // cboPhongChieu
@@ -142,20 +144,20 @@
             this.cboPhongChieu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboPhongChieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboPhongChieu.ItemHeight = 30;
-            this.cboPhongChieu.Location = new System.Drawing.Point(10, 334);
+            this.cboPhongChieu.Location = new System.Drawing.Point(9, 328);
             this.cboPhongChieu.Name = "cboPhongChieu";
-            this.cboPhongChieu.Size = new System.Drawing.Size(199, 36);
+            this.cboPhongChieu.Size = new System.Drawing.Size(256, 36);
             this.cboPhongChieu.TabIndex = 5;
             // 
-            // lbl_PhongChieu
+            // label1
             // 
-            this.lbl_PhongChieu.AutoSize = true;
-            this.lbl_PhongChieu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_PhongChieu.Location = new System.Drawing.Point(7, 306);
-            this.lbl_PhongChieu.Name = "lbl_PhongChieu";
-            this.lbl_PhongChieu.Size = new System.Drawing.Size(144, 25);
-            this.lbl_PhongChieu.TabIndex = 7;
-            this.lbl_PhongChieu.Text = "Phòng chiếu🏢";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 299);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Phòng chiếu🏢";
             // 
             // cboSuatChieu
             // 
@@ -168,9 +170,9 @@
             this.cboSuatChieu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboSuatChieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboSuatChieu.ItemHeight = 30;
-            this.cboSuatChieu.Location = new System.Drawing.Point(11, 242);
+            this.cboSuatChieu.Location = new System.Drawing.Point(9, 238);
             this.cboSuatChieu.Name = "cboSuatChieu";
-            this.cboSuatChieu.Size = new System.Drawing.Size(199, 36);
+            this.cboSuatChieu.Size = new System.Drawing.Size(256, 36);
             this.cboSuatChieu.TabIndex = 3;
             // 
             // gn_boxxuatchieu
@@ -184,7 +186,7 @@
             this.gn_boxxuatchieu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gn_boxxuatchieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.gn_boxxuatchieu.ItemHeight = 30;
-            this.gn_boxxuatchieu.Location = new System.Drawing.Point(11, 242);
+            this.gn_boxxuatchieu.Location = new System.Drawing.Point(22, 236);
             this.gn_boxxuatchieu.Name = "gn_boxxuatchieu";
             this.gn_boxxuatchieu.Size = new System.Drawing.Size(184, 36);
             this.gn_boxxuatchieu.TabIndex = 3;
@@ -192,10 +194,10 @@
             // lbl_SuatChieu
             // 
             this.lbl_SuatChieu.AutoSize = true;
-            this.lbl_SuatChieu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SuatChieu.Location = new System.Drawing.Point(7, 215);
+            this.lbl_SuatChieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SuatChieu.Location = new System.Drawing.Point(4, 207);
             this.lbl_SuatChieu.Name = "lbl_SuatChieu";
-            this.lbl_SuatChieu.Size = new System.Drawing.Size(132, 25);
+            this.lbl_SuatChieu.Size = new System.Drawing.Size(151, 26);
             this.lbl_SuatChieu.TabIndex = 4;
             this.lbl_SuatChieu.Text = "Suất chiếu ⏰";
             // 
@@ -210,28 +212,28 @@
             this.cboFilmName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboFilmName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboFilmName.ItemHeight = 30;
-            this.cboFilmName.Location = new System.Drawing.Point(10, 151);
+            this.cboFilmName.Location = new System.Drawing.Point(9, 145);
             this.cboFilmName.Name = "cboFilmName";
-            this.cboFilmName.Size = new System.Drawing.Size(200, 36);
+            this.cboFilmName.Size = new System.Drawing.Size(256, 36);
             this.cboFilmName.TabIndex = 1;
             // 
             // lbl_Phim
             // 
             this.lbl_Phim.AutoSize = true;
-            this.lbl_Phim.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Phim.Location = new System.Drawing.Point(8, 123);
+            this.lbl_Phim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Phim.Location = new System.Drawing.Point(4, 116);
             this.lbl_Phim.Name = "lbl_Phim";
-            this.lbl_Phim.Size = new System.Drawing.Size(84, 25);
+            this.lbl_Phim.Size = new System.Drawing.Size(96, 26);
             this.lbl_Phim.TabIndex = 1;
             this.lbl_Phim.Text = "Phim 🎬";
             // 
             // lbl_Tgian
             // 
             this.lbl_Tgian.AutoSize = true;
-            this.lbl_Tgian.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tgian.Location = new System.Drawing.Point(8, 41);
+            this.lbl_Tgian.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tgian.Location = new System.Drawing.Point(4, 35);
             this.lbl_Tgian.Name = "lbl_Tgian";
-            this.lbl_Tgian.Size = new System.Drawing.Size(91, 25);
+            this.lbl_Tgian.Size = new System.Drawing.Size(101, 26);
             this.lbl_Tgian.TabIndex = 0;
             this.lbl_Tgian.Text = "Ngày 📅 ";
             // 
@@ -297,12 +299,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtv_CaChieu.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtv_CaChieu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtv_CaChieu.Location = new System.Drawing.Point(251, 60);
+            this.dtv_CaChieu.Location = new System.Drawing.Point(335, 57);
             this.dtv_CaChieu.Name = "dtv_CaChieu";
             this.dtv_CaChieu.RowHeadersVisible = false;
             this.dtv_CaChieu.RowHeadersWidth = 62;
             this.dtv_CaChieu.RowTemplate.Height = 28;
-            this.dtv_CaChieu.Size = new System.Drawing.Size(647, 540);
+            this.dtv_CaChieu.Size = new System.Drawing.Size(851, 550);
             this.dtv_CaChieu.TabIndex = 8;
             this.dtv_CaChieu.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtv_CaChieu.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -330,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 600);
+            this.ClientSize = new System.Drawing.Size(1186, 593);
             this.Controls.Add(this.gn_Sidebar);
             this.Controls.Add(this.pn_LichChieuPhim);
             this.Controls.Add(this.dtv_CaChieu);
@@ -356,7 +358,7 @@
         private Guna.UI2.WinForms.Guna2Panel gn_Backgr;
         private System.Windows.Forms.DateTimePicker dtpThoiGian;
         private Guna.UI2.WinForms.Guna2ComboBox cboPhongChieu;
-        private System.Windows.Forms.Label lbl_PhongChieu;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox cboSuatChieu;
         private Guna.UI2.WinForms.Guna2ComboBox gn_boxxuatchieu;
         private System.Windows.Forms.Label lbl_SuatChieu;

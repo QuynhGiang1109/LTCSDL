@@ -32,10 +32,11 @@
             // 
             // CustomerUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CustomerUC";
-            this.Size = new System.Drawing.Size(823, 497);
+            this.Size = new System.Drawing.Size(1234, 765);
             this.ResumeLayout(false);
 
         }
