@@ -22,7 +22,17 @@ namespace QuanLyRapChieu.frmAdminUserControl
 
         private void btnMovieUC_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnShowTimesUC_Click(object sender, EventArgs e)
+        {
+            //SidePanel.Height = btnShowTimesUC.Height;
+            //SidePanel.Top = btnShowTimesUC.Top;
+            pnData.Controls.Clear();
+            ShowTimesUC showTimesUc = new ShowTimesUC();
+            showTimesUc.Dock = DockStyle.Fill;
+            pnData.Controls.Add(showTimesUc);
         }
 
         private void btnGenreUC_Click(object sender, EventArgs e)
@@ -37,6 +47,16 @@ namespace QuanLyRapChieu.frmAdminUserControl
             Cinema cinema = new Cinema();
             pnData.Controls.Clear();
             pnData.Controls.Add(cinema);
+        }
+
+        private void btnShowTimesUC_Click_1(object sender, EventArgs e)
+        {
+            //SidePanel.Height = btnShowTimesUC.Height;
+            //SidePanel.Top = btnShowTimesUC.Top;
+            pnData.Controls.Clear();
+            ShowTimesUC showTimesUc = new ShowTimesUC();
+            showTimesUc.Dock = DockStyle.Fill;
+            pnData.Controls.Add(showTimesUc);
         }
     }
 }

@@ -39,22 +39,23 @@ namespace QuanLyRapChieu
             pnAdmin.Controls.Add(customerUC);
         }
 
+        //Button hien thi thong tin tai khoan Admin, Staff
         private void btnAccountUC_Click(object sender, EventArgs e)
         {
-            //pnAdmin.Controls.Clear();
-            //AccountUC accountUC = new AccountUC();
-            //accountUC.Dock = DockStyle.Fill;
-            //pnAdmin.Controls.Add(accountUC);
+            pnAdmin.Controls.Clear();
+            AccountUC accountUC = new AccountUC();
+            accountUC.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(accountUC);
         }
 
-        //Button Thong Ke
+        //Button Thong Ke Doanh thu
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Text = "Doanh Thu";
-            //pnAdmin.Controls.Clear();
-            //RevenueUC revenueUc = new RevenueUC();
-            //revenueUc.Dock = DockStyle.Fill;
-            //pnAdmin.Controls.Add(revenueUc);
+            this.Text = "Doanh Thu";
+            pnAdmin.Controls.Clear();
+            RevenueUC revenueUc = new RevenueUC();
+            revenueUc.Dock = DockStyle.Fill;
+            pnAdmin.Controls.Add(revenueUc);
         }
 
         private void frmAdmin_FormClosing(object sender, FormClosingEventArgs e)
@@ -64,8 +65,5 @@ namespace QuanLyRapChieu
                 e.Cancel = true;
             }
         }
-
-
-
     }
 }

@@ -713,7 +713,6 @@ namespace QuanLyRapChieu
         private System.Windows.Forms.RadioButton rdoAdult;
         private System.Windows.Forms.RadioButton rdoChild;
         private System.Windows.Forms.RadioButton rdoFree;
-        private float borderRadius;
         private Label txtRefund;
         private Button button2;
         private Label label6;
