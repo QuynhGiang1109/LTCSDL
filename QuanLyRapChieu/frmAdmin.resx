@@ -121,7 +121,7 @@
   <data name="btnThongke.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHyuSURBVHhe7d0F
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHyuSURBVHhe7d0F
         uBXF3wfwl3uBS3d3p3R3SktLqUh3dxggBphgAGJhoBiAIoJIioQ00h12oShg6++dWb38ie+9zNk4Z885
         39/zfJ7nff8gszs7O/M7u7Mz/+dClFQGK88rm5UvlHOKEFFU+Uv5UnlH6arEKAwGI8Iin3K3clxBHQER
         0W6liMJgMCIgCin6l/4fCrrhiYgud1appDAYjDCN5Mqdyi8KusmJiBLyg1JZYTAYYRb6cf8WBd3YREQm
@@ -660,7 +660,7 @@
   <data name="btnAccountUC.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGXsSURBVHhe7d13
+        DAAACwwBP0AiyAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGXsSURBVHhe7d13
         YFzVnTb+N4SwbDabX95s1g14SZaEECAQQoAApoVOTCiB0AOEFppDS0ggQAhtAwZjbMCATTG9u2FsXGVZ
         lpvq9KoymuZeJFm2JZ/fOWNkZOmRNXPvuTP3zjx/fN4XzgZpNHPmPN977yn/RwhBREREJQY2EpF9+KPp
         b/ki6cN8kdT53nBypPSkJ5SY5A7GZ7qDLctcgVio3t8ck1J1vqZV0rpab+NGqa3W27C5xtOwtcYT3Vbt
@@ -1102,7 +1102,7 @@
   <data name="btnCustomerUC.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEPqSURBVHhe7Z0J
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEPqSURBVHhe7Z0J
         mFzVeaZxtnHseGJnHE+S2SfzjMeTCZIMtkPARuoqCRMHLUCrJWE2oa6SBAKz2GAMWMRGbDZmB4EJmE1S
         013dLYnFLGaRWCS1MGZNcMCAN5CQ0NoSTsyde5oj3C596q5TfevWPfe87/O8Dzw2fbrurfP/3+2qW3/t
         BQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -5669,7 +5669,7 @@
         jUaj0WisMjtr/wZJmkI5x0gHIgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnAdmin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYanhsIARAAABtbnRyUkdCIFhZ
         WiAH4wAMAAEAAAAAAABhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLWp4
