@@ -31,6 +31,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountUC));
             this.Show_MK = new System.Windows.Forms.CheckBox();
             this.txt_Pass = new System.Windows.Forms.TextBox();
             this.txt_idNV = new System.Windows.Forms.TextBox();
@@ -47,6 +48,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnInsertAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).BeginInit();
             this.grpAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
@@ -176,7 +178,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.grpAccount.FillColor = System.Drawing.Color.Transparent;
             this.grpAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAccount.ForeColor = System.Drawing.Color.DimGray;
-            this.grpAccount.Location = new System.Drawing.Point(209, 16);
+            this.grpAccount.Location = new System.Drawing.Point(231, 19);
             this.grpAccount.Name = "grpAccount";
             this.grpAccount.Size = new System.Drawing.Size(713, 177);
             this.grpAccount.TabIndex = 16;
@@ -201,7 +203,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.grpDetailAcc.Controls.Add(this.dtgvAccount);
             this.grpDetailAcc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDetailAcc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.grpDetailAcc.Location = new System.Drawing.Point(83, 282);
+            this.grpDetailAcc.Location = new System.Drawing.Point(25, 257);
             this.grpDetailAcc.Name = "grpDetailAcc";
             this.grpDetailAcc.Size = new System.Drawing.Size(946, 341);
             this.grpDetailAcc.TabIndex = 28;
@@ -213,7 +215,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.lbAccUC.AutoSize = true;
             this.lbAccUC.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccUC.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lbAccUC.Location = new System.Drawing.Point(20, 168);
+            this.lbAccUC.Location = new System.Drawing.Point(31, 168);
             this.lbAccUC.Name = "lbAccUC";
             this.lbAccUC.Size = new System.Drawing.Size(170, 25);
             this.lbAccUC.TabIndex = 29;
@@ -232,7 +234,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnInsertAccount.FillColor = System.Drawing.Color.LightSlateGray;
             this.btnInsertAccount.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnInsertAccount.ForeColor = System.Drawing.Color.White;
-            this.btnInsertAccount.Location = new System.Drawing.Point(244, 213);
+            this.btnInsertAccount.Location = new System.Drawing.Point(329, 207);
             this.btnInsertAccount.Name = "btnInsertAccount";
             this.btnInsertAccount.Size = new System.Drawing.Size(124, 49);
             this.btnInsertAccount.TabIndex = 30;
@@ -251,7 +253,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnUpdateAccount.FillColor = System.Drawing.Color.LightSlateGray;
             this.btnUpdateAccount.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnUpdateAccount.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateAccount.Location = new System.Drawing.Point(452, 213);
+            this.btnUpdateAccount.Location = new System.Drawing.Point(514, 206);
             this.btnUpdateAccount.Name = "btnUpdateAccount";
             this.btnUpdateAccount.Size = new System.Drawing.Size(135, 49);
             this.btnUpdateAccount.TabIndex = 31;
@@ -271,18 +273,28 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnDeleteAccount.FillColor = System.Drawing.Color.LightSlateGray;
             this.btnDeleteAccount.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(662, 213);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(713, 206);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(127, 49);
+            this.btnDeleteAccount.Size = new System.Drawing.Size(132, 49);
             this.btnDeleteAccount.TabIndex = 32;
             this.btnDeleteAccount.Text = "Xóa";
             this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
+            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Panel1.Location = new System.Drawing.Point(25, 16);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(176, 149);
+            this.guna2Panel1.TabIndex = 33;
             // 
             // AccountUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnDeleteAccount);
             this.Controls.Add(this.btnUpdateAccount);
             this.Controls.Add(this.btnInsertAccount);
@@ -291,7 +303,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.Controls.Add(this.grpAccount);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AccountUC";
-            this.Size = new System.Drawing.Size(1097, 663);
+            this.Size = new System.Drawing.Size(994, 611);
             ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).EndInit();
             this.grpAccount.ResumeLayout(false);
             this.grpAccount.PerformLayout();
@@ -319,5 +331,6 @@ namespace QuanLyRapChieu.frmAdminUserControl
         private Guna.UI2.WinForms.Guna2Button btnInsertAccount;
         private Guna.UI2.WinForms.Guna2Button btnUpdateAccount;
         private Guna.UI2.WinForms.Guna2Button btnDeleteAccount;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

@@ -61,7 +61,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.lblTongDoanhThu.AutoSize = true;
             this.lblTongDoanhThu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongDoanhThu.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblTongDoanhThu.Location = new System.Drawing.Point(566, 594);
+            this.lblTongDoanhThu.Location = new System.Drawing.Point(449, 565);
             this.lblTongDoanhThu.Name = "lblTongDoanhThu";
             this.lblTongDoanhThu.Size = new System.Drawing.Size(181, 25);
             this.lblTongDoanhThu.TabIndex = 38;
@@ -72,7 +72,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.txtDoanhThu.Enabled = false;
             this.txtDoanhThu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoanhThu.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtDoanhThu.Location = new System.Drawing.Point(763, 584);
+            this.txtDoanhThu.Location = new System.Drawing.Point(713, 555);
             this.txtDoanhThu.Name = "txtDoanhThu";
             this.txtDoanhThu.Size = new System.Drawing.Size(235, 35);
             this.txtDoanhThu.TabIndex = 37;
@@ -106,12 +106,13 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.dtgvRevenue.AllowUserToDeleteRows = false;
             this.dtgvRevenue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvRevenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvRevenue.Location = new System.Drawing.Point(73, 165);
+            this.dtgvRevenue.Location = new System.Drawing.Point(45, 156);
             this.dtgvRevenue.Name = "dtgvRevenue";
             this.dtgvRevenue.ReadOnly = true;
             this.dtgvRevenue.RowHeadersWidth = 51;
-            this.dtgvRevenue.Size = new System.Drawing.Size(925, 399);
+            this.dtgvRevenue.Size = new System.Drawing.Size(903, 375);
             this.dtgvRevenue.TabIndex = 34;
+            this.dtgvRevenue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRevenue_CellContentClick);
             // 
             // cboSelectMovie
             // 
@@ -185,7 +186,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnShowRevenue.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnShowRevenue.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnShowRevenue.IndicateFocus = true;
-            this.btnShowRevenue.Location = new System.Drawing.Point(747, 60);
+            this.btnShowRevenue.Location = new System.Drawing.Point(749, 60);
             this.btnShowRevenue.Name = "btnShowRevenue";
             this.btnShowRevenue.PressedColor = System.Drawing.Color.Transparent;
             this.btnShowRevenue.PressedDepth = 10;
@@ -207,22 +208,24 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.pnSelectMovie.Controls.Add(this.cboSelectMovie);
             this.pnSelectMovie.Controls.Add(this.lblSelectMovie);
             this.pnSelectMovie.Controls.Add(this.lblDenNgay);
-            this.pnSelectMovie.Location = new System.Drawing.Point(65, 10);
+            this.pnSelectMovie.Location = new System.Drawing.Point(45, 14);
             this.pnSelectMovie.Name = "pnSelectMovie";
-            this.pnSelectMovie.Size = new System.Drawing.Size(932, 134);
+            this.pnSelectMovie.Size = new System.Drawing.Size(903, 125);
             this.pnSelectMovie.TabIndex = 44;
             // 
             // RevenueUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.pnSelectMovie);
             this.Controls.Add(this.lblTongDoanhThu);
             this.Controls.Add(this.txtDoanhThu);
             this.Controls.Add(this.dtgvRevenue);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "RevenueUC";
-            this.Size = new System.Drawing.Size(1097, 663);
+            this.Size = new System.Drawing.Size(994, 611);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRevenue)).EndInit();
             this.pnSelectMovie.ResumeLayout(false);
             this.pnSelectMovie.PerformLayout();

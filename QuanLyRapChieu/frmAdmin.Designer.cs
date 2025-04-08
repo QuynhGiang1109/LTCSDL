@@ -30,13 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnAdmin = new System.Windows.Forms.Panel();
             this.btnThongke = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaffUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnDataUC = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnAdmin = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -54,29 +53,10 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 652);
+            this.panel1.Size = new System.Drawing.Size(267, 661);
             this.panel1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 147);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 37);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Admin";
-            // 
-            // pnAdmin
-            // 
-            this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnAdmin.Location = new System.Drawing.Point(200, 0);
-            this.pnAdmin.Name = "pnAdmin";
-            this.pnAdmin.Size = new System.Drawing.Size(862, 539);
-            this.pnAdmin.TabIndex = 6;
             // 
             // btnThongke
             // 
@@ -90,7 +70,7 @@
             this.btnThongke.Image = ((System.Drawing.Image)(resources.GetObject("btnThongke.Image")));
             this.btnThongke.ImageSize = new System.Drawing.Size(40, 40);
             this.btnThongke.Location = new System.Drawing.Point(4, 582);
-            this.btnThongke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThongke.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongke.Name = "btnThongke";
             this.btnThongke.Size = new System.Drawing.Size(267, 55);
             this.btnThongke.TabIndex = 6;
@@ -109,7 +89,7 @@
             this.btnAccountUC.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountUC.Image")));
             this.btnAccountUC.ImageSize = new System.Drawing.Size(40, 40);
             this.btnAccountUC.Location = new System.Drawing.Point(-8, 501);
-            this.btnAccountUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAccountUC.Margin = new System.Windows.Forms.Padding(4);
             this.btnAccountUC.Name = "btnAccountUC";
             this.btnAccountUC.Size = new System.Drawing.Size(279, 55);
             this.btnAccountUC.TabIndex = 5;
@@ -128,7 +108,7 @@
             this.btnCustomerUC.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerUC.Image")));
             this.btnCustomerUC.ImageSize = new System.Drawing.Size(40, 40);
             this.btnCustomerUC.Location = new System.Drawing.Point(0, 414);
-            this.btnCustomerUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustomerUC.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomerUC.Name = "btnCustomerUC";
             this.btnCustomerUC.Size = new System.Drawing.Size(271, 55);
             this.btnCustomerUC.TabIndex = 4;
@@ -147,7 +127,7 @@
             this.btnStaffUC.Image = ((System.Drawing.Image)(resources.GetObject("btnStaffUC.Image")));
             this.btnStaffUC.ImageSize = new System.Drawing.Size(40, 40);
             this.btnStaffUC.Location = new System.Drawing.Point(0, 332);
-            this.btnStaffUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStaffUC.Margin = new System.Windows.Forms.Padding(4);
             this.btnStaffUC.Name = "btnStaffUC";
             this.btnStaffUC.Size = new System.Drawing.Size(267, 55);
             this.btnStaffUC.TabIndex = 3;
@@ -166,7 +146,7 @@
             this.btnDataUC.Image = ((System.Drawing.Image)(resources.GetObject("btnDataUC.Image")));
             this.btnDataUC.ImageSize = new System.Drawing.Size(40, 40);
             this.btnDataUC.Location = new System.Drawing.Point(-29, 250);
-            this.btnDataUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDataUC.Margin = new System.Windows.Forms.Padding(4);
             this.btnDataUC.Name = "btnDataUC";
             this.btnDataUC.Size = new System.Drawing.Size(300, 55);
             this.btnDataUC.TabIndex = 2;
@@ -189,7 +169,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(267, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,23 +178,22 @@
             // 
             // pnAdmin
             // 
-            this.pnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnAdmin.BackgroundImage")));
             this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnAdmin.Location = new System.Drawing.Point(275, 0);
-            this.pnAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnAdmin.Margin = new System.Windows.Forms.Padding(0);
             this.pnAdmin.Name = "pnAdmin";
-            this.pnAdmin.Size = new System.Drawing.Size(1097, 663);
+            this.pnAdmin.Size = new System.Drawing.Size(994, 661);
             this.pnAdmin.TabIndex = 6;
             // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1364, 652);
+            this.ClientSize = new System.Drawing.Size(1279, 667);
             this.Controls.Add(this.pnAdmin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

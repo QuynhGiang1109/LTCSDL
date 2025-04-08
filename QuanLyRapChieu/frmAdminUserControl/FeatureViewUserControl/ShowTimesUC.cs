@@ -22,23 +22,23 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         {
             //CaChieuBUS.Instance.GetCaChieu(showtimeList);
             LoadmovieNameIntoComboBox();
-            AddShowtimeBinding();
+            //AddShowtimeBinding();
 
         }
 
         //add Binding 
-        void AddShowtimeBinding()
-        {
-            txtShowtimeID.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "MaCaChieu", true, DataSourceUpdateMode.Never));
-            dtmShowtimeDate.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
-            dtmShowtimeTime.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
-            dateTimeDay.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianKetThuc", true, DataSourceUpdateMode.Never));
-            dateTimetimes.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianKetThuc", true, DataSourceUpdateMode.Never));
-            txtTicketPrice_Showtime.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "GiaVe", true, DataSourceUpdateMode.Never));
-            cboCinemaID_Showtime.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaPhong", true, DataSourceUpdateMode.Never));
-            cboRap.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaRap", true, DataSourceUpdateMode.Never));
+        //void AddShowtimeBinding()
+        //{
+        //    txtShowtimeID.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "MaCaChieu", true, DataSourceUpdateMode.Never));
+        //    dtmShowtimeDate.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
+        //    dtmShowtimeTime.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianChieu", true, DataSourceUpdateMode.Never));
+        //    dateTimeDay.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianKetThuc", true, DataSourceUpdateMode.Never));
+        //    dateTimetimes.DataBindings.Add(new Binding("Value", dtgvShowtime.DataSource, "ThoiGianKetThuc", true, DataSourceUpdateMode.Never));
+        //    txtTicketPrice_Showtime.DataBindings.Add(new Binding("Text", dtgvShowtime.DataSource, "GiaVe", true, DataSourceUpdateMode.Never));
+        //    cboCinemaID_Showtime.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaPhong", true, DataSourceUpdateMode.Never));
+        //    cboRap.DataBindings.Add(new Binding("SelectedValue", dtgvShowtime.DataSource, "MaRap", true, DataSourceUpdateMode.Never));
 
-        }
+        //}
         void LoadmovieNameIntoComboBox()
         {
            // cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
