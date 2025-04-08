@@ -88,6 +88,12 @@
     <Compile Include="frmAdminUserControl\CustomerUC.Designer.cs">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.Designer.cs">
+      <DependentUpon>GenreUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,7 +144,6 @@
     </Compile> -->
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx">
       <DependentUpon>FeatureViewUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
+      <DependentUpon>GenreUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
@@ -209,9 +217,7 @@
   <ItemGroup>
     <None Include="Resources\z6456875295756_4ec7ef9c0465c60e3e178b5b2aea2b3f.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="frmAdminUserControl\FeatureViewUserControl\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

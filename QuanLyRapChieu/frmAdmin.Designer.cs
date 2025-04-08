@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnAdmin = new System.Windows.Forms.Panel();
             this.btnThongke = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaffUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnDataUC = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnAdmin = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,29 +52,11 @@
             this.panel1.Controls.Add(this.btnDataUC);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 530);
+            this.panel1.Size = new System.Drawing.Size(200, 611);
             this.panel1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 147);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 37);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Admin";
-            // 
-            // pnAdmin
-            // 
-            this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnAdmin.Location = new System.Drawing.Point(200, 0);
-            this.pnAdmin.Name = "pnAdmin";
-            this.pnAdmin.Size = new System.Drawing.Size(862, 539);
-            this.pnAdmin.TabIndex = 6;
             // 
             // btnThongke
             // 
@@ -87,7 +69,7 @@
             this.btnThongke.ForeColor = System.Drawing.Color.White;
             this.btnThongke.Image = ((System.Drawing.Image)(resources.GetObject("btnThongke.Image")));
             this.btnThongke.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnThongke.Location = new System.Drawing.Point(3, 473);
+            this.btnThongke.Location = new System.Drawing.Point(3, 536);
             this.btnThongke.Name = "btnThongke";
             this.btnThongke.Size = new System.Drawing.Size(200, 45);
             this.btnThongke.TabIndex = 6;
@@ -105,7 +87,7 @@
             this.btnAccountUC.ForeColor = System.Drawing.Color.White;
             this.btnAccountUC.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountUC.Image")));
             this.btnAccountUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAccountUC.Location = new System.Drawing.Point(-6, 407);
+            this.btnAccountUC.Location = new System.Drawing.Point(-6, 455);
             this.btnAccountUC.Name = "btnAccountUC";
             this.btnAccountUC.Size = new System.Drawing.Size(209, 45);
             this.btnAccountUC.TabIndex = 5;
@@ -123,7 +105,7 @@
             this.btnCustomerUC.ForeColor = System.Drawing.Color.White;
             this.btnCustomerUC.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerUC.Image")));
             this.btnCustomerUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnCustomerUC.Location = new System.Drawing.Point(0, 336);
+            this.btnCustomerUC.Location = new System.Drawing.Point(0, 373);
             this.btnCustomerUC.Name = "btnCustomerUC";
             this.btnCustomerUC.Size = new System.Drawing.Size(203, 45);
             this.btnCustomerUC.TabIndex = 4;
@@ -141,7 +123,7 @@
             this.btnStaffUC.ForeColor = System.Drawing.Color.White;
             this.btnStaffUC.Image = ((System.Drawing.Image)(resources.GetObject("btnStaffUC.Image")));
             this.btnStaffUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnStaffUC.Location = new System.Drawing.Point(0, 270);
+            this.btnStaffUC.Location = new System.Drawing.Point(0, 295);
             this.btnStaffUC.Name = "btnStaffUC";
             this.btnStaffUC.Size = new System.Drawing.Size(200, 45);
             this.btnStaffUC.TabIndex = 3;
@@ -159,12 +141,23 @@
             this.btnDataUC.ForeColor = System.Drawing.Color.White;
             this.btnDataUC.Image = ((System.Drawing.Image)(resources.GetObject("btnDataUC.Image")));
             this.btnDataUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDataUC.Location = new System.Drawing.Point(-22, 203);
+            this.btnDataUC.Location = new System.Drawing.Point(-22, 221);
             this.btnDataUC.Name = "btnDataUC";
             this.btnDataUC.Size = new System.Drawing.Size(225, 45);
             this.btnDataUC.TabIndex = 2;
             this.btnDataUC.Text = "Dữ Liệu";
             this.btnDataUC.Click += new System.EventHandler(this.btnDataUC_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(41, 147);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Admin";
             // 
             // pictureBox1
             // 
@@ -176,11 +169,20 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pnAdmin
+            // 
+            this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnAdmin.Location = new System.Drawing.Point(200, 0);
+            this.pnAdmin.Name = "pnAdmin";
+            this.pnAdmin.Size = new System.Drawing.Size(994, 611);
+            this.pnAdmin.TabIndex = 6;
+            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 530);
+            this.ClientSize = new System.Drawing.Size(1194, 611);
             this.Controls.Add(this.pnAdmin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
