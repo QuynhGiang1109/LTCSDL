@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeatureViewUC));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnData = new Guna.UI2.WinForms.Guna2Panel();
             this.btnTicketsUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowTimesUC = new Guna.UI2.WinForms.Guna2Button();
@@ -38,6 +37,7 @@
             this.btnMovieUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCinema = new Guna.UI2.WinForms.Guna2Button();
             this.btnGenreUC = new Guna.UI2.WinForms.Guna2Button();
+            this.pnData = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,16 +57,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1000, 89);
             this.guna2Panel1.TabIndex = 0;
-            // 
-            // pnData
-            // 
-            this.pnData.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnData.Location = new System.Drawing.Point(0, 89);
-            this.pnData.Name = "pnData";
-            this.pnData.Size = new System.Drawing.Size(1000, 522);
-            this.pnData.TabIndex = 1;
             // 
             // btnTicketsUC
             // 
@@ -164,6 +154,7 @@
             this.btnCinema.Size = new System.Drawing.Size(207, 89);
             this.btnCinema.TabIndex = 5;
             this.btnCinema.Text = "Phòng chiếu";
+            this.btnCinema.Click += new System.EventHandler(this.btnCinema_Click);
             // 
             // btnGenreUC
             // 
@@ -182,6 +173,16 @@
             this.btnGenreUC.TabIndex = 4;
             this.btnGenreUC.Text = "Thể loại";
             this.btnGenreUC.Click += new System.EventHandler(this.btnGenreUC_Click);
+            // 
+            // pnData
+            // 
+            this.pnData.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnData.Location = new System.Drawing.Point(0, 89);
+            this.pnData.Name = "pnData";
+            this.pnData.Size = new System.Drawing.Size(1000, 522);
+            this.pnData.TabIndex = 1;
             // 
             // FeatureViewUC
             // 

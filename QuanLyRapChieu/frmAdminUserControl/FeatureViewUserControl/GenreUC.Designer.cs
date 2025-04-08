@@ -74,7 +74,7 @@
             this.btnUpdateGenre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUpdateGenre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnUpdateGenre.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.btnUpdateGenre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btnUpdateGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateGenre.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateGenre.IndicateFocus = true;
             this.btnUpdateGenre.Location = new System.Drawing.Point(258, 17);
@@ -94,7 +94,7 @@
             this.btnDeleteGenre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteGenre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteGenre.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.btnDeleteGenre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteGenre.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteGenre.IndicateFocus = true;
             this.btnDeleteGenre.Location = new System.Drawing.Point(134, 17);
@@ -114,7 +114,7 @@
             this.btnInsertGenre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnInsertGenre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnInsertGenre.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.btnInsertGenre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertGenre.ForeColor = System.Drawing.Color.Black;
             this.btnInsertGenre.IndicateFocus = true;
             this.btnInsertGenre.Location = new System.Drawing.Point(15, 17);
@@ -164,10 +164,10 @@
             // lblGenreName
             // 
             this.lblGenreName.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenreName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenreName.Location = new System.Drawing.Point(13, 15);
+            this.lblGenreName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenreName.Location = new System.Drawing.Point(13, 18);
             this.lblGenreName.Name = "lblGenreName";
-            this.lblGenreName.Size = new System.Drawing.Size(98, 21);
+            this.lblGenreName.Size = new System.Drawing.Size(108, 21);
             this.lblGenreName.TabIndex = 2;
             this.lblGenreName.Text = "Tên Thể Loại:";
             // 
@@ -203,10 +203,10 @@
             // lblGenreID
             // 
             this.lblGenreID.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenreID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenreID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenreID.Location = new System.Drawing.Point(13, 16);
             this.lblGenreID.Name = "lblGenreID";
-            this.lblGenreID.Size = new System.Drawing.Size(96, 21);
+            this.lblGenreID.Size = new System.Drawing.Size(101, 21);
             this.lblGenreID.TabIndex = 0;
             this.lblGenreID.Text = "Mã Thể Loại:";
             // 

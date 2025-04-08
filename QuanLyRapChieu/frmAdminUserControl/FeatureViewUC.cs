@@ -31,5 +31,12 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Clear();
             pnData.Controls.Add(genreUC);
         }
+
+        private void btnCinema_Click(object sender, EventArgs e)
+        {
+            Cinema cinema = new Cinema();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(cinema);
+        }
     }
 }

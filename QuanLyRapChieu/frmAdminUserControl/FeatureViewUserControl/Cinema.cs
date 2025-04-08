@@ -10,18 +10,13 @@ using System.Windows.Forms;
 
 namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
-    public partial class GenreUC : UserControl
+    public partial class Cinema : UserControl
     {
-        public GenreUC()
+        public Cinema()
         {
             InitializeComponent();
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
+       
     }
 }

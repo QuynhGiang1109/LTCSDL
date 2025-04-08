@@ -1,0 +1,465 @@
+﻿
+namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
+{
+    partial class Cinema
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.lblSeatsPerRow = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.txtNumberOfRows = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblNumberOfRows = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtCinemaStatus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCinemaStatus = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.txtCinemaSeats = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCinemaSeats = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.txtCinemaName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCinemaName = new System.Windows.Forms.Label();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.txtCinemaID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCinemaID = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.btnUpdateCinema = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteCinema = new Guna.UI2.WinForms.Guna2Button();
+            this.btnInsertCinema = new Guna.UI2.WinForms.Guna2Button();
+            this.dtgvCinema = new System.Windows.Forms.DataGridView();
+            this.txtSeatsPerRow = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCinema)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel33);
+            this.panel1.Controls.Add(this.dtgvCinema);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1000, 611);
+            this.panel1.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel15);
+            this.panel2.Controls.Add(this.panel12);
+            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.panel31);
+            this.panel2.Controls.Add(this.panel32);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(631, 54);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(369, 557);
+            this.panel2.TabIndex = 32;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.txtSeatsPerRow);
+            this.panel15.Controls.Add(this.lblSeatsPerRow);
+            this.panel15.Location = new System.Drawing.Point(13, 293);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(331, 44);
+            this.panel15.TabIndex = 5;
+            // 
+            // lblSeatsPerRow
+            // 
+            this.lblSeatsPerRow.AutoSize = true;
+            this.lblSeatsPerRow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblSeatsPerRow.Location = new System.Drawing.Point(0, 17);
+            this.lblSeatsPerRow.Name = "lblSeatsPerRow";
+            this.lblSeatsPerRow.Size = new System.Drawing.Size(121, 19);
+            this.lblSeatsPerRow.TabIndex = 0;
+            this.lblSeatsPerRow.Text = "Ghế mỗi hàng:";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.txtNumberOfRows);
+            this.panel12.Controls.Add(this.lblNumberOfRows);
+            this.panel12.Location = new System.Drawing.Point(13, 234);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(331, 44);
+            this.panel12.TabIndex = 6;
+            // 
+            // txtNumberOfRows
+            // 
+            this.txtNumberOfRows.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumberOfRows.DefaultText = "Enter No Row";
+            this.txtNumberOfRows.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNumberOfRows.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNumberOfRows.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNumberOfRows.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNumberOfRows.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumberOfRows.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtNumberOfRows.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumberOfRows.Location = new System.Drawing.Point(119, 7);
+            this.txtNumberOfRows.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNumberOfRows.Name = "txtNumberOfRows";
+            this.txtNumberOfRows.PlaceholderText = "";
+            this.txtNumberOfRows.SelectedText = "";
+            this.txtNumberOfRows.Size = new System.Drawing.Size(195, 30);
+            this.txtNumberOfRows.TabIndex = 5;
+            // 
+            // lblNumberOfRows
+            // 
+            this.lblNumberOfRows.AutoSize = true;
+            this.lblNumberOfRows.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblNumberOfRows.Location = new System.Drawing.Point(3, 15);
+            this.lblNumberOfRows.Name = "lblNumberOfRows";
+            this.lblNumberOfRows.Size = new System.Drawing.Size(112, 19);
+            this.lblNumberOfRows.TabIndex = 0;
+            this.lblNumberOfRows.Text = "Số hàng ghế:";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.txtCinemaStatus);
+            this.panel9.Controls.Add(this.lblCinemaStatus);
+            this.panel9.Location = new System.Drawing.Point(13, 176);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(331, 44);
+            this.panel9.TabIndex = 7;
+            // 
+            // txtCinemaStatus
+            // 
+            this.txtCinemaStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCinemaStatus.DefaultText = "Enter Cinema Satus";
+            this.txtCinemaStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCinemaStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCinemaStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaStatus.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtCinemaStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaStatus.Location = new System.Drawing.Point(117, 8);
+            this.txtCinemaStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCinemaStatus.Name = "txtCinemaStatus";
+            this.txtCinemaStatus.PlaceholderText = "";
+            this.txtCinemaStatus.SelectedText = "";
+            this.txtCinemaStatus.Size = new System.Drawing.Size(197, 30);
+            this.txtCinemaStatus.TabIndex = 4;
+            // 
+            // lblCinemaStatus
+            // 
+            this.lblCinemaStatus.AutoSize = true;
+            this.lblCinemaStatus.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCinemaStatus.Location = new System.Drawing.Point(3, 15);
+            this.lblCinemaStatus.Name = "lblCinemaStatus";
+            this.lblCinemaStatus.Size = new System.Drawing.Size(93, 19);
+            this.lblCinemaStatus.TabIndex = 0;
+            this.lblCinemaStatus.Text = "Tình trạng:";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.txtCinemaSeats);
+            this.panel8.Controls.Add(this.lblCinemaSeats);
+            this.panel8.Location = new System.Drawing.Point(13, 115);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(331, 44);
+            this.panel8.TabIndex = 8;
+            // 
+            // txtCinemaSeats
+            // 
+            this.txtCinemaSeats.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCinemaSeats.DefaultText = "Enter Cinema Seats";
+            this.txtCinemaSeats.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCinemaSeats.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCinemaSeats.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaSeats.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaSeats.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaSeats.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtCinemaSeats.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaSeats.Location = new System.Drawing.Point(118, 7);
+            this.txtCinemaSeats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCinemaSeats.Name = "txtCinemaSeats";
+            this.txtCinemaSeats.PlaceholderText = "";
+            this.txtCinemaSeats.SelectedText = "";
+            this.txtCinemaSeats.Size = new System.Drawing.Size(196, 30);
+            this.txtCinemaSeats.TabIndex = 3;
+            // 
+            // lblCinemaSeats
+            // 
+            this.lblCinemaSeats.AutoSize = true;
+            this.lblCinemaSeats.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCinemaSeats.Location = new System.Drawing.Point(3, 15);
+            this.lblCinemaSeats.Name = "lblCinemaSeats";
+            this.lblCinemaSeats.Size = new System.Drawing.Size(107, 19);
+            this.lblCinemaSeats.TabIndex = 0;
+            this.lblCinemaSeats.Text = "Số chỗ ngồi:";
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.txtCinemaName);
+            this.panel31.Controls.Add(this.lblCinemaName);
+            this.panel31.Location = new System.Drawing.Point(13, 53);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(331, 44);
+            this.panel31.TabIndex = 9;
+            // 
+            // txtCinemaName
+            // 
+            this.txtCinemaName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCinemaName.DefaultText = "Enter Cinema Name";
+            this.txtCinemaName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCinemaName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCinemaName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaName.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtCinemaName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaName.Location = new System.Drawing.Point(116, 7);
+            this.txtCinemaName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCinemaName.Name = "txtCinemaName";
+            this.txtCinemaName.PlaceholderText = "";
+            this.txtCinemaName.SelectedText = "";
+            this.txtCinemaName.Size = new System.Drawing.Size(198, 30);
+            this.txtCinemaName.TabIndex = 2;
+            // 
+            // lblCinemaName
+            // 
+            this.lblCinemaName.AutoSize = true;
+            this.lblCinemaName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCinemaName.Location = new System.Drawing.Point(3, 15);
+            this.lblCinemaName.Name = "lblCinemaName";
+            this.lblCinemaName.Size = new System.Drawing.Size(98, 19);
+            this.lblCinemaName.TabIndex = 0;
+            this.lblCinemaName.Text = "Tên phòng:";
+            // 
+            // panel32
+            // 
+            this.panel32.Controls.Add(this.txtCinemaID);
+            this.panel32.Controls.Add(this.lblCinemaID);
+            this.panel32.Location = new System.Drawing.Point(13, 3);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(331, 44);
+            this.panel32.TabIndex = 3;
+            // 
+            // txtCinemaID
+            // 
+            this.txtCinemaID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCinemaID.DefaultText = "Enter Cinema ID";
+            this.txtCinemaID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCinemaID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCinemaID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCinemaID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCinemaID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCinemaID.Location = new System.Drawing.Point(117, 8);
+            this.txtCinemaID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCinemaID.Name = "txtCinemaID";
+            this.txtCinemaID.PlaceholderText = "";
+            this.txtCinemaID.SelectedText = "";
+            this.txtCinemaID.Size = new System.Drawing.Size(197, 30);
+            this.txtCinemaID.TabIndex = 1;
+            // 
+            // lblCinemaID
+            // 
+            this.lblCinemaID.AutoSize = true;
+            this.lblCinemaID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCinemaID.Location = new System.Drawing.Point(3, 16);
+            this.lblCinemaID.Name = "lblCinemaID";
+            this.lblCinemaID.Size = new System.Drawing.Size(91, 19);
+            this.lblCinemaID.TabIndex = 0;
+            this.lblCinemaID.Text = "Mã phòng:";
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.btnUpdateCinema);
+            this.panel33.Controls.Add(this.btnDeleteCinema);
+            this.panel33.Controls.Add(this.btnInsertCinema);
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel33.Location = new System.Drawing.Point(0, 0);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(1000, 54);
+            this.panel33.TabIndex = 31;
+            // 
+            // btnUpdateCinema
+            // 
+            this.btnUpdateCinema.AutoRoundedCorners = true;
+            this.btnUpdateCinema.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateCinema.BorderRadius = 16;
+            this.btnUpdateCinema.BorderThickness = 2;
+            this.btnUpdateCinema.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCinema.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateCinema.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateCinema.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateCinema.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.btnUpdateCinema.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCinema.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateCinema.IndicateFocus = true;
+            this.btnUpdateCinema.Location = new System.Drawing.Point(263, 11);
+            this.btnUpdateCinema.Name = "btnUpdateCinema";
+            this.btnUpdateCinema.Size = new System.Drawing.Size(83, 34);
+            this.btnUpdateCinema.TabIndex = 3;
+            this.btnUpdateCinema.Text = "Sửa";
+            // 
+            // btnDeleteCinema
+            // 
+            this.btnDeleteCinema.AutoRoundedCorners = true;
+            this.btnDeleteCinema.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnDeleteCinema.BorderRadius = 16;
+            this.btnDeleteCinema.BorderThickness = 2;
+            this.btnDeleteCinema.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCinema.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteCinema.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteCinema.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteCinema.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.btnDeleteCinema.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCinema.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteCinema.IndicateFocus = true;
+            this.btnDeleteCinema.Location = new System.Drawing.Point(138, 11);
+            this.btnDeleteCinema.Name = "btnDeleteCinema";
+            this.btnDeleteCinema.Size = new System.Drawing.Size(83, 34);
+            this.btnDeleteCinema.TabIndex = 2;
+            this.btnDeleteCinema.Text = "Xóa";
+            // 
+            // btnInsertCinema
+            // 
+            this.btnInsertCinema.AutoRoundedCorners = true;
+            this.btnInsertCinema.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnInsertCinema.BorderRadius = 16;
+            this.btnInsertCinema.BorderThickness = 2;
+            this.btnInsertCinema.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInsertCinema.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInsertCinema.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInsertCinema.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInsertCinema.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.btnInsertCinema.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertCinema.ForeColor = System.Drawing.Color.Black;
+            this.btnInsertCinema.IndicateFocus = true;
+            this.btnInsertCinema.Location = new System.Drawing.Point(19, 11);
+            this.btnInsertCinema.Name = "btnInsertCinema";
+            this.btnInsertCinema.Size = new System.Drawing.Size(83, 34);
+            this.btnInsertCinema.TabIndex = 1;
+            this.btnInsertCinema.Text = "Thêm";
+            // 
+            // dtgvCinema
+            // 
+            this.dtgvCinema.AllowUserToAddRows = false;
+            this.dtgvCinema.AllowUserToDeleteRows = false;
+            this.dtgvCinema.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvCinema.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCinema.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvCinema.Location = new System.Drawing.Point(0, 0);
+            this.dtgvCinema.Name = "dtgvCinema";
+            this.dtgvCinema.ReadOnly = true;
+            this.dtgvCinema.RowHeadersWidth = 51;
+            this.dtgvCinema.Size = new System.Drawing.Size(1000, 611);
+            this.dtgvCinema.TabIndex = 1;
+            // 
+            // txtSeatsPerRow
+            // 
+            this.txtSeatsPerRow.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSeatsPerRow.DefaultText = "Enter Seat Row";
+            this.txtSeatsPerRow.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSeatsPerRow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSeatsPerRow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeatsPerRow.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeatsPerRow.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeatsPerRow.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtSeatsPerRow.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeatsPerRow.Location = new System.Drawing.Point(118, 7);
+            this.txtSeatsPerRow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSeatsPerRow.Name = "txtSeatsPerRow";
+            this.txtSeatsPerRow.PlaceholderText = "";
+            this.txtSeatsPerRow.SelectedText = "";
+            this.txtSeatsPerRow.Size = new System.Drawing.Size(196, 30);
+            this.txtSeatsPerRow.TabIndex = 6;
+            // 
+            // Cinema
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Cinema";
+            this.Size = new System.Drawing.Size(1000, 611);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCinema)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dtgvCinema;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label lblSeatsPerRow;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label lblNumberOfRows;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label lblCinemaStatus;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label lblCinemaSeats;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Label lblCinemaName;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Label lblCinemaID;
+        private System.Windows.Forms.Panel panel33;
+        private Guna.UI2.WinForms.Guna2Button btnInsertCinema;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteCinema;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateCinema;
+        private Guna.UI2.WinForms.Guna2TextBox txtCinemaName;
+        private Guna.UI2.WinForms.Guna2TextBox txtCinemaID;
+        private Guna.UI2.WinForms.Guna2TextBox txtCinemaSeats;
+        private Guna.UI2.WinForms.Guna2TextBox txtNumberOfRows;
+        private Guna.UI2.WinForms.Guna2TextBox txtCinemaStatus;
+        private Guna.UI2.WinForms.Guna2TextBox txtSeatsPerRow;
+    }
+}
