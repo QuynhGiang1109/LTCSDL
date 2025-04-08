@@ -105,6 +105,7 @@
     </Compile>
     <Compile Include="frmAdminUserControl\RevenueUC.Designer.cs">
       <DependentUpon>RevenueUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,19 +179,17 @@
     <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.resx">
       <DependentUpon>ShowTimesUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\RevenueUC.resx">
       <DependentUpon>RevenueUC.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx">
       <DependentUpon>Cinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
       <DependentUpon>GenreUC.cs</DependentUpon>
->>>>>>> origin/main
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>

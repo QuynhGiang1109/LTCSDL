@@ -48,5 +48,15 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Clear();
             pnData.Controls.Add(cinema);
         }
+
+        private void btnShowTimesUC_Click_1(object sender, EventArgs e)
+        {
+            //SidePanel.Height = btnShowTimesUC.Height;
+            //SidePanel.Top = btnShowTimesUC.Top;
+            pnData.Controls.Clear();
+            ShowTimesUC showTimesUc = new ShowTimesUC();
+            showTimesUc.Dock = DockStyle.Fill;
+            pnData.Controls.Add(showTimesUc);
+        }
     }
 }
