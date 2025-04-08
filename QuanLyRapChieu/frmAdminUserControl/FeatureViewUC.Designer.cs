@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeatureViewUC));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnData = new Guna.UI2.WinForms.Guna2Panel();
             this.btnTicketsUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowTimesUC = new Guna.UI2.WinForms.Guna2Button();
@@ -37,7 +38,6 @@
             this.btnMovieUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnCinema = new Guna.UI2.WinForms.Guna2Button();
             this.btnGenreUC = new Guna.UI2.WinForms.Guna2Button();
-            this.pnData = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,16 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1000, 89);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // pnData
+            // 
+            this.pnData.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnData.Location = new System.Drawing.Point(0, 89);
+            this.pnData.Name = "pnData";
+            this.pnData.Size = new System.Drawing.Size(1000, 522);
+            this.pnData.TabIndex = 1;
             // 
             // btnTicketsUC
             // 
@@ -88,7 +98,7 @@
             this.btnRap.Image = ((System.Drawing.Image)(resources.GetObject("btnRap.Image")));
             this.btnRap.Location = new System.Drawing.Point(0, 0);
             this.btnRap.Name = "btnRap";
-            this.btnRap.Size = new System.Drawing.Size(140, 89);
+            this.btnRap.Size = new System.Drawing.Size(149, 89);
             this.btnRap.TabIndex = 1;
             this.btnRap.Text = "  Rạp";
             // 
@@ -103,9 +113,9 @@
             this.btnShowTimesUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowTimesUC.ForeColor = System.Drawing.Color.White;
             this.btnShowTimesUC.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTimesUC.Image")));
-            this.btnShowTimesUC.Location = new System.Drawing.Point(676, 0);
+            this.btnShowTimesUC.Location = new System.Drawing.Point(692, 0);
             this.btnShowTimesUC.Name = "btnShowTimesUC";
-            this.btnShowTimesUC.Size = new System.Drawing.Size(178, 89);
+            this.btnShowTimesUC.Size = new System.Drawing.Size(162, 89);
             this.btnShowTimesUC.TabIndex = 2;
             this.btnShowTimesUC.Text = "Ca chiếu";
             // 
@@ -133,7 +143,7 @@
             this.btnMovieUC.Image = ((System.Drawing.Image)(resources.GetObject("btnMovieUC.Image")));
             this.btnMovieUC.Location = new System.Drawing.Point(530, 0);
             this.btnMovieUC.Name = "btnMovieUC";
-            this.btnMovieUC.Size = new System.Drawing.Size(146, 89);
+            this.btnMovieUC.Size = new System.Drawing.Size(169, 89);
             this.btnMovieUC.TabIndex = 3;
             this.btnMovieUC.Text = "  Phim";
             this.btnMovieUC.Click += new System.EventHandler(this.btnMovieUC_Click);
@@ -149,9 +159,9 @@
             this.btnCinema.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCinema.ForeColor = System.Drawing.Color.White;
             this.btnCinema.Image = ((System.Drawing.Image)(resources.GetObject("btnCinema.Image")));
-            this.btnCinema.Location = new System.Drawing.Point(140, 0);
+            this.btnCinema.Location = new System.Drawing.Point(146, 0);
             this.btnCinema.Name = "btnCinema";
-            this.btnCinema.Size = new System.Drawing.Size(213, 89);
+            this.btnCinema.Size = new System.Drawing.Size(207, 89);
             this.btnCinema.TabIndex = 5;
             this.btnCinema.Text = "Phòng chiếu";
             // 
@@ -172,14 +182,6 @@
             this.btnGenreUC.TabIndex = 4;
             this.btnGenreUC.Text = "Thể loại";
             this.btnGenreUC.Click += new System.EventHandler(this.btnGenreUC_Click);
-            // 
-            // pnData
-            // 
-            this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnData.Location = new System.Drawing.Point(0, 89);
-            this.pnData.Name = "pnData";
-            this.pnData.Size = new System.Drawing.Size(1000, 522);
-            this.pnData.TabIndex = 1;
             // 
             // FeatureViewUC
             // 

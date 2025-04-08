@@ -171,6 +171,7 @@
             // 
             // pnAdmin
             // 
+            this.pnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnAdmin.BackgroundImage")));
             this.pnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnAdmin.Location = new System.Drawing.Point(200, 0);
