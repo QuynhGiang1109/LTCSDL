@@ -13,9 +13,11 @@ namespace QuanLyRapChieu.frmAdminUserControl
 {
     public partial class FeatureViewUC : UserControl
     {
+        const int Y = 110;
         public FeatureViewUC()
         {
             InitializeComponent();
+            //SidePanel.Hide();
         }
 
         private void btnMovieUC_Click(object sender, EventArgs e)
@@ -31,6 +33,20 @@ namespace QuanLyRapChieu.frmAdminUserControl
             ShowTimesUC showTimesUc = new ShowTimesUC();
             showTimesUc.Dock = DockStyle.Fill;
             pnData.Controls.Add(showTimesUc);
+        }
+
+        private void btnGenreUC_Click(object sender, EventArgs e)
+        {
+            GenreUC genreUC = new GenreUC();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(genreUC);
+        }
+
+        private void btnCinema_Click(object sender, EventArgs e)
+        {
+            Cinema cinema = new Cinema();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(cinema);
         }
     }
 }

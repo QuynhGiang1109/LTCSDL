@@ -105,6 +105,17 @@
     </Compile>
     <Compile Include="frmAdminUserControl\RevenueUC.Designer.cs">
       <DependentUpon>RevenueUC.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.Designer.cs">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.Designer.cs">
+      <DependentUpon>GenreUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
@@ -167,11 +178,19 @@
     <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.resx">
       <DependentUpon>ShowTimesUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\RevenueUC.resx">
       <DependentUpon>RevenueUC.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
+      <DependentUpon>GenreUC.cs</DependentUpon>
+>>>>>>> origin/main
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
@@ -237,7 +256,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -248,6 +267,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
+  </ItemGroup> -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
