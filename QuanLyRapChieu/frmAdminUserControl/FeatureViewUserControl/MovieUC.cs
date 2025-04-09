@@ -14,28 +14,34 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
     {
         BindingSource movieList = new BindingSource();
 
-        //public MovieUC()
+        public MovieUC()
+        {
+            InitializeComponent();
+        }
+
+       
+
+
+
+
+
+        //private void btnAddMovie_Click_1(object sender, EventArgs e)
         //{
-        //    InitializeComponent();
+        //    string MaPhim = txtMovieID.Text;
+        //    string TenPhim = txtMovieName.Text;
+        //    string MoTa = txtMovieDesc.Text;
+        //    double ThoiLuong = Convert.ToDouble(txtMovieLength.Text);
+        //    DateTime NgayBatDau = dtmMovieStart.Value;
+        //    DateTime NgayKetThuc = dtmMovieEnd.Value;
+        //    string QuocGia = txtMovieCountry.Text;
+        //    string DienVien = txtMovieActor.Text;
+        //    int NamSX = Convert.ToInt32(numericUpDownPhim.Value);
+        //    int GioiHanTuoi = Convert.ToInt32(txtMovieYearLimit.Text);
+
+        //    PhimBUS.Instance.themDanhSachPhim(MaPhim, TenPhim, MoTa, ThoiLuong, NgayBatDau, NgayKetThuc,
+        //        QuocGia, DienVien, NamSX, GioiHanTuoi);
+        //    PhimBUS.Instance.hienThiPhim(movieList);
         //}
-
-        //    private void btnAddMovie_Click_1(object sender, EventArgs e)
-        //    {
-        //        string MaPhim = txtMovieID.Text;
-        //        string TenPhim = txtMovieName.Text;
-        //        string MoTa = txtMovieDesc.Text;
-        //        double ThoiLuong = Convert.ToDouble(txtMovieLength.Text);
-        //        DateTime NgayBatDau = dtmMovieStart.Value;
-        //        DateTime NgayKetThuc = dtmMovieEnd.Value;
-        //        string QuocGia = txtMovieCountry.Text;
-        //        string DienVien = txtMovieActor.Text;
-        //        int NamSX = Convert.ToInt32(numericUpDownPhim.Value);
-        //        int GioiHanTuoi = Convert.ToInt32(txtMovieYearLimit.Text);
-
-        //        PhimBUS.Instance.themDanhSachPhim(MaPhim, TenPhim, MoTa, ThoiLuong, NgayBatDau, NgayKetThuc,
-        //            QuocGia, DienVien, NamSX, GioiHanTuoi);
-        //        PhimBUS.Instance.hienThiPhim(movieList);
-        //    }
 
         //    bool formLoad;
 
@@ -146,12 +152,12 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 
         //    }
 
-        //    private void MovieUC_Load(object sender, EventArgs e)
-        //    {
-        //        formLoad = true;
-        //        dtgvMovie.DataSource = movieList;
-        //        hienThiDanhSachPhim();
-        //        formLoad = false;
-        //    }
+        //private void MovieUC_Load(object sender, EventArgs e)
+        //{
+        //    formLoad = true;
+        //    dtgvMovie.DataSource = movieList;
+        //    hienThiDanhSachPhim();
+        //    formLoad = false;
+        //}
     }
 }
