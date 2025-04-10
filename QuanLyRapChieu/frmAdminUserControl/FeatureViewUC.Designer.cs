@@ -74,6 +74,7 @@
             this.btnTicketsUC.Size = new System.Drawing.Size(144, 89);
             this.btnTicketsUC.TabIndex = 6;
             this.btnTicketsUC.Text = "  Vé";
+            this.btnTicketsUC.Click += new System.EventHandler(this.btnTicketsUC_Click);
             // 
             // btnRap
             // 
@@ -91,6 +92,7 @@
             this.btnRap.Size = new System.Drawing.Size(149, 89);
             this.btnRap.TabIndex = 1;
             this.btnRap.Text = "  Rạp";
+            this.btnRap.Click += new System.EventHandler(this.btnRap_Click);
             // 
             // btnShowTimesUC
             // 
@@ -108,6 +110,7 @@
             this.btnShowTimesUC.Size = new System.Drawing.Size(162, 89);
             this.btnShowTimesUC.TabIndex = 2;
             this.btnShowTimesUC.Text = "Ca chiếu";
+            this.btnShowTimesUC.Click += new System.EventHandler(this.btnShowTimesUC_Click);
             // 
             // guna2ImageRadioButton1
             // 
