@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -12,6 +12,9 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <StartupObject>QuanLyRapChieu.Program</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <!-- Publish settings -->
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +26,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -33,7 +36,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -46,9 +49,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
@@ -70,23 +70,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAdminUserControl\FeatureViewUC.cs">
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUC.Designer.cs">
-      <DependentUpon>FeatureViewUC.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.Designer.cs">
+      <DependentUpon>RapUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminUserControl\StaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\StaffUC.Designer.cs">
+      <DependentUpon>StaffUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAdmin.Designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAdminUserControl\AccountUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frmAdminUserControl\AccountUC.Designer.cs">
-      <DependentUpon>AccountUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminUserControl\CustomerUC.cs">
       <SubType>UserControl</SubType>
@@ -94,17 +95,17 @@
     <Compile Include="frmAdminUserControl\CustomerUC.Designer.cs">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.cs">
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.Designer.cs">
-      <DependentUpon>ShowTimesUC.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.Designer.cs">
+      <DependentUpon>MovieUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminUserControl\RevenueUC.cs">
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAdminUserControl\RevenueUC.Designer.cs">
-      <DependentUpon>RevenueUC.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.Designer.cs">
+      <DependentUpon>TicketsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.cs">
       <SubType>UserControl</SubType>
@@ -117,6 +118,12 @@
     </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.Designer.cs">
       <DependentUpon>GenreUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUC.Designer.cs">
+      <DependentUpon>FeatureViewUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
@@ -154,42 +161,50 @@
     <Compile Include="frmStaff.Designer.cs">
       <DependentUpon>frmStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx">
-      <DependentUpon>FeatureViewUC.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmAdmin.resx">
-      <DependentUpon>frmAdmin.cs</DependentUpon>
-      <SubType>Designer</SubType>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
+      <DependentUpon>MovieUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\AccountUC.resx">
-      <DependentUpon>AccountUC.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\RapUC.resx">
+      <DependentUpon>RapUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
-      <DependentUpon>CustomerUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.resx">
-      <DependentUpon>ShowTimesUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\RevenueUC.resx">
-      <DependentUpon>RevenueUC.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx">
+      <DependentUpon>TicketsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx">
       <DependentUpon>Cinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
       <DependentUpon>GenreUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx">
+      <DependentUpon>FeatureViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\StaffUC.resx">
+      <DependentUpon>StaffUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
+      <DependentUpon>CustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
@@ -203,29 +218,21 @@
     <EmbeddedResource Include="frmStaff.resx">
       <DependentUpon>frmStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+    <None Include="Resources\z6456795631442_3a79be7e00fb0cafa0195e156f586c54.jpg" />
+    <None Include="Resources\z6456875295756_4ec7ef9c0465c60e3e178b5b2aea2b3f.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{b55033c0-7392-465b-b7e8-6ae2b0dd1956}</Project>
@@ -237,16 +244,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\z6456795631442_3a79be7e00fb0cafa0195e156f586c54.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\z6456875295756_4ec7ef9c0465c60e3e178b5b2aea2b3f.jpg" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.7.2 (x86 and x64)</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -255,17 +255,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <!-- <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup> -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

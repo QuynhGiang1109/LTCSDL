@@ -316,8 +316,13 @@
             // 
             // CustomerUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "CustomerUC";
+            this.Size = new System.Drawing.Size(1234, 765);
+
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.dtgvCustomer);
             this.Controls.Add(this.btnUpdateCustomer);
@@ -331,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudPoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNamSinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCustomer)).EndInit();
+
             this.ResumeLayout(false);
 
         }

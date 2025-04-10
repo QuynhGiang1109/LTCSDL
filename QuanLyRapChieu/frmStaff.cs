@@ -63,6 +63,6 @@ namespace QuanLyRapChieu
             //CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(dtv_CaChieu, tenPhim);
         }
 
-
+       
     }
 }

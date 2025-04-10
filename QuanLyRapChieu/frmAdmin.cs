@@ -27,9 +27,9 @@ namespace QuanLyRapChieu
 
         private void btnStaffUC_Click(object sender, EventArgs e)
         {
-            //StaffUC staffUC = new StaffUC();
-            //pnAdmin.Controls.Clear();
-            //pnAdmin.Controls.Add(staffUC);
+            StaffUC staffUC = new StaffUC();
+            pnAdmin.Controls.Clear();
+            pnAdmin.Controls.Add(staffUC);
         }
 
         private void btnCustomerUC_Click(object sender, EventArgs e)

@@ -70,12 +70,13 @@
             this.btnTicketsUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketsUC.ForeColor = System.Drawing.Color.White;
             this.btnTicketsUC.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketsUC.Image")));
-            this.btnTicketsUC.Location = new System.Drawing.Point(1137, 0);
-            this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTicketsUC.Location = new System.Drawing.Point(1280, 0);
+            this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTicketsUC.Name = "btnTicketsUC";
-            this.btnTicketsUC.Size = new System.Drawing.Size(192, 110);
+            this.btnTicketsUC.Size = new System.Drawing.Size(216, 137);
             this.btnTicketsUC.TabIndex = 6;
             this.btnTicketsUC.Text = "  Vé";
+            this.btnTicketsUC.Click += new System.EventHandler(this.btnTicketsUC_Click);
             // 
             // btnRap
             // 
@@ -89,11 +90,12 @@
             this.btnRap.ForeColor = System.Drawing.Color.White;
             this.btnRap.Image = ((System.Drawing.Image)(resources.GetObject("btnRap.Image")));
             this.btnRap.Location = new System.Drawing.Point(0, 0);
-            this.btnRap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRap.Name = "btnRap";
-            this.btnRap.Size = new System.Drawing.Size(199, 110);
+            this.btnRap.Size = new System.Drawing.Size(224, 137);
             this.btnRap.TabIndex = 1;
             this.btnRap.Text = "  Rạp";
+            this.btnRap.Click += new System.EventHandler(this.btnRap_Click);
             // 
             // btnShowTimesUC
             // 
@@ -120,10 +122,10 @@
             this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
             this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageRadioButton1.ImageRotate = 0F;
-            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(92, 92);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(104, 115);
+            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
-            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(131, 78);
+            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(147, 97);
             this.guna2ImageRadioButton1.TabIndex = 0;
             // 
             // btnMovieUC
@@ -137,10 +139,10 @@
             this.btnMovieUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieUC.ForeColor = System.Drawing.Color.White;
             this.btnMovieUC.Image = ((System.Drawing.Image)(resources.GetObject("btnMovieUC.Image")));
-            this.btnMovieUC.Location = new System.Drawing.Point(707, 0);
-            this.btnMovieUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMovieUC.Location = new System.Drawing.Point(795, 0);
+            this.btnMovieUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMovieUC.Name = "btnMovieUC";
-            this.btnMovieUC.Size = new System.Drawing.Size(225, 110);
+            this.btnMovieUC.Size = new System.Drawing.Size(254, 137);
             this.btnMovieUC.TabIndex = 3;
             this.btnMovieUC.Text = "  Phim";
             this.btnMovieUC.Click += new System.EventHandler(this.btnMovieUC_Click);
