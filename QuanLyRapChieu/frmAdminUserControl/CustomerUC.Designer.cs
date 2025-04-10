@@ -45,6 +45,12 @@
             this.btnDeleteCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvCustomer = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiemTichLuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNamSinh)).BeginInit();
@@ -306,13 +312,61 @@
             this.dtgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaKH,
+            this.TenKhachHang,
+            this.DiaChi,
+            this.NamSinh,
+            this.SoDienThoai,
+            this.DiemTichLuy});
             this.dtgvCustomer.Location = new System.Drawing.Point(0, 179);
             this.dtgvCustomer.Name = "dtgvCustomer";
             this.dtgvCustomer.ReadOnly = true;
             this.dtgvCustomer.Size = new System.Drawing.Size(994, 432);
             this.dtgvCustomer.TabIndex = 14;
             this.dtgvCustomer.SelectionChanged += new System.EventHandler(this.dtgvCustomer_SelectionChanged);
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã Khách Hàng";
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
+            // 
+            // TenKhachHang
+            // 
+            this.TenKhachHang.DataPropertyName = "TenKhachHang";
+            this.TenKhachHang.HeaderText = "Tên Khách Hàng";
+            this.TenKhachHang.Name = "TenKhachHang";
+            this.TenKhachHang.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.DataPropertyName = "NamSinh";
+            this.NamSinh.HeaderText = "Năm Sinh";
+            this.NamSinh.Name = "NamSinh";
+            this.NamSinh.ReadOnly = true;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.DataPropertyName = "SoDienThoai";
+            this.SoDienThoai.HeaderText = "Số Điện Thoại";
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            // 
+            // DiemTichLuy
+            // 
+            this.DiemTichLuy.DataPropertyName = "DiemTichLuy";
+            this.DiemTichLuy.HeaderText = "Điểm Tích Lũy";
+            this.DiemTichLuy.Name = "DiemTichLuy";
+            this.DiemTichLuy.ReadOnly = true;
             // 
             // CustomerUC
             // 
@@ -353,12 +407,12 @@
         private Guna.UI2.WinForms.Guna2Button btnAddCustomer;
         private Guna.UI2.WinForms.Guna2Button btnDeleteCustomer;
         private Guna.UI2.WinForms.Guna2Button btnUpdateCustomer;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn TenKhachHang;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn DiemTichLuy;
         private System.Windows.Forms.DataGridView dtgvCustomer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiemTichLuy;
     }
 }
