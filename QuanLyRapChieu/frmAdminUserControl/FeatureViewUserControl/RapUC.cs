@@ -12,7 +12,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
     public partial class RapUC : UserControl
     {
-        BindingSource _src = new BindingSource();
+        BindingSource staffList = new BindingSource();
         public RapUC()
         {
             InitializeComponent();

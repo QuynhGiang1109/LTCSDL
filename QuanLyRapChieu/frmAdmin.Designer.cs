@@ -65,7 +65,7 @@
             this.btnThongke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThongke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThongke.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnThongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongke.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongke.ForeColor = System.Drawing.Color.White;
             this.btnThongke.Image = ((System.Drawing.Image)(resources.GetObject("btnThongke.Image")));
             this.btnThongke.ImageSize = new System.Drawing.Size(40, 40);
@@ -83,7 +83,7 @@
             this.btnAccountUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAccountUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAccountUC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAccountUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountUC.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountUC.ForeColor = System.Drawing.Color.White;
             this.btnAccountUC.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountUC.Image")));
             this.btnAccountUC.ImageSize = new System.Drawing.Size(40, 40);
@@ -91,7 +91,7 @@
             this.btnAccountUC.Name = "btnAccountUC";
             this.btnAccountUC.Size = new System.Drawing.Size(209, 45);
             this.btnAccountUC.TabIndex = 5;
-            this.btnAccountUC.Text = "Tài Khoản";
+            this.btnAccountUC.Text = " Tài Khoản";
             this.btnAccountUC.Click += new System.EventHandler(this.btnAccountUC_Click);
             // 
             // btnCustomerUC
@@ -101,11 +101,11 @@
             this.btnCustomerUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCustomerUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCustomerUC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCustomerUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerUC.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerUC.ForeColor = System.Drawing.Color.White;
             this.btnCustomerUC.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerUC.Image")));
             this.btnCustomerUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnCustomerUC.Location = new System.Drawing.Point(0, 373);
+            this.btnCustomerUC.Location = new System.Drawing.Point(4, 373);
             this.btnCustomerUC.Name = "btnCustomerUC";
             this.btnCustomerUC.Size = new System.Drawing.Size(203, 45);
             this.btnCustomerUC.TabIndex = 4;
@@ -119,15 +119,15 @@
             this.btnStaffUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStaffUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStaffUC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnStaffUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaffUC.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaffUC.ForeColor = System.Drawing.Color.White;
             this.btnStaffUC.Image = ((System.Drawing.Image)(resources.GetObject("btnStaffUC.Image")));
             this.btnStaffUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnStaffUC.Location = new System.Drawing.Point(0, 295);
+            this.btnStaffUC.Location = new System.Drawing.Point(-4, 295);
             this.btnStaffUC.Name = "btnStaffUC";
             this.btnStaffUC.Size = new System.Drawing.Size(200, 45);
             this.btnStaffUC.TabIndex = 3;
-            this.btnStaffUC.Text = "Nhân Viên";
+            this.btnStaffUC.Text = " Nhân Viên";
             this.btnStaffUC.Click += new System.EventHandler(this.btnStaffUC_Click);
             // 
             // btnDataUC
@@ -137,25 +137,25 @@
             this.btnDataUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDataUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDataUC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDataUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDataUC.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDataUC.ForeColor = System.Drawing.Color.White;
             this.btnDataUC.Image = ((System.Drawing.Image)(resources.GetObject("btnDataUC.Image")));
             this.btnDataUC.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDataUC.Location = new System.Drawing.Point(-22, 221);
+            this.btnDataUC.Location = new System.Drawing.Point(-27, 221);
             this.btnDataUC.Name = "btnDataUC";
             this.btnDataUC.Size = new System.Drawing.Size(225, 45);
             this.btnDataUC.TabIndex = 2;
-            this.btnDataUC.Text = "Dữ Liệu";
+            this.btnDataUC.Text = " Dữ Liệu";
             this.btnDataUC.Click += new System.EventHandler(this.btnDataUC_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 147);
+            this.label1.Location = new System.Drawing.Point(37, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 37);
+            this.label1.Size = new System.Drawing.Size(126, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Admin";
             // 

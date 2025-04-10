@@ -70,11 +70,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAdminUserControl\AccountUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\AccountUC.Designer.cs">
+      <DependentUpon>AccountUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.Designer.cs">
       <DependentUpon>RapUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.Designer.cs">
+      <DependentUpon>ShowTimesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUserControl\RevenueUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\RevenueUC.Designer.cs">
+      <DependentUpon>RevenueUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminUserControl\StaffUC.cs">
       <SubType>UserControl</SubType>
@@ -179,11 +197,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAdminUserControl\AccountUC.resx">
+      <DependentUpon>AccountUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
       <DependentUpon>MovieUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\RapUC.resx">
       <DependentUpon>RapUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\ShowTimesUC.resx">
+      <DependentUpon>ShowTimesUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx">
       <DependentUpon>TicketsUC.cs</DependentUpon>
@@ -196,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx">
       <DependentUpon>FeatureViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\RevenueUC.resx">
+      <DependentUpon>RevenueUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\StaffUC.resx">
       <DependentUpon>StaffUC.cs</DependentUpon>

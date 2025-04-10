@@ -27,16 +27,6 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Add(movieUC);
         }
 
-        private void btnShowTimesUC_Click(object sender, EventArgs e)
-        {
-            //SidePanel.Height = btnShowTimesUC.Height;
-            //SidePanel.Top = btnShowTimesUC.Top;
-            pnData.Controls.Clear();
-            ShowTimesUC showTimesUc = new ShowTimesUC();
-            showTimesUc.Dock = DockStyle.Fill;
-            pnData.Controls.Add(showTimesUc);
-        }
-
         private void btnGenreUC_Click(object sender, EventArgs e)
         {
             GenreUC genreUC = new GenreUC();
@@ -58,14 +48,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Add(ticketsUC);
         }
 
-        private void btnRap_Click(object sender, EventArgs e)
-        {
-            RapUC rapUC = new RapUC();
-            pnData.Controls.Clear();
-            pnData.Controls.Add(rapUC);
-        }
-        
-        private void btnShowTimesUC_Click_1(object sender, EventArgs e)
+        private void btnShowTimesUC_Click(object sender, EventArgs e)
         {
             //SidePanel.Height = btnShowTimesUC.Height;
             //SidePanel.Top = btnShowTimesUC.Top;
@@ -73,6 +56,13 @@ namespace QuanLyRapChieu.frmAdminUserControl
             ShowTimesUC showTimesUc = new ShowTimesUC();
             showTimesUc.Dock = DockStyle.Fill;
             pnData.Controls.Add(showTimesUc);
+        }
+
+        private void btnRap_Click(object sender, EventArgs e)
+        {
+            RapUC rapUC = new RapUC();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(rapUC);
         }
     }
 }
