@@ -145,7 +145,7 @@ namespace QuanLyRapChieu
 
 
             int giaVeNguoiLon = 100000;
-            int giaVeTreEm = 60000;
+           // int giaVeTreEm = 60000;
 
 
             Button btn = sender as Button;

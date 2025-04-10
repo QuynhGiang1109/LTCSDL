@@ -54,9 +54,9 @@
             this.guna2Panel1.Controls.Add(this.btnGenreUC);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1500, 137);
+            this.guna2Panel1.Size = new System.Drawing.Size(1333, 110);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnTicketsUC
@@ -108,12 +108,13 @@
             this.btnShowTimesUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowTimesUC.ForeColor = System.Drawing.Color.White;
             this.btnShowTimesUC.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTimesUC.Image")));
-            this.btnShowTimesUC.Location = new System.Drawing.Point(1038, 0);
-            this.btnShowTimesUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnShowTimesUC.Location = new System.Drawing.Point(923, 0);
+            this.btnShowTimesUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShowTimesUC.Name = "btnShowTimesUC";
-            this.btnShowTimesUC.Size = new System.Drawing.Size(243, 137);
+            this.btnShowTimesUC.Size = new System.Drawing.Size(216, 110);
             this.btnShowTimesUC.TabIndex = 2;
             this.btnShowTimesUC.Text = "Ca chiếu";
+            this.btnShowTimesUC.Click += new System.EventHandler(this.btnShowTimesUC_Click_1);
             // 
             // guna2ImageRadioButton1
             // 
@@ -157,10 +158,10 @@
             this.btnCinema.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCinema.ForeColor = System.Drawing.Color.White;
             this.btnCinema.Image = ((System.Drawing.Image)(resources.GetObject("btnCinema.Image")));
-            this.btnCinema.Location = new System.Drawing.Point(219, 0);
-            this.btnCinema.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCinema.Location = new System.Drawing.Point(207, 0);
+            this.btnCinema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCinema.Name = "btnCinema";
-            this.btnCinema.Size = new System.Drawing.Size(310, 137);
+            this.btnCinema.Size = new System.Drawing.Size(250, 110);
             this.btnCinema.TabIndex = 5;
             this.btnCinema.Text = "Phòng chiếu";
             this.btnCinema.Click += new System.EventHandler(this.btnCinema_Click);
@@ -176,10 +177,10 @@
             this.btnGenreUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenreUC.ForeColor = System.Drawing.Color.White;
             this.btnGenreUC.Image = ((System.Drawing.Image)(resources.GetObject("btnGenreUC.Image")));
-            this.btnGenreUC.Location = new System.Drawing.Point(524, 0);
-            this.btnGenreUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGenreUC.Location = new System.Drawing.Point(465, 0);
+            this.btnGenreUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenreUC.Name = "btnGenreUC";
-            this.btnGenreUC.Size = new System.Drawing.Size(276, 137);
+            this.btnGenreUC.Size = new System.Drawing.Size(245, 110);
             this.btnGenreUC.TabIndex = 4;
             this.btnGenreUC.Text = "Thể loại";
             this.btnGenreUC.Click += new System.EventHandler(this.btnGenreUC_Click);
@@ -189,21 +190,21 @@
             this.pnData.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnData.Location = new System.Drawing.Point(0, 137);
-            this.pnData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnData.Location = new System.Drawing.Point(0, 110);
+            this.pnData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnData.Name = "pnData";
-            this.pnData.Size = new System.Drawing.Size(1500, 803);
+            this.pnData.Size = new System.Drawing.Size(1333, 642);
             this.pnData.TabIndex = 1;
             // 
             // FeatureViewUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnData);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FeatureViewUC";
-            this.Size = new System.Drawing.Size(1500, 940);
+            this.Size = new System.Drawing.Size(1333, 752);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
