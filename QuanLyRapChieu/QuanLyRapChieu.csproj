@@ -179,31 +179,47 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAdmin.resx" />
-    <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx" />
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx" />
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
+      <DependentUpon>MovieUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\RapUC.resx">
       <DependentUpon>RapUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx" />
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx" />
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx" />
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx" />
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx">
+      <DependentUpon>TicketsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
+      <DependentUpon>GenreUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUC.resx">
+      <DependentUpon>FeatureViewUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\StaffUC.resx">
       <DependentUpon>StaffUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCustomer.resx" />
-    <EmbeddedResource Include="frmDashboard.resx" />
-    <EmbeddedResource Include="frmRegister.resx" />
-    <EmbeddedResource Include="frmStaff.resx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="frmAdminUserControl\CustomerUC.resx">
+      <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaff.resx">
+      <DependentUpon>frmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
