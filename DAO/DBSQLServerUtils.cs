@@ -26,7 +26,7 @@ namespace DAO
         public string conString()
         {
             
-            return "Data Source=ADMIN;Initial Catalog=QuanLyXemPhim" +
+            return "Data Source=.;Initial Catalog=QuanLyXemPhim" +
                 ";Persist Security Info=True;Integrated Security=True;" +
                 "User ID=" + userName + ";Password=" + Password;
             
