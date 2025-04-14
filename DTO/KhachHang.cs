@@ -35,7 +35,7 @@ namespace DTO
             NamSinh = (int)row["NamSinh"];
             SoDienThoai = row["SoDienThoai"].ToString();
             Cmnd = row["CMND"].ToString();
-            DiemTichLuy = (int)row["DiemTichLuy "];
+            DiemTichLuy = (int)row["DiemTichLuy"];
         }
     }
 }
