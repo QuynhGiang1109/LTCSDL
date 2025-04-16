@@ -1,4 +1,5 @@
 ﻿using QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl;
+using QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,7 +41,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Clear();
             pnData.Controls.Add(cinema);
         }
-        
+
         private void btnTicketsUC_Click(object sender, EventArgs e)
         {
             TicketsUC ticketsUC = new TicketsUC();
@@ -64,5 +65,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Clear();
             pnData.Controls.Add(rapUC);
         }
+
+
     }
 }

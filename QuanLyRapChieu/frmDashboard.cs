@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace QuanLyRapChieu
 {
@@ -29,25 +30,25 @@ namespace QuanLyRapChieu
 
 
 
-        //public void handleAccessPermissions(TaiKhoan taiKhoan)
-        //{
-        //    lbl_AccountInfo.Text += taiKhoan.UserName;
-        //    if (taiKhoan.LoaiTK != 1) // Admin
-        //    {
-        //        btn_Admin.Enabled = false;
-        //    }
-        //}
-        //private void btn_Admin_Click(object sender, EventArgs e)
-        //{
-        //    frmAdmin frmAdmin = new frmAdmin();
-        //    frmAdmin.ShowDialog()
-        //}
+        public void handleAccessPermissions(TaiKhoan taiKhoan)
+        {
+            lblAccountInfo.Text += taiKhoan.UserName;
+            if (taiKhoan.LoaiTK != 1) // Admin
+            {
+                btn_Admin.Enabled = false;
+            }
+        }
+        private void btn_Admin_Click(object sender, EventArgs e)
+        {
+            frmAdmin frmAdmin = new frmAdmin();
+            frmAdmin.ShowDialog();
+        }
 
-        //private void btn_Staff_Click(object sender, EventArgs e)
-        //{
-        //    frmStaff frmStaff = new frmStaff();
-        //    frmStaff.ShowDialog();
-        //}
+        private void btn_Staff_Click(object sender, EventArgs e)
+        {
+            frmStaff frmStaff = new frmStaff();
+            frmStaff.ShowDialog();
+        }
 
     }
 }

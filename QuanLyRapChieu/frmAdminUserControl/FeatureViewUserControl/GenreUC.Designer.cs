@@ -60,7 +60,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1000, 64);
+            this.guna2Panel1.Size = new System.Drawing.Size(1000, 74);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnUpdateGenre
@@ -82,6 +82,7 @@
             this.btnUpdateGenre.Size = new System.Drawing.Size(83, 34);
             this.btnUpdateGenre.TabIndex = 2;
             this.btnUpdateGenre.Text = "Sửa";
+            this.btnUpdateGenre.Click += new System.EventHandler(this.btnUpdateGenre_Click);
             // 
             // btnDeleteGenre
             // 
@@ -102,6 +103,7 @@
             this.btnDeleteGenre.Size = new System.Drawing.Size(83, 34);
             this.btnDeleteGenre.TabIndex = 1;
             this.btnDeleteGenre.Text = "Xóa";
+            this.btnDeleteGenre.Click += new System.EventHandler(this.btnDeleteGenre_Click);
             // 
             // btnInsertGenre
             // 
@@ -122,15 +124,16 @@
             this.btnInsertGenre.Size = new System.Drawing.Size(83, 34);
             this.btnInsertGenre.TabIndex = 0;
             this.btnInsertGenre.Text = "Thêm";
+            this.btnInsertGenre.Click += new System.EventHandler(this.btnInsertGenre_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.guna2Panel4);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(631, 64);
+            this.guna2Panel2.Location = new System.Drawing.Point(631, 74);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(369, 547);
+            this.guna2Panel2.Size = new System.Drawing.Size(369, 537);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2Panel4
@@ -151,7 +154,7 @@
             this.txtGenreName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreName.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.txtGenreName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenreName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGenreName.Location = new System.Drawing.Point(126, 11);
             this.txtGenreName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -190,21 +193,21 @@
             this.txtGenreID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreID.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.txtGenreID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenreID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreID.Location = new System.Drawing.Point(126, 12);
+            this.txtGenreID.Location = new System.Drawing.Point(125, 10);
             this.txtGenreID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGenreID.Name = "txtGenreID";
             this.txtGenreID.PlaceholderText = "";
             this.txtGenreID.SelectedText = "";
-            this.txtGenreID.Size = new System.Drawing.Size(227, 28);
+            this.txtGenreID.Size = new System.Drawing.Size(228, 31);
             this.txtGenreID.TabIndex = 1;
             // 
             // lblGenreID
             // 
             this.lblGenreID.BackColor = System.Drawing.Color.Transparent;
             this.lblGenreID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenreID.Location = new System.Drawing.Point(13, 16);
+            this.lblGenreID.Location = new System.Drawing.Point(13, 17);
             this.lblGenreID.Name = "lblGenreID";
             this.lblGenreID.Size = new System.Drawing.Size(101, 21);
             this.lblGenreID.TabIndex = 0;
@@ -214,9 +217,9 @@
             // 
             this.guna2Panel5.Controls.Add(this.dtgvGenre);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 64);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 74);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(631, 547);
+            this.guna2Panel5.Size = new System.Drawing.Size(631, 537);
             this.guna2Panel5.TabIndex = 2;
             // 
             // dtgvGenre
@@ -225,6 +228,7 @@
             this.dtgvGenre.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgvGenre.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvGenre.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvGenre.BackgroundColor = System.Drawing.SystemColors.AppWorkspace;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -238,7 +242,7 @@
             this.dtgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -250,7 +254,8 @@
             this.dtgvGenre.Name = "dtgvGenre";
             this.dtgvGenre.ReadOnly = true;
             this.dtgvGenre.RowHeadersVisible = false;
-            this.dtgvGenre.Size = new System.Drawing.Size(631, 547);
+            this.dtgvGenre.RowTemplate.Height = 40;
+            this.dtgvGenre.Size = new System.Drawing.Size(631, 537);
             this.dtgvGenre.TabIndex = 0;
             this.dtgvGenre.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvGenre.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -270,7 +275,7 @@
             this.dtgvGenre.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvGenre.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvGenre.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtgvGenre.ThemeStyle.RowsStyle.Height = 22;
+            this.dtgvGenre.ThemeStyle.RowsStyle.Height = 40;
             this.dtgvGenre.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvGenre.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
@@ -284,6 +289,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "GenreUC";
             this.Size = new System.Drawing.Size(1000, 611);
+            this.Load += new System.EventHandler(this.GenreUC_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);

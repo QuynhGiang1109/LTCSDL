@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.txtTenRap = new System.Windows.Forms.TextBox();
@@ -71,17 +73,18 @@
             // 
             // txtTenRap
             // 
-            this.txtTenRap.Location = new System.Drawing.Point(188, 18);
+            this.txtTenRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenRap.Location = new System.Drawing.Point(165, 16);
             this.txtTenRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenRap.Name = "txtTenRap";
-            this.txtTenRap.Size = new System.Drawing.Size(370, 26);
+            this.txtTenRap.Size = new System.Drawing.Size(370, 35);
             this.txtTenRap.TabIndex = 1;
             // 
             // lblGenreName
             // 
             this.lblGenreName.AutoSize = true;
             this.lblGenreName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblGenreName.Location = new System.Drawing.Point(4, 14);
+            this.lblGenreName.Location = new System.Drawing.Point(4, 20);
             this.lblGenreName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGenreName.Name = "lblGenreName";
             this.lblGenreName.Size = new System.Drawing.Size(114, 29);
@@ -100,17 +103,18 @@
             // 
             // txtMaRap
             // 
-            this.txtMaRap.Location = new System.Drawing.Point(188, 18);
+            this.txtMaRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaRap.Location = new System.Drawing.Point(165, 16);
             this.txtMaRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaRap.Name = "txtMaRap";
-            this.txtMaRap.Size = new System.Drawing.Size(370, 26);
+            this.txtMaRap.Size = new System.Drawing.Size(370, 35);
             this.txtMaRap.TabIndex = 1;
             // 
             // lblGenreID
             // 
             this.lblGenreID.AutoSize = true;
             this.lblGenreID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblGenreID.Location = new System.Drawing.Point(4, 14);
+            this.lblGenreID.Location = new System.Drawing.Point(4, 19);
             this.lblGenreID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGenreID.Name = "lblGenreID";
             this.lblGenreID.Size = new System.Drawing.Size(105, 29);
@@ -163,6 +167,7 @@
             this.btnUpdateRap.Size = new System.Drawing.Size(124, 52);
             this.btnUpdateRap.TabIndex = 42;
             this.btnUpdateRap.Text = "Sửa";
+            this.btnUpdateRap.Click += new System.EventHandler(this.btnUpdateRap_Click);
             // 
             // btnDeleteRap
             // 
@@ -184,6 +189,7 @@
             this.btnDeleteRap.Size = new System.Drawing.Size(124, 52);
             this.btnDeleteRap.TabIndex = 41;
             this.btnDeleteRap.Text = "Xóa";
+            this.btnDeleteRap.Click += new System.EventHandler(this.btnDeleteRap_Click);
             // 
             // btnInsertRap
             // 
@@ -205,6 +211,7 @@
             this.btnInsertRap.Size = new System.Drawing.Size(124, 52);
             this.btnInsertRap.TabIndex = 40;
             this.btnInsertRap.Text = "Thêm";
+            this.btnInsertRap.Click += new System.EventHandler(this.btnInsertRap_Click);
             // 
             // dtgvRap
             // 
@@ -213,7 +220,23 @@
             this.dtgvRap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtgvRap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvRap.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvRap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvRap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvRap.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvRap.Location = new System.Drawing.Point(0, 92);
             this.dtgvRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvRap.Name = "dtgvRap";
@@ -221,6 +244,7 @@
             this.dtgvRap.RowHeadersWidth = 51;
             this.dtgvRap.Size = new System.Drawing.Size(849, 848);
             this.dtgvRap.TabIndex = 1;
+            this.dtgvRap.Click += new System.EventHandler(this.RapUC_Load);
             // 
             // RapUC
             // 

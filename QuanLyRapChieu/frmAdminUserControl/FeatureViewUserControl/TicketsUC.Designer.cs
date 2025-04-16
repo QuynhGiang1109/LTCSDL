@@ -1,4 +1,4 @@
-﻿namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
+﻿namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
 {
     partial class TicketsUC
     {

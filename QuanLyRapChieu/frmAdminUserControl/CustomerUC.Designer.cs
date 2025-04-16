@@ -112,7 +112,6 @@
             this.nudPoint.Size = new System.Drawing.Size(68, 26);
             this.nudPoint.TabIndex = 10;
             this.nudPoint.UpDownButtonFillColor = System.Drawing.SystemColors.Highlight;
-            this.nudPoint.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 
             // numericUpDownNamSinh
             // 
@@ -272,6 +271,7 @@
             this.btnAddCustomer.Size = new System.Drawing.Size(89, 34);
             this.btnAddCustomer.TabIndex = 1;
             this.btnAddCustomer.Text = "Thêm";
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // btnDeleteCustomer
             // 
@@ -290,6 +290,7 @@
             this.btnDeleteCustomer.Size = new System.Drawing.Size(89, 34);
             this.btnDeleteCustomer.TabIndex = 2;
             this.btnDeleteCustomer.Text = "Xóa";
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
             // 
             // btnUpdateCustomer
             // 
@@ -308,6 +309,7 @@
             this.btnUpdateCustomer.Size = new System.Drawing.Size(89, 34);
             this.btnUpdateCustomer.TabIndex = 3;
             this.btnUpdateCustomer.Text = "Sửa";
+            this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
             // 
             // dtgvCustomer
             // 

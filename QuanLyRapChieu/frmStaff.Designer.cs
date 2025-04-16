@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaff));
             this.el_TestLichChieu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pn_LichChieuPhim = new Guna.UI2.WinForms.Guna2Panel();
             this.labelX = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             this.SuatChieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dtv_CaChieu = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pn_LichChieuPhim.SuspendLayout();
             this.gn_Sidebar.SuspendLayout();
             this.gn_Backgr.SuspendLayout();
@@ -68,11 +70,12 @@
             // pn_LichChieuPhim
             // 
             this.pn_LichChieuPhim.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pn_LichChieuPhim.Controls.Add(this.btnClose);
             this.pn_LichChieuPhim.Controls.Add(this.labelX);
             this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_LichChieuPhim.Location = new System.Drawing.Point(0, 0);
             this.pn_LichChieuPhim.Name = "pn_LichChieuPhim";
-            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1186, 60);
+            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1210, 60);
             this.pn_LichChieuPhim.TabIndex = 6;
             // 
             // labelX
@@ -93,7 +96,7 @@
             this.gn_Sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.gn_Sidebar.Location = new System.Drawing.Point(0, 60);
             this.gn_Sidebar.Name = "gn_Sidebar";
-            this.gn_Sidebar.Size = new System.Drawing.Size(337, 533);
+            this.gn_Sidebar.Size = new System.Drawing.Size(337, 590);
             this.gn_Sidebar.TabIndex = 7;
             // 
             // btn_ChonVe
@@ -328,11 +331,26 @@
             this.dtv_CaChieu.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtv_CaChieu.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // btnClose
+            // 
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Location = new System.Drawing.Point(1159, 6);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.Size = new System.Drawing.Size(51, 48);
+            this.btnClose.TabIndex = 20;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 593);
+            this.ClientSize = new System.Drawing.Size(1210, 650);
             this.Controls.Add(this.gn_Sidebar);
             this.Controls.Add(this.pn_LichChieuPhim);
             this.Controls.Add(this.dtv_CaChieu);
@@ -374,5 +392,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SuatChieu;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2DataGridView dtv_CaChieu;
+        private Guna.UI2.WinForms.Guna2ImageButton btnClose;
     }
 }

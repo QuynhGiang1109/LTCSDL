@@ -59,12 +59,8 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                // Ghi log ra console (nếu bạn dùng WinForms/Console App)
+                // Ghi log ra console
                 Console.WriteLine("Lỗi khi thêm tài khoản: " + ex.Message);
-
-                // Hoặc show lỗi ra giao diện nếu cần:
-                // MessageBox.Show("Lỗi khi thêm tài khoản: " + ex.Message);
-
                 return 0; // Trả về 0 để biết là có lỗi
             }
         }
