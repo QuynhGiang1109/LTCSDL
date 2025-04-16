@@ -114,11 +114,12 @@
             this.DiaChi,
             this.SDT,
             this.CMND});
-            this.dtgvStaff.Location = new System.Drawing.Point(0, 207);
+            this.dtgvStaff.Location = new System.Drawing.Point(0, 255);
+            this.dtgvStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgvStaff.Name = "dtgvStaff";
             this.dtgvStaff.ReadOnly = true;
             this.dtgvStaff.RowHeadersWidth = 51;
-            this.dtgvStaff.Size = new System.Drawing.Size(994, 404);
+            this.dtgvStaff.Size = new System.Drawing.Size(1325, 497);
             this.dtgvStaff.TabIndex = 24;
             // 
             // grpAccount
@@ -134,11 +135,11 @@
             this.grpAccount.Controls.Add(this.lblAccountType);
             this.grpAccount.Controls.Add(this.lblStaffID_Account);
             this.grpAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpAccount.Location = new System.Drawing.Point(19, 18);
-            this.grpAccount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.grpAccount.Location = new System.Drawing.Point(25, 22);
+            this.grpAccount.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.grpAccount.Name = "grpAccount";
-            this.grpAccount.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.grpAccount.Size = new System.Drawing.Size(483, 138);
+            this.grpAccount.Padding = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.grpAccount.Size = new System.Drawing.Size(644, 170);
             this.grpAccount.TabIndex = 25;
             this.grpAccount.TabStop = false;
             this.grpAccount.Text = "Thông tin tài khoản";
@@ -147,10 +148,10 @@
             // 
             this.Show_MK.AutoSize = true;
             this.Show_MK.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Show_MK.Location = new System.Drawing.Point(339, 108);
-            this.Show_MK.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Show_MK.Location = new System.Drawing.Point(452, 133);
+            this.Show_MK.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.Show_MK.Name = "Show_MK";
-            this.Show_MK.Size = new System.Drawing.Size(77, 19);
+            this.Show_MK.Size = new System.Drawing.Size(93, 22);
             this.Show_MK.TabIndex = 7;
             this.Show_MK.Text = "Mật Khẩu";
             this.Show_MK.UseMnemonic = false;
@@ -159,28 +160,28 @@
             // txt_Pass
             // 
             this.txt_Pass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pass.Location = new System.Drawing.Point(327, 68);
-            this.txt_Pass.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txt_Pass.Location = new System.Drawing.Point(436, 84);
+            this.txt_Pass.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txt_Pass.Multiline = true;
             this.txt_Pass.Name = "txt_Pass";
             this.txt_Pass.PasswordChar = '*';
-            this.txt_Pass.Size = new System.Drawing.Size(111, 29);
+            this.txt_Pass.Size = new System.Drawing.Size(147, 35);
             this.txt_Pass.TabIndex = 8;
             // 
             // txt_idNV
             // 
             this.txt_idNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idNV.Location = new System.Drawing.Point(103, 68);
-            this.txt_idNV.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txt_idNV.Location = new System.Drawing.Point(137, 84);
+            this.txt_idNV.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txt_idNV.Name = "txt_idNV";
-            this.txt_idNV.Size = new System.Drawing.Size(111, 26);
+            this.txt_idNV.Size = new System.Drawing.Size(147, 30);
             this.txt_idNV.TabIndex = 7;
             // 
             // nudAccountType
             // 
             this.nudAccountType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAccountType.Location = new System.Drawing.Point(327, 22);
-            this.nudAccountType.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.nudAccountType.Location = new System.Drawing.Point(436, 27);
+            this.nudAccountType.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.nudAccountType.Maximum = new decimal(new int[] {
             2,
             0,
@@ -192,7 +193,7 @@
             0,
             0});
             this.nudAccountType.Name = "nudAccountType";
-            this.nudAccountType.Size = new System.Drawing.Size(106, 26);
+            this.nudAccountType.Size = new System.Drawing.Size(141, 30);
             this.nudAccountType.TabIndex = 6;
             this.nudAccountType.Value = new decimal(new int[] {
             1,
@@ -204,30 +205,28 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(17, 27);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Location = new System.Drawing.Point(23, 33);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(82, 19);
+            this.lblUsername.Size = new System.Drawing.Size(102, 23);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username:\r\n";
             // 
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(103, 26);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.txtUsername.Location = new System.Drawing.Point(137, 32);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(111, 26);
+            this.txtUsername.Size = new System.Drawing.Size(147, 30);
             this.txtUsername.TabIndex = 2;
             // 
             // lblStaffName_Account
             // 
             this.lblStaffName_Account.AutoSize = true;
             this.lblStaffName_Account.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffName_Account.Location = new System.Drawing.Point(244, 72);
-            this.lblStaffName_Account.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStaffName_Account.Location = new System.Drawing.Point(325, 89);
             this.lblStaffName_Account.Name = "lblStaffName_Account";
-            this.lblStaffName_Account.Size = new System.Drawing.Size(77, 19);
+            this.lblStaffName_Account.Size = new System.Drawing.Size(97, 23);
             this.lblStaffName_Account.TabIndex = 4;
             this.lblStaffName_Account.Text = "Password:\r\n";
             // 
@@ -235,10 +234,9 @@
             // 
             this.lblAccountType.AutoSize = true;
             this.lblAccountType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountType.Location = new System.Drawing.Point(244, 27);
-            this.lblAccountType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAccountType.Location = new System.Drawing.Point(325, 33);
             this.lblAccountType.Name = "lblAccountType";
-            this.lblAccountType.Size = new System.Drawing.Size(74, 19);
+            this.lblAccountType.Size = new System.Drawing.Size(92, 23);
             this.lblAccountType.TabIndex = 4;
             this.lblAccountType.Text = "Loại TK: ";
             // 
@@ -246,10 +244,9 @@
             // 
             this.lblStaffID_Account.AutoSize = true;
             this.lblStaffID_Account.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffID_Account.Location = new System.Drawing.Point(17, 72);
-            this.lblStaffID_Account.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStaffID_Account.Location = new System.Drawing.Point(23, 89);
             this.lblStaffID_Account.Name = "lblStaffID_Account";
-            this.lblStaffID_Account.Size = new System.Drawing.Size(64, 19);
+            this.lblStaffID_Account.Size = new System.Drawing.Size(76, 23);
             this.lblStaffID_Account.TabIndex = 4;
             this.lblStaffID_Account.Text = "Mã NV:";
             // 
@@ -257,7 +254,7 @@
             // 
             this.btnInsertAccount.AutoRoundedCorners = true;
             this.btnInsertAccount.BorderColor = System.Drawing.Color.White;
-            this.btnInsertAccount.BorderRadius = 16;
+            this.btnInsertAccount.BorderRadius = 20;
             this.btnInsertAccount.BorderThickness = 2;
             this.btnInsertAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnInsertAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -267,9 +264,10 @@
             this.btnInsertAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnInsertAccount.ForeColor = System.Drawing.Color.White;
             this.btnInsertAccount.IndicateFocus = true;
-            this.btnInsertAccount.Location = new System.Drawing.Point(25, 165);
+            this.btnInsertAccount.Location = new System.Drawing.Point(33, 203);
+            this.btnInsertAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsertAccount.Name = "btnInsertAccount";
-            this.btnInsertAccount.Size = new System.Drawing.Size(83, 34);
+            this.btnInsertAccount.Size = new System.Drawing.Size(111, 42);
             this.btnInsertAccount.TabIndex = 34;
             this.btnInsertAccount.Text = "Thêm";
             // 
@@ -277,7 +275,7 @@
             // 
             this.btnDeleteAccount.AutoRoundedCorners = true;
             this.btnDeleteAccount.BorderColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.BorderRadius = 16;
+            this.btnDeleteAccount.BorderRadius = 20;
             this.btnDeleteAccount.BorderThickness = 2;
             this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -287,9 +285,10 @@
             this.btnDeleteAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.White;
             this.btnDeleteAccount.IndicateFocus = true;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(137, 165);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(183, 203);
+            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(83, 34);
+            this.btnDeleteAccount.Size = new System.Drawing.Size(111, 42);
             this.btnDeleteAccount.TabIndex = 35;
             this.btnDeleteAccount.Text = "Xóa";
             // 
@@ -297,7 +296,7 @@
             // 
             this.btnUpdateAccount.AutoRoundedCorners = true;
             this.btnUpdateAccount.BorderColor = System.Drawing.Color.White;
-            this.btnUpdateAccount.BorderRadius = 16;
+            this.btnUpdateAccount.BorderRadius = 20;
             this.btnUpdateAccount.BorderThickness = 2;
             this.btnUpdateAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -307,15 +306,16 @@
             this.btnUpdateAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnUpdateAccount.ForeColor = System.Drawing.Color.White;
             this.btnUpdateAccount.IndicateFocus = true;
-            this.btnUpdateAccount.Location = new System.Drawing.Point(255, 165);
+            this.btnUpdateAccount.Location = new System.Drawing.Point(340, 203);
+            this.btnUpdateAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdateAccount.Name = "btnUpdateAccount";
-            this.btnUpdateAccount.Size = new System.Drawing.Size(83, 34);
+            this.btnUpdateAccount.Size = new System.Drawing.Size(111, 42);
             this.btnUpdateAccount.TabIndex = 36;
             this.btnUpdateAccount.Text = "Sửa";
             // 
             // StaffUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.btnUpdateAccount);
@@ -323,9 +323,9 @@
             this.Controls.Add(this.btnInsertAccount);
             this.Controls.Add(this.grpAccount);
             this.Controls.Add(this.dtgvStaff);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StaffUC";
-            this.Size = new System.Drawing.Size(994, 611);
+            this.Size = new System.Drawing.Size(1325, 752);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
             this.grpAccount.ResumeLayout(false);
             this.grpAccount.PerformLayout();

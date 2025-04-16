@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaChieuBUS.cs" />
+    <Compile Include="CaChieu_PhimBUS.cs" />
     <Compile Include="CustomerBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoanBUS.cs" />

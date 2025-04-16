@@ -19,6 +19,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             InitializeComponent();
             //LoadStaff();
         }
+
         //void LoadStaff()
         //{
         //    DataTable dt = StaffBUS.Instance.getListStaff();

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,16 +23,29 @@ namespace QuanLyRapChieu
             string userName = txtUsername.Text; //user qly: admin, nvien: NV02
             string password = txtPassword.Text; //pass ply: admin, nvien: admin
 
-            //DBSQLServerUtils con = new DBSQLServerUtils(userName, password);
-            //TaiKhoan taiKhoan = TaiKhoanBUS.Instance.xuLyDangNhap(userName, password);
-            //if (taiKhoan != null)
-            //{
+            TaiKhoan taiKhoan = TaiKhoanBUS.Instance.xuLyDangNhap(userName, password);
 
-            //    frmDashboard dashboard = new frmDashboard(taiKhoan);
-            //    dashboard.ShowDialog();
-            //    txtUsername.Clear();
-            //    txtPassword.Clear();
-            //}
+            if (taiKhoan != null)
+            {
+                // Đăng nhập thành công
+                //frmDashboard dashboard = new frmDashboard(taiKhoan);
+                //this.Hide();
+                //dashboard.ShowDialog();
+                //this.Show();
+
+                // Xóa thông tin đăng nhập sau khi đóng Dashboard
+                txtUsername.Clear();
+                txtPassword.Clear();
+            }
+            else
+            {
+               
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu của bạn không đúng!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                // Có thể xóa mật khẩu để người dùng gõ lại
+                txtPassword.Clear();
+                txtPassword.Focus();
+            }
         }
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {

@@ -238,7 +238,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvGenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvGenre.ColumnHeadersHeight = 4;
+            this.dtgvGenre.ColumnHeadersHeight = 40;
             this.dtgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -269,7 +269,7 @@
             this.dtgvGenre.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvGenre.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvGenre.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvGenre.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgvGenre.ThemeStyle.HeaderStyle.Height = 40; //fix loi header bi hide
             this.dtgvGenre.ThemeStyle.ReadOnly = true;
             this.dtgvGenre.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvGenre.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
