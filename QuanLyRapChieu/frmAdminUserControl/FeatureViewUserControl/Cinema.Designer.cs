@@ -29,9 +29,13 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.txtSeatsPerRow = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblSeatsPerRow = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txtNumberOfRows = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,7 +57,12 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.btnDeleteCinema = new Guna.UI2.WinForms.Guna2Button();
             this.btnInsertCinema = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvCinema = new System.Windows.Forms.DataGridView();
-            this.txtSeatsPerRow = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoChoNgoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoHangGhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoGheMotHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -87,20 +96,39 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.panel2.Controls.Add(this.panel31);
             this.panel2.Controls.Add(this.panel32);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(631, 54);
+            this.panel2.Location = new System.Drawing.Point(731, 54);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 557);
+            this.panel2.Size = new System.Drawing.Size(269, 557);
             this.panel2.TabIndex = 32;
             // 
             // panel15
             // 
             this.panel15.Controls.Add(this.txtSeatsPerRow);
             this.panel15.Controls.Add(this.lblSeatsPerRow);
-            this.panel15.Location = new System.Drawing.Point(13, 293);
+            this.panel15.Location = new System.Drawing.Point(4, 293);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(331, 44);
+            this.panel15.Size = new System.Drawing.Size(301, 44);
             this.panel15.TabIndex = 5;
+            // 
+            // txtSeatsPerRow
+            // 
+            this.txtSeatsPerRow.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSeatsPerRow.DefaultText = "Enter Seat Row";
+            this.txtSeatsPerRow.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSeatsPerRow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSeatsPerRow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeatsPerRow.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSeatsPerRow.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeatsPerRow.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtSeatsPerRow.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSeatsPerRow.Location = new System.Drawing.Point(118, 7);
+            this.txtSeatsPerRow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSeatsPerRow.Name = "txtSeatsPerRow";
+            this.txtSeatsPerRow.PlaceholderText = "";
+            this.txtSeatsPerRow.SelectedText = "";
+            this.txtSeatsPerRow.Size = new System.Drawing.Size(137, 30);
+            this.txtSeatsPerRow.TabIndex = 6;
             // 
             // lblSeatsPerRow
             // 
@@ -116,9 +144,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             // 
             this.panel12.Controls.Add(this.txtNumberOfRows);
             this.panel12.Controls.Add(this.lblNumberOfRows);
-            this.panel12.Location = new System.Drawing.Point(13, 234);
+            this.panel12.Location = new System.Drawing.Point(4, 234);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(331, 44);
+            this.panel12.Size = new System.Drawing.Size(301, 44);
             this.panel12.TabIndex = 6;
             // 
             // txtNumberOfRows
@@ -137,7 +165,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.txtNumberOfRows.Name = "txtNumberOfRows";
             this.txtNumberOfRows.PlaceholderText = "";
             this.txtNumberOfRows.SelectedText = "";
-            this.txtNumberOfRows.Size = new System.Drawing.Size(195, 30);
+            this.txtNumberOfRows.Size = new System.Drawing.Size(136, 30);
             this.txtNumberOfRows.TabIndex = 5;
             // 
             // lblNumberOfRows
@@ -154,9 +182,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             // 
             this.panel9.Controls.Add(this.txtCinemaStatus);
             this.panel9.Controls.Add(this.lblCinemaStatus);
-            this.panel9.Location = new System.Drawing.Point(13, 176);
+            this.panel9.Location = new System.Drawing.Point(4, 176);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(331, 44);
+            this.panel9.Size = new System.Drawing.Size(301, 44);
             this.panel9.TabIndex = 7;
             // 
             // txtCinemaStatus
@@ -175,7 +203,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.txtCinemaStatus.Name = "txtCinemaStatus";
             this.txtCinemaStatus.PlaceholderText = "";
             this.txtCinemaStatus.SelectedText = "";
-            this.txtCinemaStatus.Size = new System.Drawing.Size(197, 30);
+            this.txtCinemaStatus.Size = new System.Drawing.Size(138, 30);
             this.txtCinemaStatus.TabIndex = 4;
             // 
             // lblCinemaStatus
@@ -192,9 +220,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             // 
             this.panel8.Controls.Add(this.txtCinemaSeats);
             this.panel8.Controls.Add(this.lblCinemaSeats);
-            this.panel8.Location = new System.Drawing.Point(13, 115);
+            this.panel8.Location = new System.Drawing.Point(4, 115);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(331, 44);
+            this.panel8.Size = new System.Drawing.Size(301, 44);
             this.panel8.TabIndex = 8;
             // 
             // txtCinemaSeats
@@ -213,7 +241,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.txtCinemaSeats.Name = "txtCinemaSeats";
             this.txtCinemaSeats.PlaceholderText = "";
             this.txtCinemaSeats.SelectedText = "";
-            this.txtCinemaSeats.Size = new System.Drawing.Size(196, 30);
+            this.txtCinemaSeats.Size = new System.Drawing.Size(137, 30);
             this.txtCinemaSeats.TabIndex = 3;
             // 
             // lblCinemaSeats
@@ -230,9 +258,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             // 
             this.panel31.Controls.Add(this.txtCinemaName);
             this.panel31.Controls.Add(this.lblCinemaName);
-            this.panel31.Location = new System.Drawing.Point(13, 53);
+            this.panel31.Location = new System.Drawing.Point(4, 53);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(331, 44);
+            this.panel31.Size = new System.Drawing.Size(301, 44);
             this.panel31.TabIndex = 9;
             // 
             // txtCinemaName
@@ -251,7 +279,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.txtCinemaName.Name = "txtCinemaName";
             this.txtCinemaName.PlaceholderText = "";
             this.txtCinemaName.SelectedText = "";
-            this.txtCinemaName.Size = new System.Drawing.Size(198, 30);
+            this.txtCinemaName.Size = new System.Drawing.Size(139, 30);
             this.txtCinemaName.TabIndex = 2;
             // 
             // lblCinemaName
@@ -268,9 +296,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             // 
             this.panel32.Controls.Add(this.txtCinemaID);
             this.panel32.Controls.Add(this.lblCinemaID);
-            this.panel32.Location = new System.Drawing.Point(13, 3);
+            this.panel32.Location = new System.Drawing.Point(4, 3);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(331, 44);
+            this.panel32.Size = new System.Drawing.Size(301, 44);
             this.panel32.TabIndex = 3;
             // 
             // txtCinemaID
@@ -289,7 +317,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.txtCinemaID.Name = "txtCinemaID";
             this.txtCinemaID.PlaceholderText = "";
             this.txtCinemaID.SelectedText = "";
-            this.txtCinemaID.Size = new System.Drawing.Size(197, 30);
+            this.txtCinemaID.Size = new System.Drawing.Size(138, 30);
             this.txtCinemaID.TabIndex = 1;
             // 
             // lblCinemaID
@@ -332,6 +360,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.btnUpdateCinema.Size = new System.Drawing.Size(83, 34);
             this.btnUpdateCinema.TabIndex = 3;
             this.btnUpdateCinema.Text = "Sửa";
+            this.btnUpdateCinema.Click += new System.EventHandler(this.btnUpdateCinema_Click);
             // 
             // btnDeleteCinema
             // 
@@ -352,6 +381,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.btnDeleteCinema.Size = new System.Drawing.Size(83, 34);
             this.btnDeleteCinema.TabIndex = 2;
             this.btnDeleteCinema.Text = "Xóa";
+            this.btnDeleteCinema.Click += new System.EventHandler(this.btnDeleteCinema_Click);
             // 
             // btnInsertCinema
             // 
@@ -372,39 +402,95 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.btnInsertCinema.Size = new System.Drawing.Size(83, 34);
             this.btnInsertCinema.TabIndex = 1;
             this.btnInsertCinema.Text = "Thêm";
+            this.btnInsertCinema.Click += new System.EventHandler(this.btnInsertCinema_Click);
             // 
             // dtgvCinema
             // 
             this.dtgvCinema.AllowUserToAddRows = false;
             this.dtgvCinema.AllowUserToDeleteRows = false;
             this.dtgvCinema.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvCinema.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvCinema.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvCinema.Location = new System.Drawing.Point(0, 0);
+            this.dtgvCinema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCinema.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvCinema.ColumnHeadersHeight = 50;
+            this.dtgvCinema.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvCinema.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPhong,
+            this.TenPhong,
+            this.SoChoNgoi,
+            this.TinhTrang,
+            this.SoHangGhe,
+            this.SoGheMotHang});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvCinema.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvCinema.Location = new System.Drawing.Point(0, 54);
             this.dtgvCinema.Name = "dtgvCinema";
             this.dtgvCinema.ReadOnly = true;
-            this.dtgvCinema.RowHeadersWidth = 51;
-            this.dtgvCinema.Size = new System.Drawing.Size(1000, 611);
-            this.dtgvCinema.TabIndex = 1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCinema.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvCinema.RowHeadersWidth = 30;
+            this.dtgvCinema.Size = new System.Drawing.Size(732, 557);
+            this.dtgvCinema.TabIndex = 21;
             // 
-            // txtSeatsPerRow
+            // MaPhong
             // 
-            this.txtSeatsPerRow.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSeatsPerRow.DefaultText = "Enter Seat Row";
-            this.txtSeatsPerRow.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSeatsPerRow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSeatsPerRow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSeatsPerRow.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSeatsPerRow.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSeatsPerRow.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.txtSeatsPerRow.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSeatsPerRow.Location = new System.Drawing.Point(118, 7);
-            this.txtSeatsPerRow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSeatsPerRow.Name = "txtSeatsPerRow";
-            this.txtSeatsPerRow.PlaceholderText = "";
-            this.txtSeatsPerRow.SelectedText = "";
-            this.txtSeatsPerRow.Size = new System.Drawing.Size(196, 30);
-            this.txtSeatsPerRow.TabIndex = 6;
+            this.MaPhong.DataPropertyName = "MaPhong";
+            this.MaPhong.HeaderText = "Mã Phòng";
+            this.MaPhong.Name = "MaPhong";
+            this.MaPhong.ReadOnly = true;
+            // 
+            // TenPhong
+            // 
+            this.TenPhong.DataPropertyName = "TenPhong";
+            this.TenPhong.HeaderText = "Tên Phòng";
+            this.TenPhong.Name = "TenPhong";
+            this.TenPhong.ReadOnly = true;
+            // 
+            // SoChoNgoi
+            // 
+            this.SoChoNgoi.DataPropertyName = "SoChoNgoi";
+            this.SoChoNgoi.HeaderText = "Số Chỗ Ngồi";
+            this.SoChoNgoi.Name = "SoChoNgoi";
+            this.SoChoNgoi.ReadOnly = true;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.DataPropertyName = "TinhTrang";
+            this.TinhTrang.HeaderText = "Tình Trạng";
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.ReadOnly = true;
+            // 
+            // SoHangGhe
+            // 
+            this.SoHangGhe.DataPropertyName = "SoHangGhe";
+            this.SoHangGhe.HeaderText = "Số Hàng Ghế";
+            this.SoHangGhe.Name = "SoHangGhe";
+            this.SoHangGhe.ReadOnly = true;
+            // 
+            // SoGheMotHang
+            // 
+            this.SoGheMotHang.DataPropertyName = "SoGheMotHang";
+            this.SoGheMotHang.HeaderText = "Số Ghế Một Hàng";
+            this.SoGheMotHang.Name = "SoGheMotHang";
+            this.SoGheMotHang.ReadOnly = true;
             // 
             // Cinema
             // 
@@ -415,6 +501,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cinema";
             this.Size = new System.Drawing.Size(1000, 611);
+            this.Load += new System.EventHandler(this.Cinema_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
@@ -461,5 +548,11 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         private Guna.UI2.WinForms.Guna2TextBox txtNumberOfRows;
         private Guna.UI2.WinForms.Guna2TextBox txtCinemaStatus;
         private Guna.UI2.WinForms.Guna2TextBox txtSeatsPerRow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoChoNgoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoHangGhe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoGheMotHang;
     }
 }

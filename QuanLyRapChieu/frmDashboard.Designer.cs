@@ -33,7 +33,7 @@
             this.btn_Staff = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Close = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblAccountInfo = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
@@ -47,11 +47,13 @@
             this.btn_Admin.FillColor = System.Drawing.Color.MidnightBlue;
             this.btn_Admin.Font = new System.Drawing.Font("Arial", 14F);
             this.btn_Admin.ForeColor = System.Drawing.Color.White;
-            this.btn_Admin.Location = new System.Drawing.Point(72, 254);
+            this.btn_Admin.Location = new System.Drawing.Point(48, 165);
+            this.btn_Admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Admin.Name = "btn_Admin";
-            this.btn_Admin.Size = new System.Drawing.Size(303, 58);
+            this.btn_Admin.Size = new System.Drawing.Size(202, 38);
             this.btn_Admin.TabIndex = 14;
             this.btn_Admin.Text = "Quản Lý";
+            this.btn_Admin.Click += new System.EventHandler(this.btn_Admin_Click);
             // 
             // btn_Staff
             // 
@@ -63,11 +65,13 @@
             this.btn_Staff.FillColor = System.Drawing.Color.DarkOrange;
             this.btn_Staff.Font = new System.Drawing.Font("Arial", 14F);
             this.btn_Staff.ForeColor = System.Drawing.Color.White;
-            this.btn_Staff.Location = new System.Drawing.Point(72, 343);
+            this.btn_Staff.Location = new System.Drawing.Point(48, 223);
+            this.btn_Staff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Staff.Name = "btn_Staff";
-            this.btn_Staff.Size = new System.Drawing.Size(303, 58);
+            this.btn_Staff.Size = new System.Drawing.Size(202, 38);
             this.btn_Staff.TabIndex = 15;
             this.btn_Staff.Text = "Nhân Viên";
+            this.btn_Staff.Click += new System.EventHandler(this.btn_Staff_Click);
             // 
             // btn_Close
             // 
@@ -77,31 +81,34 @@
             this.btn_Close.ImageOffset = new System.Drawing.Point(0, 0);
             this.btn_Close.ImageRotate = 0F;
             this.btn_Close.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Close.Location = new System.Drawing.Point(393, 0);
+            this.btn_Close.Location = new System.Drawing.Point(262, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btn_Close.Size = new System.Drawing.Size(51, 48);
+            this.btn_Close.Size = new System.Drawing.Size(34, 31);
             this.btn_Close.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(95, 111);
+            this.label1.Location = new System.Drawing.Point(63, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 51);
+            this.label1.Size = new System.Drawing.Size(154, 35);
             this.label1.TabIndex = 17;
             this.label1.Text = "Welcome!";
             // 
-            // label2
+            // lblAccountInfo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(98, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 36);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Xin chào,";
+            this.lblAccountInfo.AutoSize = true;
+            this.lblAccountInfo.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountInfo.Location = new System.Drawing.Point(65, 117);
+            this.lblAccountInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAccountInfo.Name = "lblAccountInfo";
+            this.lblAccountInfo.Size = new System.Drawing.Size(102, 25);
+            this.lblAccountInfo.TabIndex = 18;
+            this.lblAccountInfo.Text = "Xin chào,";
             // 
             // btnClose
             // 
@@ -111,25 +118,27 @@
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(393, 0);
+            this.btnClose.Location = new System.Drawing.Point(262, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Size = new System.Drawing.Size(51, 48);
+            this.btnClose.Size = new System.Drawing.Size(34, 31);
             this.btnClose.TabIndex = 19;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 481);
+            this.ClientSize = new System.Drawing.Size(296, 313);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblAccountInfo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Staff);
             this.Controls.Add(this.btn_Admin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDashboard";
@@ -143,7 +152,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_Staff;
         private Guna.UI2.WinForms.Guna2ImageButton btn_Close;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAccountInfo;
         private Guna.UI2.WinForms.Guna2ImageButton btnClose;
     }
 }
