@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaChieuDAO.cs" />
+    <Compile Include="CaChieu_PhimDAO.cs" />
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DBSQLServerUtils.cs" />
