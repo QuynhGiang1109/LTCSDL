@@ -1,4 +1,8 @@
-﻿using System;
+﻿using BUS;
+using DAO;
+using DTO;
+//using QuanLyXemPhim.frmAdminUserControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,16 +25,16 @@ namespace QuanLyRapChieu
             string userName = txtUsername.Text; //user qly: admin, nvien: NV02
             string password = txtPassword.Text; //pass ply: admin, nvien: admin
 
-            //DBSQLServerUtils con = new DBSQLServerUtils(userName, password);
-            //TaiKhoan taiKhoan = TaiKhoanBUS.Instance.xuLyDangNhap(userName, password);
-            //if (taiKhoan != null)
-            //{
+            DBSQLServerUtils con = new DBSQLServerUtils(userName, password);
+            TaiKhoan taiKhoan = TaiKhoanBUS.Instance.xuLyDangNhap(userName, password);
+            if (taiKhoan != null)
+            {
 
-            //    frmDashboard dashboard = new frmDashboard(taiKhoan);
-            //    dashboard.ShowDialog();
-            //    txtUsername.Clear();
-            //    txtPassword.Clear();
-            //}
+                frmDashboard dashboard = new frmDashboard(taiKhoan);
+                dashboard.ShowDialog();
+                txtUsername.Clear();
+                txtPassword.Clear();
+            }
         }
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
