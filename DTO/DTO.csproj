@@ -46,6 +46,7 @@
     <Compile Include="ChiTietCaChieu.cs" />
     <Compile Include="ChoNgoi.cs" />
     <Compile Include="KhachHang.cs" />
+    <Compile Include="PhongChieu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="TheLoai.cs" />

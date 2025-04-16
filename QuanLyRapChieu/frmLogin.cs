@@ -1,5 +1,7 @@
 ﻿using BUS;
+using DAO;
 using DTO;
+//using QuanLyXemPhim.frmAdminUserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

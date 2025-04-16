@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffUC));
             this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +49,8 @@
             this.btnInsertAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.lbAccUC = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
             this.grpAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).BeginInit();
@@ -135,8 +138,8 @@
             this.grpAccount.Controls.Add(this.lblAccountType);
             this.grpAccount.Controls.Add(this.lblStaffID_Account);
             this.grpAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpAccount.Location = new System.Drawing.Point(25, 22);
-            this.grpAccount.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.grpAccount.Location = new System.Drawing.Point(248, 8);
+            this.grpAccount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.grpAccount.Name = "grpAccount";
             this.grpAccount.Padding = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.grpAccount.Size = new System.Drawing.Size(644, 170);
@@ -264,8 +267,7 @@
             this.btnInsertAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnInsertAccount.ForeColor = System.Drawing.Color.White;
             this.btnInsertAccount.IndicateFocus = true;
-            this.btnInsertAccount.Location = new System.Drawing.Point(33, 203);
-            this.btnInsertAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsertAccount.Location = new System.Drawing.Point(308, 155);
             this.btnInsertAccount.Name = "btnInsertAccount";
             this.btnInsertAccount.Size = new System.Drawing.Size(111, 42);
             this.btnInsertAccount.TabIndex = 34;
@@ -285,8 +287,7 @@
             this.btnDeleteAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.White;
             this.btnDeleteAccount.IndicateFocus = true;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(183, 203);
-            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(453, 155);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(111, 42);
             this.btnDeleteAccount.TabIndex = 35;
@@ -306,24 +307,47 @@
             this.btnUpdateAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.btnUpdateAccount.ForeColor = System.Drawing.Color.White;
             this.btnUpdateAccount.IndicateFocus = true;
-            this.btnUpdateAccount.Location = new System.Drawing.Point(340, 203);
-            this.btnUpdateAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateAccount.Location = new System.Drawing.Point(590, 155);
             this.btnUpdateAccount.Name = "btnUpdateAccount";
             this.btnUpdateAccount.Size = new System.Drawing.Size(111, 42);
             this.btnUpdateAccount.TabIndex = 36;
             this.btnUpdateAccount.Text = "Sửa";
+            // 
+            // lbAccUC
+            // 
+            this.lbAccUC.AutoSize = true;
+            this.lbAccUC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccUC.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbAccUC.Location = new System.Drawing.Point(38, 150);
+            this.lbAccUC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAccUC.Name = "lbAccUC";
+            this.lbAccUC.Size = new System.Drawing.Size(177, 21);
+            this.lbAccUC.TabIndex = 38;
+            this.lbAccUC.Text = "OMG Account Cinema";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Location = new System.Drawing.Point(59, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(134, 133);
+            this.panel1.TabIndex = 39;
             // 
             // StaffUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbAccUC);
             this.Controls.Add(this.btnUpdateAccount);
             this.Controls.Add(this.btnDeleteAccount);
             this.Controls.Add(this.btnInsertAccount);
             this.Controls.Add(this.grpAccount);
             this.Controls.Add(this.dtgvStaff);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StaffUC";
             this.Size = new System.Drawing.Size(1325, 752);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
@@ -331,6 +355,7 @@
             this.grpAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -355,5 +380,7 @@
         private Guna.UI2.WinForms.Guna2Button btnInsertAccount;
         private Guna.UI2.WinForms.Guna2Button btnDeleteAccount;
         private Guna.UI2.WinForms.Guna2Button btnUpdateAccount;
+        private System.Windows.Forms.Label lbAccUC;
+        private System.Windows.Forms.Panel panel1;
     }
 }
