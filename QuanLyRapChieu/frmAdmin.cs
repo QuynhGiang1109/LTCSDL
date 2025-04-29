@@ -1,4 +1,5 @@
 ﻿using QuanLyRapChieu.frmAdminUserControl;
+using QuanLyXemPhim.frmAdminUserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,7 @@ namespace QuanLyRapChieu
             pnAdmin.Controls.Add(featureViewUC);
         }
 
+   
         private void btnStaffUC_Click(object sender, EventArgs e)
         {
             StaffUC staffUC = new StaffUC();
@@ -65,5 +67,7 @@ namespace QuanLyRapChieu
                 e.Cancel = true;
             }
         }
+
+        
     }
 }

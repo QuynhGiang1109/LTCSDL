@@ -1,4 +1,4 @@
-﻿namespace QuanLyRapChieu.frmAdminUserControl
+﻿namespace QuanLyXemPhim.frmAdminUserControl
 {
     partial class StaffUC
     {
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffUC));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,24 +37,24 @@
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idVN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgvStaff = new System.Windows.Forms.DataGridView();
-            this.grpAccount = new System.Windows.Forms.GroupBox();
-            this.Show_MK = new System.Windows.Forms.CheckBox();
-            this.txt_Pass = new System.Windows.Forms.TextBox();
-            this.txt_idNV = new System.Windows.Forms.TextBox();
-            this.nudAccountType = new System.Windows.Forms.NumericUpDown();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblStaffName_Account = new System.Windows.Forms.Label();
-            this.lblAccountType = new System.Windows.Forms.Label();
-            this.lblStaffID_Account = new System.Windows.Forms.Label();
-            this.btnInsertAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.lbAccUC = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.grpStaff = new System.Windows.Forms.GroupBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.lblStaffID = new System.Windows.Forms.Label();
+            this.txtStaffId = new System.Windows.Forms.TextBox();
+            this.txtStaffAddress = new System.Windows.Forms.TextBox();
+            this.lblStaffINumber = new System.Windows.Forms.Label();
+            this.txtStaffName = new System.Windows.Forms.TextBox();
+            this.lblStaffBirth = new System.Windows.Forms.Label();
+            this.txtStaffPhone = new System.Windows.Forms.TextBox();
+            this.lblStaffPhone = new System.Windows.Forms.Label();
+            this.lblStaffAddress = new System.Windows.Forms.Label();
+            this.txtStaffINumber = new System.Windows.Forms.TextBox();
+            this.lblStaffName = new System.Windows.Forms.Label();
+            this.btnAddStaff = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteStaff = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdateStaff = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
-            this.grpAccount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).BeginInit();
+            this.grpStaff.SuspendLayout();
             this.SuspendLayout();
             // 
             // CMND
@@ -109,6 +110,14 @@
             this.dtgvStaff.AllowUserToAddRows = false;
             this.dtgvStaff.AllowUserToDeleteRows = false;
             this.dtgvStaff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvStaff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idVN,
@@ -117,248 +126,248 @@
             this.DiaChi,
             this.SDT,
             this.CMND});
-            this.dtgvStaff.Location = new System.Drawing.Point(0, 207);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvStaff.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvStaff.Location = new System.Drawing.Point(0, 318);
+            this.dtgvStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvStaff.Name = "dtgvStaff";
             this.dtgvStaff.ReadOnly = true;
             this.dtgvStaff.RowHeadersWidth = 51;
-            this.dtgvStaff.Size = new System.Drawing.Size(994, 404);
+            this.dtgvStaff.Size = new System.Drawing.Size(1491, 622);
             this.dtgvStaff.TabIndex = 24;
+            this.dtgvStaff.Click += new System.EventHandler(this.dtgvStaff_SelectionChanged);
             // 
-            // grpAccount
+            // grpStaff
             // 
-            this.grpAccount.BackColor = System.Drawing.Color.Transparent;
-            this.grpAccount.Controls.Add(this.Show_MK);
-            this.grpAccount.Controls.Add(this.txt_Pass);
-            this.grpAccount.Controls.Add(this.txt_idNV);
-            this.grpAccount.Controls.Add(this.nudAccountType);
-            this.grpAccount.Controls.Add(this.lblUsername);
-            this.grpAccount.Controls.Add(this.txtUsername);
-            this.grpAccount.Controls.Add(this.lblStaffName_Account);
-            this.grpAccount.Controls.Add(this.lblAccountType);
-            this.grpAccount.Controls.Add(this.lblStaffID_Account);
-            this.grpAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpAccount.Location = new System.Drawing.Point(248, 8);
-            this.grpAccount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.grpAccount.Name = "grpAccount";
-            this.grpAccount.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.grpAccount.Size = new System.Drawing.Size(483, 138);
-            this.grpAccount.TabIndex = 25;
-            this.grpAccount.TabStop = false;
-            this.grpAccount.Text = "Thông tin tài khoản";
+            this.grpStaff.BackColor = System.Drawing.Color.Transparent;
+            this.grpStaff.Controls.Add(this.dtpNgaySinh);
+            this.grpStaff.Controls.Add(this.lblStaffID);
+            this.grpStaff.Controls.Add(this.txtStaffId);
+            this.grpStaff.Controls.Add(this.txtStaffAddress);
+            this.grpStaff.Controls.Add(this.lblStaffINumber);
+            this.grpStaff.Controls.Add(this.txtStaffName);
+            this.grpStaff.Controls.Add(this.lblStaffBirth);
+            this.grpStaff.Controls.Add(this.txtStaffPhone);
+            this.grpStaff.Controls.Add(this.lblStaffPhone);
+            this.grpStaff.Controls.Add(this.lblStaffAddress);
+            this.grpStaff.Controls.Add(this.txtStaffINumber);
+            this.grpStaff.Controls.Add(this.lblStaffName);
+            this.grpStaff.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpStaff.Location = new System.Drawing.Point(28, 28);
+            this.grpStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpStaff.Name = "grpStaff";
+            this.grpStaff.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpStaff.Size = new System.Drawing.Size(904, 212);
+            this.grpStaff.TabIndex = 25;
+            this.grpStaff.TabStop = false;
+            this.grpStaff.Text = "THÔNG TIN NHÂN VIÊN";
             // 
-            // Show_MK
+            // dtpNgaySinh
             // 
-            this.Show_MK.AutoSize = true;
-            this.Show_MK.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Show_MK.Location = new System.Drawing.Point(339, 108);
-            this.Show_MK.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.Show_MK.Name = "Show_MK";
-            this.Show_MK.Size = new System.Drawing.Size(77, 19);
-            this.Show_MK.TabIndex = 7;
-            this.Show_MK.Text = "Mật Khẩu";
-            this.Show_MK.UseMnemonic = false;
-            this.Show_MK.UseVisualStyleBackColor = true;
+            this.dtpNgaySinh.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.CustomFormat = "yyyy/MM/dd";
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(172, 142);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(250, 35);
+            this.dtpNgaySinh.TabIndex = 17;
+            this.dtpNgaySinh.Value = new System.DateTime(2025, 4, 14, 23, 59, 0, 0);
             // 
-            // txt_Pass
+            // lblStaffID
             // 
-            this.txt_Pass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pass.Location = new System.Drawing.Point(327, 68);
-            this.txt_Pass.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.txt_Pass.Multiline = true;
-            this.txt_Pass.Name = "txt_Pass";
-            this.txt_Pass.PasswordChar = '*';
-            this.txt_Pass.Size = new System.Drawing.Size(111, 29);
-            this.txt_Pass.TabIndex = 8;
+            this.lblStaffID.AutoSize = true;
+            this.lblStaffID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffID.Location = new System.Drawing.Point(31, 56);
+            this.lblStaffID.Name = "lblStaffID";
+            this.lblStaffID.Size = new System.Drawing.Size(93, 26);
+            this.lblStaffID.TabIndex = 11;
+            this.lblStaffID.Text = "Mã NV:";
             // 
-            // txt_idNV
+            // txtStaffId
             // 
-            this.txt_idNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idNV.Location = new System.Drawing.Point(103, 68);
-            this.txt_idNV.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.txt_idNV.Name = "txt_idNV";
-            this.txt_idNV.Size = new System.Drawing.Size(111, 26);
-            this.txt_idNV.TabIndex = 7;
+            this.txtStaffId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffId.Location = new System.Drawing.Point(172, 47);
+            this.txtStaffId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStaffId.Name = "txtStaffId";
+            this.txtStaffId.Size = new System.Drawing.Size(250, 35);
+            this.txtStaffId.TabIndex = 6;
             // 
-            // nudAccountType
+            // txtStaffAddress
             // 
-            this.nudAccountType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAccountType.Location = new System.Drawing.Point(327, 22);
-            this.nudAccountType.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.nudAccountType.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.nudAccountType.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudAccountType.Name = "nudAccountType";
-            this.nudAccountType.Size = new System.Drawing.Size(106, 26);
-            this.nudAccountType.TabIndex = 6;
-            this.nudAccountType.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.txtStaffAddress.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffAddress.Location = new System.Drawing.Point(610, 55);
+            this.txtStaffAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStaffAddress.Name = "txtStaffAddress";
+            this.txtStaffAddress.Size = new System.Drawing.Size(250, 35);
+            this.txtStaffAddress.TabIndex = 7;
             // 
-            // lblUsername
+            // lblStaffINumber
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(17, 27);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(82, 19);
-            this.lblUsername.TabIndex = 4;
-            this.lblUsername.Text = "Username:\r\n";
+            this.lblStaffINumber.AutoSize = true;
+            this.lblStaffINumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffINumber.Location = new System.Drawing.Point(503, 145);
+            this.lblStaffINumber.Name = "lblStaffINumber";
+            this.lblStaffINumber.Size = new System.Drawing.Size(94, 26);
+            this.lblStaffINumber.TabIndex = 12;
+            this.lblStaffINumber.Text = "CMND:";
             // 
-            // txtUsername
+            // txtStaffName
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(103, 26);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(111, 26);
-            this.txtUsername.TabIndex = 2;
+            this.txtStaffName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffName.Location = new System.Drawing.Point(172, 92);
+            this.txtStaffName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStaffName.Name = "txtStaffName";
+            this.txtStaffName.Size = new System.Drawing.Size(250, 35);
+            this.txtStaffName.TabIndex = 8;
             // 
-            // lblStaffName_Account
+            // lblStaffBirth
             // 
-            this.lblStaffName_Account.AutoSize = true;
-            this.lblStaffName_Account.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffName_Account.Location = new System.Drawing.Point(244, 72);
-            this.lblStaffName_Account.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblStaffName_Account.Name = "lblStaffName_Account";
-            this.lblStaffName_Account.Size = new System.Drawing.Size(77, 19);
-            this.lblStaffName_Account.TabIndex = 4;
-            this.lblStaffName_Account.Text = "Password:\r\n";
+            this.lblStaffBirth.AutoSize = true;
+            this.lblStaffBirth.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffBirth.Location = new System.Drawing.Point(31, 142);
+            this.lblStaffBirth.Name = "lblStaffBirth";
+            this.lblStaffBirth.Size = new System.Drawing.Size(121, 26);
+            this.lblStaffBirth.TabIndex = 13;
+            this.lblStaffBirth.Text = "Ngày sinh:";
             // 
-            // lblAccountType
+            // txtStaffPhone
             // 
-            this.lblAccountType.AutoSize = true;
-            this.lblAccountType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountType.Location = new System.Drawing.Point(244, 27);
-            this.lblAccountType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAccountType.Name = "lblAccountType";
-            this.lblAccountType.Size = new System.Drawing.Size(74, 19);
-            this.lblAccountType.TabIndex = 4;
-            this.lblAccountType.Text = "Loại TK: ";
+            this.txtStaffPhone.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffPhone.Location = new System.Drawing.Point(610, 99);
+            this.txtStaffPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStaffPhone.Name = "txtStaffPhone";
+            this.txtStaffPhone.Size = new System.Drawing.Size(250, 35);
+            this.txtStaffPhone.TabIndex = 9;
             // 
-            // lblStaffID_Account
+            // lblStaffPhone
             // 
-            this.lblStaffID_Account.AutoSize = true;
-            this.lblStaffID_Account.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffID_Account.Location = new System.Drawing.Point(17, 72);
-            this.lblStaffID_Account.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblStaffID_Account.Name = "lblStaffID_Account";
-            this.lblStaffID_Account.Size = new System.Drawing.Size(64, 19);
-            this.lblStaffID_Account.TabIndex = 4;
-            this.lblStaffID_Account.Text = "Mã NV:";
+            this.lblStaffPhone.AutoSize = true;
+            this.lblStaffPhone.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffPhone.Location = new System.Drawing.Point(503, 104);
+            this.lblStaffPhone.Name = "lblStaffPhone";
+            this.lblStaffPhone.Size = new System.Drawing.Size(81, 26);
+            this.lblStaffPhone.TabIndex = 14;
+            this.lblStaffPhone.Text = "Số ĐT:";
             // 
-            // btnInsertAccount
+            // lblStaffAddress
             // 
-            this.btnInsertAccount.AutoRoundedCorners = true;
-            this.btnInsertAccount.BorderColor = System.Drawing.Color.White;
-            this.btnInsertAccount.BorderRadius = 16;
-            this.btnInsertAccount.BorderThickness = 2;
-            this.btnInsertAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnInsertAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnInsertAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnInsertAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnInsertAccount.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnInsertAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnInsertAccount.ForeColor = System.Drawing.Color.White;
-            this.btnInsertAccount.IndicateFocus = true;
-            this.btnInsertAccount.Location = new System.Drawing.Point(308, 155);
-            this.btnInsertAccount.Name = "btnInsertAccount";
-            this.btnInsertAccount.Size = new System.Drawing.Size(83, 34);
-            this.btnInsertAccount.TabIndex = 34;
-            this.btnInsertAccount.Text = "Thêm";
+            this.lblStaffAddress.AutoSize = true;
+            this.lblStaffAddress.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffAddress.Location = new System.Drawing.Point(503, 59);
+            this.lblStaffAddress.Name = "lblStaffAddress";
+            this.lblStaffAddress.Size = new System.Drawing.Size(93, 26);
+            this.lblStaffAddress.TabIndex = 15;
+            this.lblStaffAddress.Text = "Địa chỉ:";
             // 
-            // btnDeleteAccount
+            // txtStaffINumber
             // 
-            this.btnDeleteAccount.AutoRoundedCorners = true;
-            this.btnDeleteAccount.BorderColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.BorderRadius = 16;
-            this.btnDeleteAccount.BorderThickness = 2;
-            this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAccount.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnDeleteAccount.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.IndicateFocus = true;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(453, 155);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(83, 34);
-            this.btnDeleteAccount.TabIndex = 35;
-            this.btnDeleteAccount.Text = "Xóa";
+            this.txtStaffINumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStaffINumber.Location = new System.Drawing.Point(610, 145);
+            this.txtStaffINumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStaffINumber.Name = "txtStaffINumber";
+            this.txtStaffINumber.Size = new System.Drawing.Size(250, 35);
+            this.txtStaffINumber.TabIndex = 10;
             // 
-            // btnUpdateAccount
+            // lblStaffName
             // 
-            this.btnUpdateAccount.AutoRoundedCorners = true;
-            this.btnUpdateAccount.BorderColor = System.Drawing.Color.White;
-            this.btnUpdateAccount.BorderRadius = 16;
-            this.btnUpdateAccount.BorderThickness = 2;
-            this.btnUpdateAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateAccount.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnUpdateAccount.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.btnUpdateAccount.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateAccount.IndicateFocus = true;
-            this.btnUpdateAccount.Location = new System.Drawing.Point(590, 155);
-            this.btnUpdateAccount.Name = "btnUpdateAccount";
-            this.btnUpdateAccount.Size = new System.Drawing.Size(83, 34);
-            this.btnUpdateAccount.TabIndex = 36;
-            this.btnUpdateAccount.Text = "Sửa";
+            this.lblStaffName.AutoSize = true;
+            this.lblStaffName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffName.Location = new System.Drawing.Point(31, 101);
+            this.lblStaffName.Name = "lblStaffName";
+            this.lblStaffName.Size = new System.Drawing.Size(89, 26);
+            this.lblStaffName.TabIndex = 16;
+            this.lblStaffName.Text = "Họ tên:";
             // 
-            // lbAccUC
+            // btnAddStaff
             // 
-            this.lbAccUC.AutoSize = true;
-            this.lbAccUC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccUC.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbAccUC.Location = new System.Drawing.Point(38, 150);
-            this.lbAccUC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbAccUC.Name = "lbAccUC";
-            this.lbAccUC.Size = new System.Drawing.Size(177, 21);
-            this.lbAccUC.TabIndex = 38;
-            this.lbAccUC.Text = "OMG Account Cinema";
+            this.btnAddStaff.AutoRoundedCorners = true;
+            this.btnAddStaff.BorderColor = System.Drawing.Color.White;
+            this.btnAddStaff.BorderRadius = 25;
+            this.btnAddStaff.BorderThickness = 2;
+            this.btnAddStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddStaff.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnAddStaff.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnAddStaff.ForeColor = System.Drawing.Color.White;
+            this.btnAddStaff.IndicateFocus = true;
+            this.btnAddStaff.Location = new System.Drawing.Point(38, 254);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.Size = new System.Drawing.Size(124, 52);
+            this.btnAddStaff.TabIndex = 34;
+            this.btnAddStaff.Text = "Thêm";
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
             // 
-            // panel1
+            // btnDeleteStaff
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Location = new System.Drawing.Point(59, 13);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 133);
-            this.panel1.TabIndex = 39;
+            this.btnDeleteStaff.AutoRoundedCorners = true;
+            this.btnDeleteStaff.BorderColor = System.Drawing.Color.White;
+            this.btnDeleteStaff.BorderRadius = 25;
+            this.btnDeleteStaff.BorderThickness = 2;
+            this.btnDeleteStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteStaff.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnDeleteStaff.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnDeleteStaff.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteStaff.IndicateFocus = true;
+            this.btnDeleteStaff.Location = new System.Drawing.Point(206, 254);
+            this.btnDeleteStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDeleteStaff.Name = "btnDeleteStaff";
+            this.btnDeleteStaff.Size = new System.Drawing.Size(124, 52);
+            this.btnDeleteStaff.TabIndex = 35;
+            this.btnDeleteStaff.Text = "Xóa";
+            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
+            // 
+            // btnUpdateStaff
+            // 
+            this.btnUpdateStaff.AutoRoundedCorners = true;
+            this.btnUpdateStaff.BorderColor = System.Drawing.Color.White;
+            this.btnUpdateStaff.BorderRadius = 25;
+            this.btnUpdateStaff.BorderThickness = 2;
+            this.btnUpdateStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateStaff.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnUpdateStaff.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnUpdateStaff.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateStaff.IndicateFocus = true;
+            this.btnUpdateStaff.Location = new System.Drawing.Point(382, 254);
+            this.btnUpdateStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdateStaff.Name = "btnUpdateStaff";
+            this.btnUpdateStaff.Size = new System.Drawing.Size(124, 52);
+            this.btnUpdateStaff.TabIndex = 36;
+            this.btnUpdateStaff.Text = "Sửa";
+            this.btnUpdateStaff.Click += new System.EventHandler(this.btnUpdateStaff_Click);
             // 
             // StaffUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lbAccUC);
-            this.Controls.Add(this.btnUpdateAccount);
-            this.Controls.Add(this.btnDeleteAccount);
-            this.Controls.Add(this.btnInsertAccount);
-            this.Controls.Add(this.grpAccount);
+            this.Controls.Add(this.btnUpdateStaff);
+            this.Controls.Add(this.btnDeleteStaff);
+            this.Controls.Add(this.btnAddStaff);
+            this.Controls.Add(this.grpStaff);
             this.Controls.Add(this.dtgvStaff);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StaffUC";
-            this.Size = new System.Drawing.Size(994, 611);
+            this.Size = new System.Drawing.Size(1491, 940);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
-            this.grpAccount.ResumeLayout(false);
-            this.grpAccount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAccountType)).EndInit();
+            this.grpStaff.ResumeLayout(false);
+            this.grpStaff.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -370,20 +379,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVN;
         private System.Windows.Forms.DataGridView dtgvStaff;
-        private System.Windows.Forms.GroupBox grpAccount;
-        private System.Windows.Forms.CheckBox Show_MK;
-        private System.Windows.Forms.TextBox txt_Pass;
-        private System.Windows.Forms.TextBox txt_idNV;
-        private System.Windows.Forms.NumericUpDown nudAccountType;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Label lblStaffName_Account;
-        private System.Windows.Forms.Label lblAccountType;
-        private System.Windows.Forms.Label lblStaffID_Account;
-        private Guna.UI2.WinForms.Guna2Button btnInsertAccount;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAccount;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateAccount;
-        private System.Windows.Forms.Label lbAccUC;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox grpStaff;
+        private Guna.UI2.WinForms.Guna2Button btnAddStaff;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteStaff;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateStaff;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Label lblStaffID;
+        private System.Windows.Forms.TextBox txtStaffId;
+        private System.Windows.Forms.TextBox txtStaffAddress;
+        private System.Windows.Forms.Label lblStaffINumber;
+        private System.Windows.Forms.TextBox txtStaffName;
+        private System.Windows.Forms.Label lblStaffBirth;
+        private System.Windows.Forms.TextBox txtStaffPhone;
+        private System.Windows.Forms.Label lblStaffPhone;
+        private System.Windows.Forms.Label lblStaffAddress;
+        private System.Windows.Forms.TextBox txtStaffINumber;
+        private System.Windows.Forms.Label lblStaffName;
     }
 }

@@ -155,7 +155,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
                 int TinhTrang = Convert.ToInt32(txtCinemaStatus.Text);
                 int SoHangGhe = Convert.ToInt32(txtNumberOfRows.Text);
 
-                // Nếu bạn có textbox riêng cho số ghế một hàng, hãy dùng nó. Nếu không, bạn có thể gán mặc định.
+                // Nếu có txt riêng cho số ghế một hàng, hãy dùng nó. Nếu ko, có thể gán mặc định
                 int SoGheMotHang = SoChoNgoi / SoHangGhe;
 
                 int result = PhongChieuBUS.Instance.capNhatPhongChieu(MaPhong, TenPhong, SoChoNgoi, TinhTrang, SoHangGhe, SoGheMotHang);

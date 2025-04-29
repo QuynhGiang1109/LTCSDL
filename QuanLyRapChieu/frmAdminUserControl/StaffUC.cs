@@ -7,147 +7,147 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
-namespace QuanLyRapChieu.frmAdminUserControl
+namespace QuanLyXemPhim.frmAdminUserControl
 {
     public partial class StaffUC : UserControl
     {
-        BindingSource staffList = new BindingSource();
-
         public StaffUC()
         {
             InitializeComponent();
-            //LoadStaff();
+            LoadDanhSachNhanVien();
         }
-        //void LoadStaff()
-        //{
-        //    DataTable dt = StaffBUS.Instance.getListStaff();
-        //    if (dt == null)
-        //    {
-        //        MessageBox.Show("Error when load data");
-        //    }
-        //    else
-        //    {
-        //        dtgvStaff.DataSource = dt;
-        //    }
-        //}
 
+        private void LoadDanhSachNhanVien()
+        {
+            DataTable danhSach = StaffBUS.Instance.getListStaff();
 
-        //private void resetPanel()
-        //{
-        //    txtStaffId.Clear();
-        //    txtStaffName.Clear();
-        //    txtStaffAddress.Clear();
-        //    txtStaffINumber.Clear();
-        //    txtStaffPhone.Clear();
-        //    dtpNgaySinh.Refresh();
+            if (danhSach == null || danhSach.Rows.Count == 0)
+            {
+                MessageBox.Show("Không thể tải danh sách nhân viên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-        //}
+            dtgvStaff.DataSource = null;
+            dtgvStaff.DataSource = danhSach;
+        }
 
-        //private void btnAddStaff_Click(object sender, EventArgs e)
-        //{
-        //    if (txtStaffId.Text == null || txtStaffName.Text == null || txtStaffINumber.Text == null)
-        //    {
-        //        MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OKCancel);
-        //        return;
-        //    }
+        private void ResetForm()
+        {
+            txtStaffId.Clear();
+            txtStaffName.Clear();
+            txtStaffAddress.Clear();
+            txtStaffPhone.Clear();
+            txtStaffINumber.Clear();
+            dtpNgaySinh.Value = DateTime.Now;
+        }
 
-        //    try
-        //    {
-        //        String id = txtStaffId.Text;
-        //        String name = txtStaffName.Text;
-        //        String address = txtStaffAddress.Text;
+        private void btnAddStaff_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraThongTinDauVao()) return;
 
-        //        DateTime birth = dtpNgaySinh.Value;
+            string id = txtStaffId.Text.Trim();
+            string name = txtStaffName.Text.Trim();
+            string address = txtStaffAddress.Text.Trim();
+            string phone = txtStaffPhone.Text.Trim();
+            DateTime birth = dtpNgaySinh.Value;
+            bool isInt = int.TryParse(txtStaffINumber.Text.Trim(), out int cmnd);
 
-        //        String phone = txtStaffPhone.Text;
-        //        int identity = Int32.Parse(txtStaffINumber.Text);
+            if (!isInt)
+            {
+                MessageBox.Show("CMND phải là số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        //        if (StaffBUS.Instance.addStaff(id, name, birth, address, phone, identity))
-        //        {
-        //            LoadStaff();
-        //            resetPanel();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Có lỗi xảy ra", "Thông báo", MessageBoxButtons.OK);
-        //        }
+            bool result = StaffBUS.Instance.addStaff(id, name, birth, address, phone, cmnd);
 
-        //    }
-        //    catch
-        //    {
-        //        MessageBox.Show("Kiểm tra lại dữ liệu nhập vào", "Thông báo", MessageBoxButtons.OK);
+            if (result)
+            {
+                MessageBox.Show("Thêm nhân viên thành công.", "Thông báo");
+                LoadDanhSachNhanVien();
+                ResetForm();
+            }
+            else
+            {
+                MessageBox.Show("Thêm thất bại.", "Lỗi");
+            }
+        }
 
-        //    }
+        private void btnUpdateStaff_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraThongTinDauVao()) return;
 
+            String id = txtStaffId.Text;
+            String name = txtStaffName.Text;
+            DateTime birth = dtpNgaySinh.Value;
+            String address = txtStaffAddress.Text;
+            String phone = txtStaffPhone.Text;
+            int cmnd = Int32.Parse(txtStaffINumber.Text);
 
+            bool result = StaffBUS.Instance.updateStaffBUS(id, name, birth, address, phone, cmnd);
 
-        //}
+            if (result)
+            {
+                MessageBox.Show("Cập nhật thành công.", "Thông báo");
+                LoadDanhSachNhanVien();
+                ResetForm();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thất bại.", "Lỗi");
+            }
+        }
 
+        private void btnDeleteStaff_Click(object sender, EventArgs e)
+        {
+            string id = txtStaffId.Text.Trim();
+            if (string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên cần xóa.", "Cảnh báo");
+                return;
+            }
 
-        //private void btnUpdateStaff_Click(object sender, EventArgs e)
-        //{
+            var confirm = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (confirm != DialogResult.Yes) return;
 
-        //    if (txtStaffId.Text == "" || txtStaffName.Text == "" || txtStaffINumber.Text == "")
-        //    {
-        //        MessageBox.Show("Vui lòng cung cấp đủ thông tin", "Thông báo", MessageBoxButtons.OK);
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        String id = txtStaffId.Text;
-        //        String name = txtStaffName.Text;
-        //        DateTime birth = dtpNgaySinh.Value;
-        //        String address = txtStaffAddress.Text;
-        //        String phone = txtStaffPhone.Text;
-        //        int number = Int32.Parse(txtStaffINumber.Text);
+            bool result = StaffBUS.Instance.deleteStaffBUS(id);
 
-        //        if (StaffBUS.Instance.updateStaffBUS(id, name, birth, address, phone, number))
-        //        {
-        //            LoadStaff();
-        //            resetPanel();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Cập nhật thất bại", "Thông báo", MessageBoxButtons.OK);
-        //        }
-        //    }
+            if (result)
+            {
+                MessageBox.Show("Xóa thành công.", "Thông báo");
+                LoadDanhSachNhanVien();
+                ResetForm();
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại.", "Lỗi");
+            }
+        }
 
+        private void dtgvStaff_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgvStaff.SelectedRows)
+            {
+                txtStaffId.Text = row.Cells[0].Value.ToString();
+                txtStaffName.Text = row.Cells[1].Value.ToString();
+                dtpNgaySinh.Value = (DateTime)row.Cells[2].Value;
+                txtStaffAddress.Text = row.Cells[3].Value.ToString();
+                txtStaffPhone.Text = row.Cells[4].Value.ToString();
+                txtStaffINumber.Text = row.Cells[5].Value.ToString();
+            }
+        }
 
-        //}
-
-        //private void btnDeleteStaff_Click(object sender, EventArgs e)
-        //{
-        //    string staffId = (String)txtStaffId.Text;
-        //    if (staffId == "" || staffId == null)
-        //    {
-        //        MessageBox.Show("Chọn nhân viên cần xóa", "Thông báo", MessageBoxButtons.OK);
-        //        return;
-        //    }
-        //    // thực hiện xóa
-        //    if (StaffBUS.Instance.deleteStaffBUS(staffId))
-        //    {
-        //        resetPanel();
-        //        LoadStaff();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK);
-        //    }
-
-        //}
-
-        //private void dtgvStaff_SelectionChanged(object sender, EventArgs e)
-        //{
-        //    foreach (DataGridViewRow row in dtgvStaff.SelectedRows)
-        //    {
-        //        txtStaffId.Text = row.Cells[0].Value.ToString();
-        //        txtStaffName.Text = row.Cells[1].Value.ToString();
-        //        dtpNgaySinh.Value = (DateTime)row.Cells[2].Value;
-        //        txtStaffAddress.Text = row.Cells[3].Value.ToString();
-        //        txtStaffPhone.Text = row.Cells[4].Value.ToString();
-        //        txtStaffINumber.Text = row.Cells[5].Value.ToString();
-        //    }
-        //}
+        private bool KiemTraThongTinDauVao()
+        {
+            if (string.IsNullOrWhiteSpace(txtStaffId.Text) ||
+                string.IsNullOrWhiteSpace(txtStaffName.Text) ||
+                string.IsNullOrWhiteSpace(txtStaffINumber.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ các thông tin bắt buộc.", "Cảnh báo");
+                return false;
+            }
+            return true;
+        }
     }
 }
