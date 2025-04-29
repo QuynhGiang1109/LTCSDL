@@ -13,13 +13,13 @@ namespace QuanLyRapChieu
 {
     public partial class frmDashboard : Form
     {
-        //private TaiKhoan taiKhoan;
-        public frmDashboard(/*TaiKhoan taiKhoan*/)
+        private TaiKhoan taiKhoan;
+        public frmDashboard(TaiKhoan taiKhoan)
         {
-            //this.taiKhoan = taiKhoan;
+            this.taiKhoan = taiKhoan;
             InitializeComponent();
 
-            //handleAccessPermissions(this.taiKhoan);
+            handleAccessPermissions(this.taiKhoan);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

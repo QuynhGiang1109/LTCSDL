@@ -28,8 +28,7 @@ namespace DAO
             
             return "Data Source=.;Initial Catalog=QuanLyXemPhim" +
                 ";Persist Security Info=True;Integrated Security=True;" +
-                "User ID=" + userName + ";Password=" + Password;
-            
+                "User ID=" + userName + ";Password=" + Password;   
         }
     }
 }

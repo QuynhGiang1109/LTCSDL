@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DAO;
+using DTO;
 
 namespace QuanLyRapChieu
 {
@@ -17,55 +20,70 @@ namespace QuanLyRapChieu
         {
             InitializeComponent();
             hienThiPhimTheoNgay();
-            //loadDataToComboboxShowTime();
+           
         }
 
+        // Sk khi người dùng thay đổi ngày trong dateTimePicker
         private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
         {
-            hienThiPhimTheoNgay();
-            //loadDataToComboboxShowTime();
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //Load lại form để cập nhật cơ sở dữ liệu
-            this.OnLoad(null);
-        }
-        private void frmStaff_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
+            hienThiPhimTheoNgay();// Update ds phim tương ứng với ngày vừa chọn
+
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Tự động gọi lại sk Load để cập nhật dữ liệu (tự động reload dữ liệu theo thời gian)
+            this.OnLoad(null);
+        }
+
+        // Khi form được load (chạy lần đầu)
+        private void frmStaff_Load(object sender, EventArgs e)
+        {
+            timer1.Start();// Bắt đầu chạy timer, giúp dữ liệu luôn được làm mới sau khoảng thời gian nhất định
+        }
+
+        // Khi người dùng chọn một tên phim khác trong cbobox
         private void cboFilmName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hienThiDanhSachCaChieuTheoTenPhim();
+            hienThiDanhSachCaChieuTheoTenPhim();// Hiển thị danh sách ca chiếu của phim được chọn
         }
 
         private void btn_ChonVe_Click(object sender, EventArgs e)
         {
+            // Kiểm tra xem người dùng đã chọn dòng nào trong bảng chưa
             if (dtv_CaChieu.SelectedCells.Count <= 0)
                 return;
-
+            // Lấy mã ca chiếu từ dòng được chọn
             string maCaChieu = dtv_CaChieu.SelectedCells[0].OwningRow.Cells["MaCaChieu"].Value.ToString();
-            //frmTheatre frmTheatre = new frmTheatre(maCaChieu);
-            //frmTheatre.ShowDialog();
+            // Mở form chọn ghế (frmTheatre), truyền vào mã ca chiếu tương ứng
+            frmTheatre frmTheatre = new frmTheatre(maCaChieu);
+            frmTheatre.ShowDialog();
         }
-        // Hiện thị danh sách các phim thỏa điều kiện ngày được người dùng chọn từ Datetimepicker
+        // Hiển thị ds các phim thỏa điều kiện ngày được người dùng chọn từ datetimepicker
         public void hienThiPhimTheoNgay()
         {
             DateTime date = dtpThoiGian.Value;
-            //PhimBUS.Instance.hienThiPhimTheoNgay(cboFilmName, date);
+            PhimBUS.Instance.hienThiPhimTheoNgay(cboFilmName, date);
         }
 
-
+        // Hiển thị danh sách ca chiếu ứng với phim được chọn
         public void hienThiDanhSachCaChieuTheoTenPhim()
         {
-            string tenPhim = cboFilmName.Text;
-            //CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(dtv_CaChieu, tenPhim);
+  
+            string tenPhim = cboFilmName.Text;// Lấy tên phim từ ComboBox
+            List<CaChieu_Phim> listCaChieu = CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(tenPhim);
+            dtv_CaChieu.DataSource = listCaChieu; // Gán dữ liệu vào dtgv
+
+        }
+
+        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Close();
+
         }
     }
 }

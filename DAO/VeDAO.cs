@@ -27,10 +27,10 @@ namespace DAO
         public List<Ve> hienthiVe(string maCaChieu)
         {
             List<Ve> listTicket = new List<Ve>();
-            //string query = @"select * from Ve where MaCaChieu = '" + maCaChieu + "'";  //Dễ xh SQL Injection risk (không dùng tham số hóa truy vấn)
-            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            string query = "SELECT * FROM Ve WHERE MaCaChieu = @maCaChieu";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maCaChieu });
+            string query = @"select * from Ve where MaCaChieu = '" + maCaChieu + "'";  //Dễ xh SQL Injection risk (không dùng tham số hóa truy vấn)
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            //string query = "SELECT * FROM Ve WHERE MaCaChieu = @maCaChieu";
+            //DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maCaChieu });
 
             foreach (DataRow row in data.Rows)
             {
@@ -81,13 +81,15 @@ namespace DAO
         public List<Ve> layTrangThaiVeDaBan(string maCaChieu)
         {
             List<Ve> listTicket = new List<Ve>();
-            string query = @"select * from Ve where MaCaChieu = '" + maCaChieu + "' AND TrangThai = 1";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            string query = "SELECT * FROM Ve WHERE MaCaChieu = @MaCaChieu AND TrangThai = 1";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maCaChieu });
+
             foreach (DataRow row in data.Rows)
             {
                 Ve ticket = new Ve(row);
                 listTicket.Add(ticket);
             }
+
             return listTicket;
         }
     }

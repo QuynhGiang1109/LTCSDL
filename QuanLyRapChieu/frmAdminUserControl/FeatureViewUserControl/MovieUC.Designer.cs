@@ -53,6 +53,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvMovie = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.clbMovieGenre = new System.Windows.Forms.CheckedListBox();
             this.txtMovieDesc = new System.Windows.Forms.TextBox();
             this.lblMovieGenre = new System.Windows.Forms.Label();
             this.lblMovieDesc = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.txtMovieID = new System.Windows.Forms.TextBox();
             this.lblMovieID = new System.Windows.Forms.Label();
             this.lblMovieActor = new System.Windows.Forms.Label();
-            this.clbMovieGenre = new System.Windows.Forms.CheckedListBox();
             this.panel47.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPhim)).BeginInit();
             this.panel1.SuspendLayout();
@@ -374,6 +374,18 @@
             this.panel2.Size = new System.Drawing.Size(1491, 331);
             this.panel2.TabIndex = 0;
             // 
+            // clbMovieGenre
+            // 
+            this.clbMovieGenre.CheckOnClick = true;
+            this.clbMovieGenre.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clbMovieGenre.FormattingEnabled = true;
+            this.clbMovieGenre.Location = new System.Drawing.Point(50, 197);
+            this.clbMovieGenre.MultiColumn = true;
+            this.clbMovieGenre.Name = "clbMovieGenre";
+            this.clbMovieGenre.Size = new System.Drawing.Size(364, 104);
+            this.clbMovieGenre.TabIndex = 58;
+            this.clbMovieGenre.SelectedIndexChanged += new System.EventHandler(this.clbMovieGenre_SelectedIndexChanged);
+            // 
             // txtMovieDesc
             // 
             this.txtMovieDesc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -449,17 +461,6 @@
             this.lblMovieActor.Size = new System.Drawing.Size(115, 26);
             this.lblMovieActor.TabIndex = 39;
             this.lblMovieActor.Text = "Đạo Diễn:";
-            // 
-            // clbMovieGenre
-            // 
-            this.clbMovieGenre.CheckOnClick = true;
-            this.clbMovieGenre.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clbMovieGenre.FormattingEnabled = true;
-            this.clbMovieGenre.Location = new System.Drawing.Point(50, 197);
-            this.clbMovieGenre.MultiColumn = true;
-            this.clbMovieGenre.Name = "clbMovieGenre";
-            this.clbMovieGenre.Size = new System.Drawing.Size(364, 119);
-            this.clbMovieGenre.TabIndex = 58;
             // 
             // MovieUC
             // 
