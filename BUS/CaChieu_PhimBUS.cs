@@ -18,9 +18,9 @@ namespace BUS
             get { if (instance == null) instance = new CaChieu_PhimBUS(); return CaChieu_PhimBUS.instance; }
             private set { CaChieu_PhimBUS.instance = value; }
         }
-        public List<CaChieu_Phim> GetDanhSachCaChieuTheoTenPhim(string tenPhim) //edited. Ko load dtgv o day
+        public List<CaChieu_Phim> hienThiDanhSachCaChieuTheoTenPhim(string tenPhim) //edited. Ko load dtgv o day
         {
-            return CaChieu_PhimDAO.Instance.GetDanhSachCaChieuByTenPhim(tenPhim);
+            return CaChieu_PhimDAO.Instance.hienthiDanhSachCaChieuByTenPhim(tenPhim);
         }
     }
 }

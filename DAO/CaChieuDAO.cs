@@ -59,7 +59,7 @@ namespace DAO
             }
             catch (Exception ex) 
             {
-                    Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
+                    //Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
                     throw new Exception("Có lỗi khi thêm ca chiếu trong DAO: " + ex.Message); //de goi BUS khi co loi xay ra
                     return 0;
             }
@@ -75,7 +75,7 @@ namespace DAO
             }
             catch (Exception ex) 
             {
-                Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
+                //Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
                 throw new Exception("Có lỗi khi xóa ca chiếu trong DAO: " + ex.Message); 
                 return 0; //neu loi
             }
@@ -91,7 +91,7 @@ namespace DAO
             }
             catch (Exception ex) 
             {
-                Console.WriteLine("Lỗi khi sửa ca chiếu: " + ex.Message);
+                //Console.WriteLine("Lỗi khi sửa ca chiếu: " + ex.Message);
                 throw new Exception("Có lỗi khi sửa ca chiếu trong DAO: " + ex.Message);
                 return 0;
             }

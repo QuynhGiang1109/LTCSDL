@@ -31,7 +31,7 @@ namespace DAO
             return listcachieu;
         }
 
-        public List<CaChieu_Phim> GetDanhSachCaChieuByTenPhim(string tenPhim)
+        public List<CaChieu_Phim> hienthiDanhSachCaChieuByTenPhim(string tenPhim)
         {
             List<CaChieu_Phim> caChieus = new List<CaChieu_Phim>();
 
