@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComBoBapNuocDAO.cs" />
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DBSQLServerUtils.cs" />

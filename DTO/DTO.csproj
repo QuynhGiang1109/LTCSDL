@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComBoBapNuoc.cs" />
+    <Compile Include="ComBoBapNuoc_Chon.cs" />
     <Compile Include="KhachHang.cs" />
     <Compile Include="PhongChieu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
