@@ -17,8 +17,8 @@ namespace QuanLyRapChieu
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frmLogin());
-            //Application.Run(new frmPopcorn_Drinks());
+            //Application.Run(new frmLogin());
+            Application.Run(new frmPopcorn_Drinks());
 
         }
     }

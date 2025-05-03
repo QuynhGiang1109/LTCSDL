@@ -12,8 +12,10 @@ namespace DTO
         {
             public int MaCombo { get; set; }
             public string TenCombo { get; set; }
-            public int Gia { get; set; }
-            public int SoLuong { get; set; }
+            public decimal Gia { get; set; }
+            public int SoLuong { get; set; } = 0;
+
+            public decimal ThanhTien => Gia * SoLuong;
         }
 
     }

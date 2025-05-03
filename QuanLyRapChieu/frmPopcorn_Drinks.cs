@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,24 +8,155 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DTO.ComBoBapNuoc_Chon;
 
 namespace QuanLyRapChieu
 {
     public partial class frmPopcorn_Drinks : Form
     {
+
+        private decimal tienVe;
+        private Dictionary<int, TextBox> textBoxSoLuongMap = new Dictionary<int, TextBox>();
+
+        //Constructor có tham số – dùng để truyền tiền vé từ frmTheatre
+        public frmPopcorn_Drinks(decimal tienVeTruyenVao) : this() // Gọi constructor mặc định
+        {
+            tienVe = tienVeTruyenVao;
+            txtTienVe.Text = tienVe.ToString("N3");
+        }
+
+        //Constructor mặc định – cấu hình UI và gán map
         public frmPopcorn_Drinks()
         {
             InitializeComponent();
+
+            textBoxSoLuongMap[1] = txtMycombo1;
+            textBoxSoLuongMap[2] = txtMycombo2;
+            textBoxSoLuongMap[3] = txtSpecialcombo1;
+            textBoxSoLuongMap[4] = txtSpecialcombo2;
+
+            foreach (var tb in textBoxSoLuongMap.Values)
+                tb.Text = "0"; // reset về 0 khi load
         }
 
-        private void btnAddMovie_Click(object sender, EventArgs e)
+        private void frmPopcorn_Drinks_Load(object sender, EventArgs e)
         {
-
+            LoadCombo();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        List<ComboChon> danhSachComboChon = new List<ComboChon>();
+
+
+
+
+        //Khởi tạo ds ban đầu
+        private void LoadCombo()
         {
-
+            var danhSachCombo = ComBoBapNuocBUS.Instance.LayDanhSachCombo();
+            foreach (var combo in danhSachCombo)
+            {
+                danhSachComboChon.Add(new ComboChon
+                {
+                    MaCombo = combo.MaCombo,
+                    TenCombo = combo.TenCombo,
+                    Gia = combo.Gia,
+                    SoLuong = 0
+                });
+            }
         }
+
+
+        //Chạy tăng SL Combo
+        private void TangSoLuong(int maCombo)
+        {
+            var combo = danhSachComboChon.FirstOrDefault(c => c.MaCombo == maCombo);
+            if (combo != null)
+            {
+                combo.SoLuong++;
+                CapNhatTienCombo();
+                CapNhatTextBoxSoLuong(maCombo, combo.SoLuong);
+            }
+        }
+
+        //Chạy giảm SL Combo
+        private void GiamSoLuong(int maCombo)
+        {
+            var combo = danhSachComboChon.FirstOrDefault(c => c.MaCombo == maCombo);
+            if (combo != null && combo.SoLuong > 0)
+            {
+                combo.SoLuong--;
+                CapNhatTienCombo();
+                CapNhatTextBoxSoLuong(maCombo, combo.SoLuong);
+            }
+        }
+
+        //Cập nhật lại số lượng cb
+        private void CapNhatTextBoxSoLuong(int maCombo, int soLuong)
+        {
+            if (textBoxSoLuongMap.ContainsKey(maCombo))
+            {
+                textBoxSoLuongMap[maCombo].Text = soLuong.ToString();
+            }
+        }
+
+
+        //Hàm Cập nhật giá tiền
+        private void CapNhatTienCombo()
+        {
+            decimal tongTien = danhSachComboChon.Sum(c => c.ThanhTien);
+            txtCombo.Text = tongTien.ToString("N3");
+        }
+
+        //Xử lý Combo1
+        private void btnCong1_Click(object sender, EventArgs e)
+        {
+            TangSoLuong(1); //Mã CB = 1
+        }
+
+        private void btnTru1_Click(object sender, EventArgs e)
+        {
+            GiamSoLuong(1);
+        }
+
+        //Xử lý CB2
+        private void btnCong2_Click(object sender, EventArgs e)
+        {
+            TangSoLuong(2);
+        }
+
+        private void btnTru2_Click(object sender, EventArgs e)
+        {
+            GiamSoLuong(2);
+        }
+
+        //Xử lý Special CB1
+        private void btnCongS1_Click(object sender, EventArgs e)
+        {
+            TangSoLuong(3);
+        }
+
+        private void btnTruS1_Click(object sender, EventArgs e)
+        {
+            GiamSoLuong(3);
+        }
+
+
+        //Xử lý Special CB2
+        private void btnCongS2_Click(object sender, EventArgs e)
+        {
+            TangSoLuong(4);
+        }
+
+        private void btnTruS2_Click(object sender, EventArgs e)
+        {
+            GiamSoLuong(4);
+        }
+
+
+        
+
+
+
+
     }
 }

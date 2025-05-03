@@ -317,6 +317,25 @@ namespace QuanLyRapChieu
                     updatePoint(frmCustomer.phoneNumber.Trim(), Convert.ToInt32(numBonusPoint.Value));
                 }
 
+                // ⭐ LẤY GIÁ TIỀN VÉ từ txtRefund và truyền sang frmPopcorn_Drinks ⭐
+
+
+
+
+
+
+                //CHƯA FIX CHỖ NÀY
+                decimal tienVe = decimal.Parse(txtRefund.Text.Replace(".", "").Replace(" đ", "").Trim());
+
+                frmPopcorn_Drinks frm = new frmPopcorn_Drinks(tienVe);
+                frm.Show();
+                ///
+
+
+
+
+
+
                 // Reset chỉ khi đặt vé thành công
                 totalPrice = 0;
                 finalPrice = 0;

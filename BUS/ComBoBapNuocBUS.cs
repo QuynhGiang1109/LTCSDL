@@ -30,17 +30,19 @@ namespace BUS
             return ComBoBapNuocDAO.Instance.LayDanhSachCombo();
         }
 
-        public List<ComboChon> LayDanhSachComboChon()
-        {
-            var danhSach = LayDanhSachCombo();
-            return danhSach.Select(c => new ComboChon
-            {
-                MaCombo = c.MaCombo,
-                TenCombo = c.TenCombo,
-                Gia = c.Gia,
-                SoLuong = 0
-            }).ToList();
-        }
+        
+
+        //public List<ComboChon> LayDanhSachComboChon()
+        //{
+        //    var danhSach = LayDanhSachCombo();
+        //    return danhSach.Select(c => new ComboChon
+        //    {
+        //        MaCombo = c.MaCombo,
+        //        TenCombo = c.TenCombo,
+        //        Gia = c.Gia,
+        //        SoLuong = 0
+        //    }).ToList();
+        //}
 
     }
 }
