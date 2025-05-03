@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DAO;
+using DTO;
 
 namespace QuanLyRapChieu
 {
@@ -17,13 +20,13 @@ namespace QuanLyRapChieu
         {
             InitializeComponent();
             hienThiPhimTheoNgay();
-            //loadDataToComboboxShowTime();
+           
         }
 
         private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
         {
             hienThiPhimTheoNgay();
-            //loadDataToComboboxShowTime();
+            
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -46,26 +49,34 @@ namespace QuanLyRapChieu
                 return;
 
             string maCaChieu = dtv_CaChieu.SelectedCells[0].OwningRow.Cells["MaCaChieu"].Value.ToString();
-            //frmTheatre frmTheatre = new frmTheatre(maCaChieu);
-            //frmTheatre.ShowDialog();
+            frmTheatre frmTheatre = new frmTheatre(maCaChieu);
+            frmTheatre.ShowDialog();
         }
         // Hiện thị danh sách các phim thỏa điều kiện ngày được người dùng chọn từ Datetimepicker
         public void hienThiPhimTheoNgay()
         {
             DateTime date = dtpThoiGian.Value;
-            //PhimBUS.Instance.hienThiPhimTheoNgay(cboFilmName, date);
+            PhimBUS.Instance.hienThiPhimTheoNgay(cboFilmName, date);
         }
 
 
         public void hienThiDanhSachCaChieuTheoTenPhim()
         {
+          
             string tenPhim = cboFilmName.Text;
-            //CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(dtv_CaChieu, tenPhim);
+            List<CaChieu_Phim> listCaChieu = CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(tenPhim);
+            dtv_CaChieu.DataSource = listCaChieu; // Gán dữ liệu vào DataGridView
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

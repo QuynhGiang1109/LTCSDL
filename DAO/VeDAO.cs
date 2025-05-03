@@ -27,10 +27,9 @@ namespace DAO
         public List<Ve> hienthiVe(string maCaChieu)
         {
             List<Ve> listTicket = new List<Ve>();
-            //string query = @"select * from Ve where MaCaChieu = '" + maCaChieu + "'";  //Dễ xh SQL Injection risk (không dùng tham số hóa truy vấn)
-            //DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            string query = "SELECT * FROM Ve WHERE MaCaChieu = @maCaChieu";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maCaChieu });
+            string query = @"select * from Ve where MaCaChieu = '" + maCaChieu + "'";  //Dễ xh SQL Injection risk (không dùng tham số hóa truy vấn)
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+     
 
             foreach (DataRow row in data.Rows)
             {

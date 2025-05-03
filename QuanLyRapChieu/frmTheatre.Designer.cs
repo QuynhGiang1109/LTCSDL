@@ -36,14 +36,8 @@ namespace QuanLyRapChieu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTheatre));
             this.flpSeat = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
@@ -78,9 +72,13 @@ namespace QuanLyRapChieu
             this.label10 = new System.Windows.Forms.Label();
             this.panelScreen = new System.Windows.Forms.Panel();
             this.lbScreen = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -90,19 +88,21 @@ namespace QuanLyRapChieu
             ((System.ComponentModel.ISupportInitialize)(this.numBonusPoint)).BeginInit();
             this.pnlRefund.SuspendLayout();
             this.panelScreen.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpSeat
             // 
-            this.flpSeat.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.flpSeat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpSeat.AutoScroll = true;
-            this.flpSeat.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flpSeat.Location = new System.Drawing.Point(34, 155);
-            this.flpSeat.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.flpSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flpSeat.Location = new System.Drawing.Point(27, 155);
+            this.flpSeat.Margin = new System.Windows.Forms.Padding(0);
             this.flpSeat.Name = "flpSeat";
-            this.flpSeat.Size = new System.Drawing.Size(1027, 400);
+            this.flpSeat.Size = new System.Drawing.Size(1022, 410);
             this.flpSeat.TabIndex = 0;
-            this.flpSeat.Paint += new System.Windows.Forms.PaintEventHandler(this.flpSeat_Paint);
             // 
             // label1
             // 
@@ -110,66 +110,6 @@ namespace QuanLyRapChieu
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(1101, 155);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(256, 141);
-            this.panel2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(19, 95);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 31);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(19, 59);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(33, 31);
-            this.button4.TabIndex = 7;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(68, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 27);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Ghế đã mua";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(68, 59);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 27);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Ghế đang chọn";
             // 
             // panel4
             // 
@@ -181,7 +121,7 @@ namespace QuanLyRapChieu
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1370, 71);
+            this.panel4.Size = new System.Drawing.Size(1362, 71);
             this.panel4.TabIndex = 5;
             // 
             // panel3
@@ -195,24 +135,24 @@ namespace QuanLyRapChieu
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Maroon;
             this.lblTime.Location = new System.Drawing.Point(13, 39);
             this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(104, 25);
+            this.lblTime.Size = new System.Drawing.Size(101, 22);
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "Giờ chiếu:";
             // 
             // lblInformation
             // 
             this.lblInformation.AutoSize = true;
-            this.lblInformation.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInformation.ForeColor = System.Drawing.Color.Maroon;
             this.lblInformation.Location = new System.Drawing.Point(13, 9);
             this.lblInformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInformation.Name = "lblInformation";
-            this.lblInformation.Size = new System.Drawing.Size(160, 25);
+            this.lblInformation.Size = new System.Drawing.Size(149, 22);
             this.lblInformation.TabIndex = 1;
             this.lblInformation.Text = "Thông tin phim:";
             // 
@@ -225,7 +165,7 @@ namespace QuanLyRapChieu
             this.panel5.Location = new System.Drawing.Point(0, 584);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1370, 202);
+            this.panel5.Size = new System.Drawing.Size(1362, 202);
             this.panel5.TabIndex = 6;
             // 
             // panel7
@@ -236,7 +176,7 @@ namespace QuanLyRapChieu
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(884, 200);
+            this.panel7.Size = new System.Drawing.Size(876, 200);
             this.panel7.TabIndex = 17;
             // 
             // groupBox2
@@ -245,13 +185,13 @@ namespace QuanLyRapChieu
             this.groupBox2.Controls.Add(this.grpTicketType);
             this.groupBox2.Controls.Add(this.pnCustomer);
             this.groupBox2.Controls.Add(this.chkCustomer);
-            this.groupBox2.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(-1, 1);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.groupBox2.Size = new System.Drawing.Size(924, 198);
+            this.groupBox2.Size = new System.Drawing.Size(884, 198);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thành Viên:";
@@ -280,7 +220,7 @@ namespace QuanLyRapChieu
             this.rdoFree.Location = new System.Drawing.Point(52, 151);
             this.rdoFree.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoFree.Name = "rdoFree";
-            this.rdoFree.Size = new System.Drawing.Size(142, 29);
+            this.rdoFree.Size = new System.Drawing.Size(136, 26);
             this.rdoFree.TabIndex = 9;
             this.rdoFree.Text = "Vé miễn phí";
             this.rdoFree.UseVisualStyleBackColor = true;
@@ -291,9 +231,9 @@ namespace QuanLyRapChieu
             this.rdoStudent.Location = new System.Drawing.Point(52, 114);
             this.rdoStudent.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoStudent.Name = "rdoStudent";
-            this.rdoStudent.Size = new System.Drawing.Size(119, 29);
+            this.rdoStudent.Size = new System.Drawing.Size(246, 26);
             this.rdoStudent.TabIndex = 8;
-            this.rdoStudent.Text = "Sinh Viên";
+            this.rdoStudent.Text = "Sinh Viên (Trên 18 tuổi)";
             this.rdoStudent.UseVisualStyleBackColor = true;
             // 
             // rdoAdult
@@ -303,7 +243,7 @@ namespace QuanLyRapChieu
             this.rdoAdult.Location = new System.Drawing.Point(52, 41);
             this.rdoAdult.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoAdult.Name = "rdoAdult";
-            this.rdoAdult.Size = new System.Drawing.Size(131, 29);
+            this.rdoAdult.Size = new System.Drawing.Size(122, 26);
             this.rdoAdult.TabIndex = 7;
             this.rdoAdult.TabStop = true;
             this.rdoAdult.Text = "Người Lớn";
@@ -315,9 +255,9 @@ namespace QuanLyRapChieu
             this.rdoChild.Location = new System.Drawing.Point(52, 77);
             this.rdoChild.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoChild.Name = "rdoChild";
-            this.rdoChild.Size = new System.Drawing.Size(226, 29);
+            this.rdoChild.Size = new System.Drawing.Size(241, 26);
             this.rdoChild.TabIndex = 6;
-            this.rdoChild.Text = "Trẻ Em (Dưới 12 tuổi)";
+            this.rdoChild.Text = "Học Sinh (Trên 12 tuổi)";
             this.rdoChild.UseVisualStyleBackColor = true;
             // 
             // pnCustomer
@@ -341,7 +281,7 @@ namespace QuanLyRapChieu
             this.btnUsePoint.BackColor = System.Drawing.Color.SlateGray;
             this.btnUsePoint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsePoint.ForeColor = System.Drawing.Color.MintCream;
-            this.btnUsePoint.Location = new System.Drawing.Point(370, 94);
+            this.btnUsePoint.Location = new System.Drawing.Point(370, 55);
             this.btnUsePoint.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnUsePoint.Name = "btnUsePoint";
             this.btnUsePoint.Size = new System.Drawing.Size(126, 40);
@@ -355,7 +295,7 @@ namespace QuanLyRapChieu
             this.numBonusPoint.Location = new System.Drawing.Point(220, 99);
             this.numBonusPoint.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.numBonusPoint.Name = "numBonusPoint";
-            this.numBonusPoint.Size = new System.Drawing.Size(116, 29);
+            this.numBonusPoint.Size = new System.Drawing.Size(116, 28);
             this.numBonusPoint.TabIndex = 27;
             this.numBonusPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numBonusPoint.Value = new decimal(new int[] {
@@ -384,17 +324,17 @@ namespace QuanLyRapChieu
             this.label7.Location = new System.Drawing.Point(9, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 25);
+            this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 25;
             this.label7.Text = "Tên Khách Hàng:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 101);
+            this.label4.Location = new System.Drawing.Point(9, 101);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 25);
+            this.label4.Size = new System.Drawing.Size(170, 22);
             this.label4.TabIndex = 20;
             this.label4.Text = "Điểm Cộng Thêm:";
             // 
@@ -413,20 +353,20 @@ namespace QuanLyRapChieu
             this.txtPoint.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txtPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPoint.ForeColor = System.Drawing.Color.Red;
-            this.txtPoint.Location = new System.Drawing.Point(220, 55);
+            this.txtPoint.Location = new System.Drawing.Point(220, 57);
             this.txtPoint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPoint.Name = "txtPoint";
-            this.txtPoint.Size = new System.Drawing.Size(276, 31);
+            this.txtPoint.Size = new System.Drawing.Size(130, 31);
             this.txtPoint.TabIndex = 17;
             this.txtPoint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(35, 57);
+            this.label11.Location = new System.Drawing.Point(12, 57);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(150, 25);
+            this.label11.Size = new System.Drawing.Size(144, 22);
             this.label11.TabIndex = 16;
             this.label11.Text = "Điểm Tích Lũy:";
             // 
@@ -436,7 +376,7 @@ namespace QuanLyRapChieu
             this.chkCustomer.Location = new System.Drawing.Point(17, 26);
             this.chkCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.chkCustomer.Name = "chkCustomer";
-            this.chkCustomer.Size = new System.Drawing.Size(258, 29);
+            this.chkCustomer.Size = new System.Drawing.Size(250, 26);
             this.chkCustomer.TabIndex = 0;
             this.chkCustomer.Text = "Khách Hàng Thành Viên";
             this.chkCustomer.UseVisualStyleBackColor = true;
@@ -456,7 +396,7 @@ namespace QuanLyRapChieu
             this.pnlRefund.Controls.Add(this.txtDiscount);
             this.pnlRefund.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRefund.ForeColor = System.Drawing.Color.White;
-            this.pnlRefund.Location = new System.Drawing.Point(884, 0);
+            this.pnlRefund.Location = new System.Drawing.Point(876, 0);
             this.pnlRefund.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnlRefund.Name = "pnlRefund";
             this.pnlRefund.Size = new System.Drawing.Size(484, 200);
@@ -467,7 +407,7 @@ namespace QuanLyRapChieu
             this.txtRefund.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRefund.BackColor = System.Drawing.SystemColors.Window;
             this.txtRefund.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtRefund.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRefund.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRefund.ForeColor = System.Drawing.Color.Maroon;
             this.txtRefund.Location = new System.Drawing.Point(196, 91);
             this.txtRefund.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -484,7 +424,7 @@ namespace QuanLyRapChieu
             this.btnCancel.Location = new System.Drawing.Point(112, 146);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(136, 40);
+            this.btnCancel.Size = new System.Drawing.Size(136, 42);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -495,7 +435,7 @@ namespace QuanLyRapChieu
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.BackColor = System.Drawing.SystemColors.Window;
             this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtTotal.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.Maroon;
             this.txtTotal.Location = new System.Drawing.Point(196, 9);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -517,43 +457,40 @@ namespace QuanLyRapChieu
             this.btnNext.Text = "Tiếp tục";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            this.btnNext.MouseEnter += new System.EventHandler(this.btnNext_MouseEnter);
-            this.btnNext.MouseLeave += new System.EventHandler(this.btnNext_MouseLeave);
-            this.btnNext.MouseHover += new System.EventHandler(this.btnNext_MouseHover);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(5, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 27);
+            this.label5.Size = new System.Drawing.Size(139, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Số tiền giảm:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Maroon;
             this.label8.Location = new System.Drawing.Point(5, 12);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 27);
+            this.label8.Size = new System.Drawing.Size(118, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Tổng Tiền:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
             this.label9.Location = new System.Drawing.Point(5, 95);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(170, 27);
+            this.label9.Size = new System.Drawing.Size(159, 25);
             this.label9.TabIndex = 8;
             this.label9.Text = "Số tiền cần trả:";
             // 
@@ -562,7 +499,7 @@ namespace QuanLyRapChieu
             this.txtDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiscount.BackColor = System.Drawing.SystemColors.Window;
             this.txtDiscount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtDiscount.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiscount.ForeColor = System.Drawing.Color.Maroon;
             this.txtDiscount.Location = new System.Drawing.Point(196, 51);
             this.txtDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -570,17 +507,16 @@ namespace QuanLyRapChieu
             this.txtDiscount.Size = new System.Drawing.Size(275, 31);
             this.txtDiscount.TabIndex = 10;
             this.txtDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDiscount.Click += new System.EventHandler(this.txtDiscount_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Brown;
-            this.label10.Location = new System.Drawing.Point(1094, 99);
+            this.label10.Location = new System.Drawing.Point(1103, 100);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 41);
+            this.label10.Size = new System.Drawing.Size(141, 36);
             this.label10.TabIndex = 8;
             this.label10.Text = "LỐI VÀO";
             // 
@@ -590,19 +526,77 @@ namespace QuanLyRapChieu
             this.panelScreen.Controls.Add(this.lbScreen);
             this.panelScreen.Location = new System.Drawing.Point(30, 82);
             this.panelScreen.Name = "panelScreen";
-            this.panelScreen.Size = new System.Drawing.Size(1031, 58);
+            this.panelScreen.Size = new System.Drawing.Size(1032, 58);
             this.panelScreen.TabIndex = 9;
             // 
             // lbScreen
             // 
             this.lbScreen.AutoSize = true;
-            this.lbScreen.Font = new System.Drawing.Font("Montserrat", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbScreen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbScreen.Location = new System.Drawing.Point(357, 8);
             this.lbScreen.Name = "lbScreen";
-            this.lbScreen.Size = new System.Drawing.Size(324, 46);
+            this.lbScreen.Size = new System.Drawing.Size(304, 38);
             this.lbScreen.TabIndex = 0;
             this.lbScreen.Text = "MÀN HÌNH CHIẾU";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Brown;
+            this.label3.Location = new System.Drawing.Point(60, 59);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Ghế đang chọn";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Brown;
+            this.label2.Location = new System.Drawing.Point(60, 99);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ghế đã mua";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button4.Enabled = false;
+            this.button4.Location = new System.Drawing.Point(19, 59);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(33, 31);
+            this.button4.TabIndex = 7;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(19, 95);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 31);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Brown;
+            this.label6.Location = new System.Drawing.Point(60, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Ghế trống";
             // 
             // button2
             // 
@@ -615,41 +609,40 @@ namespace QuanLyRapChieu
             this.button2.TabIndex = 10;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // panel2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Brown;
-            this.label6.Location = new System.Drawing.Point(68, 20);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 27);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Ghế trống";
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(1074, 155);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(236, 149);
+            this.panel2.TabIndex = 4;
             // 
             // frmTheatre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1370, 786);
+            this.ClientSize = new System.Drawing.Size(1362, 786);
+            this.Controls.Add(this.flpSeat);
             this.Controls.Add(this.panelScreen);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.flpSeat);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmTheatre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đặt vé";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTheatre_FormClosing);
             this.Load += new System.EventHandler(this.frmTheatre_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -665,23 +658,19 @@ namespace QuanLyRapChieu
             this.pnlRefund.PerformLayout();
             this.panelScreen.ResumeLayout(false);
             this.panelScreen.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+       
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flpSeat;
         private System.Windows.Forms.Panel panelScreen;
         private System.Windows.Forms.Label lbScreen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblInformation;
@@ -714,7 +703,13 @@ namespace QuanLyRapChieu
         private System.Windows.Forms.RadioButton rdoChild;
         private System.Windows.Forms.RadioButton rdoFree;
         private Label txtRefund;
-        private Button button2;
+        private FlowLayoutPanel flpSeat;
+        private Label label3;
+        private Label label2;
+        private Button button4;
+        private Button button1;
         private Label label6;
+        private Button button2;
+        private Panel panel2;
     }
 }

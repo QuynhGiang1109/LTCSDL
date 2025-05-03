@@ -36,10 +36,12 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel61 = new System.Windows.Forms.Panel();
+            this.btnAllListShowTimes = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteTicketsByShowTime = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDeleteTicketsByShowTime = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAllListShowTimes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTicket)).BeginInit();
             this.panel61.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -77,6 +79,7 @@
             this.lsvAllListShowTimes.TabIndex = 22;
             this.lsvAllListShowTimes.UseCompatibleStateImageBehavior = false;
             this.lsvAllListShowTimes.View = System.Windows.Forms.View.Details;
+            this.lsvAllListShowTimes.Click += new System.EventHandler(this.lsvAllListShowTimes_Click);
             // 
             // columnHeader5
             // 
@@ -114,26 +117,28 @@
             this.panel61.Size = new System.Drawing.Size(431, 80);
             this.panel61.TabIndex = 23;
             // 
-            // panel1
+            // btnAllListShowTimes
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel61);
-            this.panel1.Controls.Add(this.dtgvTicket);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1491, 940);
-            this.panel1.TabIndex = 0;
-            this.panel1.TabStop = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lsvAllListShowTimes);
-            this.panel2.Location = new System.Drawing.Point(697, 91);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 701);
-            this.panel2.TabIndex = 24;
+            this.btnAllListShowTimes.AutoRoundedCorners = true;
+            this.btnAllListShowTimes.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnAllListShowTimes.BorderRadius = 32;
+            this.btnAllListShowTimes.BorderThickness = 2;
+            this.btnAllListShowTimes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllListShowTimes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllListShowTimes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAllListShowTimes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAllListShowTimes.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAllListShowTimes.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllListShowTimes.ForeColor = System.Drawing.Color.Black;
+            this.btnAllListShowTimes.IndicateFocus = true;
+            this.btnAllListShowTimes.Location = new System.Drawing.Point(229, 8);
+            this.btnAllListShowTimes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAllListShowTimes.Name = "btnAllListShowTimes";
+            this.btnAllListShowTimes.Size = new System.Drawing.Size(192, 67);
+            this.btnAllListShowTimes.TabIndex = 41;
+            this.btnAllListShowTimes.TabStop = false;
+            this.btnAllListShowTimes.Text = "Xem Tất Cả Lịch Chiếu";
+            this.btnAllListShowTimes.Click += new System.EventHandler(this.btnAllListShowTimes_Click);
             // 
             // btnDeleteTicketsByShowTime
             // 
@@ -156,28 +161,76 @@
             this.btnDeleteTicketsByShowTime.TabIndex = 40;
             this.btnDeleteTicketsByShowTime.TabStop = false;
             this.btnDeleteTicketsByShowTime.Text = "Xóa Vé Theo Lịch Chiếu";
+            this.btnDeleteTicketsByShowTime.Click += new System.EventHandler(this.btnDeleteTicketsByShowTime_Click);
             // 
-            // btnAllListShowTimes
+            // panel1
             // 
-            this.btnAllListShowTimes.AutoRoundedCorners = true;
-            this.btnAllListShowTimes.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnAllListShowTimes.BorderRadius = 32;
-            this.btnAllListShowTimes.BorderThickness = 2;
-            this.btnAllListShowTimes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllListShowTimes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllListShowTimes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAllListShowTimes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllListShowTimes.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.btnAllListShowTimes.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllListShowTimes.ForeColor = System.Drawing.Color.Black;
-            this.btnAllListShowTimes.IndicateFocus = true;
-            this.btnAllListShowTimes.Location = new System.Drawing.Point(229, 8);
-            this.btnAllListShowTimes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAllListShowTimes.Name = "btnAllListShowTimes";
-            this.btnAllListShowTimes.Size = new System.Drawing.Size(192, 67);
-            this.btnAllListShowTimes.TabIndex = 41;
-            this.btnAllListShowTimes.TabStop = false;
-            this.btnAllListShowTimes.Text = "Xem Tất Cả Lịch Chiếu";
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.guna2Button2);
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel61);
+            this.panel1.Controls.Add(this.dtgvTicket);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1491, 940);
+            this.panel1.TabIndex = 0;
+            this.panel1.TabStop = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lsvAllListShowTimes);
+            this.panel2.Location = new System.Drawing.Point(697, 91);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(774, 701);
+            this.panel2.TabIndex = 24;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.guna2Button1.BorderRadius = 32;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.IndicateFocus = true;
+            this.guna2Button1.Location = new System.Drawing.Point(482, 5);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(192, 67);
+            this.guna2Button1.TabIndex = 42;
+            this.guna2Button1.TabStop = false;
+            this.guna2Button1.Text = "TẠO";
+            this.guna2Button1.Click += new System.EventHandler(this.btnAddTicketsByShowTime_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.guna2Button2.BorderRadius = 32;
+            this.guna2Button2.BorderThickness = 2;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.IndicateFocus = true;
+            this.guna2Button2.Location = new System.Drawing.Point(709, 5);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(192, 67);
+            this.guna2Button2.TabIndex = 43;
+            this.guna2Button2.TabStop = false;
+            this.guna2Button2.Text = "ĐÃ MUA";
+            this.guna2Button2.Click += new System.EventHandler(this.btnShowAllTicketsBoughtByShowTime_Click);
             // 
             // TicketsUC
             // 
@@ -209,5 +262,7 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnAllListShowTimes;
         private Guna.UI2.WinForms.Guna2Button btnDeleteTicketsByShowTime;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

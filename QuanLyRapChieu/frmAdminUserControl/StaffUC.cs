@@ -18,7 +18,6 @@ namespace QuanLyXemPhim.frmAdminUserControl
             InitializeComponent();
             LoadDanhSachNhanVien();
         }
-
         private void LoadDanhSachNhanVien()
         {
             DataTable danhSach = StaffBUS.Instance.getListStaff();
