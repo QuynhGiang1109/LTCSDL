@@ -57,12 +57,13 @@ namespace DAO
                 int kq = DataProvider.Instance.ExecuteNonQuery(query, new object[] { MaCaChieu, ThoiGianChieu, ThoiGianKetThuc, MaPhong, MaPhim, GiaVe, MaRap });
                 return kq;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                    //Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
-                    throw new Exception("Có lỗi khi thêm ca chiếu trong DAO: " + ex.Message); //de goi BUS khi co loi xay ra
-                    return 0;
+                //Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
+                throw new Exception("Có lỗi khi thêm ca chiếu trong DAO: " + ex.Message); //de goi BUS khi co loi xay ra
+                return 0;
             }
+
 
         }
         public int xoaCaChieu(string MaCaChieu)

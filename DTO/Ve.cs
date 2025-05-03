@@ -15,7 +15,7 @@ namespace DTO
         private string maGheNgoi;
         private string maKhachHang;
         private int trangThai;
-        private float tienBanVe;
+        private decimal tienBanVe;
 
         public int Id { get => id; set => id = value; }
         public int LoaiVe { get => loaiVe; set => loaiVe = value; }
@@ -23,7 +23,7 @@ namespace DTO
         public string MaGheNgoi { get => maGheNgoi; set => maGheNgoi = value; }
         public string MaKhachHang { get => maKhachHang; set => maKhachHang = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
-        public float TienBanVe { get => tienBanVe; set => tienBanVe = value; }
+        public decimal TienBanVe { get => tienBanVe; set => tienBanVe = value; }
 
         public Ve() { }
 
@@ -38,7 +38,7 @@ namespace DTO
             if (row["TienBanVe"].ToString() == "")
                 this.TienBanVe = 0;
             else
-                this.TienBanVe = float.Parse(row["TienBanVe"].ToString()); ;
+                this.TienBanVe = decimal.Parse(row["TienBanVe"].ToString()); ;
         }
     }
 }

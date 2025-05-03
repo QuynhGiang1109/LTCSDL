@@ -140,7 +140,7 @@ namespace QuanLyRapChieu
             this.lblTime.Location = new System.Drawing.Point(13, 39);
             this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(120, 26);
+            this.lblTime.Size = new System.Drawing.Size(101, 22);
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "Giờ chiếu:";
             // 
@@ -152,7 +152,7 @@ namespace QuanLyRapChieu
             this.lblInformation.Location = new System.Drawing.Point(13, 9);
             this.lblInformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInformation.Name = "lblInformation";
-            this.lblInformation.Size = new System.Drawing.Size(176, 26);
+            this.lblInformation.Size = new System.Drawing.Size(149, 22);
             this.lblInformation.TabIndex = 1;
             this.lblInformation.Text = "Thông tin phim:";
             // 
@@ -220,7 +220,7 @@ namespace QuanLyRapChieu
             this.rdoFree.Location = new System.Drawing.Point(52, 151);
             this.rdoFree.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoFree.Name = "rdoFree";
-            this.rdoFree.Size = new System.Drawing.Size(164, 30);
+            this.rdoFree.Size = new System.Drawing.Size(136, 26);
             this.rdoFree.TabIndex = 9;
             this.rdoFree.Text = "Vé miễn phí";
             this.rdoFree.UseVisualStyleBackColor = true;
@@ -231,9 +231,9 @@ namespace QuanLyRapChieu
             this.rdoStudent.Location = new System.Drawing.Point(52, 114);
             this.rdoStudent.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoStudent.Name = "rdoStudent";
-            this.rdoStudent.Size = new System.Drawing.Size(140, 30);
+            this.rdoStudent.Size = new System.Drawing.Size(246, 26);
             this.rdoStudent.TabIndex = 8;
-            this.rdoStudent.Text = "Sinh Viên";
+            this.rdoStudent.Text = "Sinh Viên (Trên 18 tuổi)";
             this.rdoStudent.UseVisualStyleBackColor = true;
             // 
             // rdoAdult
@@ -243,7 +243,7 @@ namespace QuanLyRapChieu
             this.rdoAdult.Location = new System.Drawing.Point(52, 41);
             this.rdoAdult.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoAdult.Name = "rdoAdult";
-            this.rdoAdult.Size = new System.Drawing.Size(145, 30);
+            this.rdoAdult.Size = new System.Drawing.Size(122, 26);
             this.rdoAdult.TabIndex = 7;
             this.rdoAdult.TabStop = true;
             this.rdoAdult.Text = "Người Lớn";
@@ -255,9 +255,9 @@ namespace QuanLyRapChieu
             this.rdoChild.Location = new System.Drawing.Point(52, 77);
             this.rdoChild.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.rdoChild.Name = "rdoChild";
-            this.rdoChild.Size = new System.Drawing.Size(265, 30);
+            this.rdoChild.Size = new System.Drawing.Size(241, 26);
             this.rdoChild.TabIndex = 6;
-            this.rdoChild.Text = "Trẻ Em (Dưới 12 tuổi)";
+            this.rdoChild.Text = "Học Sinh (Trên 12 tuổi)";
             this.rdoChild.UseVisualStyleBackColor = true;
             // 
             // pnCustomer
@@ -281,7 +281,7 @@ namespace QuanLyRapChieu
             this.btnUsePoint.BackColor = System.Drawing.Color.SlateGray;
             this.btnUsePoint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsePoint.ForeColor = System.Drawing.Color.MintCream;
-            this.btnUsePoint.Location = new System.Drawing.Point(370, 94);
+            this.btnUsePoint.Location = new System.Drawing.Point(370, 55);
             this.btnUsePoint.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnUsePoint.Name = "btnUsePoint";
             this.btnUsePoint.Size = new System.Drawing.Size(126, 40);
@@ -295,7 +295,7 @@ namespace QuanLyRapChieu
             this.numBonusPoint.Location = new System.Drawing.Point(220, 99);
             this.numBonusPoint.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.numBonusPoint.Name = "numBonusPoint";
-            this.numBonusPoint.Size = new System.Drawing.Size(116, 32);
+            this.numBonusPoint.Size = new System.Drawing.Size(116, 28);
             this.numBonusPoint.TabIndex = 27;
             this.numBonusPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numBonusPoint.Value = new decimal(new int[] {
@@ -324,17 +324,17 @@ namespace QuanLyRapChieu
             this.label7.Location = new System.Drawing.Point(9, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 26);
+            this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 25;
             this.label7.Text = "Tên Khách Hàng:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 101);
+            this.label4.Location = new System.Drawing.Point(9, 101);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(204, 26);
+            this.label4.Size = new System.Drawing.Size(170, 22);
             this.label4.TabIndex = 20;
             this.label4.Text = "Điểm Cộng Thêm:";
             // 
@@ -353,20 +353,20 @@ namespace QuanLyRapChieu
             this.txtPoint.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txtPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPoint.ForeColor = System.Drawing.Color.Red;
-            this.txtPoint.Location = new System.Drawing.Point(220, 55);
+            this.txtPoint.Location = new System.Drawing.Point(220, 57);
             this.txtPoint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPoint.Name = "txtPoint";
-            this.txtPoint.Size = new System.Drawing.Size(276, 31);
+            this.txtPoint.Size = new System.Drawing.Size(130, 31);
             this.txtPoint.TabIndex = 17;
             this.txtPoint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(35, 57);
+            this.label11.Location = new System.Drawing.Point(12, 57);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 26);
+            this.label11.Size = new System.Drawing.Size(144, 22);
             this.label11.TabIndex = 16;
             this.label11.Text = "Điểm Tích Lũy:";
             // 
@@ -376,7 +376,7 @@ namespace QuanLyRapChieu
             this.chkCustomer.Location = new System.Drawing.Point(17, 26);
             this.chkCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.chkCustomer.Name = "chkCustomer";
-            this.chkCustomer.Size = new System.Drawing.Size(295, 30);
+            this.chkCustomer.Size = new System.Drawing.Size(250, 26);
             this.chkCustomer.TabIndex = 0;
             this.chkCustomer.Text = "Khách Hàng Thành Viên";
             this.chkCustomer.UseVisualStyleBackColor = true;
@@ -466,7 +466,7 @@ namespace QuanLyRapChieu
             this.label5.Location = new System.Drawing.Point(5, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 29);
+            this.label5.Size = new System.Drawing.Size(139, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Số tiền giảm:";
             // 
@@ -478,7 +478,7 @@ namespace QuanLyRapChieu
             this.label8.Location = new System.Drawing.Point(5, 12);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 29);
+            this.label8.Size = new System.Drawing.Size(118, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Tổng Tiền:";
             // 
@@ -490,7 +490,7 @@ namespace QuanLyRapChieu
             this.label9.Location = new System.Drawing.Point(5, 95);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 29);
+            this.label9.Size = new System.Drawing.Size(159, 25);
             this.label9.TabIndex = 8;
             this.label9.Text = "Số tiền cần trả:";
             // 
@@ -516,7 +516,7 @@ namespace QuanLyRapChieu
             this.label10.Location = new System.Drawing.Point(1103, 100);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(167, 40);
+            this.label10.Size = new System.Drawing.Size(141, 36);
             this.label10.TabIndex = 8;
             this.label10.Text = "LỐI VÀO";
             // 
@@ -536,7 +536,7 @@ namespace QuanLyRapChieu
             this.lbScreen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbScreen.Location = new System.Drawing.Point(357, 8);
             this.lbScreen.Name = "lbScreen";
-            this.lbScreen.Size = new System.Drawing.Size(366, 46);
+            this.lbScreen.Size = new System.Drawing.Size(304, 38);
             this.lbScreen.TabIndex = 0;
             this.lbScreen.Text = "MÀN HÌNH CHIẾU";
             // 
@@ -548,7 +548,7 @@ namespace QuanLyRapChieu
             this.label3.Location = new System.Drawing.Point(60, 59);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 26);
+            this.label3.Size = new System.Drawing.Size(156, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ghế đang chọn";
             // 
@@ -560,7 +560,7 @@ namespace QuanLyRapChieu
             this.label2.Location = new System.Drawing.Point(60, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 26);
+            this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ghế đã mua";
             // 
@@ -594,7 +594,7 @@ namespace QuanLyRapChieu
             this.label6.Location = new System.Drawing.Point(60, 20);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 26);
+            this.label6.Size = new System.Drawing.Size(103, 24);
             this.label6.TabIndex = 9;
             this.label6.Text = "Ghế trống";
             // 
@@ -625,7 +625,7 @@ namespace QuanLyRapChieu
             // 
             // frmTheatre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1362, 786);
