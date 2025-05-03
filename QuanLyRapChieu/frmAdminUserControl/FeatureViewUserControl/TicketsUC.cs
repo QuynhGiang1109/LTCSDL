@@ -32,7 +32,7 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
                 lvi.Tag = showTimes;
                 if (showTimes.TrangThai == 1)
                 {
-                    lvi.SubItems.Add("Đã Chiếu");
+                    lvi.SubItems.Add("Sắp Chiếu");
                 }
                 else
                 {
@@ -69,18 +69,18 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             }
         }
 
-        private void btnShowAllTicketsBoughtByShowTime_Click(object sender, EventArgs e)
-        {
-            if (lsvAllListShowTimes.SelectedItems.Count > 0)
-            {
-                CaChieu caChieu = lsvAllListShowTimes.SelectedItems[0].Tag as CaChieu;
-                hienThiVeDaMuaBoiCaChieu(caChieu.MaCaChieu);
-            }
-            else
-            {
-                MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XEM!!!", "THÔNG BÁO");
-            }
-        }
+        //private void btnShowAllTicketsBoughtByShowTime_Click(object sender, EventArgs e)
+        //{
+        //    if (lsvAllListShowTimes.SelectedItems.Count > 0)
+        //    {
+        //        CaChieu caChieu = lsvAllListShowTimes.SelectedItems[0].Tag as CaChieu;
+        //        hienThiVeDaMuaBoiCaChieu(caChieu.MaCaChieu);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XEM!!!", "THÔNG BÁO");
+        //    }
+        //}
         void TaoVe(CaChieu_Phim caChieu)
         {
             int result = 0;
@@ -136,21 +136,21 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
                 MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA CA CHIẾU ID=" + caChieu.MaCaChieu + " THẤT BẠI!", "THÔNG BÁO");
         }
 
-        private void btnDeleteTicketsByShowTime_Click(object sender, EventArgs e)
-        {
-            if (lsvAllListShowTimes.SelectedItems.Count > 0)
-            {
-                CaChieu_Phim caChieu = lsvAllListShowTimes.SelectedItems[0].Tag as CaChieu_Phim;
-                xoaVebyCaChieu(caChieu);
-                LoadCaChieuList();
-                hienThiVebyCaChieu(caChieu.MaCaChieu);
-            }
-            else
-            {
-                MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XÓA!!!", "THÔNG BÁO");
-            }
+        //private void btnDeleteTicketsByShowTime_Click(object sender, EventArgs e)
+        //{
+        //    if (lsvAllListShowTimes.SelectedItems.Count > 0)
+        //    {
+        //        CaChieu_Phim caChieu = lsvAllListShowTimes.SelectedItems[0].Tag as CaChieu_Phim;
+        //        xoaVebyCaChieu(caChieu);
+        //        LoadCaChieuList();
+        //        hienThiVebyCaChieu(caChieu.MaCaChieu);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XÓA!!!", "THÔNG BÁO");
+        //    }
 
-        }
+        //}
 
         void hienThiVeDaMuaBoiCaChieu(string maCaChieu)
         {

@@ -19,6 +19,7 @@ namespace QuanLyRapChieu
 
             //Application.Run(new frmAdmin());
             Application.Run(new frmLogin());
+            //Application.Run(new frmPopcorn_Drinks());
 
         }
     }

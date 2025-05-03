@@ -110,6 +110,7 @@ namespace QuanLyRapChieu
                     hangGhePanels[hang].Controls.Add(btn);
                 }
             }
+
         }
 
         // Xử lý khi click vào ghế: Đổi màu ghế + Ktra loại vé + Tinh gia ve
@@ -299,7 +300,48 @@ namespace QuanLyRapChieu
 
         private void label15_Click(object sender, EventArgs e)
         {
+            ChiTietCaChieu ct = CaChieuBUS.Instance.LayChiTietCaChieu(maCaChieu);
+            if (ct == null)
+                return;
+            lblInformation.Text = string.Format("Ca chiếu : {0}, Phim : {1}, Phòng : {2}, Rạp : {3} ", ct.MaCaChieu, ct.TenPhim, ct.TenPhong, ct.TenRap);
+            lblTime.Text = string.Format("Từ Giờ : {0:HH:mm}, đến Giờ : {1:HH:mm} ", ct.ThoiGianChieu, ct.ThoiGianKetThuc);
+        }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+         
+            if (maVe.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn vé trước khi tiếp tục thao tác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            if (VeBUS.Instance.updateListTicket(maVe))
+            {
+                MessageBox.Show("Đặt vé thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                if (!string.IsNullOrEmpty(txtCustomerName.Text))
+                {
+                    updatePoint(frmCustomer.phoneNumber.Trim(), Convert.ToInt32(numBonusPoint.Value));
+                }
+
+                // Reset chỉ khi đặt vé thành công
+                totalPrice = 0;
+                finalPrice = 0;
+                bonus = 0;
+                maVe.Clear();
+                flpSeat.Controls.Clear();
+                hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
+                resetPanels();
+            }
+            else
+            {
+                MessageBox.Show("Đặt vé thất bại. Vui lòng kiểm tra lại thông tin và thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //Không reset để user còn sửa lại
+            }
+            
         }
 
         private void frmTheatre_Load(object sender, EventArgs e)

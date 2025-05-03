@@ -25,6 +25,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 
         private void btnAddMovie_Click(object sender, EventArgs e)
         {
+            //Lấy dữ liệu từ các control trên form
             string MaPhim = txtMovieID.Text;
             string TenPhim = txtMovieName.Text;
             string MoTa = txtMovieDesc.Text;
@@ -36,6 +37,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             int NamSX = Convert.ToInt32(numericUpDownPhim.Value);
             int GioiHanTuoi = Convert.ToInt32(txtMovieYearLimit.Text);
 
+            // Gọi lớp BUS để thêm phim
             bool success = PhimBUS.Instance.themDanhSachPhim(MaPhim, TenPhim, MoTa, ThoiLuong, NgayBatDau,
                 NgayKetThuc, QuocGia, DienVien, NamSX, GioiHanTuoi);
 
@@ -44,19 +46,23 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             else
                 MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            // Reload lại ds phim
             PhimBUS.Instance.hienThiPhim(movieList);
         }
 
         bool formLoad;
+
+        // Load dữ liệu vào lưới và binding dữ liệu
         private void LoadGrid()
         {
             PhimBUS.Instance.hienThiPhim(movieList);
             ClearAndAddBinding();
         }
-        public void bindingMovie()
+
+        public void bindingMovie() // Binding dữ liệu từ dtgv lên các control
         {
 
-            ClearAndAddBinding(); // Gọi trước để tránh lỗi khi Add binding mới
+            ClearAndAddBinding(); // Gọi(Xóa) biding cũ trước để tránh lỗi khi Add binding mới
 
             txtMovieID.DataBindings.Add(new Binding("Text", dtgvMovie.DataSource, "MaPhim", true, DataSourceUpdateMode.Never));
             txtMovieName.DataBindings.Add(new Binding("Text", dtgvMovie.DataSource, "TenPhim", true, DataSourceUpdateMode.Never));
@@ -68,13 +74,13 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             txtMovieActor.DataBindings.Add(new Binding("Text", dtgvMovie.DataSource, "DaoDien", true, DataSourceUpdateMode.Never));
             txtMovieYearLimit.DataBindings.Add(new Binding("Text", dtgvMovie.DataSource, "GioiHanTuoi", true, DataSourceUpdateMode.Never));
             numericUpDownPhim.DataBindings.Add(new Binding("Value", dtgvMovie.DataSource, "NamSX", true, DataSourceUpdateMode.Never));
-            
-            // them the loai vao checklist
+
+            // Load thể loại vào checkedListBox
             clbMovieGenre.SuspendLayout();
-            //LoadGenreIntoCheckedList(clbMovieGenre);
+            LoadGenreIntoCheckedList(clbMovieGenre);
             clbMovieGenre.ResumeLayout();
         }
-        private void ClearAndAddBinding()
+        private void ClearAndAddBinding()// Xóa các binding hiện tại
         {
             txtMovieID.DataBindings.Clear();
             txtMovieName.DataBindings.Clear();
@@ -97,6 +103,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             bindingMovie();
         }
 
+        // Khi text của txtMovieID thay đổi → thể loại đã chọn sẽ đc update
         private void txtMovieID_TextChanged(object sender, EventArgs e)
         //Use to binding the CheckedListBox the loai phim
         {
@@ -108,19 +115,22 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
                 clbMovieGenre.SetItemChecked(i, false);
                 //Uncheck all CheckBox first
             }
-            //List<TheLoai> listGenreOfMovie = TheLoaiDAO.layDanhSachTheLoaiBoiPhimID(txtMovieID.Text);
-            //for (int i = 0; i < clbMovieGenre.Items.Count; i++)
-            //{
-            //    TheLoai theLoai = (TheLoai)clbMovieGenre.Items[i];
-            //    foreach (TheLoai item in listGenreOfMovie)
-            //    {
-            //        if (theLoai.MaLoaiPhim == item.MaLoaiPhim)
-            //        {
-            //            clbMovieGenre.SetItemChecked(i, true);
-            //            break;
-            //        }
-            //    }
-            //}
+            // Lấy danh sách thể loại của phim hiện tại
+            List<TheLoai> listGenreOfMovie = TheLoaiDAO.layDanhSachTheLoaiBoPhimID(txtMovieID.Text);
+            // So sánh và check lại các thể loại tương ứng
+            for (int i = 0; i < clbMovieGenre.Items.Count; i++)
+            {
+                TheLoai theLoai = (TheLoai)clbMovieGenre.Items[i];
+                foreach (TheLoai item in listGenreOfMovie)
+                {
+                    if (theLoai.MaLoaiPhim == item.MaLoaiPhim)
+                    {
+                        clbMovieGenre.SetItemChecked(i, true);
+                        break;
+                    }
+                }
+            }
+            // Lấy thông tin chi tiết phim (nếu có)
             Phim movie = PhimDAO.layMaPhim(txtMovieID.Text);
             if (movie == null)
                 return;
@@ -140,6 +150,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             int NamSX = Convert.ToInt32(numericUpDownPhim.Value);
             int GioiHanTuoi = Convert.ToInt32(txtMovieYearLimit.Text);
 
+            // Gọi BUS để cập nhật
             bool success = PhimBUS.Instance.suaDanhSachPhim(MaPhim, TenPhim, MoTa, ThoiLuong, NgayBatDau,
                 NgayKetThuc, QuocGia, DienVien, NamSX, GioiHanTuoi);
 
@@ -165,19 +176,18 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             PhimBUS.Instance.hienThiPhim(movieList);
 
         }
-        //void LoadGenreIntoCheckedList(CheckedListBox checkedList)
-        //{
-        //    try
-        //    {
-        //        checkedList.DataSource = null;
-        //        List<TheLoai> theloaiList = TheLoaiDAO.Instance.hienThiTheLoaiPhim();
-        //        checkedList.DataSource = theloaiList;
-        //        checkedList.DisplayMember = "TenTheLoai";
-        //        checkedList.ValueMember = "MaTheLoai";
-        //    }
-        //    catch (Exception ex) { }
-
-        //}
+        void LoadGenreIntoCheckedList(CheckedListBox checkedList)  // Load thể loại vào checkedListBox
+        {
+            try
+            {
+                checkedList.DataSource = null;
+                List<TheLoai> theloaiList = TheLoaiDAO.Instance.hienThiTheLoaiPhim();
+                checkedList.DataSource = theloaiList;
+                checkedList.DisplayMember = "TenTheLoai";
+                checkedList.ValueMember = "MaTheLoai";
+            }
+            catch (Exception ex) { }
+        }
 
 
         private void MovieUC_Load(object sender, EventArgs e)
@@ -189,6 +199,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 
         }
 
-       
+        private void clbMovieGenre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

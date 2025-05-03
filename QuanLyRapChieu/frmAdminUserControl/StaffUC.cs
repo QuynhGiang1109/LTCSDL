@@ -84,12 +84,6 @@ namespace QuanLyXemPhim.frmAdminUserControl
             String phone = txtStaffPhone.Text;
             int cmnd = Int32.Parse(txtStaffINumber.Text);
 
-            //if (!isInt)
-            //{
-            //    MessageBox.Show("CMND phải là số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
-
             bool result = StaffBUS.Instance.updateStaffBUS(id, name, birth, address, phone, cmnd);
 
             if (result)
