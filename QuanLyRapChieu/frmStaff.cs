@@ -85,5 +85,10 @@ namespace QuanLyRapChieu
         {
 
         }
+
+        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -120,21 +120,21 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
         }
 
 
-        //private void xoaVebyCaChieu(CaChieu_Phim caChieu)
-        //{
-        //    PhongChieu cinema = PhongChieuDAO.GetPhongChieuByName();
-        //    int Row = cinema.SoHangGhe;
-        //    int Column = cinema.SoGheMotHang;
-        //    int result = VeDAO.Instance.xoaVeByCaChieu(caChieu.MaCaChieu);
-        //    if (result == Row * Column)
-        //    {
-        //        int ret = CaChieuDAO.updateTinhTrangCaChieu(caChieu.MaCaChieu, 0);
-        //        if (ret > 0)
-        //            MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA CA CHIẾU ID=" + caChieu.MaCaChieu + " THÀNH CÔNG!", "THÔNG BÁO");
-        //    }
-        //    else
-        //        MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA CA CHIẾU ID=" + caChieu.MaCaChieu + " THẤT BẠI!", "THÔNG BÁO");
-        //}
+        private void xoaVebyCaChieu(CaChieu_Phim caChieu)
+        {
+            PhongChieu cinema = PhongChieuDAO.GetPhongChieuByName();
+            int Row = cinema.SoHangGhe;
+            int Column = cinema.SoGheMotHang;
+            int result = VeDAO.Instance.xoaVeByCaChieu(caChieu.MaCaChieu);
+            if (result == Row * Column)
+            {
+                int ret = CaChieuDAO.updateTinhTrangCaChieu(caChieu.MaCaChieu, 0);
+                if (ret > 0)
+                    MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA CA CHIẾU ID=" + caChieu.MaCaChieu + " THÀNH CÔNG!", "THÔNG BÁO");
+            }
+            else
+                MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA CA CHIẾU ID=" + caChieu.MaCaChieu + " THẤT BẠI!", "THÔNG BÁO");
+        }
 
         //private void btnDeleteTicketsByShowTime_Click(object sender, EventArgs e)
         //{
