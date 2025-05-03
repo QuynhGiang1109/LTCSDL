@@ -83,12 +83,8 @@ namespace QuanLyRapChieu
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

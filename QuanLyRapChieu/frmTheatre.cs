@@ -20,11 +20,11 @@ namespace QuanLyRapChieu
     {
         private string maCaChieu;
         private static List<Ve> maVe = new List<Ve>();
-        private static float totalPrice = 0;
-        private static float finalPrice = 0;
+        private static decimal totalPrice = 0;
+        private static decimal finalPrice = 0;
         private static int bonus = 0;
-        private int tongTien = 0;
         //private List<List<int>> loaiVe = new List<List<int>>();
+
         // Dùng từ điển để lưu lại tất cả ghế đã tạo, key là mã ghế, value là Button tương ứng
         private Dictionary<string, Button> danhSachGhe = new Dictionary<string, Button>();
     
@@ -112,6 +112,27 @@ namespace QuanLyRapChieu
             }
 
         }
+        private void TinhToanSoTienCanTra()
+        {
+            decimal tongTien = totalPrice;
+            decimal soTienGiam = 0;
+
+
+            // Ktra nếu có thông tin KH và đã dùng điểm (txtDiscount đã có giá trị)
+            if (!string.IsNullOrEmpty(txtCustomerName.Text) &&
+                !string.IsNullOrEmpty(frmCustomer.phoneNumber) &&
+                !string.IsNullOrEmpty(txtDiscount.Text))
+            {
+                var culture = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                decimal.TryParse(txtDiscount.Text, System.Globalization.NumberStyles.Number, culture, out soTienGiam);
+            }
+            //case k sudung diem tich luy
+            decimal soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
+            txtRefund.Text = soTienCanTra.ToString("N3");
+
+        }
+
+         
 
         // Xử lý khi click vào ghế: Đổi màu ghế + Ktra loại vé + Tinh gia ve
         private void btnSeat_Click(object sender, EventArgs e)
@@ -122,6 +143,7 @@ namespace QuanLyRapChieu
             Button btn = (sender as Button);
             Ve ve = (btn.Tag as Ve);
 
+            decimal soTienCanTra = totalPrice;
 
             if (ve.LoaiVe != 0)
             {
@@ -137,17 +159,17 @@ namespace QuanLyRapChieu
                 else if (rdoChild.Checked)
                 {
                     ve.LoaiVe = 2;
-                    ve.TienBanVe = 0.5f * getSingleTicketPrice(this.maCaChieu);
+                    ve.TienBanVe = 0.5m * getSingleTicketPrice(this.maCaChieu);
                 }
                 else if (rdoStudent.Checked)
                 {
                     ve.LoaiVe = 3;
-                    ve.TienBanVe = 0.75f * getSingleTicketPrice(this.maCaChieu);
+                    ve.TienBanVe = 0.75m * getSingleTicketPrice(this.maCaChieu);
                 }
                 else if (rdoFree.Checked)
                 {
                     ve.LoaiVe = 4;
-                    ve.TienBanVe = 0 * getSingleTicketPrice(this.maCaChieu);
+                    ve.TienBanVe = 0m * getSingleTicketPrice(this.maCaChieu);
                 }
 
             }
@@ -166,19 +188,19 @@ namespace QuanLyRapChieu
                 totalPrice += ve.TienBanVe;
                 bonus++;
             }
-            // Cập nhật giá vé vào giao diện người dùng (ví dụ: cập nhật vào một TextBox)
-            txtTotal.Text = (totalPrice * 1000).ToString("N0"); //NO format 90 -> 90,000
+            // Khi click ghe ngoi bat ki, thuc hien tinh toan: 
+            txtTotal.Text = (totalPrice).ToString("N3"); //NO format 90 -> 90,000
+            TinhToanSoTienCanTra(); 
+
         }
 
 
 
         // lấy giá của một vé theo ca chiếu
-        private float getSingleTicketPrice(string maCaChieu)
+        private decimal getSingleTicketPrice(string maCaChieu)
         {
-            return VeBUS.Instance.getPriceOfTicketBUS(maCaChieu);
+            return Convert.ToDecimal(VeBUS.Instance.getPriceOfTicketBUS(maCaChieu));
         }
-
-        // chưa có btn THANH TOÁN -> btnNext :private void btnPayment_Click(object sender, EventArgs e)
 
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -228,7 +250,7 @@ namespace QuanLyRapChieu
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không tìm thấy thông tin khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
             }
@@ -255,33 +277,38 @@ namespace QuanLyRapChieu
             {
                 MessageBox.Show("Cập nhật điểm không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void btnUsePoint_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtPoint.Text))
+            // Nếu khg có th.tin khách hàng
+            if (string.IsNullOrWhiteSpace(txtCustomerName.Text) ||
+                string.IsNullOrWhiteSpace(frmCustomer.phoneNumber))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // Check: nếu k có điểm để sử dụng
+            if (string.IsNullOrWhiteSpace(txtPoint.Text))
+            {
+                // thì kh có giảm giá
+                txtDiscount.Text = "0";
+                txtRefund.Text = txtTotal.Text;  
+
+            }
+
+            // Ktra đkiện sử dụng điểm
             if (CustomerBUS.Instance.usePointBUS(frmCustomer.phoneNumber))
             {
+                // Cập nhật số điểm giảm giá
                 int diem = int.Parse(txtPoint.Text);
-                int soTienGiam = diem * 1000;
+                int soTienGiam = diem;
 
-                txtDiscount.Text = soTienGiam.ToString("N0");
+                txtDiscount.Text = soTienGiam.ToString("N3");
 
-                if (int.TryParse(txtTotal.Text.Replace(",", ""), out int tongTien))
-                {
-                    int soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
-                    txtRefund.Text = soTienCanTra.ToString("N0");
-                }
-                else
-                {
-                    MessageBox.Show("Không thể đọc được tổng tiền!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                TinhToanSoTienCanTra();  //txtRefund
 
                 MessageBox.Show("Sử dụng điểm thành công! Nhân viên vui lòng tiến hành đổi điểm cho khách.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -307,42 +334,6 @@ namespace QuanLyRapChieu
             lblTime.Text = string.Format("Từ Giờ : {0:HH:mm}, đến Giờ : {1:HH:mm} ", ct.ThoiGianChieu, ct.ThoiGianKetThuc);
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-         
-            if (maVe.Count == 0)
-            {
-                MessageBox.Show("Vui lòng chọn vé trước khi tiếp tục thao tác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                return;
-            }
-
-            if (VeBUS.Instance.updateListTicket(maVe))
-            {
-                MessageBox.Show("Đặt vé thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-                if (!string.IsNullOrEmpty(txtCustomerName.Text))
-                {
-                    updatePoint(frmCustomer.phoneNumber.Trim(), Convert.ToInt32(numBonusPoint.Value));
-                }
-
-                // Reset chỉ khi đặt vé thành công
-                totalPrice = 0;
-                finalPrice = 0;
-                bonus = 0;
-                maVe.Clear();
-                flpSeat.Controls.Clear();
-                hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
-                resetPanels();
-            }
-            else
-            {
-                MessageBox.Show("Đặt vé thất bại. Vui lòng kiểm tra lại thông tin và thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //Không reset để user còn sửa lại
-            }
-            
-        }
 
         private void frmTheatre_Load(object sender, EventArgs e)
         {
@@ -396,26 +387,26 @@ namespace QuanLyRapChieu
                 if (!string.IsNullOrEmpty(txtCustomerName.Text) && !string.IsNullOrEmpty(frmCustomer.phoneNumber)) 
                 {
                     int diem = int.Parse(txtPoint.Text);
-                    int soTienGiam = diem * 1000;
-                    txtDiscount.Text = soTienGiam.ToString("N0");
-                    //int soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
-                    //txtRefund.Text = soTienCanTra.ToString("N0");
-
+                    decimal soTienGiam = diem;
+                    txtDiscount.Text = soTienGiam.ToString("N3");
 
                     thongTin = $"Đặt vé thành công!\n\n" +
-                               $"💰 Tổng tiền: {(totalPrice * 1000).ToString("N0")} đ\n" +
+                               $"💰 Tổng tiền: {(totalPrice).ToString("N3")} đ\n" +
                                $"🎁 Điểm đã dùng: {diem}\n" +
                                $"Ma KH: {maKH}\n" +
-                               $"Ma ghe: {test}" + 
-                               $"💸 Giảm giá: {soTienGiam.ToString("N0")} đ\n";
-                              // $"🧾 Số tiền cần trả: {soTienCanTra.ToString("N0")} đ";
+                               $"Ma ghe: {test}\n" + 
+                               $"💸 Giảm giá: {soTienGiam.ToString("N3")} đ\n";
+                              
                 }
                 //Neu dat ve khong kem thông tin KH thành viên
                 else 
                 {
+                    int soTienCanTra = (int)(totalPrice); // totalPrice là float
+                    txtRefund.Text = soTienCanTra.ToString("N3");
+           
                     thongTin = $"Đặt vé thành công!\n\n" +
-                               $"ma ghe: {test}" +
-                               $"💰 Tổng tiền: {totalPrice.ToString("N0")} đ\n" +
+                               $"Mã ghế: {test}\n" +
+                               $"💰 Tổng tiền: {totalPrice.ToString("N3")} đ\n" +
                                $"(Không sử dụng khách hàng thành viên)";
                 }
 
@@ -453,6 +444,5 @@ namespace QuanLyRapChieu
         }
 
     }
-
 
 }
