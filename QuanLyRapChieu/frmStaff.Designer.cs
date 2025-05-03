@@ -126,7 +126,7 @@
             this.dtv_CaChieu.RowTemplate.Height = 28;
             this.dtv_CaChieu.Size = new System.Drawing.Size(977, 757);
             this.dtv_CaChieu.TabIndex = 1;
-            this.dtv_CaChieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CaChieu_CellContentClick);
+            //this.dtv_CaChieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CaChieu_CellContentClick);
             // 
             // gn_Backgr
             // 
@@ -212,19 +212,8 @@
             // 
             // btnClose
             // 
-            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnClose.ImageRotate = 0F;
-            this.btnClose.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnClose.Location = new System.Drawing.Point(1304, -1);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Size = new System.Drawing.Size(76, 74);
-            this.btnClose.TabIndex = 20;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+       
+            
             // 
             // frmStaff
             // 
@@ -266,7 +255,7 @@
         private System.Windows.Forms.Button btn_ChonVe;
         private Guna.UI2.WinForms.Guna2Panel gn_Sidebar;
         private Guna.UI2.WinForms.Guna2ImageButton btnClose;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dtv_CaChieu;
+       
+       
     }
 }
