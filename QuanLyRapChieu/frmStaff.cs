@@ -76,10 +76,6 @@ namespace QuanLyRapChieu
 
         }
 
-        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
