@@ -79,6 +79,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.pnlCountdown.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -102,9 +103,10 @@
             this.pnlCountdown.Controls.Add(this.panel8);
             this.pnlCountdown.Controls.Add(this.panel7);
             this.pnlCountdown.Controls.Add(this.panel6);
-            this.pnlCountdown.Location = new System.Drawing.Point(907, 232);
+            this.pnlCountdown.Location = new System.Drawing.Point(605, 151);
+            this.pnlCountdown.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCountdown.Name = "pnlCountdown";
-            this.pnlCountdown.Size = new System.Drawing.Size(548, 170);
+            this.pnlCountdown.Size = new System.Drawing.Size(365, 110);
             this.pnlCountdown.TabIndex = 36;
             // 
             // panel8
@@ -112,18 +114,20 @@
             this.panel8.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel8.Controls.Add(this.label9);
             this.panel8.Controls.Add(this.panel10);
-            this.panel8.Location = new System.Drawing.Point(269, 55);
+            this.panel8.Location = new System.Drawing.Point(179, 36);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(98, 100);
+            this.panel8.Size = new System.Drawing.Size(65, 65);
             this.panel8.TabIndex = 14;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(14, 74);
+            this.label9.Location = new System.Drawing.Point(9, 48);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 21);
+            this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Seconds";
             // 
@@ -131,9 +135,10 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.IndianRed;
             this.panel10.Controls.Add(this.lblSeconds);
-            this.panel10.Location = new System.Drawing.Point(16, 12);
+            this.panel10.Location = new System.Drawing.Point(11, 8);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(68, 59);
+            this.panel10.Size = new System.Drawing.Size(45, 38);
             this.panel10.TabIndex = 15;
             // 
             // lblSeconds
@@ -141,9 +146,10 @@
             this.lblSeconds.AutoSize = true;
             this.lblSeconds.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeconds.ForeColor = System.Drawing.Color.White;
-            this.lblSeconds.Location = new System.Drawing.Point(13, 20);
+            this.lblSeconds.Location = new System.Drawing.Point(9, 13);
+            this.lblSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeconds.Name = "lblSeconds";
-            this.lblSeconds.Size = new System.Drawing.Size(44, 21);
+            this.lblSeconds.Size = new System.Drawing.Size(30, 13);
             this.lblSeconds.TabIndex = 16;
             this.lblSeconds.Text = "Giay";
             // 
@@ -152,18 +158,20 @@
             this.panel7.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(165, 55);
+            this.panel7.Location = new System.Drawing.Point(110, 36);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(98, 100);
+            this.panel7.Size = new System.Drawing.Size(65, 65);
             this.panel7.TabIndex = 13;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 75);
+            this.label8.Location = new System.Drawing.Point(11, 49);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 21);
+            this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "Minutes";
             // 
@@ -171,9 +179,10 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.IndianRed;
             this.panel9.Controls.Add(this.lblMinutes);
-            this.panel9.Location = new System.Drawing.Point(17, 12);
+            this.panel9.Location = new System.Drawing.Point(11, 8);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(64, 59);
+            this.panel9.Size = new System.Drawing.Size(43, 38);
             this.panel9.TabIndex = 14;
             // 
             // lblMinutes
@@ -181,9 +190,10 @@
             this.lblMinutes.AutoSize = true;
             this.lblMinutes.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinutes.ForeColor = System.Drawing.Color.White;
-            this.lblMinutes.Location = new System.Drawing.Point(10, 20);
+            this.lblMinutes.Location = new System.Drawing.Point(7, 13);
+            this.lblMinutes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(46, 21);
+            this.lblMinutes.Size = new System.Drawing.Size(32, 13);
             this.lblMinutes.TabIndex = 15;
             this.lblMinutes.Text = "Phut";
             // 
@@ -191,9 +201,10 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Location = new System.Drawing.Point(2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(542, 41);
+            this.panel6.Size = new System.Drawing.Size(361, 27);
             this.panel6.TabIndex = 12;
             // 
             // label7
@@ -201,9 +212,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(137, 0);
+            this.label7.Location = new System.Drawing.Point(91, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(248, 38);
+            this.label7.Size = new System.Drawing.Size(172, 25);
             this.label7.TabIndex = 0;
             this.label7.Text = "Countdown Clock";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -216,18 +228,20 @@
             // 
             this.pnlVoucher.Controls.Add(this.lblVoucher);
             this.pnlVoucher.Controls.Add(this.panel12);
-            this.pnlVoucher.Location = new System.Drawing.Point(66, 91);
+            this.pnlVoucher.Location = new System.Drawing.Point(44, 59);
+            this.pnlVoucher.Margin = new System.Windows.Forms.Padding(2);
             this.pnlVoucher.Name = "pnlVoucher";
-            this.pnlVoucher.Size = new System.Drawing.Size(717, 95);
+            this.pnlVoucher.Size = new System.Drawing.Size(478, 62);
             this.pnlVoucher.TabIndex = 39;
             // 
             // lblVoucher
             // 
             this.lblVoucher.AutoSize = true;
             this.lblVoucher.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoucher.Location = new System.Drawing.Point(14, 56);
+            this.lblVoucher.Location = new System.Drawing.Point(9, 36);
+            this.lblVoucher.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVoucher.Name = "lblVoucher";
-            this.lblVoucher.Size = new System.Drawing.Size(158, 28);
+            this.lblVoucher.Size = new System.Drawing.Size(111, 19);
             this.lblVoucher.TabIndex = 28;
             this.lblVoucher.Text = "Mã khuyến mãi";
             // 
@@ -235,9 +249,10 @@
             // 
             this.panel12.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Location = new System.Drawing.Point(2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(711, 41);
+            this.panel12.Size = new System.Drawing.Size(474, 27);
             this.panel12.TabIndex = 12;
             // 
             // label10
@@ -245,9 +260,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(257, 2);
+            this.label10.Location = new System.Drawing.Point(171, 1);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 38);
+            this.label10.Size = new System.Drawing.Size(101, 25);
             this.label10.TabIndex = 0;
             this.label10.Text = "GIẢM GIÁ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,17 +274,19 @@
             this.pnlDKyVoucher.Controls.Add(this.txtMaKM);
             this.pnlDKyVoucher.Controls.Add(this.btnSuDungMaKM);
             this.pnlDKyVoucher.Controls.Add(this.label11);
-            this.pnlDKyVoucher.Location = new System.Drawing.Point(66, 186);
+            this.pnlDKyVoucher.Location = new System.Drawing.Point(44, 121);
+            this.pnlDKyVoucher.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDKyVoucher.Name = "pnlDKyVoucher";
-            this.pnlDKyVoucher.Size = new System.Drawing.Size(717, 64);
+            this.pnlDKyVoucher.Size = new System.Drawing.Size(478, 42);
             this.pnlDKyVoucher.TabIndex = 40;
             // 
             // txtMaKM
             // 
             this.txtMaKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKM.Location = new System.Drawing.Point(242, 15);
+            this.txtMaKM.Location = new System.Drawing.Point(161, 10);
+            this.txtMaKM.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaKM.Name = "txtMaKM";
-            this.txtMaKM.Size = new System.Drawing.Size(332, 35);
+            this.txtMaKM.Size = new System.Drawing.Size(223, 26);
             this.txtMaKM.TabIndex = 48;
             // 
             // btnSuDungMaKM
@@ -276,9 +294,10 @@
             this.btnSuDungMaKM.BackColor = System.Drawing.Color.IndianRed;
             this.btnSuDungMaKM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuDungMaKM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSuDungMaKM.Location = new System.Drawing.Point(592, 16);
+            this.btnSuDungMaKM.Location = new System.Drawing.Point(395, 10);
+            this.btnSuDungMaKM.Margin = new System.Windows.Forms.Padding(2);
             this.btnSuDungMaKM.Name = "btnSuDungMaKM";
-            this.btnSuDungMaKM.Size = new System.Drawing.Size(101, 34);
+            this.btnSuDungMaKM.Size = new System.Drawing.Size(67, 22);
             this.btnSuDungMaKM.TabIndex = 2;
             this.btnSuDungMaKM.Text = "Sử dụng";
             this.btnSuDungMaKM.UseVisualStyleBackColor = false;
@@ -287,9 +306,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(11, 17);
+            this.label11.Location = new System.Drawing.Point(7, 11);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(214, 28);
+            this.label11.Size = new System.Drawing.Size(151, 19);
             this.label11.TabIndex = 0;
             this.label11.Text = "Nhập mã khuyến mãi";
             // 
@@ -298,9 +318,10 @@
             this.panel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel5.Controls.Add(this.btnPay);
             this.panel5.Controls.Add(this.btnBack2);
-            this.panel5.Location = new System.Drawing.Point(3, 775);
+            this.panel5.Location = new System.Drawing.Point(2, 504);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1574, 113);
+            this.panel5.Size = new System.Drawing.Size(1049, 73);
             this.panel5.TabIndex = 38;
             // 
             // btnPay
@@ -316,10 +337,9 @@
             this.btnPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.White;
             this.btnPay.IndicateFocus = true;
-            this.btnPay.Location = new System.Drawing.Point(1364, 27);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPay.Location = new System.Drawing.Point(909, 18);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(159, 81);
+            this.btnPay.Size = new System.Drawing.Size(106, 53);
             this.btnPay.TabIndex = 41;
             this.btnPay.Text = "THANH TOÁN";
             // 
@@ -336,20 +356,21 @@
             this.btnBack2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack2.ForeColor = System.Drawing.Color.White;
             this.btnBack2.IndicateFocus = true;
-            this.btnBack2.Location = new System.Drawing.Point(10, 14);
-            this.btnBack2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBack2.Location = new System.Drawing.Point(7, 9);
             this.btnBack2.Name = "btnBack2";
-            this.btnBack2.Size = new System.Drawing.Size(164, 81);
+            this.btnBack2.Size = new System.Drawing.Size(109, 53);
             this.btnBack2.TabIndex = 40;
             this.btnBack2.Text = "QUAY LẠI";
+            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
             // 
             // ckboAgree
             // 
             this.ckboAgree.AutoSize = true;
             this.ckboAgree.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckboAgree.Location = new System.Drawing.Point(66, 710);
+            this.ckboAgree.Location = new System.Drawing.Point(44, 461);
+            this.ckboAgree.Margin = new System.Windows.Forms.Padding(2);
             this.ckboAgree.Name = "ckboAgree";
-            this.ckboAgree.Size = new System.Drawing.Size(761, 32);
+            this.ckboAgree.Size = new System.Drawing.Size(534, 23);
             this.ckboAgree.TabIndex = 37;
             this.ckboAgree.Text = "Tôi đồng ý với điều khoản sử dụng và mua về cho người có độ tuổi phù hợp";
             this.ckboAgree.UseVisualStyleBackColor = true;
@@ -359,9 +380,10 @@
             this.panelScreen.AutoSize = true;
             this.panelScreen.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panelScreen.Controls.Add(this.lblBapNuoc);
-            this.panelScreen.Location = new System.Drawing.Point(3, 1);
+            this.panelScreen.Location = new System.Drawing.Point(2, 1);
+            this.panelScreen.Margin = new System.Windows.Forms.Padding(2);
             this.panelScreen.Name = "panelScreen";
-            this.panelScreen.Size = new System.Drawing.Size(1523, 58);
+            this.panelScreen.Size = new System.Drawing.Size(1015, 38);
             this.panelScreen.TabIndex = 33;
             // 
             // lblBapNuoc
@@ -369,11 +391,12 @@
             this.lblBapNuoc.AutoSize = true;
             this.lblBapNuoc.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBapNuoc.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblBapNuoc.Location = new System.Drawing.Point(632, 2);
+            this.lblBapNuoc.Location = new System.Drawing.Point(421, 1);
+            this.lblBapNuoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBapNuoc.Name = "lblBapNuoc";
-            this.lblBapNuoc.Size = new System.Drawing.Size(412, 54);
+            this.lblBapNuoc.Size = new System.Drawing.Size(287, 37);
             this.lblBapNuoc.TabIndex = 0;
-            this.lblBapNuoc.Text = "🧾 THANH TOÁN 🧾";
+            this.lblBapNuoc.Text = "💳 THANH TOÁN 💳";
             this.lblBapNuoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -394,18 +417,20 @@
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(66, 301);
+            this.panel1.Location = new System.Drawing.Point(44, 196);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(720, 395);
+            this.panel1.Size = new System.Drawing.Size(480, 257);
             this.panel1.TabIndex = 34;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(150, 356);
+            this.label6.Location = new System.Drawing.Point(100, 231);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 28);
+            this.label6.Size = new System.Drawing.Size(51, 19);
             this.label6.TabIndex = 27;
             this.label6.Text = "VNPAY";
             // 
@@ -417,19 +442,21 @@
             this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(64, 60);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(66, 334);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(44, 217);
+            this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton5.Size = new System.Drawing.Size(50, 58);
+            this.guna2ImageButton5.Size = new System.Drawing.Size(33, 38);
             this.guna2ImageButton5.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 283);
+            this.label5.Location = new System.Drawing.Point(100, 184);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 28);
+            this.label5.Size = new System.Drawing.Size(67, 19);
             this.label5.TabIndex = 25;
             this.label5.Text = "ZALOPAY";
             // 
@@ -441,19 +468,21 @@
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(64, 70);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(60, 268);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(40, 174);
+            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.Size = new System.Drawing.Size(73, 60);
+            this.guna2ImageButton4.Size = new System.Drawing.Size(49, 39);
             this.guna2ImageButton4.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(150, 209);
+            this.label4.Location = new System.Drawing.Point(100, 136);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 28);
+            this.label4.Size = new System.Drawing.Size(73, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "Ví MOMO";
             // 
@@ -465,19 +494,21 @@
             this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(64, 70);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(60, 194);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(40, 126);
+            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(73, 60);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(49, 39);
             this.guna2ImageButton3.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(150, 73);
+            this.label3.Location = new System.Drawing.Point(100, 47);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 28);
+            this.label3.Size = new System.Drawing.Size(116, 19);
             this.label3.TabIndex = 21;
             this.label3.Text = "ATM (Thẻ nội địa)";
             // 
@@ -489,19 +520,21 @@
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(70, 64);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(60, 59);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(40, 38);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(79, 49);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(53, 32);
             this.guna2ImageButton2.TabIndex = 20;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(150, 139);
+            this.label2.Location = new System.Drawing.Point(100, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 28);
+            this.label2.Size = new System.Drawing.Size(238, 19);
             this.label2.TabIndex = 19;
             this.label2.Text = "Thẻ quốc tế (Visa, Master, Amex, JCB)";
             // 
@@ -512,18 +545,20 @@
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(60, 119);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(40, 77);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(73, 60);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(49, 39);
             this.guna2ImageButton1.TabIndex = 18;
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(31, 356);
+            this.radioButton5.Location = new System.Drawing.Point(21, 231);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(21, 20);
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
             this.radioButton5.TabIndex = 17;
             this.radioButton5.TabStop = true;
             this.radioButton5.UseVisualStyleBackColor = true;
@@ -531,9 +566,10 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(31, 285);
+            this.radioButton4.Location = new System.Drawing.Point(21, 185);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(21, 20);
+            this.radioButton4.Size = new System.Drawing.Size(14, 13);
             this.radioButton4.TabIndex = 16;
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -541,9 +577,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(31, 211);
+            this.radioButton3.Location = new System.Drawing.Point(21, 137);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(21, 20);
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
             this.radioButton3.TabIndex = 15;
             this.radioButton3.TabStop = true;
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -551,9 +588,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(31, 139);
+            this.radioButton2.Location = new System.Drawing.Point(21, 90);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(21, 20);
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
             this.radioButton2.TabIndex = 14;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -561,9 +599,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(33, 73);
+            this.radioButton1.Location = new System.Drawing.Point(22, 47);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(21, 20);
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
             this.radioButton1.TabIndex = 13;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -572,9 +611,10 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(714, 41);
+            this.panel2.Size = new System.Drawing.Size(476, 27);
             this.panel2.TabIndex = 12;
             // 
             // label1
@@ -582,38 +622,44 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(186, 1);
+            this.label1.Location = new System.Drawing.Point(124, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(368, 38);
+            this.label1.Size = new System.Drawing.Size(252, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "HÌNH THỨC THANH TOÁN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.txtTongTien);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(907, 93);
+            this.panel3.Location = new System.Drawing.Point(605, 60);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(548, 118);
+            this.panel3.Size = new System.Drawing.Size(365, 77);
             this.panel3.TabIndex = 35;
             // 
             // txtTongTien
             // 
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongTien.Location = new System.Drawing.Point(175, 64);
+            this.txtTongTien.Location = new System.Drawing.Point(117, 42);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(332, 35);
+            this.txtTongTien.Size = new System.Drawing.Size(190, 26);
             this.txtTongTien.TabIndex = 47;
+            this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Location = new System.Drawing.Point(2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(542, 41);
+            this.panel4.Size = new System.Drawing.Size(361, 27);
             this.panel4.TabIndex = 12;
             // 
             // label12
@@ -621,9 +667,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(102, 0);
+            this.label12.Location = new System.Drawing.Point(68, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(333, 38);
+            this.label12.Size = new System.Drawing.Size(225, 25);
             this.label12.TabIndex = 0;
             this.label12.Text = "Tổng số tiền thanh toán";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -632,18 +679,29 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(32, 66);
+            this.label14.Location = new System.Drawing.Point(21, 43);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 32);
+            this.label14.Size = new System.Drawing.Size(90, 21);
             this.label14.TabIndex = 46;
             this.label14.Text = "Tổng Tiền:";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(307, 45);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 20);
+            this.label13.TabIndex = 48;
+            this.label13.Text = "VNĐ";
+            // 
             // frmPayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1530, 887);
+            this.ClientSize = new System.Drawing.Size(1034, 570);
             this.Controls.Add(this.pnlCountdown);
             this.Controls.Add(this.pnlVoucher);
             this.Controls.Add(this.pnlDKyVoucher);
@@ -653,7 +711,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPayment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment";
             this.pnlCountdown.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -739,5 +799,6 @@
         private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtMaKM;
+        private System.Windows.Forms.Label label13;
     }
 }

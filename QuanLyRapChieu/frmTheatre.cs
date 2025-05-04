@@ -120,7 +120,6 @@ namespace QuanLyRapChieu
             decimal soTienGiam = 0;
             var culture = System.Globalization.CultureInfo.InvariantCulture;
 
-
             // Ktra nếu có thông tin KH và đã dùng điểm (txtDiscount đã có giá trị)
             if (!string.IsNullOrEmpty(txtCustomerName.Text) &&
                 !string.IsNullOrEmpty(frmCustomer.phoneNumber) &&
@@ -131,7 +130,6 @@ namespace QuanLyRapChieu
             //case k sudung diem tich luy
             decimal soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
             txtRefund.Text = soTienCanTra.ToString("N3", culture);
-
         }
 
          
@@ -192,7 +190,7 @@ namespace QuanLyRapChieu
             }
             // Khi click ghe ngoi bat ki, thuc hien tinh toan: 
             txtTotal.Text = (totalPrice).ToString("N3", CultureInfo.InvariantCulture); //NO format 90 -> 90,000
-            TinhToanSoTienCanTra(); 
+            TinhToanSoTienCanTra();
 
         }
 
@@ -308,7 +306,6 @@ namespace QuanLyRapChieu
                 int soTienGiam = diem;
 
                 txtDiscount.Text = soTienGiam.ToString("N3", System.Globalization.CultureInfo.InvariantCulture);
-
                 TinhToanSoTienCanTra();  //txtRefund
 
                 MessageBox.Show("Sử dụng điểm thành công! Nhân viên vui lòng tiến hành đổi điểm cho khách.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -368,47 +365,54 @@ namespace QuanLyRapChieu
                     //txtPoint.Text = row["DiemTichLuy"].ToString();
                 }
 
-                List<string> maGheNguoiDungChon = getUserSelectedSeats();
-                string test = "";
-                foreach(string maghe in maGheNguoiDungChon)
-                {
-                    test += maghe + ", ";
-                }
 
-                //Thông báo khi đặt vé kèm thông tin KH 
-                if (!string.IsNullOrEmpty(txtCustomerName.Text) && !string.IsNullOrEmpty(frmCustomer.phoneNumber)) 
-                {
-                    int diem = int.Parse(txtPoint.Text);
-                    decimal soTienGiam = diem;
-                    txtDiscount.Text = soTienGiam.ToString("N3");
+                // ⭐ LẤY GIÁ TIỀN VÉ từ txtRefund và truyền sang frmPopcorn_Drinks ⭐
 
-                    thongTin = $"Đặt vé thành công!\n\n" +
-                               $"💰 Tổng tiền: {(totalPrice).ToString("N3")} đ\n" +
-                               $"🎁 Điểm đã dùng: {diem}\n" +
-                               $"Ma KH: {maKH}\n" +
-                               $"Ma ghe: {test}\n" + 
-                               $"💸 Giảm giá: {soTienGiam.ToString("N3")} đ\n";
-                              
-                }
-                //Neu dat ve khong kem thông tin KH thành viên
-                else 
-                {
-                    int soTienCanTra = (int)(totalPrice); // totalPrice là float
-                    txtRefund.Text = soTienCanTra.ToString("N3");
-           
-                    thongTin = $"Đặt vé thành công!\n\n" +
-                               $"Mã ghế: {test}\n" +
-                               $"💰 Tổng tiền: {totalPrice.ToString("N3")} đ\n" +
-                               $"(Không sử dụng khách hàng thành viên)";
-                }
+                decimal tienVe = decimal.Parse(txtRefund.Text.Trim());
 
-                MessageBox.Show(thongTin, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Chỉ ẩn form chứ không đóng, và chờ frmPopcorn_Drinks đóng lại
+                frmPopcorn_Drinks frm = new frmPopcorn_Drinks(tienVe, this);
+                this.Hide(); // Ẩn frmTheatre
+                frm.ShowDialog(); // Đợi người dùng đặt xong combo hoặc quay lại
+                this.Show(); // Hiện lại frmTheatre
+                
 
-                //load lai trang thai ghedangduocchon -> ghe da dat
-                //hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
 
-                // Reset
-                resetPanels();
+                ////Thông báo khi đặt vé kèm thông tin KH 
+                //if (!string.IsNullOrEmpty(txtCustomerName.Text) && !string.IsNullOrEmpty(frmCustomer.phoneNumber))
+                //{
+                //    int diem = int.Parse(txtPoint.Text);
+                //    decimal soTienGiam = diem;
+                //    txtDiscount.Text = soTienGiam.ToString("N3");
+
+                //    thongTin = $"Đặt vé thành công!\n\n" +
+                //               $"💰 Tổng tiền: {(totalPrice).ToString("N3")} đ\n" +
+                //               $"🎁 Điểm đã dùng: {diem}\n" +
+                //               $"Ma KH: {maKH}\n" +
+                //               $"Ma ghe: {test}\n" +
+                //               $"💸 Giảm giá: {soTienGiam.ToString("N3")} đ\n";
+
+                //}
+                ////Neu dat ve khong kem thông tin KH thành viên
+                //else
+                //{
+                //    int soTienCanTra = (int)(totalPrice); // totalPrice là float
+                //    txtRefund.Text = soTienCanTra.ToString("N3");
+
+                //    thongTin = $"Đặt vé thành công!\n\n" +
+                //               $"Mã ghế: {test}\n" +
+                //               $"💰 Tổng tiền: {totalPrice.ToString("N3")} đ\n" +
+                //               $"(Không sử dụng khách hàng thành viên)";
+                //}
+
+                //MessageBox.Show(thongTin, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //// Update điểm thưởng sau khi mua vé
+
+
+                //// Reset
+
+                //resetPanels();
             }
             else
             {
