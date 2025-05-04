@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 /*Mot so thay doi:
  txtPayment -> txtRefund
@@ -116,6 +118,7 @@ namespace QuanLyRapChieu
         {
             decimal tongTien = totalPrice;
             decimal soTienGiam = 0;
+            var culture = System.Globalization.CultureInfo.InvariantCulture;
 
 
             // Ktra nếu có thông tin KH và đã dùng điểm (txtDiscount đã có giá trị)
@@ -123,12 +126,11 @@ namespace QuanLyRapChieu
                 !string.IsNullOrEmpty(frmCustomer.phoneNumber) &&
                 !string.IsNullOrEmpty(txtDiscount.Text))
             {
-                var culture = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
                 decimal.TryParse(txtDiscount.Text, System.Globalization.NumberStyles.Number, culture, out soTienGiam);
             }
             //case k sudung diem tich luy
             decimal soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
-            txtRefund.Text = soTienCanTra.ToString("N3");
+            txtRefund.Text = soTienCanTra.ToString("N3", culture);
 
         }
 
@@ -189,11 +191,10 @@ namespace QuanLyRapChieu
                 bonus++;
             }
             // Khi click ghe ngoi bat ki, thuc hien tinh toan: 
-            txtTotal.Text = (totalPrice).ToString("N3"); //NO format 90 -> 90,000
+            txtTotal.Text = (totalPrice).ToString("N3", CultureInfo.InvariantCulture); //NO format 90 -> 90,000
             TinhToanSoTienCanTra(); 
 
         }
-
 
 
         // lấy giá của một vé theo ca chiếu
@@ -306,7 +307,7 @@ namespace QuanLyRapChieu
                 int diem = int.Parse(txtPoint.Text);
                 int soTienGiam = diem;
 
-                txtDiscount.Text = soTienGiam.ToString("N3");
+                txtDiscount.Text = soTienGiam.ToString("N3", System.Globalization.CultureInfo.InvariantCulture);
 
                 TinhToanSoTienCanTra();  //txtRefund
 
@@ -323,15 +324,6 @@ namespace QuanLyRapChieu
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-            ChiTietCaChieu ct = CaChieuBUS.Instance.LayChiTietCaChieu(maCaChieu);
-            if (ct == null)
-                return;
-            lblInformation.Text = string.Format("Ca chiếu : {0}, Phim : {1}, Phòng : {2}, Rạp : {3} ", ct.MaCaChieu, ct.TenPhim, ct.TenPhong, ct.TenRap);
-            lblTime.Text = string.Format("Từ Giờ : {0:HH:mm}, đến Giờ : {1:HH:mm} ", ct.ThoiGianChieu, ct.ThoiGianKetThuc);
         }
 
 
@@ -412,8 +404,8 @@ namespace QuanLyRapChieu
 
                 MessageBox.Show(thongTin, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Update điểm thưởng sau khi mua vé
-
+                //load lai trang thai ghedangduocchon -> ghe da dat
+                //hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
 
                 // Reset
                 resetPanels();
