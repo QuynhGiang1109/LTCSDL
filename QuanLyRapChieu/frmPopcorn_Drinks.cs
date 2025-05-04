@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,16 +20,25 @@ namespace QuanLyRapChieu
         private Dictionary<int, TextBox> textBoxSoLuongMap = new Dictionary<int, TextBox>();
 
         //Constructor có tham số – dùng để truyền tiền vé từ frmTheatre
-        public frmPopcorn_Drinks(decimal tienVeTruyenVao) : this() // Gọi constructor mặc định
+        private frmTheatre previousForm; //ở đầu class để lưu tham chiếu
+
+        public frmPopcorn_Drinks(decimal tienVeTruyenVao, frmTheatre prevForm) : this()
         {
             tienVe = tienVeTruyenVao;
+            previousForm = prevForm; // Lưu lại form trước đó
+
             txtTienVe.Text = tienVe.ToString("N3");
+            CapNhatTongTien(); // hiển thị tổng tiền ban đầu (chỉ là tiền vé)
         }
+
+        
 
         //Constructor mặc định – cấu hình UI và gán map
         public frmPopcorn_Drinks()
         {
             InitializeComponent();
+
+            txtCombo.Text = "0"; // Nếu chưa chọn combo nào
 
             textBoxSoLuongMap[1] = txtMycombo1;
             textBoxSoLuongMap[2] = txtMycombo2;
@@ -99,12 +109,38 @@ namespace QuanLyRapChieu
             }
         }
 
+        //Hàm cập nhật tổng tiền
+        private void CapNhatTongTien()
+        {
+            var culture = System.Globalization.CultureInfo.InvariantCulture;
+            try
+            {
+                decimal tienCombo = 0;
 
-        //Hàm Cập nhật giá tiền
+                if (!string.IsNullOrWhiteSpace(txtCombo.Text))
+                {
+                    decimal.TryParse(txtCombo.Text, NumberStyles.Number, culture, out tienCombo);
+                }
+
+                decimal tong = tienVe + tienCombo;
+                txtTongTien.Text = tong.ToString("N3", culture);
+            }
+            catch
+            {
+                txtTongTien.Text = tienVe.ToString("N3", culture);
+            }
+
+        }
+
+
+        //Hàm Cập nhật giá tiền Combo
         private void CapNhatTienCombo()
         {
+            var culture = System.Globalization.CultureInfo.InvariantCulture;
+
             decimal tongTien = danhSachComboChon.Sum(c => c.ThanhTien);
-            txtCombo.Text = tongTien.ToString("N3");
+            txtCombo.Text = tongTien.ToString("N3", culture);
+            CapNhatTongTien();
         }
 
         //Xử lý Combo1
@@ -152,11 +188,33 @@ namespace QuanLyRapChieu
             GiamSoLuong(4);
         }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            decimal tienTong = 0;
+            if (!decimal.TryParse(txtTongTien.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out tienTong))
+            {
+                MessageBox.Show("Tổng tiền không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-        
+            frmPayment frm = new frmPayment(tienTong, this);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
 
+            
+        }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            // Hiện lại form cũ (frmTheatre)
+            if (previousForm != null)
+            {
+                previousForm.Show();
+            }
 
-
+            // Đóng form hiện tại
+            this.Close();
+        }
     }
 }

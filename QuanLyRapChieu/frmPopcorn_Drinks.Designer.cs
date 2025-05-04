@@ -60,14 +60,17 @@
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelScreen = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtTongVe = new System.Windows.Forms.TextBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.txtCombo = new System.Windows.Forms.TextBox();
             this.txtTienVe = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
-            this.txtBack1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panelScreen.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -434,28 +437,32 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel5.Controls.Add(this.txtTongVe);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.txtTongTien);
             this.panel5.Controls.Add(this.txtCombo);
             this.panel5.Controls.Add(this.txtTienVe);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.btnNext);
-            this.panel5.Controls.Add(this.txtBack1);
+            this.panel5.Controls.Add(this.btnBack);
             this.panel5.Location = new System.Drawing.Point(1, 569);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(980, 94);
             this.panel5.TabIndex = 68;
             // 
-            // txtTongVe
+            // txtTongTien
             // 
-            this.txtTongVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongVe.Location = new System.Drawing.Point(613, 53);
-            this.txtTongVe.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTongVe.Name = "txtTongVe";
-            this.txtTongVe.Size = new System.Drawing.Size(223, 26);
-            this.txtTongVe.TabIndex = 45;
+            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.Location = new System.Drawing.Point(612, 48);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(177, 26);
+            this.txtTongTien.TabIndex = 45;
+            this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtCombo
             // 
@@ -463,8 +470,9 @@
             this.txtCombo.Location = new System.Drawing.Point(255, 55);
             this.txtCombo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCombo.Name = "txtCombo";
-            this.txtCombo.Size = new System.Drawing.Size(223, 26);
+            this.txtCombo.Size = new System.Drawing.Size(178, 26);
             this.txtCombo.TabIndex = 44;
+            this.txtCombo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTienVe
             // 
@@ -472,8 +480,9 @@
             this.txtTienVe.Location = new System.Drawing.Point(255, 19);
             this.txtTienVe.Margin = new System.Windows.Forms.Padding(2);
             this.txtTienVe.Name = "txtTienVe";
-            this.txtTienVe.Size = new System.Drawing.Size(223, 26);
+            this.txtTienVe.Size = new System.Drawing.Size(178, 26);
             this.txtTienVe.TabIndex = 43;
+            this.txtTienVe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label12
             // 
@@ -526,25 +535,57 @@
             this.btnNext.Size = new System.Drawing.Size(106, 53);
             this.btnNext.TabIndex = 39;
             this.btnNext.Text = "TIẾP TỤC";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // txtBack1
+            // btnBack
             // 
-            this.txtBack1.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.txtBack1.BorderRadius = 15;
-            this.txtBack1.BorderThickness = 2;
-            this.txtBack1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.txtBack1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.txtBack1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.txtBack1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.txtBack1.FillColor = System.Drawing.Color.IndianRed;
-            this.txtBack1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBack1.ForeColor = System.Drawing.Color.White;
-            this.txtBack1.IndicateFocus = true;
-            this.txtBack1.Location = new System.Drawing.Point(7, 23);
-            this.txtBack1.Name = "txtBack1";
-            this.txtBack1.Size = new System.Drawing.Size(109, 53);
-            this.txtBack1.TabIndex = 38;
-            this.txtBack1.Text = "QUAY LẠI";
+            this.btnBack.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnBack.BorderRadius = 15;
+            this.btnBack.BorderThickness = 2;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.IndianRed;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.IndicateFocus = true;
+            this.btnBack.Location = new System.Drawing.Point(7, 23);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(109, 53);
+            this.btnBack.TabIndex = 38;
+            this.btnBack.Text = "QUAY LẠI";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(433, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 20);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "VNĐ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(433, 58);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 20);
+            this.label14.TabIndex = 47;
+            this.label14.Text = "VNĐ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(789, 51);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(43, 20);
+            this.label15.TabIndex = 48;
+            this.label15.Text = "VNĐ";
             // 
             // frmPopcorn_Drinks
             // 
@@ -631,12 +672,15 @@
         private System.Windows.Forms.Panel panelScreen;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2Button btnNext;
-        private Guna.UI2.WinForms.Guna2Button txtBack1;
-        private System.Windows.Forms.TextBox txtTongVe;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.TextBox txtCombo;
         private System.Windows.Forms.TextBox txtTienVe;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
     }
 }
