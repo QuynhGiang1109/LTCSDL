@@ -29,6 +29,8 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
                 lvi.SubItems.Add(showTimes.MaPhong);
                 lvi.SubItems.Add(showTimes.TenPhim);
                 lvi.SubItems.Add(showTimes.ThoiGianChieu.ToString("HH:mm:ss dd/MM/yyyy"));
+                //lvi.SubItems.Add(showTimes.ThoiGianKetThuc.ToString("HH:mm:ss dd/MM/yyyy"));
+
                 lvi.Tag = showTimes;
                 if (showTimes.TrangThai == 1)
                 {
@@ -87,13 +89,15 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             PhongChieu cinema = PhongChieuDAO.GetPhongChieuByName();
             int Row = cinema.SoHangGhe;
             int Column = cinema.SoGheMotHang;
-            for (int i = 0; i < Row; i++)
+
+            for (int i = 0; i < Row; i++) 
             {
+                
                 int temp = i + 65;
                 char nameRow = (char)(temp);
-                for (int j = 1; j <= Column; j++)
+                for (int j = 0; j < Column; j++) // j bắt đầu từ 0
                 {
-                    string seatName = nameRow.ToString() + j;
+                    string seatName = $"{nameRow}-{j}"; //HIEN THI maghengoi A-0 den A-9 thay vi A0 A1
                     result += VeDAO.Instance.themVeByCaChieu(caChieu.MaCaChieu, seatName);
                 }
             }
@@ -162,5 +166,6 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
         {
             LoadCaChieuList();
         }
+
     }
 }

@@ -59,9 +59,40 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
             cboMovieName_Showtime.DisplayMember = "MaPhim";
         }
+        //Khi click 1 datarow thì các control bên phải hiển thị đầy đủ đúng t.tin datarow đang chọn
         private void dtgvShowtime_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                // Lấy thông tin từ dòng được chọn
+                DataGridViewRow selectedRow = dtgvShowtime.Rows[e.RowIndex];
 
+                // Cập nhật các control với thông tin từ dòng được chọn
+                txtShowtimeID.Text = selectedRow.Cells["MaCaChieu"].Value.ToString(); // Mã lịch chiếu
+
+                // Cập nhật tên phim
+                string movieName = selectedRow.Cells["TenPhim"].Value.ToString();
+                cboMovieName_Showtime.SelectedItem = movieName; // Chọn tên phim trong combo box
+                txtMovieName_Showtime.Text = movieName; // Hiển thị tên phim
+
+                // Cập nhật mã rạp
+                string cinemaID = selectedRow.Cells["MaRap"].Value.ToString();
+                cboCinemaID_Showtime.SelectedItem = cinemaID; // Chọn mã rạp trong combo box
+                cboRap.SelectedItem = cinemaID; // Chọn rạp trong combo box
+
+                // Cập nhật thời gian chiếu
+                DateTime showtimeDateTime = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value.ToString());
+                dtmShowtimeDate.Value = showtimeDateTime.Date; // Ngày chiếu
+                dtmShowtimeTime.Value = showtimeDateTime; // Giờ chiếu
+
+                // Cập nhật thời gian kết thúc
+                DateTime endTime = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value.ToString());
+                dateTimeDay.Value = endTime.Date; // Ngày kết thúc
+                dateTimetimes.Value = endTime; // Giờ kết thúc
+
+                // Cập nhật giá vé
+                txtTicketPrice_Showtime.Text = selectedRow.Cells["GiaVe"].Value.ToString(); // Giá vé
+            }
         }
 
         private void cboMovieName_Showtime_SelectedIndexChanged(object sender, EventArgs e)

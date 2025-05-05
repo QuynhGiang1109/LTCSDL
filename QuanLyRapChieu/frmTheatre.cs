@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Text.RegularExpressions;
 using System.Globalization;
 
 /*Mot so thay doi:
@@ -22,9 +23,8 @@ namespace QuanLyRapChieu
         private string maCaChieu;
         private static List<Ve> maVe = new List<Ve>();
         private static decimal totalPrice = 0;
-        private static decimal finalPrice = 0;
         private static int bonus = 0;
-        //private List<List<int>> loaiVe = new List<List<int>>();
+        
 
         // Dùng từ điển để lưu lại tất cả ghế đã tạo, key là mã ghế, value là Button tương ứng
         private Dictionary<string, Button> danhSachGhe = new Dictionary<string, Button>();
@@ -194,7 +194,6 @@ namespace QuanLyRapChieu
         }
 
 
-
         // lấy giá của một vé theo ca chiếu
         private decimal getSingleTicketPrice(string maCaChieu)
         {
@@ -213,7 +212,7 @@ namespace QuanLyRapChieu
             hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
             maVe.Clear();
             totalPrice = 0;
-            finalPrice = 0;
+       
             bonus = 0;
             resetPanels();
 
@@ -324,7 +323,6 @@ namespace QuanLyRapChieu
         }
 
 
-
         private void frmTheatre_Load(object sender, EventArgs e)
         {
             //MessageBox.Show(flpSeat.Parent.Name); // Xem flpSeat nằm trong đâu
@@ -351,7 +349,7 @@ namespace QuanLyRapChieu
 
             if (VeBUS.Instance.updateListTicket(maVe))
             {
-                string thongTin = "";
+                //string thongTin = "";
                 string maKH = "";
 
                 DataTable customer = CustomerBUS.Instance.getCustomer(frmCustomer.phoneNumber.Trim());
@@ -369,7 +367,8 @@ namespace QuanLyRapChieu
 
                 // ⭐ LẤY GIÁ TIỀN VÉ từ txtRefund và truyền sang frmPopcorn_Drinks ⭐
 
-                decimal tienVe = decimal.Parse(txtRefund.Text.Trim());
+                //decimal tienVe = decimal.Parse(txtRefund.Text.Trim());
+                decimal tienVe = decimal.Parse(txtRefund.Text.Trim(), CultureInfo.InvariantCulture);
 
                 //Chỉ ẩn form chứ không đóng, và chờ frmPopcorn_Drinks đóng lại
                 frmPopcorn_Drinks frm = new frmPopcorn_Drinks(tienVe, this);

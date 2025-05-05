@@ -54,8 +54,31 @@ namespace DAO
                 }
                 return danhSachPhim;
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine("Lỗi DAO khi truy vấn hienThiPhimTheoNgay: " + ex.Message);
+                return null;
+            }
+        }
+        //string query = @"SELECT * FROM dbo.FUNC_layPhimTheoThangChieu('2025-05-01');
+        public List<Phim> hienThiPhimTheoThang(DateTime date)
+        {
+            try
+            {
+                string query = @"SELECT * FROM dbo.FUNC_layPhimTheoThangChieu( @NgayChieu )"; //error: cần space ( @NgayChieu )
+                List<Phim> danhSachPhim = new List<Phim>();
+                DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { date });
+
+                foreach (DataRow row in table.Rows)
+                {
+                    Phim phim = new Phim(row);
+                    danhSachPhim.Add(phim);
+                }
+                return danhSachPhim;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi DAO khi truy vấn hienThiPhimTheoThang: " + ex.Message);
                 return null;
             }
         }
