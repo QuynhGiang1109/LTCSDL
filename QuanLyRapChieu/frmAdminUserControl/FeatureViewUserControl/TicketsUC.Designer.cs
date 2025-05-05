@@ -39,8 +39,8 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel61 = new System.Windows.Forms.Panel();
             this.btnAllListShowTimes = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddTicketsByShowTime = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTicket)).BeginInit();
             this.panel61.SuspendLayout();
@@ -53,14 +53,12 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             this.dtgvTicket.AllowUserToDeleteRows = false;
             this.dtgvTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTicket.Location = new System.Drawing.Point(23, 91);
-            this.dtgvTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvTicket.Location = new System.Drawing.Point(20, 73);
+            this.dtgvTicket.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvTicket.Name = "dtgvTicket";
             this.dtgvTicket.RowHeadersWidth = 51;
-            this.dtgvTicket.Size = new System.Drawing.Size(667, 698);
+            this.dtgvTicket.Size = new System.Drawing.Size(593, 558);
             this.dtgvTicket.TabIndex = 21;
-            this.dtgvTicket.ScrollBars = ScrollBars.Both;
-
             // 
             // lsvAllListShowTimes
             // 
@@ -76,8 +74,9 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             this.lsvAllListShowTimes.GridLines = true;
             this.lsvAllListShowTimes.HideSelection = false;
             this.lsvAllListShowTimes.Location = new System.Drawing.Point(0, 0);
+            this.lsvAllListShowTimes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsvAllListShowTimes.Name = "lsvAllListShowTimes";
-            this.lsvAllListShowTimes.Size = new System.Drawing.Size(774, 701);
+            this.lsvAllListShowTimes.Size = new System.Drawing.Size(688, 561);
             this.lsvAllListShowTimes.TabIndex = 22;
             this.lsvAllListShowTimes.UseCompatibleStateImageBehavior = false;
             this.lsvAllListShowTimes.View = System.Windows.Forms.View.Details;
@@ -101,29 +100,29 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Thời Gian";
+            this.columnHeader3.Text = "Thời Gian Chiếu";
             this.columnHeader3.Width = 87;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Trạng Thái Chiếu";
-            this.columnHeader4.Width = 410;
+            this.columnHeader4.Width = 151;
             // 
             // panel61
             // 
             this.panel61.Controls.Add(this.btnAllListShowTimes);
             this.panel61.Controls.Add(this.btnAddTicketsByShowTime);
-            this.panel61.Location = new System.Drawing.Point(23, 3);
-            this.panel61.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel61.Location = new System.Drawing.Point(20, 2);
+            this.panel61.Margin = new System.Windows.Forms.Padding(4);
             this.panel61.Name = "panel61";
-            this.panel61.Size = new System.Drawing.Size(431, 80);
+            this.panel61.Size = new System.Drawing.Size(383, 64);
             this.panel61.TabIndex = 23;
             // 
             // btnAllListShowTimes
             // 
             this.btnAllListShowTimes.AutoRoundedCorners = true;
             this.btnAllListShowTimes.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnAllListShowTimes.BorderRadius = 32;
+            this.btnAllListShowTimes.BorderRadius = 26;
             this.btnAllListShowTimes.BorderThickness = 2;
             this.btnAllListShowTimes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAllListShowTimes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -133,33 +132,20 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             this.btnAllListShowTimes.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllListShowTimes.ForeColor = System.Drawing.Color.Black;
             this.btnAllListShowTimes.IndicateFocus = true;
-            this.btnAllListShowTimes.Location = new System.Drawing.Point(4, 8);
-            this.btnAllListShowTimes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAllListShowTimes.Location = new System.Drawing.Point(4, 6);
+            this.btnAllListShowTimes.Margin = new System.Windows.Forms.Padding(4);
             this.btnAllListShowTimes.Name = "btnAllListShowTimes";
-            this.btnAllListShowTimes.Size = new System.Drawing.Size(192, 67);
+            this.btnAllListShowTimes.Size = new System.Drawing.Size(171, 54);
             this.btnAllListShowTimes.TabIndex = 41;
             this.btnAllListShowTimes.TabStop = false;
             this.btnAllListShowTimes.Text = "Xem Tất Cả Lịch Chiếu";
             this.btnAllListShowTimes.Click += new System.EventHandler(this.btnAllListShowTimes_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel61);
-            this.panel1.Controls.Add(this.dtgvTicket);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1491, 940);
-            this.panel1.TabIndex = 0;
-            this.panel1.TabStop = true;
-            // 
             // btnAddTicketsByShowTime
             // 
             this.btnAddTicketsByShowTime.AutoRoundedCorners = true;
             this.btnAddTicketsByShowTime.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnAddTicketsByShowTime.BorderRadius = 32;
+            this.btnAddTicketsByShowTime.BorderRadius = 26;
             this.btnAddTicketsByShowTime.BorderThickness = 2;
             this.btnAddTicketsByShowTime.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddTicketsByShowTime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -169,31 +155,47 @@ namespace QuanLyXemPhim.frmAdminUserControl.FeatureViewUserControl
             this.btnAddTicketsByShowTime.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTicketsByShowTime.ForeColor = System.Drawing.Color.Black;
             this.btnAddTicketsByShowTime.IndicateFocus = true;
-            this.btnAddTicketsByShowTime.Location = new System.Drawing.Point(223, 8);
-            this.btnAddTicketsByShowTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddTicketsByShowTime.Location = new System.Drawing.Point(198, 6);
+            this.btnAddTicketsByShowTime.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddTicketsByShowTime.Name = "btnAddTicketsByShowTime";
-            this.btnAddTicketsByShowTime.Size = new System.Drawing.Size(192, 67);
+            this.btnAddTicketsByShowTime.Size = new System.Drawing.Size(171, 54);
             this.btnAddTicketsByShowTime.TabIndex = 42;
             this.btnAddTicketsByShowTime.TabStop = false;
             this.btnAddTicketsByShowTime.Text = "Tạo vé phim";
             this.btnAddTicketsByShowTime.Click += new System.EventHandler(this.btnAddTicketsByShowTime_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel61);
+            this.panel1.Controls.Add(this.dtgvTicket);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1325, 752);
+            this.panel1.TabIndex = 0;
+            this.panel1.TabStop = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lsvAllListShowTimes);
-            this.panel2.Location = new System.Drawing.Point(697, 91);
+            this.panel2.Location = new System.Drawing.Point(620, 73);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 701);
+            this.panel2.Size = new System.Drawing.Size(688, 561);
             this.panel2.TabIndex = 24;
             // 
             // TicketsUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TicketsUC";
-            this.Size = new System.Drawing.Size(1491, 940);
+            this.Size = new System.Drawing.Size(1325, 752);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTicket)).EndInit();
             this.panel61.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
