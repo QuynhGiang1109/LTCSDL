@@ -43,7 +43,7 @@ namespace QuanLyRapChieu
             thongBao += $"💰 Tổng tiền: {tienTong.ToString("N3", CultureInfo.InvariantCulture)}\n";
             thongBao += $"💰 Tiền vé: {tienVe.ToString("N3", CultureInfo.InvariantCulture)}\n";
             thongBao += $"💰 Tiền combo: {tienCombo.ToString("N3", CultureInfo.InvariantCulture)}\n";
-            thongBao += $"🎁 Điểm đã dùng: {diemDaDung.ToString("N3", CultureInfo.InvariantCulture)}\n";
+            thongBao += $"🎁 Điểm đã dùng: {diemDaDung.ToString("N0", CultureInfo.InvariantCulture)}\n";
             thongBao += "💺 Mã ghế: " + (selectedSeats.Any() ? string.Join(", ", selectedSeats) : "Không có ghế nào được chọn");
 
             MessageBox.Show(thongBao, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

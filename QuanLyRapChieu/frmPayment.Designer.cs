@@ -53,7 +53,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack2 = new Guna.UI2.WinForms.Guna2Button();
-            this.ckboAgree = new System.Windows.Forms.CheckBox();
             this.panelScreen = new System.Windows.Forms.Panel();
             this.lblBapNuoc = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -294,10 +293,10 @@
             this.btnSuDungMaKM.BackColor = System.Drawing.Color.IndianRed;
             this.btnSuDungMaKM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuDungMaKM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSuDungMaKM.Location = new System.Drawing.Point(395, 10);
+            this.btnSuDungMaKM.Location = new System.Drawing.Point(399, 10);
             this.btnSuDungMaKM.Margin = new System.Windows.Forms.Padding(2);
             this.btnSuDungMaKM.Name = "btnSuDungMaKM";
-            this.btnSuDungMaKM.Size = new System.Drawing.Size(67, 22);
+            this.btnSuDungMaKM.Size = new System.Drawing.Size(67, 26);
             this.btnSuDungMaKM.TabIndex = 2;
             this.btnSuDungMaKM.Text = "Sử dụng";
             this.btnSuDungMaKM.UseVisualStyleBackColor = false;
@@ -364,18 +363,6 @@
             this.btnBack2.Text = "QUAY LẠI";
             this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
             // 
-            // ckboAgree
-            // 
-            this.ckboAgree.AutoSize = true;
-            this.ckboAgree.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckboAgree.Location = new System.Drawing.Point(44, 461);
-            this.ckboAgree.Margin = new System.Windows.Forms.Padding(2);
-            this.ckboAgree.Name = "ckboAgree";
-            this.ckboAgree.Size = new System.Drawing.Size(534, 23);
-            this.ckboAgree.TabIndex = 37;
-            this.ckboAgree.Text = "Tôi đồng ý với điều khoản sử dụng và mua về cho người có độ tuổi phù hợp";
-            this.ckboAgree.UseVisualStyleBackColor = true;
-            // 
             // panelScreen
             // 
             this.panelScreen.AutoSize = true;
@@ -421,14 +408,14 @@
             this.panel1.Location = new System.Drawing.Point(44, 196);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(480, 257);
+            this.panel1.Size = new System.Drawing.Size(480, 281);
             this.panel1.TabIndex = 34;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(100, 231);
+            this.label6.Location = new System.Drawing.Point(100, 243);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 19);
@@ -443,7 +430,7 @@
             this.guna2ImageButton5.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton5.ImageRotate = 0F;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(64, 60);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(44, 217);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(44, 229);
             this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -454,7 +441,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(100, 184);
+            this.label5.Location = new System.Drawing.Point(100, 191);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 19);
@@ -469,7 +456,7 @@
             this.guna2ImageButton4.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(64, 70);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(40, 174);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(40, 181);
             this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -556,7 +543,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(21, 231);
+            this.radioButton5.Location = new System.Drawing.Point(21, 243);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(14, 13);
@@ -567,7 +554,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(21, 185);
+            this.radioButton4.Location = new System.Drawing.Point(21, 192);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(14, 13);
@@ -708,7 +695,6 @@
             this.Controls.Add(this.pnlVoucher);
             this.Controls.Add(this.pnlDKyVoucher);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.ckboAgree);
             this.Controls.Add(this.panelScreen);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -772,7 +758,6 @@
         private System.Windows.Forms.Button btnSuDungMaKM;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.CheckBox ckboAgree;
         private System.Windows.Forms.Panel panelScreen;
         private System.Windows.Forms.Label lblBapNuoc;
         private System.Windows.Forms.Panel panel1;
