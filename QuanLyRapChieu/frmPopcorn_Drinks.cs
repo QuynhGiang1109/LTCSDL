@@ -17,14 +17,16 @@ namespace QuanLyRapChieu
     {
 
         private decimal tienVe;
+        private decimal diemDaDung;
         private Dictionary<int, TextBox> textBoxSoLuongMap = new Dictionary<int, TextBox>();
 
         //Constructor có tham số – dùng để truyền tiền vé từ frmTheatre
-        private frmTheatre previousForm; //ở đầu class để lưu tham chiếu
+        public frmTheatre previousForm; //ở đầu class để lưu tham chiếu
 
-        public frmPopcorn_Drinks(decimal tienVeTruyenVao, frmTheatre prevForm) : this()
+        public frmPopcorn_Drinks(decimal tienVeTruyenVao, decimal diemDaDungTruyenVao, frmTheatre prevForm) : this()
         {
             tienVe = tienVeTruyenVao;
+            diemDaDung = diemDaDungTruyenVao;
             previousForm = prevForm; // Lưu lại form trước đó
 
             txtTienVe.Text = tienVe.ToString("N3");
@@ -191,18 +193,36 @@ namespace QuanLyRapChieu
         private void btnNext_Click(object sender, EventArgs e)
         {
             decimal tienTong = 0;
-            if (!decimal.TryParse(txtTongTien.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out tienTong))
+            decimal tienCombo = 0;
+
+            if (!decimal.TryParse(txtTongTien.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out tienTong) ||
+                !decimal.TryParse(txtCombo.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out tienCombo))
             {
                 MessageBox.Show("Tổng tiền không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            frmPayment frm = new frmPayment(tienTong, this);
+            // Lấy danh sách mã ghế từ frmTheatre
+            List<string> selectedSeats = previousForm.getUserSelectedSeats();
+
+            // Truyền tiền tổng, tiền vé, tiền combo, và mã ghế sang frmPayment
+            frmPayment frm = new frmPayment(tienTong, tienVe, tienCombo, diemDaDung, selectedSeats, this);
             this.Hide();
             frm.ShowDialog();
             this.Show();
 
-            
+            //if (!decimal.TryParse(txtTongTien.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out tienTong))
+            //{
+            //    MessageBox.Show("Tổng tiền không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+            //frmPayment frm = new frmPayment(tienTong, this);
+            //this.Hide();
+            //frm.ShowDialog();
+            //this.Show();
+
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
