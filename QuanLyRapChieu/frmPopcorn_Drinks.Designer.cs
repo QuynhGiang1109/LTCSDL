@@ -60,6 +60,9 @@
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelScreen = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.txtCombo = new System.Windows.Forms.TextBox();
             this.txtTienVe = new System.Windows.Forms.TextBox();
@@ -68,9 +71,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panelScreen.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -454,12 +454,43 @@
             this.panel5.Size = new System.Drawing.Size(980, 94);
             this.panel5.TabIndex = 68;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(789, 51);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(43, 20);
+            this.label15.TabIndex = 48;
+            this.label15.Text = "VNĐ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(433, 58);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 20);
+            this.label14.TabIndex = 47;
+            this.label14.Text = "VNĐ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(433, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 20);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "VNĐ";
+            // 
             // txtTongTien
             // 
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(612, 48);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
             this.txtTongTien.Size = new System.Drawing.Size(177, 26);
             this.txtTongTien.TabIndex = 45;
             this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -470,6 +501,7 @@
             this.txtCombo.Location = new System.Drawing.Point(255, 55);
             this.txtCombo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCombo.Name = "txtCombo";
+            this.txtCombo.ReadOnly = true;
             this.txtCombo.Size = new System.Drawing.Size(178, 26);
             this.txtCombo.TabIndex = 44;
             this.txtCombo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -480,6 +512,7 @@
             this.txtTienVe.Location = new System.Drawing.Point(255, 19);
             this.txtTienVe.Margin = new System.Windows.Forms.Padding(2);
             this.txtTienVe.Name = "txtTienVe";
+            this.txtTienVe.ReadOnly = true;
             this.txtTienVe.Size = new System.Drawing.Size(178, 26);
             this.txtTienVe.TabIndex = 43;
             this.txtTienVe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -556,36 +589,6 @@
             this.btnBack.TabIndex = 38;
             this.btnBack.Text = "QUAY LẠI";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(433, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 20);
-            this.label13.TabIndex = 46;
-            this.label13.Text = "VNĐ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(433, 58);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 20);
-            this.label14.TabIndex = 47;
-            this.label14.Text = "VNĐ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(789, 51);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(43, 20);
-            this.label15.TabIndex = 48;
-            this.label15.Text = "VNĐ";
             // 
             // frmPopcorn_Drinks
             // 

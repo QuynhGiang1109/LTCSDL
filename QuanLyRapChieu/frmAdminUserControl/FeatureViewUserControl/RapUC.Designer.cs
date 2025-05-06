@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.txtTenRap = new System.Windows.Forms.TextBox();
@@ -43,6 +43,8 @@
             this.btnDeleteRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnInsertRap = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvRap = new System.Windows.Forms.DataGridView();
+            this.MaRap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenRap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel39.SuspendLayout();
@@ -55,39 +57,36 @@
             // 
             this.panel2.Controls.Add(this.panel38);
             this.panel2.Controls.Add(this.panel39);
-            this.panel2.Location = new System.Drawing.Point(856, 104);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.panel2.Location = new System.Drawing.Point(571, 68);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(632, 836);
+            this.panel2.Size = new System.Drawing.Size(421, 543);
             this.panel2.TabIndex = 25;
             // 
             // panel38
             // 
             this.panel38.Controls.Add(this.txtTenRap);
             this.panel38.Controls.Add(this.lblGenreName);
-            this.panel38.Location = new System.Drawing.Point(13, 83);
-            this.panel38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel38.Location = new System.Drawing.Point(9, 54);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(593, 68);
+            this.panel38.Size = new System.Drawing.Size(395, 44);
             this.panel38.TabIndex = 4;
             // 
             // txtTenRap
             // 
             this.txtTenRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenRap.Location = new System.Drawing.Point(165, 16);
-            this.txtTenRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTenRap.Location = new System.Drawing.Point(110, 10);
             this.txtTenRap.Name = "txtTenRap";
-            this.txtTenRap.Size = new System.Drawing.Size(370, 35);
+            this.txtTenRap.Size = new System.Drawing.Size(248, 26);
             this.txtTenRap.TabIndex = 1;
             // 
             // lblGenreName
             // 
             this.lblGenreName.AutoSize = true;
             this.lblGenreName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblGenreName.Location = new System.Drawing.Point(4, 20);
-            this.lblGenreName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGenreName.Location = new System.Drawing.Point(3, 13);
             this.lblGenreName.Name = "lblGenreName";
-            this.lblGenreName.Size = new System.Drawing.Size(114, 29);
+            this.lblGenreName.Size = new System.Drawing.Size(77, 19);
             this.lblGenreName.TabIndex = 0;
             this.lblGenreName.Text = "Tên rạp :";
             // 
@@ -95,29 +94,26 @@
             // 
             this.panel39.Controls.Add(this.txtMaRap);
             this.panel39.Controls.Add(this.lblGenreID);
-            this.panel39.Location = new System.Drawing.Point(13, 5);
-            this.panel39.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel39.Location = new System.Drawing.Point(9, 3);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(593, 68);
+            this.panel39.Size = new System.Drawing.Size(395, 44);
             this.panel39.TabIndex = 3;
             // 
             // txtMaRap
             // 
             this.txtMaRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaRap.Location = new System.Drawing.Point(165, 16);
-            this.txtMaRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaRap.Location = new System.Drawing.Point(110, 10);
             this.txtMaRap.Name = "txtMaRap";
-            this.txtMaRap.Size = new System.Drawing.Size(370, 35);
+            this.txtMaRap.Size = new System.Drawing.Size(248, 26);
             this.txtMaRap.TabIndex = 1;
             // 
             // lblGenreID
             // 
             this.lblGenreID.AutoSize = true;
             this.lblGenreID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblGenreID.Location = new System.Drawing.Point(4, 19);
-            this.lblGenreID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGenreID.Location = new System.Drawing.Point(3, 12);
             this.lblGenreID.Name = "lblGenreID";
-            this.lblGenreID.Size = new System.Drawing.Size(105, 29);
+            this.lblGenreID.Size = new System.Drawing.Size(70, 19);
             this.lblGenreID.TabIndex = 0;
             this.lblGenreID.Text = "Mã rạp :";
             // 
@@ -129,9 +125,9 @@
             this.panel1.Controls.Add(this.dtgvRap);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1491, 940);
+            this.panel1.Size = new System.Drawing.Size(994, 611);
             this.panel1.TabIndex = 16;
             // 
             // panel40
@@ -142,16 +138,15 @@
             this.panel40.Controls.Add(this.btnInsertRap);
             this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel40.Location = new System.Drawing.Point(0, 0);
-            this.panel40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(1491, 82);
+            this.panel40.Size = new System.Drawing.Size(994, 53);
             this.panel40.TabIndex = 26;
             // 
             // btnUpdateRap
             // 
             this.btnUpdateRap.AutoRoundedCorners = true;
             this.btnUpdateRap.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnUpdateRap.BorderRadius = 25;
+            this.btnUpdateRap.BorderRadius = 16;
             this.btnUpdateRap.BorderThickness = 2;
             this.btnUpdateRap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateRap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -161,10 +156,9 @@
             this.btnUpdateRap.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateRap.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateRap.IndicateFocus = true;
-            this.btnUpdateRap.Location = new System.Drawing.Point(373, 18);
-            this.btnUpdateRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdateRap.Location = new System.Drawing.Point(249, 12);
             this.btnUpdateRap.Name = "btnUpdateRap";
-            this.btnUpdateRap.Size = new System.Drawing.Size(124, 52);
+            this.btnUpdateRap.Size = new System.Drawing.Size(83, 34);
             this.btnUpdateRap.TabIndex = 42;
             this.btnUpdateRap.Text = "Sửa";
             this.btnUpdateRap.Click += new System.EventHandler(this.btnUpdateRap_Click);
@@ -173,7 +167,7 @@
             // 
             this.btnDeleteRap.AutoRoundedCorners = true;
             this.btnDeleteRap.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnDeleteRap.BorderRadius = 25;
+            this.btnDeleteRap.BorderRadius = 16;
             this.btnDeleteRap.BorderThickness = 2;
             this.btnDeleteRap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteRap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -183,10 +177,9 @@
             this.btnDeleteRap.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteRap.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteRap.IndicateFocus = true;
-            this.btnDeleteRap.Location = new System.Drawing.Point(193, 18);
-            this.btnDeleteRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDeleteRap.Location = new System.Drawing.Point(129, 12);
             this.btnDeleteRap.Name = "btnDeleteRap";
-            this.btnDeleteRap.Size = new System.Drawing.Size(124, 52);
+            this.btnDeleteRap.Size = new System.Drawing.Size(83, 34);
             this.btnDeleteRap.TabIndex = 41;
             this.btnDeleteRap.Text = "Xóa";
             this.btnDeleteRap.Click += new System.EventHandler(this.btnDeleteRap_Click);
@@ -195,7 +188,7 @@
             // 
             this.btnInsertRap.AutoRoundedCorners = true;
             this.btnInsertRap.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnInsertRap.BorderRadius = 25;
+            this.btnInsertRap.BorderRadius = 16;
             this.btnInsertRap.BorderThickness = 2;
             this.btnInsertRap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnInsertRap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -205,10 +198,9 @@
             this.btnInsertRap.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertRap.ForeColor = System.Drawing.Color.Black;
             this.btnInsertRap.IndicateFocus = true;
-            this.btnInsertRap.Location = new System.Drawing.Point(19, 18);
-            this.btnInsertRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInsertRap.Location = new System.Drawing.Point(13, 12);
             this.btnInsertRap.Name = "btnInsertRap";
-            this.btnInsertRap.Size = new System.Drawing.Size(124, 52);
+            this.btnInsertRap.Size = new System.Drawing.Size(83, 34);
             this.btnInsertRap.TabIndex = 40;
             this.btnInsertRap.Text = "Thêm";
             this.btnInsertRap.Click += new System.EventHandler(this.btnInsertRap_Click);
@@ -220,40 +212,57 @@
             this.dtgvRap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtgvRap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvRap.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvRap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvRap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvRap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvRap.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgvRap.Location = new System.Drawing.Point(0, 92);
-            this.dtgvRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgvRap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaRap,
+            this.TenRap});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvRap.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvRap.Location = new System.Drawing.Point(0, 60);
             this.dtgvRap.Name = "dtgvRap";
             this.dtgvRap.ReadOnly = true;
             this.dtgvRap.RowHeadersWidth = 51;
-            this.dtgvRap.Size = new System.Drawing.Size(849, 848);
+            this.dtgvRap.Size = new System.Drawing.Size(566, 551);
             this.dtgvRap.TabIndex = 1;
             this.dtgvRap.Click += new System.EventHandler(this.RapUC_Load);
             // 
+            // MaRap
+            // 
+            this.MaRap.DataPropertyName = "MaRap";
+            this.MaRap.HeaderText = "Mã Rạp";
+            this.MaRap.Name = "MaRap";
+            this.MaRap.ReadOnly = true;
+            // 
+            // TenRap
+            // 
+            this.TenRap.DataPropertyName = "TenRap";
+            this.TenRap.HeaderText = "Tên Rạp";
+            this.TenRap.Name = "TenRap";
+            this.TenRap.ReadOnly = true;
+            // 
             // RapUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RapUC";
-            this.Size = new System.Drawing.Size(1491, 940);
+            this.Size = new System.Drawing.Size(994, 611);
             this.panel2.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
@@ -281,5 +290,7 @@
         private Guna.UI2.WinForms.Guna2Button btnUpdateRap;
         private Guna.UI2.WinForms.Guna2Button btnDeleteRap;
         private Guna.UI2.WinForms.Guna2Button btnInsertRap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaRap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenRap;
     }
 }

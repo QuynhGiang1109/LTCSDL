@@ -75,11 +75,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.pnlCountdown.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -342,6 +342,7 @@
             this.btnPay.Size = new System.Drawing.Size(106, 53);
             this.btnPay.TabIndex = 41;
             this.btnPay.Text = "THANH TOÁN";
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnBack2
             // 
@@ -642,12 +643,23 @@
             this.panel3.Size = new System.Drawing.Size(365, 77);
             this.panel3.TabIndex = 35;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(307, 45);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 20);
+            this.label13.TabIndex = 48;
+            this.label13.Text = "VNĐ";
+            // 
             // txtTongTien
             // 
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(117, 42);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
             this.txtTongTien.Size = new System.Drawing.Size(190, 26);
             this.txtTongTien.TabIndex = 47;
             this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -685,16 +697,6 @@
             this.label14.Size = new System.Drawing.Size(90, 21);
             this.label14.TabIndex = 46;
             this.label14.Text = "Tổng Tiền:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(307, 45);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 20);
-            this.label13.TabIndex = 48;
-            this.label13.Text = "VNĐ";
             // 
             // frmPayment
             // 
