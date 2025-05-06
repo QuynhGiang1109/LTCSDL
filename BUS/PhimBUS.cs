@@ -31,9 +31,33 @@ public class PhimBUS
             }
         }
 
-        cbb.DataSource = null;
+        // Thay vì set null trước, chỉ cần gán lại trực tiếp DataSource
+        cbb.DataSource = danhSachTenPhim;
+
+    }
+    public void hienThiPhimTheoThang(ComboBox cbb, DateTime date)
+    {
+        List<Phim> danhSachPhim = PhimDAO.Instance.hienThiPhimTheoThang(date);
+
+        // Nếu null thì thoát sớm và không gán DataSource
+        if (danhSachPhim == null || danhSachPhim.Count == 0)
+        {
+            cbb.DataSource = null;
+            return;
+        }
+
+        List<string> danhSachTenPhim = new List<string>();
+        foreach (Phim tenPhim in danhSachPhim)
+        {
+            if (!danhSachTenPhim.Contains(tenPhim.TenPhim))
+            {
+                danhSachTenPhim.Add(tenPhim.TenPhim);
+            }
+        }
+
         cbb.DataSource = danhSachTenPhim;
     }
+
 
     public bool suaDanhSachPhim(string MaPhim, string TenPhim, string MoTa, double ThoiLuong,
         DateTime NgayBatDau, DateTime NgayKetThuc, string QuocGia, string DienVien, int NamSX, int GioiHanTuoi)
