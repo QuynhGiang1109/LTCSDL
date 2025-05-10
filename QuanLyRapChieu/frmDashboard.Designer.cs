@@ -44,8 +44,8 @@
             this.btn_Admin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Admin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Admin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Admin.FillColor = System.Drawing.Color.MidnightBlue;
-            this.btn_Admin.Font = new System.Drawing.Font("Arial", 14F);
+            this.btn_Admin.FillColor = System.Drawing.Color.Navy;
+            this.btn_Admin.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Admin.ForeColor = System.Drawing.Color.White;
             this.btn_Admin.Location = new System.Drawing.Point(72, 254);
             this.btn_Admin.Name = "btn_Admin";
@@ -61,8 +61,8 @@
             this.btn_Staff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Staff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Staff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Staff.FillColor = System.Drawing.Color.DarkOrange;
-            this.btn_Staff.Font = new System.Drawing.Font("Arial", 14F);
+            this.btn_Staff.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_Staff.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Staff.ForeColor = System.Drawing.Color.White;
             this.btn_Staff.Location = new System.Drawing.Point(72, 343);
             this.btn_Staff.Name = "btn_Staff";
@@ -88,20 +88,20 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(95, 111);
+            this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(107, 111);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(229, 51);
+            this.lblWelcome.Size = new System.Drawing.Size(231, 60);
             this.lblWelcome.TabIndex = 17;
             this.lblWelcome.Text = "Welcome!";
             // 
             // lblAccountInfo
             // 
             this.lblAccountInfo.AutoSize = true;
-            this.lblAccountInfo.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountInfo.Location = new System.Drawing.Point(98, 180);
+            this.lblAccountInfo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountInfo.Location = new System.Drawing.Point(110, 180);
             this.lblAccountInfo.Name = "lblAccountInfo";
-            this.lblAccountInfo.Size = new System.Drawing.Size(147, 36);
+            this.lblAccountInfo.Size = new System.Drawing.Size(149, 45);
             this.lblAccountInfo.TabIndex = 18;
             this.lblAccountInfo.Text = "Xin chào,";
             // 

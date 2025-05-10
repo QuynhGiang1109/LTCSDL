@@ -59,14 +59,16 @@
             // 
             // pn_LichChieuPhim
             // 
-            this.pn_LichChieuPhim.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pn_LichChieuPhim.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pn_LichChieuPhim.Controls.Add(this.btnClose);
             this.pn_LichChieuPhim.Controls.Add(this.labelX);
             this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_LichChieuPhim.Location = new System.Drawing.Point(0, 0);
             this.pn_LichChieuPhim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn_LichChieuPhim.Name = "pn_LichChieuPhim";
-            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1227, 58);
+
+            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1380, 72);
+
             this.pn_LichChieuPhim.TabIndex = 6;
             // 
             // btnClose
@@ -77,11 +79,13 @@
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(1153, -1);
+
+            this.btnClose.Location = new System.Drawing.Point(1213, 2);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Size = new System.Drawing.Size(74, 57);
+            this.btnClose.Size = new System.Drawing.Size(83, 71);
+
             this.btnClose.TabIndex = 20;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -89,7 +93,9 @@
             // 
             this.labelX.AutoSize = true;
             this.labelX.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX.Location = new System.Drawing.Point(432, 15);
+
+            this.labelX.Location = new System.Drawing.Point(520, 18);
+
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(334, 35);
             this.labelX.TabIndex = 0;
@@ -108,20 +114,24 @@
             this.gn_Backgr.Controls.Add(this.cboFilmName);
             this.gn_Backgr.Controls.Add(this.lbl_Phim);
             this.gn_Backgr.Controls.Add(this.lbl_Tgian);
-            this.gn_Backgr.Location = new System.Drawing.Point(36, 36);
+
+            this.gn_Backgr.Location = new System.Drawing.Point(40, 45);
             this.gn_Backgr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gn_Backgr.Name = "gn_Backgr";
-            this.gn_Backgr.Size = new System.Drawing.Size(284, 191);
+            this.gn_Backgr.Size = new System.Drawing.Size(320, 239);
+
             this.gn_Backgr.TabIndex = 0;
             // 
             // dtpThoiGian
             // 
             this.dtpThoiGian.CalendarFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpThoiGian.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpThoiGian.Location = new System.Drawing.Point(27, 55);
+
+            this.dtpThoiGian.Location = new System.Drawing.Point(30, 69);
             this.dtpThoiGian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpThoiGian.Name = "dtpThoiGian";
-            this.dtpThoiGian.Size = new System.Drawing.Size(233, 29);
+            this.dtpThoiGian.Size = new System.Drawing.Size(262, 33);
+
             this.dtpThoiGian.TabIndex = 8;
             this.dtpThoiGian.Value = new System.DateTime(2025, 5, 1, 0, 0, 0, 0);
             this.dtpThoiGian.ValueChanged += new System.EventHandler(this.dtpThoiGian_ValueChanged);
@@ -137,7 +147,9 @@
             this.cboFilmName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboFilmName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboFilmName.ItemHeight = 30;
-            this.cboFilmName.Location = new System.Drawing.Point(27, 119);
+
+            this.cboFilmName.Location = new System.Drawing.Point(30, 149);
+
             this.cboFilmName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboFilmName.Name = "cboFilmName";
             this.cboFilmName.Size = new System.Drawing.Size(233, 36);
@@ -148,9 +160,11 @@
             // 
             this.lbl_Phim.AutoSize = true;
             this.lbl_Phim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Phim.Location = new System.Drawing.Point(23, 95);
+
+            this.lbl_Phim.Location = new System.Drawing.Point(26, 119);
             this.lbl_Phim.Name = "lbl_Phim";
-            this.lbl_Phim.Size = new System.Drawing.Size(78, 23);
+            this.lbl_Phim.Size = new System.Drawing.Size(96, 26);
+
             this.lbl_Phim.TabIndex = 1;
             this.lbl_Phim.Text = "Phim 🎬";
             // 
@@ -158,9 +172,11 @@
             // 
             this.lbl_Tgian.AutoSize = true;
             this.lbl_Tgian.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tgian.Location = new System.Drawing.Point(23, 31);
+
+            this.lbl_Tgian.Location = new System.Drawing.Point(26, 39);
             this.lbl_Tgian.Name = "lbl_Tgian";
-            this.lbl_Tgian.Size = new System.Drawing.Size(85, 23);
+            this.lbl_Tgian.Size = new System.Drawing.Size(101, 26);
+
             this.lbl_Tgian.TabIndex = 0;
             this.lbl_Tgian.Text = "Ngày 📅 ";
             // 
@@ -172,10 +188,12 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.dtv_CaChieu);
-            this.panel1.Location = new System.Drawing.Point(359, 58);
+
+            this.panel1.Location = new System.Drawing.Point(404, 72);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(868, 606);
+            this.panel1.Size = new System.Drawing.Size(976, 758);
+
             this.panel1.TabIndex = 8;
             // 
             // dtv_CaChieu
@@ -190,16 +208,19 @@
             this.dtv_CaChieu.ReadOnly = true;
             this.dtv_CaChieu.RowHeadersWidth = 62;
             this.dtv_CaChieu.RowTemplate.Height = 28;
-            this.dtv_CaChieu.Size = new System.Drawing.Size(868, 606);
+
+            this.dtv_CaChieu.Size = new System.Drawing.Size(976, 758);
+
             this.dtv_CaChieu.TabIndex = 1;
             // 
             // btn_ChonVe
             // 
             this.btn_ChonVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ChonVe.Location = new System.Drawing.Point(197, 263);
+
+            this.btn_ChonVe.Location = new System.Drawing.Point(222, 329);
             this.btn_ChonVe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ChonVe.Name = "btn_ChonVe";
-            this.btn_ChonVe.Size = new System.Drawing.Size(121, 28);
+
             this.btn_ChonVe.TabIndex = 1;
             this.btn_ChonVe.Text = "CHỌN VÉ";
             this.btn_ChonVe.UseVisualStyleBackColor = true;
@@ -207,20 +228,24 @@
             // 
             // gn_Sidebar
             // 
-            this.gn_Sidebar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.gn_Sidebar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gn_Sidebar.Controls.Add(this.btn_ChonVe);
             this.gn_Sidebar.Controls.Add(this.gn_Backgr);
-            this.gn_Sidebar.Location = new System.Drawing.Point(0, 58);
+
+            this.gn_Sidebar.Location = new System.Drawing.Point(0, 72);
             this.gn_Sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gn_Sidebar.Name = "gn_Sidebar";
-            this.gn_Sidebar.Size = new System.Drawing.Size(360, 606);
+            this.gn_Sidebar.Size = new System.Drawing.Size(405, 758);
+
             this.gn_Sidebar.TabIndex = 7;
             // 
             // frmStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 630);
+
+            this.ClientSize = new System.Drawing.Size(1380, 788);
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gn_Sidebar);
             this.Controls.Add(this.pn_LichChieuPhim);
