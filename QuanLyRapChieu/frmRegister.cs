@@ -39,5 +39,7 @@ namespace QuanLyRapChieu
                 Application.Exit(); // Thoát toàn bộ chương trình
             }
         }
+
+      
     }
 }

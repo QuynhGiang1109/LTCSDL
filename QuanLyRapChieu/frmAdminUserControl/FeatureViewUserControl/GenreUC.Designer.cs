@@ -56,20 +56,22 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.Controls.Add(this.btnUpdateGenre);
             this.guna2Panel1.Controls.Add(this.btnDeleteGenre);
             this.guna2Panel1.Controls.Add(this.btnInsertGenre);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1000, 74);
+            this.guna2Panel1.Size = new System.Drawing.Size(1500, 114);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnUpdateGenre
             // 
             this.btnUpdateGenre.AutoRoundedCorners = true;
             this.btnUpdateGenre.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnUpdateGenre.BorderRadius = 16;
+            this.btnUpdateGenre.BorderRadius = 25;
             this.btnUpdateGenre.BorderThickness = 2;
             this.btnUpdateGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateGenre.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -79,9 +81,10 @@
             this.btnUpdateGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateGenre.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateGenre.IndicateFocus = true;
-            this.btnUpdateGenre.Location = new System.Drawing.Point(258, 17);
+            this.btnUpdateGenre.Location = new System.Drawing.Point(387, 26);
+            this.btnUpdateGenre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdateGenre.Name = "btnUpdateGenre";
-            this.btnUpdateGenre.Size = new System.Drawing.Size(83, 34);
+            this.btnUpdateGenre.Size = new System.Drawing.Size(124, 52);
             this.btnUpdateGenre.TabIndex = 2;
             this.btnUpdateGenre.Text = "Sửa";
             this.btnUpdateGenre.Click += new System.EventHandler(this.btnUpdateGenre_Click);
@@ -90,7 +93,7 @@
             // 
             this.btnDeleteGenre.AutoRoundedCorners = true;
             this.btnDeleteGenre.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnDeleteGenre.BorderRadius = 16;
+            this.btnDeleteGenre.BorderRadius = 25;
             this.btnDeleteGenre.BorderThickness = 2;
             this.btnDeleteGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteGenre.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -100,9 +103,10 @@
             this.btnDeleteGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteGenre.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteGenre.IndicateFocus = true;
-            this.btnDeleteGenre.Location = new System.Drawing.Point(134, 17);
+            this.btnDeleteGenre.Location = new System.Drawing.Point(201, 26);
+            this.btnDeleteGenre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeleteGenre.Name = "btnDeleteGenre";
-            this.btnDeleteGenre.Size = new System.Drawing.Size(83, 34);
+            this.btnDeleteGenre.Size = new System.Drawing.Size(124, 52);
             this.btnDeleteGenre.TabIndex = 1;
             this.btnDeleteGenre.Text = "Xóa";
             this.btnDeleteGenre.Click += new System.EventHandler(this.btnDeleteGenre_Click);
@@ -111,7 +115,7 @@
             // 
             this.btnInsertGenre.AutoRoundedCorners = true;
             this.btnInsertGenre.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.btnInsertGenre.BorderRadius = 16;
+            this.btnInsertGenre.BorderRadius = 25;
             this.btnInsertGenre.BorderThickness = 2;
             this.btnInsertGenre.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnInsertGenre.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -121,30 +125,34 @@
             this.btnInsertGenre.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertGenre.ForeColor = System.Drawing.Color.Black;
             this.btnInsertGenre.IndicateFocus = true;
-            this.btnInsertGenre.Location = new System.Drawing.Point(15, 17);
+            this.btnInsertGenre.Location = new System.Drawing.Point(22, 26);
+            this.btnInsertGenre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInsertGenre.Name = "btnInsertGenre";
-            this.btnInsertGenre.Size = new System.Drawing.Size(83, 34);
+            this.btnInsertGenre.Size = new System.Drawing.Size(124, 52);
             this.btnInsertGenre.TabIndex = 0;
             this.btnInsertGenre.Text = "Thêm";
             this.btnInsertGenre.Click += new System.EventHandler(this.btnInsertGenre_Click);
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.White;
             this.guna2Panel2.Controls.Add(this.guna2Panel4);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(631, 74);
+            this.guna2Panel2.Location = new System.Drawing.Point(946, 114);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(369, 537);
+            this.guna2Panel2.Size = new System.Drawing.Size(554, 826);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.txtGenreName);
             this.guna2Panel4.Controls.Add(this.lblGenreName);
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 57);
+            this.guna2Panel4.Location = new System.Drawing.Point(0, 88);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(369, 51);
+            this.guna2Panel4.Size = new System.Drawing.Size(554, 78);
             this.guna2Panel4.TabIndex = 1;
             // 
             // txtGenreName
@@ -156,23 +164,24 @@
             this.txtGenreName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenreName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenreName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreName.Location = new System.Drawing.Point(126, 11);
-            this.txtGenreName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGenreName.Location = new System.Drawing.Point(189, 17);
+            this.txtGenreName.Margin = new System.Windows.Forms.Padding(6);
             this.txtGenreName.Name = "txtGenreName";
             this.txtGenreName.PlaceholderText = "";
             this.txtGenreName.SelectedText = "";
-            this.txtGenreName.Size = new System.Drawing.Size(227, 28);
+            this.txtGenreName.Size = new System.Drawing.Size(340, 43);
             this.txtGenreName.TabIndex = 3;
             // 
             // lblGenreName
             // 
             this.lblGenreName.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenreName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenreName.Location = new System.Drawing.Point(13, 18);
+            this.lblGenreName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenreName.Location = new System.Drawing.Point(20, 28);
+            this.lblGenreName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblGenreName.Name = "lblGenreName";
-            this.lblGenreName.Size = new System.Drawing.Size(108, 21);
+            this.lblGenreName.Size = new System.Drawing.Size(148, 28);
             this.lblGenreName.TabIndex = 2;
             this.lblGenreName.Text = "Tên Thể Loại:";
             // 
@@ -182,8 +191,9 @@
             this.guna2Panel3.Controls.Add(this.lblGenreID);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(369, 51);
+            this.guna2Panel3.Size = new System.Drawing.Size(554, 78);
             this.guna2Panel3.TabIndex = 0;
             // 
             // txtGenreID
@@ -195,23 +205,24 @@
             this.txtGenreID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGenreID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenreID.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenreID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGenreID.Location = new System.Drawing.Point(125, 10);
-            this.txtGenreID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGenreID.Location = new System.Drawing.Point(188, 15);
+            this.txtGenreID.Margin = new System.Windows.Forms.Padding(6);
             this.txtGenreID.Name = "txtGenreID";
             this.txtGenreID.PlaceholderText = "";
             this.txtGenreID.SelectedText = "";
-            this.txtGenreID.Size = new System.Drawing.Size(228, 31);
+            this.txtGenreID.Size = new System.Drawing.Size(342, 48);
             this.txtGenreID.TabIndex = 1;
             // 
             // lblGenreID
             // 
             this.lblGenreID.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenreID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenreID.Location = new System.Drawing.Point(13, 17);
+            this.lblGenreID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenreID.Location = new System.Drawing.Point(20, 26);
+            this.lblGenreID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblGenreID.Name = "lblGenreID";
-            this.lblGenreID.Size = new System.Drawing.Size(101, 21);
+            this.lblGenreID.Size = new System.Drawing.Size(144, 28);
             this.lblGenreID.TabIndex = 0;
             this.lblGenreID.Text = "Mã Thể Loại:";
             // 
@@ -219,9 +230,10 @@
             // 
             this.guna2Panel5.Controls.Add(this.dtgvGenre);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel5.Location = new System.Drawing.Point(0, 74);
+            this.guna2Panel5.Location = new System.Drawing.Point(0, 114);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(631, 537);
+            this.guna2Panel5.Size = new System.Drawing.Size(946, 826);
             this.guna2Panel5.TabIndex = 2;
             // 
             // dtgvGenre
@@ -252,6 +264,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvGenre.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvGenre.Location = new System.Drawing.Point(0, 0);
+            this.dtgvGenre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvGenre.Name = "dtgvGenre";
             this.dtgvGenre.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -263,13 +276,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvGenre.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvGenre.RowHeadersWidth = 30;
-            this.dtgvGenre.Size = new System.Drawing.Size(631, 547);
+            this.dtgvGenre.Size = new System.Drawing.Size(946, 842);
             this.dtgvGenre.TabIndex = 22;
             // 
             // MaLoaiPhim
             // 
             this.MaLoaiPhim.DataPropertyName = "MaLoaiPhim";
             this.MaLoaiPhim.HeaderText = "Mã Loại Phim";
+            this.MaLoaiPhim.MinimumWidth = 8;
             this.MaLoaiPhim.Name = "MaLoaiPhim";
             this.MaLoaiPhim.ReadOnly = true;
             // 
@@ -277,19 +291,21 @@
             // 
             this.TenTheLoai.DataPropertyName = "TenTheLoai";
             this.TenTheLoai.HeaderText = "Tên Thể Loại";
+            this.TenTheLoai.MinimumWidth = 8;
             this.TenTheLoai.Name = "TenTheLoai";
             this.TenTheLoai.ReadOnly = true;
             // 
             // GenreUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "GenreUC";
-            this.Size = new System.Drawing.Size(1000, 611);
+            this.Size = new System.Drawing.Size(1500, 940);
             this.Load += new System.EventHandler(this.GenreUC_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);

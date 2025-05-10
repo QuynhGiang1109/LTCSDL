@@ -356,7 +356,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnUpdateStaff);
             this.Controls.Add(this.btnDeleteStaff);
             this.Controls.Add(this.btnAddStaff);

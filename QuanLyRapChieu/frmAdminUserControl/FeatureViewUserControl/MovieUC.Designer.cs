@@ -72,12 +72,12 @@
             // 
             // panel47
             // 
-            this.panel47.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel47.BackColor = System.Drawing.Color.White;
             this.panel47.Controls.Add(this.UpdateMovie);
             this.panel47.Controls.Add(this.btnDeleteMovie);
             this.panel47.Controls.Add(this.btnAddMovie);
             this.panel47.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel47.Location = new System.Drawing.Point(0, 331);
+            this.panel47.Location = new System.Drawing.Point(0, 345);
             this.panel47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(1491, 70);
@@ -306,10 +306,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dtgvMovie);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 401);
+            this.panel3.Location = new System.Drawing.Point(0, 415);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1491, 539);
+            this.panel3.Size = new System.Drawing.Size(1514, 525);
             this.panel3.TabIndex = 11;
             // 
             // dtgvMovie
@@ -334,18 +333,18 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvMovie.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvMovie.Location = new System.Drawing.Point(0, 0);
+            this.dtgvMovie.Location = new System.Drawing.Point(14, 0);
             this.dtgvMovie.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtgvMovie.Name = "dtgvMovie";
             this.dtgvMovie.ReadOnly = true;
             this.dtgvMovie.RowHeadersWidth = 51;
-            this.dtgvMovie.Size = new System.Drawing.Size(1491, 388);
+            this.dtgvMovie.Size = new System.Drawing.Size(1473, 388);
             this.dtgvMovie.TabIndex = 2;
             this.dtgvMovie.Click += new System.EventHandler(this.MovieUC_Load);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.clbMovieGenre);
             this.panel2.Controls.Add(this.numericUpDownPhim);
             this.panel2.Controls.Add(this.txtMovieDesc);
@@ -371,7 +370,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1491, 331);
+            this.panel2.Size = new System.Drawing.Size(1491, 345);
             this.panel2.TabIndex = 0;
             // 
             // clbMovieGenre
@@ -382,7 +381,7 @@
             this.clbMovieGenre.Location = new System.Drawing.Point(50, 197);
             this.clbMovieGenre.MultiColumn = true;
             this.clbMovieGenre.Name = "clbMovieGenre";
-            this.clbMovieGenre.Size = new System.Drawing.Size(364, 104);
+            this.clbMovieGenre.Size = new System.Drawing.Size(364, 129);
             this.clbMovieGenre.TabIndex = 58;
             this.clbMovieGenre.SelectedIndexChanged += new System.EventHandler(this.clbMovieGenre_SelectedIndexChanged);
             // 
@@ -502,8 +501,6 @@
         private Guna.UI2.WinForms.Guna2Button UpdateMovie;
         private Guna.UI2.WinForms.Guna2Button btnDeleteMovie;
         private Guna.UI2.WinForms.Guna2Button btnAddMovie;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dtgvMovie;
         private System.Windows.Forms.TextBox txtMovieDesc;
         private System.Windows.Forms.Label lblMovieGenre;
         private System.Windows.Forms.Label lblMovieDesc;
@@ -512,5 +509,7 @@
         private System.Windows.Forms.TextBox txtMovieID;
         private System.Windows.Forms.Label lblMovieID;
         private System.Windows.Forms.CheckedListBox clbMovieGenre;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dtgvMovie;
     }
 }
