@@ -44,45 +44,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             txtGiaCbo.DataBindings.Add(new Binding("Text", dtgvPopcorn.DataSource, "Gia", true, DataSourceUpdateMode.Never));
         }
         
-        /*
-       
-
-        private void btnUpdateCombo_Click(object sender, EventArgs e)
-        {
-            if (dtgvCombo.SelectedCells.Count == 0)
-                return;
-
-            string ma = txtMaCombo.Text;
-            string ten = txtTenCombo.Text;
-            string giaText = txtGiaCombo.Text;
-
-            if (!int.TryParse(giaText, out int gia))
-            {
-                MessageBox.Show("Giá phải là số!");
-                return;
-            }
-
-            bool result = ComBoBapNuocBUS.Instance.SuaCombo(ma, ten, gia);
-            MessageBox.Show(result ? "Sửa thành công!" : "Sửa thất bại!");
-            LoadComboList();
-        }
-
-        private void btnDeleteCombo_Click(object sender, EventArgs e)
-        {
-            if (dtgvCombo.SelectedCells.Count == 0)
-                return;
-
-            string ma = dtgvCombo.SelectedCells[0].OwningRow.Cells["MaCombo"].Value.ToString();
-            DialogResult confirm = MessageBox.Show("Xóa combo này?", "Xác nhận", MessageBoxButtons.YesNo);
-
-            if (confirm == DialogResult.Yes)
-            {
-                bool result = ComBoBapNuocBUS.Instance.XoaCombo(ma);
-                MessageBox.Show(result ? "Xóa thành công!" : "Xóa thất bại!");
-                LoadComboList();
-            }
-        }
-        */
+        
         private void btnInsertPopcorn_Click(object sender, EventArgs e)
         {
             string ma = txtMaCbo.Text.Trim();
