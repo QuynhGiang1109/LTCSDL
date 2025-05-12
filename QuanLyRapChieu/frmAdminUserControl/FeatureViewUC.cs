@@ -66,6 +66,11 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Add(rapUC);
         }
 
-
+        private void btnPopcorn_Click(object sender, EventArgs e)
+        {
+            Popcorn_UC popcornUC = new Popcorn_UC();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(popcornUC);
+        }
     }
 }

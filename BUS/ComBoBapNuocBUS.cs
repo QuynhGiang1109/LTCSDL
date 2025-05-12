@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static DTO.ComBoBapNuoc_Chon;
 
 namespace BUS
@@ -32,17 +33,25 @@ namespace BUS
 
         
 
-        //public List<ComboChon> LayDanhSachComboChon()
-        //{
-        //    var danhSach = LayDanhSachCombo();
-        //    return danhSach.Select(c => new ComboChon
-        //    {
-        //        MaCombo = c.MaCombo,
-        //        TenCombo = c.TenCombo,
-        //        Gia = c.Gia,
-        //        SoLuong = 0
-        //    }).ToList();
-        //}
+        public void HienThiDanhSachCombo(BindingSource source)
+        {
+            source.DataSource = ComBoBapNuocDAO.Instance.LayTatCaCombo();
+        }
+
+        public bool ThemCombo(string tenCombo, decimal gia)
+        {
+            return ComBoBapNuocDAO.Instance.ThemCombo(tenCombo, gia) > 0;
+        }
+
+        public bool XoaCombo(string maCombo)
+        {
+            return ComBoBapNuocDAO.Instance.XoaCombo(maCombo) > 0;
+        }
+
+        public bool SuaCombo(string maCombo, string tenCombo, decimal gia)
+        {
+            return ComBoBapNuocDAO.Instance.SuaCombo(maCombo, tenCombo, gia) > 0;
+        }
 
     }
 }
