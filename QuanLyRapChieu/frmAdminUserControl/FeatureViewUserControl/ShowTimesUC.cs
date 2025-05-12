@@ -39,6 +39,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             txtTicketPrice_Showtime.DataBindings.Clear();
             cboCinemaID_Showtime.DataBindings.Clear();
             cboRap.DataBindings.Clear();
+
+            cboMovieName_Showtime.DataBindings.Clear(); // Thêm dòng này để xóa binding của cboMovieName_Showtime
+            txtMovieName_Showtime.DataBindings.Clear(); // Xóa binding của txtMovieName_Showtime (nếu có)
         }
 
         //add Binding
@@ -57,10 +60,78 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         void LoadmovieNameIntoComboBox()
         {
             cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
-            cboMovieName_Showtime.DisplayMember = "MaPhim";
+            cboMovieName_Showtime.DisplayMember = "MaPhim"; // Hiển thị MaPhim
+            cboMovieName_Showtime.ValueMember = "MaPhim";   // Giá trị thực sự là MaPhim
+
+            /*
+            //cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
+            //cboMovieName_Showtime.DisplayMember = "MaPhim";
+            cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
+            cboMovieName_Showtime.DisplayMember = "TenPhim"; // Hiển thị TenPhim thay vì MaPhim
+            cboMovieName_Showtime.ValueMember = "MaPhim";    // Sử dụng MaPhim làm giá trị
+            */
         }
+        //Khi click 1 datarow thì các control bên phải hiển thị đầy đủ đúng t.tin datarow đang chọn
         private void dtgvShowtime_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dtgvShowtime.Rows[e.RowIndex];
+
+                // Cập nhật các control
+                txtShowtimeID.Text = selectedRow.Cells["MaCaChieu"].Value?.ToString() ?? "";
+                dtmShowtimeDate.Value = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value?.ToString() ?? DateTime.Now.ToString()).Date;
+                dtmShowtimeTime.Value = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value?.ToString() ?? DateTime.Now.ToString());
+                dateTimeDay.Value = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value?.ToString() ?? DateTime.Now.ToString()).Date;
+                dateTimetimes.Value = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value?.ToString() ?? DateTime.Now.ToString());
+                txtTicketPrice_Showtime.Text = selectedRow.Cells["GiaVe"].Value?.ToString() ?? "0";
+
+                string cinemaID = selectedRow.Cells["MaPhong"].Value?.ToString() ?? "";
+                if (cboCinemaID_Showtime.Items.Count > 0)
+                {
+                    cboCinemaID_Showtime.SelectedValue = cinemaID;
+                }
+                string rapID = selectedRow.Cells["MaRap"].Value?.ToString() ?? "";
+                if (cboRap.Items.Count > 0)
+                {
+                    cboRap.SelectedValue = rapID;
+                }
+
+                // Cập nhật cboMovieName_Showtime
+                string maPhim = selectedRow.Cells["MaPhim"].Value?.ToString() ?? "";
+                cboMovieName_Showtime.SelectedIndex = -1; // Reset trước khi set giá trị mới
+                if (cboMovieName_Showtime.Items.Count > 0 && !string.IsNullOrEmpty(maPhim))
+                {
+                    // Tìm đối tượng Phim tương ứng với MaPhim
+                    foreach (var item in cboMovieName_Showtime.Items)
+                    {
+                        if (item is Phim phim && phim.MaPhim == maPhim)
+                        {
+                            cboMovieName_Showtime.SelectedItem = item;
+                            break;
+                        }
+                    }
+
+                    if (cboMovieName_Showtime.SelectedIndex == -1)
+                    {
+                        cboMovieName_Showtime.SelectedIndex = -1; // Nếu không tìm thấy, bỏ chọn
+                    }
+                }
+                else
+                {
+                    cboMovieName_Showtime.SelectedIndex = -1;
+                }
+
+                // Cập nhật txtMovieName_Showtime
+                if (cboMovieName_Showtime.SelectedItem is Phim selectedMovie)
+                {
+                    txtMovieName_Showtime.Text = selectedMovie.TenPhim;
+                }
+                else
+                {
+                    txtMovieName_Showtime.Text = "";
+                }
+            }
 
         }
 

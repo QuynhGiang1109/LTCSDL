@@ -47,7 +47,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
         {
             CultureInfo culture = new CultureInfo("vi-VN");
             dtgvRevenue.DataSource = ThongKeDAO.Instance.GetRevenue(idMovie, fromDate, toDate);
-            txtDoanhThu.Text = GetSumRevenue().ToString("c", culture);
+            txtDoanhThu.Text = GetSumRevenue().ToString("N3");
         }
         decimal GetSumRevenue()
         {
@@ -63,5 +63,6 @@ namespace QuanLyRapChieu.frmAdminUserControl
         {
             LoadRevenue(cboSelectMovie.SelectedValue.ToString(), dtmFromDate.Value, dtmToDate.Value);
         }
+
     }
 }

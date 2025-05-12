@@ -25,7 +25,6 @@ namespace QuanLyRapChieu
         private static decimal totalPrice = 0;
         private static int bonus = 0;
 
-
         // Dùng từ điển để lưu lại tất cả ghế đã tạo, key là mã ghế, value là Button tương ứng
         private Dictionary<string, Button> danhSachGhe = new Dictionary<string, Button>();
 
@@ -131,8 +130,6 @@ namespace QuanLyRapChieu
             txtRefund.Text = soTienCanTra.ToString("N3", culture);
         }
 
-
-
         // Xử lý khi click vào ghế: Đổi màu ghế + Ktra loại vé + Tinh gia ve
         private void btnSeat_Click(object sender, EventArgs e)
         {
@@ -212,7 +209,6 @@ namespace QuanLyRapChieu
             hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
             maVe.Clear();
             totalPrice = 0;
-
             bonus = 0;
             resetPanels();
 
@@ -293,8 +289,7 @@ namespace QuanLyRapChieu
             {
                 // thì kh có giảm giá
                 txtDiscount.Text = "0";
-                txtRefund.Text = txtTotal.Text;
-
+                txtRefund.Text = txtTotal.Text;  
             }
 
             // Ktra đkiện sử dụng điểm
@@ -407,5 +402,4 @@ namespace QuanLyRapChieu
         }
 
     }
-
 }

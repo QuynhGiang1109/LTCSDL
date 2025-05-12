@@ -21,15 +21,15 @@ namespace QuanLyRapChieu
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-                //string name = txtName.Text;
-            //int birth = Int32.Parse(txtBirth.Text);
-            //string phoneNumber = txtPhoneNumber.Text.Trim();
-            //int point = 0;
-            //string address = txtAddress.Text;
-            //if (CustomerBUS.Instance.addCustomer(name, birth, phoneNumber, point, address))
-            //{
-            //    MessageBox.Show("Thêm thành viên thành công!");
-            //}
+            string name = txtName.Text;
+            int birth = Int32.Parse(txtBirth.Text);
+            string phoneNumber = txtPhoneNumber.Text.Trim();
+            int point = 0;
+            string address = txtAddress.Text;
+            if (CustomerBUS.Instance.addCustomer(name, birth, phoneNumber, point, address))
+            {
+                MessageBox.Show("Thêm thành viên thành công!");
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

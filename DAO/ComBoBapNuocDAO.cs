@@ -34,8 +34,40 @@ namespace DAO
             return list;
         }
 
+        public List<ComBoBapNuoc> LayTatCaCombo()
+        {
+            List<ComBoBapNuoc> danhSachCombo = new List<ComBoBapNuoc>();
+            string query = "USP_layDanhSachComboBapNuoc";
 
-        
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                ComBoBapNuoc combo = new ComBoBapNuoc(row);
+                danhSachCombo.Add(combo);
+            }
+
+            return danhSachCombo;
+        }
+
+        public int ThemCombo(string tenCombo, decimal gia)
+        {
+            string query = "sp_ThemCombo @TenCombo , @Gia";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { tenCombo, gia });
+        }
+
+        public int XoaCombo(string maCombo)
+        {
+            string query = "sp_XoaCombo @MaCombo";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCombo });
+        }
+
+        public int SuaCombo(string maCombo, string tenCombo, decimal gia)
+        {
+            string query = "sp_SuaCombo @MaCombo , @TenCombo , @Gia";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCombo, tenCombo, gia });
+        }
+
 
     }
 }

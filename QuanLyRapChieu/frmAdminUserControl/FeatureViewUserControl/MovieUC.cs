@@ -186,7 +186,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
                 checkedList.DisplayMember = "TenTheLoai";
                 checkedList.ValueMember = "MaTheLoai";
             }
-            catch (Exception ex) { }
+            catch (Exception ex) { 
+                Console.WriteLine("Lỗi khi load thể loại phim!" + ex.Message);
+            }
         }
 
 
@@ -203,5 +205,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         {
 
         }
+
+        
     }
 }

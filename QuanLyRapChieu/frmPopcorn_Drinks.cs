@@ -33,8 +33,6 @@ namespace QuanLyRapChieu
             CapNhatTongTien(); // hiển thị tổng tiền ban đầu (chỉ là tiền vé)
         }
 
-
-
         //Constructor mặc định – cấu hình UI và gán map
         public frmPopcorn_Drinks()
         {
