@@ -80,11 +80,11 @@
     <Compile Include="frmAdminUserControl\AccountUC.Designer.cs">
       <DependentUpon>AccountUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.cs">
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\PopcornUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.Designer.cs">
-      <DependentUpon>Popcorn_UC.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\PopcornUC.Designer.cs">
+      <DependentUpon>PopcornUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.cs">
       <SubType>UserControl</SubType>
@@ -147,11 +147,11 @@
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.Designer.cs">
       <DependentUpon>TicketsUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.cs">
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\CinemaUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Cinema.Designer.cs">
-      <DependentUpon>Cinema.cs</DependentUpon>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\CinemaUC.Designer.cs">
+      <DependentUpon>CinemaUC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.cs">
       <SubType>UserControl</SubType>
@@ -225,8 +225,8 @@
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
       <DependentUpon>MovieUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.resx">
-      <DependentUpon>Popcorn_UC.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\PopcornUC.resx">
+      <DependentUpon>PopcornUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\RapUC.resx">
       <DependentUpon>RapUC.cs</DependentUpon>
@@ -237,8 +237,8 @@
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\TicketsUC.resx">
       <DependentUpon>TicketsUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Cinema.resx">
-      <DependentUpon>Cinema.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\CinemaUC.resx">
+      <DependentUpon>CinemaUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\GenreUC.resx">
       <DependentUpon>GenreUC.cs</DependentUpon>

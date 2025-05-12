@@ -37,7 +37,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
 
         private void btnCinema_Click(object sender, EventArgs e)
         {
-            Cinema cinema = new Cinema();
+            CinemaUC cinema = new CinemaUC();
             pnData.Controls.Clear();
             pnData.Controls.Add(cinema);
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
-    partial class Cinema
+    partial class CinemaUC
     {
         /// <summary> 
         /// Required designer variable.

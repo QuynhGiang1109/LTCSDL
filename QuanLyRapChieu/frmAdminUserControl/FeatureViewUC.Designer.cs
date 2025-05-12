@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeatureViewUC));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPopcorn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPopcornUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnTicketsUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowTimesUC = new Guna.UI2.WinForms.Guna2Button();
@@ -46,7 +46,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gray;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.btnPopcorn);
+            this.guna2Panel1.Controls.Add(this.btnPopcornUC);
             this.guna2Panel1.Controls.Add(this.btnTicketsUC);
             this.guna2Panel1.Controls.Add(this.btnRap);
             this.guna2Panel1.Controls.Add(this.btnShowTimesUC);
@@ -60,7 +60,7 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1072, 89);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnPopcorn
+            // btnPopcornUC
             // 
             this.btnPopcorn.BorderColor = System.Drawing.Color.Gray;
             this.btnPopcorn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -78,6 +78,7 @@
             this.btnPopcorn.TabIndex = 7;
             this.btnPopcorn.Text = "Bắp";
             this.btnPopcorn.Click += new System.EventHandler(this.btnPopcorn_Click);
+
             // 
             // btnTicketsUC
             // 
@@ -232,6 +233,6 @@
         private Guna.UI2.WinForms.Guna2Button btnGenreUC;
         private Guna.UI2.WinForms.Guna2Button btnMovieUC;
         private Guna.UI2.WinForms.Guna2Button btnShowTimesUC;
-        private Guna.UI2.WinForms.Guna2Button btnPopcorn;
+        private Guna.UI2.WinForms.Guna2Button btnPopcornUC;
     }
 }

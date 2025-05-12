@@ -62,10 +62,11 @@
             this.btn_Staff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Staff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Staff.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btn_Staff.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Staff.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btn_Staff.ForeColor = System.Drawing.Color.White;
             this.btn_Staff.Location = new System.Drawing.Point(72, 343);
             this.btn_Staff.Name = "btn_Staff";
+            this.btn_Staff.PressedColor = System.Drawing.Color.BlanchedAlmond;
             this.btn_Staff.Size = new System.Drawing.Size(303, 58);
             this.btn_Staff.TabIndex = 15;
             this.btn_Staff.Text = "Nhân Viên";

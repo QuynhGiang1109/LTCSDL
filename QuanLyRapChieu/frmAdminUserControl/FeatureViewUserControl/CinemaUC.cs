@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
-    public partial class Cinema : UserControl
+    public partial class CinemaUC : UserControl
     {
         BindingSource cinemaList = new BindingSource();
 
-        public Cinema()
+        public CinemaUC()
         {
             InitializeComponent();
         }

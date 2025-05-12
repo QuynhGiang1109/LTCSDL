@@ -24,11 +24,10 @@ namespace QuanLyRapChieu
         private static List<Ve> maVe = new List<Ve>();
         private static decimal totalPrice = 0;
         private static int bonus = 0;
-        
 
         // Dùng từ điển để lưu lại tất cả ghế đã tạo, key là mã ghế, value là Button tương ứng
         private Dictionary<string, Button> danhSachGhe = new Dictionary<string, Button>();
-    
+
 
         public frmTheatre(string maCaChieu)
         {
@@ -89,7 +88,7 @@ namespace QuanLyRapChieu
                         Height = 30,
                         Text = ve.MaGheNgoi,
                         Font = new Font("Arial", 10.5f),
-                        TextAlign = ContentAlignment.MiddleCenter,  
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Margin = new Padding(10) // khoảng cách giữa các ghế
                     };
                     btn.Click += btnSeat_Click;
@@ -130,8 +129,6 @@ namespace QuanLyRapChieu
             decimal soTienCanTra = Math.Max(tongTien - soTienGiam, 0);
             txtRefund.Text = soTienCanTra.ToString("N3", culture);
         }
-
-         
 
         // Xử lý khi click vào ghế: Đổi màu ghế + Ktra loại vé + Tinh gia ve
         private void btnSeat_Click(object sender, EventArgs e)
@@ -212,7 +209,6 @@ namespace QuanLyRapChieu
             hienThiDanhSachChoNgoiTheoMaCaChieu(this.maCaChieu);
             maVe.Clear();
             totalPrice = 0;
-       
             bonus = 0;
             resetPanels();
 
@@ -257,7 +253,7 @@ namespace QuanLyRapChieu
         private void frmTheatre_FormClosing(object sender, FormClosingEventArgs e)
         {
             resetPanels();
-            maVe.Clear();  
+            maVe.Clear();
             DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
@@ -294,7 +290,6 @@ namespace QuanLyRapChieu
                 // thì kh có giảm giá
                 txtDiscount.Text = "0";
                 txtRefund.Text = txtTotal.Text;  
-
             }
 
             // Ktra đkiện sử dụng điểm
@@ -355,7 +350,7 @@ namespace QuanLyRapChieu
                 DataTable customer = CustomerBUS.Instance.getCustomer(frmCustomer.phoneNumber.Trim());
                 if (customer != null)
                 {
-                    if(customer.Rows.Count > 0)
+                    if (customer.Rows.Count > 0)
                     {
                         DataRow row = customer.Rows[0];
                         maKH = row["maKH"].ToString();
@@ -384,7 +379,7 @@ namespace QuanLyRapChieu
             else
             {
                 MessageBox.Show("Đặt vé thất bại. Vui lòng kiểm tra lại thông tin và thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-             
+
             }
         }
         public List<string> getUserSelectedSeats()
@@ -407,5 +402,4 @@ namespace QuanLyRapChieu
         }
 
     }
-
 }
