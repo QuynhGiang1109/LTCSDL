@@ -37,7 +37,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
 
         private void btnCinema_Click(object sender, EventArgs e)
         {
-            Cinema cinema = new Cinema();
+            CinemaUC cinema = new CinemaUC();
             pnData.Controls.Clear();
             pnData.Controls.Add(cinema);
         }
@@ -66,6 +66,11 @@ namespace QuanLyRapChieu.frmAdminUserControl
             pnData.Controls.Add(rapUC);
         }
 
-
+        private void btnPopcorn_Click(object sender, EventArgs e)
+        {
+            PopcornUC popcorn_UC = new PopcornUC();
+            pnData.Controls.Clear();
+            pnData.Controls.Add(popcorn_UC);
+        }
     }
 }

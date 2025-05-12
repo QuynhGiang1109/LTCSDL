@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="ComBoBapNuoc.cs" />
+    <Compile Include="ComBoBapNuoc_Chon.cs" />
     <Compile Include="CaChieu.cs" />
     <Compile Include="CaChieu_Phim.cs" />
     <Compile Include="ChiTietCaChieu.cs" />

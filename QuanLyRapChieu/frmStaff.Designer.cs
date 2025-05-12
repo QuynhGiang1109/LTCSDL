@@ -83,13 +83,12 @@
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnClose.Size = new System.Drawing.Size(83, 71);
             this.btnClose.TabIndex = 20;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // labelX
             // 
             this.labelX.AutoSize = true;
             this.labelX.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX.Location = new System.Drawing.Point(520, 18);
+            this.labelX.Location = new System.Drawing.Point(539, 18);
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(393, 41);
             this.labelX.TabIndex = 0;

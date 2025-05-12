@@ -19,14 +19,18 @@ namespace QuanLyRapChieu
         public frmStaff()
         {
             InitializeComponent();
-            hienThiPhimTheoNgay();
-           
+            //hienThiPhimTheoNgay();
+            hienThiPhimTheoThang();
         }
 
         // Sk khi người dùng thay đổi ngày trong dateTimePicker
         private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
         {
-            hienThiPhimTheoNgay();// Update ds phim tương ứng với ngày vừa chọn
+            //1. Nhvien lọc được phim trùng đúng ngày được chọn
+            //hienThiPhimTheoNgay();
+
+            //2. Nvien xem được tất cả bộ phim trong tháng được chọn
+            hienThiPhimTheoThang();
 
         }
 
@@ -45,7 +49,10 @@ namespace QuanLyRapChieu
         // Khi người dùng chọn một tên phim khác trong cbobox
         private void cboFilmName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            hienThiDanhSachCaChieuTheoTenPhim();// Hiển thị danh sách ca chiếu của phim được chọn
+            if (cboFilmName.SelectedIndex != -1)  // Ktranếu người dùng đã chọn một phim
+            {
+                hienThiDanhSachCaChieuTheoTenPhim();
+            }
         }
 
         private void btn_ChonVe_Click(object sender, EventArgs e)
@@ -64,31 +71,29 @@ namespace QuanLyRapChieu
         {
             DateTime date = dtpThoiGian.Value;
             PhimBUS.Instance.hienThiPhimTheoNgay(cboFilmName, date);
+
+        }
+        public void hienThiPhimTheoThang()
+        {
+            DateTime month = dtpThoiGian.Value;
+            PhimBUS.Instance.hienThiPhimTheoThang(cboFilmName, month);
         }
 
         // Hiển thị danh sách ca chiếu ứng với phim được chọn
         public void hienThiDanhSachCaChieuTheoTenPhim()
         {
-  
+
             string tenPhim = cboFilmName.Text;// Lấy tên phim từ ComboBox
             List<CaChieu_Phim> listCaChieu = CaChieu_PhimBUS.Instance.hienThiDanhSachCaChieuTheoTenPhim(tenPhim);
             dtv_CaChieu.DataSource = listCaChieu; // Gán dữ liệu vào dtgv
 
         }
 
-        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void dtv_CaChieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

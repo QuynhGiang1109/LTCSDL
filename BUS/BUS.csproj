@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComBoBapNuocBUS.cs" />
     <Compile Include="CustomerBUS.cs" />
     <Compile Include="PhimBUS.cs" />
     <Compile Include="CaChieuBUS.cs" />

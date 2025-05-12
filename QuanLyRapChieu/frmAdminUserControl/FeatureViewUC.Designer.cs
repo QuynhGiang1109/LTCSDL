@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeatureViewUC));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPopcorn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPopcornUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnTicketsUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowTimesUC = new Guna.UI2.WinForms.Guna2Button();
@@ -46,7 +46,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gray;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.btnPopcorn);
+            this.guna2Panel1.Controls.Add(this.btnPopcornUC);
             this.guna2Panel1.Controls.Add(this.btnTicketsUC);
             this.guna2Panel1.Controls.Add(this.btnRap);
             this.guna2Panel1.Controls.Add(this.btnShowTimesUC);
@@ -61,24 +61,25 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1500, 137);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnPopcorn
+            // btnPopcornUC
             // 
-            this.btnPopcorn.BorderColor = System.Drawing.Color.Gray;
-            this.btnPopcorn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPopcorn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPopcorn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPopcorn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPopcorn.FillColor = System.Drawing.Color.Gray;
-            this.btnPopcorn.Font = new System.Drawing.Font("Times New Roman", 20.25F);
-            this.btnPopcorn.ForeColor = System.Drawing.Color.White;
-            this.btnPopcorn.Image = ((System.Drawing.Image)(resources.GetObject("btnPopcorn.Image")));
-            this.btnPopcorn.ImageSize = new System.Drawing.Size(70, 70);
-            this.btnPopcorn.Location = new System.Drawing.Point(1305, 0);
-            this.btnPopcorn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnPopcorn.Name = "btnPopcorn";
-            this.btnPopcorn.Size = new System.Drawing.Size(180, 137);
-            this.btnPopcorn.TabIndex = 7;
-            this.btnPopcorn.Text = "Bắp";
+            this.btnPopcornUC.BorderColor = System.Drawing.Color.Gray;
+            this.btnPopcornUC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcornUC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcornUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPopcornUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPopcornUC.FillColor = System.Drawing.Color.Gray;
+            this.btnPopcornUC.Font = new System.Drawing.Font("Times New Roman", 20.25F);
+            this.btnPopcornUC.ForeColor = System.Drawing.Color.White;
+            this.btnPopcornUC.Image = ((System.Drawing.Image)(resources.GetObject("btnPopcornUC.Image")));
+            this.btnPopcornUC.ImageSize = new System.Drawing.Size(70, 70);
+            this.btnPopcornUC.Location = new System.Drawing.Point(1316, 0);
+            this.btnPopcornUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPopcornUC.Name = "btnPopcornUC";
+            this.btnPopcornUC.Size = new System.Drawing.Size(169, 137);
+            this.btnPopcornUC.TabIndex = 7;
+            this.btnPopcornUC.Text = "Bắp";
+            this.btnPopcornUC.Click += new System.EventHandler(this.btnPopcorn_Click);
             // 
             // btnTicketsUC
             // 
@@ -94,7 +95,7 @@
             this.btnTicketsUC.Location = new System.Drawing.Point(1151, 0);
             this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTicketsUC.Name = "btnTicketsUC";
-            this.btnTicketsUC.Size = new System.Drawing.Size(184, 137);
+            this.btnTicketsUC.Size = new System.Drawing.Size(146, 137);
             this.btnTicketsUC.TabIndex = 6;
             this.btnTicketsUC.Text = "  Vé";
             this.btnTicketsUC.Click += new System.EventHandler(this.btnTicketsUC_Click);
@@ -241,6 +242,6 @@
         private Guna.UI2.WinForms.Guna2Button btnGenreUC;
         private Guna.UI2.WinForms.Guna2Button btnMovieUC;
         private Guna.UI2.WinForms.Guna2Button btnShowTimesUC;
-        private Guna.UI2.WinForms.Guna2Button btnPopcorn;
+        private Guna.UI2.WinForms.Guna2Button btnPopcornUC;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
-    partial class Popcorn_UC
+    partial class PopcornUC
     {
         /// <summary> 
         /// Required designer variable.
