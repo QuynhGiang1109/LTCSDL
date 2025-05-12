@@ -63,8 +63,8 @@ namespace QuanLyRapChieu
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FillColor = System.Drawing.Color.AliceBlue;
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtUsername.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Location = new System.Drawing.Point(20, 165);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -83,7 +83,7 @@ namespace QuanLyRapChieu
             this.guna2CustomGradientPanel1.Controls.Add(this.txtPassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtUsername);
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.CornflowerBlue;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.MediumBlue;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.AliceBlue;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(8, 14);
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -105,8 +105,9 @@ namespace QuanLyRapChieu
             // lbPass
             // 
             this.lbPass.AutoSize = true;
+            this.lbPass.BackColor = System.Drawing.Color.Transparent;
             this.lbPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPass.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbPass.ForeColor = System.Drawing.Color.White;
             this.lbPass.Location = new System.Drawing.Point(14, 243);
             this.lbPass.Name = "lbPass";
             this.lbPass.Size = new System.Drawing.Size(122, 32);
@@ -118,7 +119,7 @@ namespace QuanLyRapChieu
             this.lbUser.AutoSize = true;
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbUser.ForeColor = System.Drawing.Color.White;
             this.lbUser.Location = new System.Drawing.Point(14, 127);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(128, 32);
@@ -129,12 +130,13 @@ namespace QuanLyRapChieu
             // 
             this.btnLogin.AutoRoundedCorners = true;
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnLogin.BorderColor = System.Drawing.Color.White;
             this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.FillColor = System.Drawing.Color.DarkBlue;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(125, 361);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -156,7 +158,7 @@ namespace QuanLyRapChieu
             this.txtPassword.FillColor = System.Drawing.Color.AliceBlue;
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txtPassword.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.txtPassword.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Location = new System.Drawing.Point(20, 281);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
