@@ -23,6 +23,7 @@ namespace QuanLyRapChieu
         {
             FeatureViewUC featureViewUC = new FeatureViewUC();
             pnAdmin.Controls.Clear();
+            featureViewUC.Dock = DockStyle.Fill;
             pnAdmin.Controls.Add(featureViewUC);
         }
 
@@ -31,6 +32,7 @@ namespace QuanLyRapChieu
         {
             StaffUC staffUC = new StaffUC();
             pnAdmin.Controls.Clear();
+            staffUC.Dock = DockStyle.Fill;
             pnAdmin.Controls.Add(staffUC);
         }
 
@@ -38,6 +40,7 @@ namespace QuanLyRapChieu
         {
             CustomerUC customerUC = new CustomerUC();
             pnAdmin.Controls.Clear();
+            customerUC.Dock = DockStyle.Fill;
             pnAdmin.Controls.Add(customerUC);
         }
 

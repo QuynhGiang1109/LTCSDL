@@ -80,6 +80,12 @@
     <Compile Include="frmAdminUserControl\AccountUC.Designer.cs">
       <DependentUpon>AccountUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.Designer.cs">
+      <DependentUpon>Popcorn_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdminUserControl\FeatureViewUserControl\RapUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\MovieUC.resx">
       <DependentUpon>MovieUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\Popcorn_UC.resx">
+      <DependentUpon>Popcorn_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminUserControl\FeatureViewUserControl\RapUC.resx">
       <DependentUpon>RapUC.cs</DependentUpon>

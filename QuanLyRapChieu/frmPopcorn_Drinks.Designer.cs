@@ -79,7 +79,7 @@
             // 
             this.txtSpecialcombo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSpecialcombo2.Location = new System.Drawing.Point(709, 511);
-            this.txtSpecialcombo2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSpecialcombo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSpecialcombo2.Name = "txtSpecialcombo2";
             this.txtSpecialcombo2.Size = new System.Drawing.Size(53, 29);
             this.txtSpecialcombo2.TabIndex = 67;
@@ -90,7 +90,7 @@
             this.btnCongS2.BackColor = System.Drawing.Color.IndianRed;
             this.btnCongS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCongS2.Location = new System.Drawing.Point(767, 510);
-            this.btnCongS2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCongS2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCongS2.Name = "btnCongS2";
             this.btnCongS2.Size = new System.Drawing.Size(29, 27);
             this.btnCongS2.TabIndex = 66;
@@ -103,7 +103,7 @@
             this.btnTruS2.BackColor = System.Drawing.Color.IndianRed;
             this.btnTruS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTruS2.Location = new System.Drawing.Point(672, 510);
-            this.btnTruS2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTruS2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTruS2.Name = "btnTruS2";
             this.btnTruS2.Size = new System.Drawing.Size(29, 27);
             this.btnTruS2.TabIndex = 65;
@@ -153,7 +153,7 @@
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(200, 200);
             this.guna2ImageButton4.Location = new System.Drawing.Point(479, 298);
-            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton4.Size = new System.Drawing.Size(188, 154);
@@ -163,7 +163,7 @@
             // 
             this.txtSpecialcombo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSpecialcombo1.Location = new System.Drawing.Point(213, 511);
-            this.txtSpecialcombo1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSpecialcombo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSpecialcombo1.Name = "txtSpecialcombo1";
             this.txtSpecialcombo1.Size = new System.Drawing.Size(53, 29);
             this.txtSpecialcombo1.TabIndex = 60;
@@ -174,7 +174,7 @@
             this.btnCongS1.BackColor = System.Drawing.Color.IndianRed;
             this.btnCongS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCongS1.Location = new System.Drawing.Point(272, 511);
-            this.btnCongS1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCongS1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCongS1.Name = "btnCongS1";
             this.btnCongS1.Size = new System.Drawing.Size(29, 27);
             this.btnCongS1.TabIndex = 59;
@@ -187,7 +187,7 @@
             this.btnTruS1.BackColor = System.Drawing.Color.IndianRed;
             this.btnTruS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTruS1.Location = new System.Drawing.Point(177, 511);
-            this.btnTruS1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTruS1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTruS1.Name = "btnTruS1";
             this.btnTruS1.Size = new System.Drawing.Size(29, 27);
             this.btnTruS1.TabIndex = 58;
@@ -237,7 +237,7 @@
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
             this.guna2ImageButton3.Location = new System.Drawing.Point(31, 298);
-            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton3.Size = new System.Drawing.Size(146, 154);
@@ -247,7 +247,7 @@
             // 
             this.txtMycombo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMycombo2.Location = new System.Drawing.Point(709, 232);
-            this.txtMycombo2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMycombo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMycombo2.Name = "txtMycombo2";
             this.txtMycombo2.Size = new System.Drawing.Size(53, 29);
             this.txtMycombo2.TabIndex = 53;
@@ -258,7 +258,7 @@
             this.btnCong2.BackColor = System.Drawing.Color.IndianRed;
             this.btnCong2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCong2.Location = new System.Drawing.Point(773, 232);
-            this.btnCong2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCong2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCong2.Name = "btnCong2";
             this.btnCong2.Size = new System.Drawing.Size(29, 27);
             this.btnCong2.TabIndex = 52;
@@ -271,7 +271,7 @@
             this.btnTru2.BackColor = System.Drawing.Color.IndianRed;
             this.btnTru2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTru2.Location = new System.Drawing.Point(670, 232);
-            this.btnTru2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTru2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTru2.Name = "btnTru2";
             this.btnTru2.Size = new System.Drawing.Size(29, 27);
             this.btnTru2.TabIndex = 51;
@@ -316,7 +316,7 @@
             // 
             this.txtMycombo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMycombo1.Location = new System.Drawing.Point(213, 233);
-            this.txtMycombo1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMycombo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMycombo1.Name = "txtMycombo1";
             this.txtMycombo1.Size = new System.Drawing.Size(53, 29);
             this.txtMycombo1.TabIndex = 46;
@@ -327,7 +327,7 @@
             this.btnCong1.BackColor = System.Drawing.Color.IndianRed;
             this.btnCong1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCong1.Location = new System.Drawing.Point(272, 232);
-            this.btnCong1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCong1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCong1.Name = "btnCong1";
             this.btnCong1.Size = new System.Drawing.Size(29, 27);
             this.btnCong1.TabIndex = 45;
@@ -340,7 +340,7 @@
             this.btnTru1.BackColor = System.Drawing.Color.IndianRed;
             this.btnTru1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTru1.Location = new System.Drawing.Point(177, 232);
-            this.btnTru1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTru1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTru1.Name = "btnTru1";
             this.btnTru1.Size = new System.Drawing.Size(29, 27);
             this.btnTru1.TabIndex = 44;
@@ -390,7 +390,7 @@
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(260, 260);
             this.guna2ImageButton1.Location = new System.Drawing.Point(31, 63);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Size = new System.Drawing.Size(146, 142);
@@ -418,7 +418,7 @@
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(200, 200);
             this.guna2ImageButton2.Location = new System.Drawing.Point(501, 63);
-            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton2.Size = new System.Drawing.Size(163, 152);
@@ -426,17 +426,17 @@
             // 
             // panelScreen
             // 
-            this.panelScreen.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panelScreen.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelScreen.Controls.Add(this.lblBapNuoc);
             this.panelScreen.Location = new System.Drawing.Point(1, 1);
-            this.panelScreen.Margin = new System.Windows.Forms.Padding(2);
+            this.panelScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelScreen.Name = "panelScreen";
             this.panelScreen.Size = new System.Drawing.Size(985, 38);
             this.panelScreen.TabIndex = 39;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label13);
@@ -449,7 +449,7 @@
             this.panel5.Controls.Add(this.btnNext);
             this.panel5.Controls.Add(this.btnBack);
             this.panel5.Location = new System.Drawing.Point(1, 569);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(980, 94);
             this.panel5.TabIndex = 68;
@@ -488,7 +488,7 @@
             // 
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(612, 48);
-            this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.ReadOnly = true;
             this.txtTongTien.Size = new System.Drawing.Size(177, 26);
@@ -499,7 +499,7 @@
             // 
             this.txtCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCombo.Location = new System.Drawing.Point(255, 55);
-            this.txtCombo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCombo.Name = "txtCombo";
             this.txtCombo.ReadOnly = true;
             this.txtCombo.Size = new System.Drawing.Size(178, 26);
@@ -510,7 +510,7 @@
             // 
             this.txtTienVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienVe.Location = new System.Drawing.Point(255, 19);
-            this.txtTienVe.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTienVe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTienVe.Name = "txtTienVe";
             this.txtTienVe.ReadOnly = true;
             this.txtTienVe.Size = new System.Drawing.Size(178, 26);
@@ -595,7 +595,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(909, 651);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(979, 651);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.txtSpecialcombo2);
             this.Controls.Add(this.btnCongS2);
@@ -627,7 +628,7 @@
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.panelScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmPopcorn_Drinks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Popcorn_Drinks";

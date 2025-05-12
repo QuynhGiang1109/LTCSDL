@@ -39,6 +39,9 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
             txtTicketPrice_Showtime.DataBindings.Clear();
             cboCinemaID_Showtime.DataBindings.Clear();
             cboRap.DataBindings.Clear();
+
+            cboMovieName_Showtime.DataBindings.Clear(); // Thêm dòng này để xóa binding của cboMovieName_Showtime
+            txtMovieName_Showtime.DataBindings.Clear(); // Xóa binding của txtMovieName_Showtime (nếu có)
         }
 
         //add Binding
@@ -57,83 +60,79 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
         void LoadmovieNameIntoComboBox()
         {
             cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
-            cboMovieName_Showtime.DisplayMember = "MaPhim";
+            cboMovieName_Showtime.DisplayMember = "MaPhim"; // Hiển thị MaPhim
+            cboMovieName_Showtime.ValueMember = "MaPhim";   // Giá trị thực sự là MaPhim
+
+            /*
+            //cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
+            //cboMovieName_Showtime.DisplayMember = "MaPhim";
+            cboMovieName_Showtime.DataSource = PhimDAO.GetPhim();
+            cboMovieName_Showtime.DisplayMember = "TenPhim"; // Hiển thị TenPhim thay vì MaPhim
+            cboMovieName_Showtime.ValueMember = "MaPhim";    // Sử dụng MaPhim làm giá trị
+            */
         }
         //Khi click 1 datarow thì các control bên phải hiển thị đầy đủ đúng t.tin datarow đang chọn
         private void dtgvShowtime_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                // Lấy thông tin từ dòng được chọn
                 DataGridViewRow selectedRow = dtgvShowtime.Rows[e.RowIndex];
 
-                // Cập nhật các control với thông tin từ dòng được chọn
-                txtShowtimeID.Text = selectedRow.Cells["MaCaChieu"].Value.ToString(); // Mã lịch chiếu
+                // Cập nhật các control
+                txtShowtimeID.Text = selectedRow.Cells["MaCaChieu"].Value?.ToString() ?? "";
+                dtmShowtimeDate.Value = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value?.ToString() ?? DateTime.Now.ToString()).Date;
+                dtmShowtimeTime.Value = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value?.ToString() ?? DateTime.Now.ToString());
+                dateTimeDay.Value = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value?.ToString() ?? DateTime.Now.ToString()).Date;
+                dateTimetimes.Value = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value?.ToString() ?? DateTime.Now.ToString());
+                txtTicketPrice_Showtime.Text = selectedRow.Cells["GiaVe"].Value?.ToString() ?? "0";
 
-                // Cập nhật tên phim
-                string movieName = selectedRow.Cells["TenPhim"].Value?.ToString() ?? "";
-                if (cboMovieName_Showtime.Items.Count > 0)
+                string cinemaID = selectedRow.Cells["MaPhong"].Value?.ToString() ?? "";
+                if (cboCinemaID_Showtime.Items.Count > 0)
                 {
-                    int index = -1;
+                    cboCinemaID_Showtime.SelectedValue = cinemaID;
+                }
+                string rapID = selectedRow.Cells["MaRap"].Value?.ToString() ?? "";
+                if (cboRap.Items.Count > 0)
+                {
+                    cboRap.SelectedValue = rapID;
+                }
+
+                // Cập nhật cboMovieName_Showtime
+                string maPhim = selectedRow.Cells["MaPhim"].Value?.ToString() ?? "";
+                cboMovieName_Showtime.SelectedIndex = -1; // Reset trước khi set giá trị mới
+                if (cboMovieName_Showtime.Items.Count > 0 && !string.IsNullOrEmpty(maPhim))
+                {
+                    // Tìm đối tượng Phim tương ứng với MaPhim
                     foreach (var item in cboMovieName_Showtime.Items)
                     {
-                        if (item.ToString() == movieName)
+                        if (item is Phim phim && phim.MaPhim == maPhim)
                         {
-                            index = cboMovieName_Showtime.Items.IndexOf(item);
+                            cboMovieName_Showtime.SelectedItem = item;
                             break;
                         }
                     }
-                    if (index >= 0)
+
+                    if (cboMovieName_Showtime.SelectedIndex == -1)
                     {
-                        cboMovieName_Showtime.SelectedIndex = index;
-                    }
-                    else
-                    {
-                        cboMovieName_Showtime.SelectedIndex = -1; // Không tìm thấy, bỏ chọn
+                        cboMovieName_Showtime.SelectedIndex = -1; // Nếu không tìm thấy, bỏ chọn
                     }
                 }
-                txtMovieName_Showtime.Text = movieName; // Hiển thị tên phim
-
-                // Cập nhật mã rạp
-                string cinemaID = selectedRow.Cells["MaRap"].Value?.ToString() ?? "";
-                if (cboCinemaID_Showtime.Items.Count > 0)
+                else
                 {
-                    int index = cboCinemaID_Showtime.Items.IndexOf(cinemaID);
-                    if (index >= 0)
-                    {
-                        cboCinemaID_Showtime.SelectedIndex = index;
-                    }
-                    else
-                    {
-                        cboCinemaID_Showtime.SelectedIndex = -1;
-                    }
+                    cboMovieName_Showtime.SelectedIndex = -1;
                 }
-                if (cboRap.Items.Count > 0)
+
+                // Cập nhật txtMovieName_Showtime
+                if (cboMovieName_Showtime.SelectedItem is Phim selectedMovie)
                 {
-                    int index = cboRap.Items.IndexOf(cinemaID);
-                    if (index >= 0)
-                    {
-                        cboRap.SelectedIndex = index;
-                    }
-                    else
-                    {
-                        cboRap.SelectedIndex = -1;
-                    }
+                    txtMovieName_Showtime.Text = selectedMovie.TenPhim;
                 }
-
-                // Cập nhật thời gian chiếu
-                DateTime showtimeDateTime = DateTime.Parse(selectedRow.Cells["ThoiGianChieu"].Value?.ToString() ?? DateTime.Now.ToString());
-                dtmShowtimeDate.Value = showtimeDateTime.Date;
-                dtmShowtimeTime.Value = showtimeDateTime;
-
-                // Cập nhật thời gian kết thúc
-                DateTime endTime = DateTime.Parse(selectedRow.Cells["ThoiGianKetThuc"].Value?.ToString() ?? DateTime.Now.ToString());
-                dateTimeDay.Value = endTime.Date;
-                dateTimetimes.Value = endTime;
-
-                // Cập nhật giá vé
-                txtTicketPrice_Showtime.Text = selectedRow.Cells["GiaVe"].Value?.ToString() ?? "0";
+                else
+                {
+                    txtMovieName_Showtime.Text = "";
+                }
             }
+
         }
 
         private void cboMovieName_Showtime_SelectedIndexChanged(object sender, EventArgs e)

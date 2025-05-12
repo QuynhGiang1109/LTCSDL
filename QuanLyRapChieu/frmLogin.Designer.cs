@@ -107,7 +107,7 @@ namespace QuanLyRapChieu
             this.lbPass.AutoSize = true;
             this.lbPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbPass.Location = new System.Drawing.Point(25, 229);
+            this.lbPass.Location = new System.Drawing.Point(14, 243);
             this.lbPass.Name = "lbPass";
             this.lbPass.Size = new System.Drawing.Size(122, 32);
             this.lbPass.TabIndex = 6;
@@ -119,7 +119,7 @@ namespace QuanLyRapChieu
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbUser.Location = new System.Drawing.Point(25, 112);
+            this.lbUser.Location = new System.Drawing.Point(14, 127);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(128, 32);
             this.lbUser.TabIndex = 5;

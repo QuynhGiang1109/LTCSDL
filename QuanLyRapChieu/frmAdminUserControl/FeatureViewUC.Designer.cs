@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeatureViewUC));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPopcorn = new Guna.UI2.WinForms.Guna2Button();
             this.btnTicketsUC = new Guna.UI2.WinForms.Guna2Button();
             this.btnRap = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowTimesUC = new Guna.UI2.WinForms.Guna2Button();
@@ -45,6 +46,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gray;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.btnPopcorn);
             this.guna2Panel1.Controls.Add(this.btnTicketsUC);
             this.guna2Panel1.Controls.Add(this.btnRap);
             this.guna2Panel1.Controls.Add(this.btnShowTimesUC);
@@ -54,10 +56,28 @@
             this.guna2Panel1.Controls.Add(this.btnGenreUC);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1500, 137);
+            this.guna2Panel1.Size = new System.Drawing.Size(1072, 89);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnPopcorn
+            // 
+            this.btnPopcorn.BorderColor = System.Drawing.Color.Gray;
+            this.btnPopcorn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcorn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcorn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPopcorn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPopcorn.FillColor = System.Drawing.Color.Gray;
+            this.btnPopcorn.Font = new System.Drawing.Font("Times New Roman", 20.25F);
+            this.btnPopcorn.ForeColor = System.Drawing.Color.White;
+            this.btnPopcorn.Image = ((System.Drawing.Image)(resources.GetObject("btnPopcorn.Image")));
+            this.btnPopcorn.ImageSize = new System.Drawing.Size(70, 70);
+            this.btnPopcorn.Location = new System.Drawing.Point(927, 0);
+            this.btnPopcorn.Name = "btnPopcorn";
+            this.btnPopcorn.Size = new System.Drawing.Size(120, 89);
+            this.btnPopcorn.TabIndex = 7;
+            this.btnPopcorn.Text = "Bắp";
+            this.btnPopcorn.Click += new System.EventHandler(this.btnPopcorn_Click);
             // 
             // btnTicketsUC
             // 
@@ -70,10 +90,9 @@
             this.btnTicketsUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketsUC.ForeColor = System.Drawing.Color.White;
             this.btnTicketsUC.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketsUC.Image")));
-            this.btnTicketsUC.Location = new System.Drawing.Point(1280, 0);
-            this.btnTicketsUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTicketsUC.Location = new System.Drawing.Point(792, 0);
             this.btnTicketsUC.Name = "btnTicketsUC";
-            this.btnTicketsUC.Size = new System.Drawing.Size(216, 137);
+            this.btnTicketsUC.Size = new System.Drawing.Size(123, 89);
             this.btnTicketsUC.TabIndex = 6;
             this.btnTicketsUC.Text = "  Vé";
             this.btnTicketsUC.Click += new System.EventHandler(this.btnTicketsUC_Click);
@@ -90,9 +109,8 @@
             this.btnRap.ForeColor = System.Drawing.Color.White;
             this.btnRap.Image = ((System.Drawing.Image)(resources.GetObject("btnRap.Image")));
             this.btnRap.Location = new System.Drawing.Point(0, 0);
-            this.btnRap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRap.Name = "btnRap";
-            this.btnRap.Size = new System.Drawing.Size(224, 137);
+            this.btnRap.Size = new System.Drawing.Size(125, 89);
             this.btnRap.TabIndex = 1;
             this.btnRap.Text = "  Rạp";
             this.btnRap.Click += new System.EventHandler(this.btnRap_Click);
@@ -108,10 +126,9 @@
             this.btnShowTimesUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowTimesUC.ForeColor = System.Drawing.Color.White;
             this.btnShowTimesUC.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTimesUC.Image")));
-            this.btnShowTimesUC.Location = new System.Drawing.Point(1038, 0);
-            this.btnShowTimesUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnShowTimesUC.Location = new System.Drawing.Point(645, 0);
             this.btnShowTimesUC.Name = "btnShowTimesUC";
-            this.btnShowTimesUC.Size = new System.Drawing.Size(243, 137);
+            this.btnShowTimesUC.Size = new System.Drawing.Size(135, 89);
             this.btnShowTimesUC.TabIndex = 2;
             this.btnShowTimesUC.Text = "Ca chiếu";
             this.btnShowTimesUC.Click += new System.EventHandler(this.btnShowTimesUC_Click);
@@ -122,10 +139,9 @@
             this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
             this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageRadioButton1.ImageRotate = 0F;
-            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(104, 115);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(69, 75);
             this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
-            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(147, 97);
+            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(98, 63);
             this.guna2ImageRadioButton1.TabIndex = 0;
             // 
             // btnMovieUC
@@ -139,10 +155,9 @@
             this.btnMovieUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieUC.ForeColor = System.Drawing.Color.White;
             this.btnMovieUC.Image = ((System.Drawing.Image)(resources.GetObject("btnMovieUC.Image")));
-            this.btnMovieUC.Location = new System.Drawing.Point(795, 0);
-            this.btnMovieUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMovieUC.Location = new System.Drawing.Point(488, 0);
             this.btnMovieUC.Name = "btnMovieUC";
-            this.btnMovieUC.Size = new System.Drawing.Size(254, 137);
+            this.btnMovieUC.Size = new System.Drawing.Size(135, 89);
             this.btnMovieUC.TabIndex = 3;
             this.btnMovieUC.Text = "  Phim";
             this.btnMovieUC.Click += new System.EventHandler(this.btnMovieUC_Click);
@@ -158,10 +173,9 @@
             this.btnCinema.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCinema.ForeColor = System.Drawing.Color.White;
             this.btnCinema.Image = ((System.Drawing.Image)(resources.GetObject("btnCinema.Image")));
-            this.btnCinema.Location = new System.Drawing.Point(219, 0);
-            this.btnCinema.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCinema.Location = new System.Drawing.Point(142, 0);
             this.btnCinema.Name = "btnCinema";
-            this.btnCinema.Size = new System.Drawing.Size(310, 137);
+            this.btnCinema.Size = new System.Drawing.Size(175, 89);
             this.btnCinema.TabIndex = 5;
             this.btnCinema.Text = "Phòng chiếu";
             this.btnCinema.Click += new System.EventHandler(this.btnCinema_Click);
@@ -177,34 +191,31 @@
             this.btnGenreUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenreUC.ForeColor = System.Drawing.Color.White;
             this.btnGenreUC.Image = ((System.Drawing.Image)(resources.GetObject("btnGenreUC.Image")));
-            this.btnGenreUC.Location = new System.Drawing.Point(524, 0);
-            this.btnGenreUC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGenreUC.Location = new System.Drawing.Point(330, 0);
             this.btnGenreUC.Name = "btnGenreUC";
-            this.btnGenreUC.Size = new System.Drawing.Size(276, 137);
+            this.btnGenreUC.Size = new System.Drawing.Size(152, 89);
             this.btnGenreUC.TabIndex = 4;
             this.btnGenreUC.Text = "Thể loại";
             this.btnGenreUC.Click += new System.EventHandler(this.btnGenreUC_Click);
             // 
             // pnData
             // 
-            this.pnData.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pnData.BackColor = System.Drawing.Color.White;
             this.pnData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pnData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnData.Location = new System.Drawing.Point(0, 137);
-            this.pnData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnData.Location = new System.Drawing.Point(0, 89);
             this.pnData.Name = "pnData";
-            this.pnData.Size = new System.Drawing.Size(1500, 803);
+            this.pnData.Size = new System.Drawing.Size(1072, 522);
             this.pnData.TabIndex = 1;
             // 
             // FeatureViewUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnData);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FeatureViewUC";
-            this.Size = new System.Drawing.Size(1500, 940);
+            this.Size = new System.Drawing.Size(1072, 611);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -221,5 +232,6 @@
         private Guna.UI2.WinForms.Guna2Button btnGenreUC;
         private Guna.UI2.WinForms.Guna2Button btnMovieUC;
         private Guna.UI2.WinForms.Guna2Button btnShowTimesUC;
+        private Guna.UI2.WinForms.Guna2Button btnPopcorn;
     }
 }

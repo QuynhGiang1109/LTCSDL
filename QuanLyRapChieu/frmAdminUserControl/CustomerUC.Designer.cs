@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpCustomer = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtCusId = new Guna.UI2.WinForms.Guna2TextBox();
             this.nudPoint = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -110,6 +110,7 @@
             this.nudPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudPoint.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPoint.Location = new System.Drawing.Point(893, 51);
+            this.nudPoint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudPoint.Name = "nudPoint";
             this.nudPoint.Size = new System.Drawing.Size(68, 26);
             this.nudPoint.TabIndex = 10;
@@ -121,7 +122,8 @@
             this.numericUpDownNamSinh.BorderColor = System.Drawing.Color.Black;
             this.numericUpDownNamSinh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDownNamSinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownNamSinh.Location = new System.Drawing.Point(173, 90);
+            this.numericUpDownNamSinh.Location = new System.Drawing.Point(161, 90);
+            this.numericUpDownNamSinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownNamSinh.Maximum = new decimal(new int[] {
             2022,
             0,
@@ -188,7 +190,7 @@
             this.txtCusName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCusName.ForeColor = System.Drawing.Color.Black;
             this.txtCusName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCusName.Location = new System.Drawing.Point(173, 51);
+            this.txtCusName.Location = new System.Drawing.Point(161, 51);
             this.txtCusName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCusName.Name = "txtCusName";
             this.txtCusName.PlaceholderText = "";
@@ -200,7 +202,7 @@
             // 
             this.lblCusBirth.BackColor = System.Drawing.Color.Transparent;
             this.lblCusBirth.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCusBirth.Location = new System.Drawing.Point(58, 99);
+            this.lblCusBirth.Location = new System.Drawing.Point(50, 99);
             this.lblCusBirth.Name = "lblCusBirth";
             this.lblCusBirth.Size = new System.Drawing.Size(73, 21);
             this.lblCusBirth.TabIndex = 5;
@@ -250,7 +252,7 @@
             // 
             this.lblCusName.BackColor = System.Drawing.Color.Transparent;
             this.lblCusName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCusName.Location = new System.Drawing.Point(58, 56);
+            this.lblCusName.Location = new System.Drawing.Point(50, 56);
             this.lblCusName.Name = "lblCusName";
             this.lblCusName.Size = new System.Drawing.Size(58, 21);
             this.lblCusName.TabIndex = 0;
@@ -319,14 +321,14 @@
             this.dtgvCustomer.AllowUserToDeleteRows = false;
             this.dtgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaKH,
@@ -335,17 +337,18 @@
             this.NamSinh,
             this.SoDienThoai,
             this.DiemTichLuy});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvCustomer.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvCustomer.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvCustomer.Location = new System.Drawing.Point(0, 179);
             this.dtgvCustomer.Name = "dtgvCustomer";
             this.dtgvCustomer.ReadOnly = true;
+            this.dtgvCustomer.RowHeadersWidth = 62;
             this.dtgvCustomer.Size = new System.Drawing.Size(994, 432);
             this.dtgvCustomer.TabIndex = 14;
             this.dtgvCustomer.SelectionChanged += new System.EventHandler(this.dtgvCustomer_SelectionChanged);
@@ -354,6 +357,7 @@
             // 
             this.MaKH.DataPropertyName = "MaKH";
             this.MaKH.HeaderText = "Mã Khách Hàng";
+            this.MaKH.MinimumWidth = 8;
             this.MaKH.Name = "MaKH";
             this.MaKH.ReadOnly = true;
             // 
@@ -361,6 +365,7 @@
             // 
             this.TenKhachHang.DataPropertyName = "TenKhachHang";
             this.TenKhachHang.HeaderText = "Tên Khách Hàng";
+            this.TenKhachHang.MinimumWidth = 8;
             this.TenKhachHang.Name = "TenKhachHang";
             this.TenKhachHang.ReadOnly = true;
             // 
@@ -368,6 +373,7 @@
             // 
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 8;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.ReadOnly = true;
             // 
@@ -375,6 +381,7 @@
             // 
             this.NamSinh.DataPropertyName = "NamSinh";
             this.NamSinh.HeaderText = "Năm Sinh";
+            this.NamSinh.MinimumWidth = 8;
             this.NamSinh.Name = "NamSinh";
             this.NamSinh.ReadOnly = true;
             // 
@@ -382,6 +389,7 @@
             // 
             this.SoDienThoai.DataPropertyName = "SoDienThoai";
             this.SoDienThoai.HeaderText = "Số Điện Thoại";
+            this.SoDienThoai.MinimumWidth = 8;
             this.SoDienThoai.Name = "SoDienThoai";
             this.SoDienThoai.ReadOnly = true;
             // 
@@ -389,6 +397,7 @@
             // 
             this.DiemTichLuy.DataPropertyName = "DiemTichLuy";
             this.DiemTichLuy.HeaderText = "Điểm Tích Lũy";
+            this.DiemTichLuy.MinimumWidth = 8;
             this.DiemTichLuy.Name = "DiemTichLuy";
             this.DiemTichLuy.ReadOnly = true;
             // 
@@ -396,7 +405,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dtgvCustomer);
             this.Controls.Add(this.btnUpdateCustomer);
             this.Controls.Add(this.btnDeleteCustomer);
