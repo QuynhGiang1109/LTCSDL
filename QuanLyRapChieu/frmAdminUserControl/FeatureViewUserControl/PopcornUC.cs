@@ -15,7 +15,7 @@ namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
     {
         BindingSource comboList = new BindingSource();
 
-        public Popcorn_UC()
+        public PopcornUC()
         {
             InitializeComponent();
         }

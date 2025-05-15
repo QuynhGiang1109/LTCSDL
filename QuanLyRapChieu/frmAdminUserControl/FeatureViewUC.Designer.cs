@@ -62,23 +62,22 @@
             // 
             // btnPopcornUC
             // 
-            this.btnPopcorn.BorderColor = System.Drawing.Color.Gray;
-            this.btnPopcorn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPopcorn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPopcorn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPopcorn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPopcorn.FillColor = System.Drawing.Color.Gray;
-            this.btnPopcorn.Font = new System.Drawing.Font("Times New Roman", 20.25F);
-            this.btnPopcorn.ForeColor = System.Drawing.Color.White;
-            this.btnPopcorn.Image = ((System.Drawing.Image)(resources.GetObject("btnPopcorn.Image")));
-            this.btnPopcorn.ImageSize = new System.Drawing.Size(70, 70);
-            this.btnPopcorn.Location = new System.Drawing.Point(927, 0);
-            this.btnPopcorn.Name = "btnPopcorn";
-            this.btnPopcorn.Size = new System.Drawing.Size(120, 89);
-            this.btnPopcorn.TabIndex = 7;
-            this.btnPopcorn.Text = "Bắp";
-            this.btnPopcorn.Click += new System.EventHandler(this.btnPopcorn_Click);
-
+            this.btnPopcornUC.BorderColor = System.Drawing.Color.Gray;
+            this.btnPopcornUC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcornUC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPopcornUC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPopcornUC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPopcornUC.FillColor = System.Drawing.Color.Gray;
+            this.btnPopcornUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPopcornUC.ForeColor = System.Drawing.Color.White;
+            this.btnPopcornUC.Image = ((System.Drawing.Image)(resources.GetObject("btnPopcornUC.Image")));
+            this.btnPopcornUC.ImageSize = new System.Drawing.Size(70, 70);
+            this.btnPopcornUC.Location = new System.Drawing.Point(946, 0);
+            this.btnPopcornUC.Name = "btnPopcornUC";
+            this.btnPopcornUC.Size = new System.Drawing.Size(123, 89);
+            this.btnPopcornUC.TabIndex = 7;
+            this.btnPopcornUC.Text = "Bắp";
+            this.btnPopcornUC.Click += new System.EventHandler(this.btnPopcornUC_Click);
             // 
             // btnTicketsUC
             // 
@@ -91,7 +90,7 @@
             this.btnTicketsUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketsUC.ForeColor = System.Drawing.Color.White;
             this.btnTicketsUC.Image = ((System.Drawing.Image)(resources.GetObject("btnTicketsUC.Image")));
-            this.btnTicketsUC.Location = new System.Drawing.Point(792, 0);
+            this.btnTicketsUC.Location = new System.Drawing.Point(808, 0);
             this.btnTicketsUC.Name = "btnTicketsUC";
             this.btnTicketsUC.Size = new System.Drawing.Size(123, 89);
             this.btnTicketsUC.TabIndex = 6;
@@ -127,7 +126,7 @@
             this.btnShowTimesUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowTimesUC.ForeColor = System.Drawing.Color.White;
             this.btnShowTimesUC.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTimesUC.Image")));
-            this.btnShowTimesUC.Location = new System.Drawing.Point(645, 0);
+            this.btnShowTimesUC.Location = new System.Drawing.Point(667, 0);
             this.btnShowTimesUC.Name = "btnShowTimesUC";
             this.btnShowTimesUC.Size = new System.Drawing.Size(135, 89);
             this.btnShowTimesUC.TabIndex = 2;
@@ -156,7 +155,7 @@
             this.btnMovieUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieUC.ForeColor = System.Drawing.Color.White;
             this.btnMovieUC.Image = ((System.Drawing.Image)(resources.GetObject("btnMovieUC.Image")));
-            this.btnMovieUC.Location = new System.Drawing.Point(488, 0);
+            this.btnMovieUC.Location = new System.Drawing.Point(526, 0);
             this.btnMovieUC.Name = "btnMovieUC";
             this.btnMovieUC.Size = new System.Drawing.Size(135, 89);
             this.btnMovieUC.TabIndex = 3;
@@ -174,7 +173,7 @@
             this.btnCinema.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCinema.ForeColor = System.Drawing.Color.White;
             this.btnCinema.Image = ((System.Drawing.Image)(resources.GetObject("btnCinema.Image")));
-            this.btnCinema.Location = new System.Drawing.Point(142, 0);
+            this.btnCinema.Location = new System.Drawing.Point(162, 0);
             this.btnCinema.Name = "btnCinema";
             this.btnCinema.Size = new System.Drawing.Size(175, 89);
             this.btnCinema.TabIndex = 5;
@@ -192,7 +191,7 @@
             this.btnGenreUC.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenreUC.ForeColor = System.Drawing.Color.White;
             this.btnGenreUC.Image = ((System.Drawing.Image)(resources.GetObject("btnGenreUC.Image")));
-            this.btnGenreUC.Location = new System.Drawing.Point(330, 0);
+            this.btnGenreUC.Location = new System.Drawing.Point(368, 0);
             this.btnGenreUC.Name = "btnGenreUC";
             this.btnGenreUC.Size = new System.Drawing.Size(152, 89);
             this.btnGenreUC.TabIndex = 4;

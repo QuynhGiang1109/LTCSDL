@@ -5,10 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
-=======
 using System.Windows.Forms;
->>>>>>> main
 using static DTO.ComBoBapNuoc_Chon;
 
 namespace BUS
