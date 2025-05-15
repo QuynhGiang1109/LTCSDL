@@ -62,11 +62,11 @@
             this.pn_LichChieuPhim.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pn_LichChieuPhim.Controls.Add(this.btnClose);
             this.pn_LichChieuPhim.Controls.Add(this.labelX);
-            this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_LichChieuPhim.Location = new System.Drawing.Point(0, 0);
             this.pn_LichChieuPhim.Margin = new System.Windows.Forms.Padding(2);
             this.pn_LichChieuPhim.Name = "pn_LichChieuPhim";
-            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1035, 58);
+            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1035, 640);
             this.pn_LichChieuPhim.TabIndex = 6;
             // 
             // btnClose

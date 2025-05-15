@@ -28,7 +28,7 @@ namespace DAO
 
             foreach (DataRow row in table.Rows)
             {
-                CaChieu caChieu = new CaChieu(row); 
+                CaChieu caChieu = new CaChieu(row);
                 caChieus.Add(caChieu); //tra ve list dsach cac ca chieu
             }
             return caChieus;
@@ -63,8 +63,6 @@ namespace DAO
                 throw new Exception("Có lỗi khi thêm ca chiếu trong DAO: " + ex.Message); //de goi BUS khi co loi xay ra
                 return 0;
             }
-
-
         }
         public int xoaCaChieu(string MaCaChieu)
         {
@@ -74,10 +72,10 @@ namespace DAO
                 int kq = DataProvider.Instance.ExecuteNonQuery(query, new object[] { MaCaChieu });
                 return kq;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 //Console.WriteLine("Lỗi khi thêm ca chiếu: " + ex.Message); //debug tạm thời
-                throw new Exception("Có lỗi khi xóa ca chiếu trong DAO: " + ex.Message); 
+                throw new Exception("Có lỗi khi xóa ca chiếu trong DAO: " + ex.Message);
                 return 0; //neu loi
             }
         }
@@ -90,7 +88,7 @@ namespace DAO
                 int kq = DataProvider.Instance.ExecuteNonQuery(query, new object[] { MaCaChieu, ThoiGianChieu, ThoiGianKetThuc, MaPhong, MaPhim, GiaVe, MaRap });
                 return kq;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 //Console.WriteLine("Lỗi khi sửa ca chiếu: " + ex.Message);
                 throw new Exception("Có lỗi khi sửa ca chiếu trong DAO: " + ex.Message);

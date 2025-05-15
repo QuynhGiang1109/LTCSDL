@@ -45,7 +45,7 @@ namespace BUS
         }
         public int suaCaChieu(string MaCaChieu, DateTime ThoiGianChieu, DateTime ThoiGianKetThuc, string MaPhong, string MaPhim, float GiaVe, string MaRap)
         {
-            return CaChieuDAO.Instance.suaCaChieu(MaCaChieu,ThoiGianChieu,ThoiGianKetThuc,MaPhong,MaPhim,GiaVe,MaRap);
+            return CaChieuDAO.Instance.suaCaChieu(MaCaChieu, ThoiGianChieu, ThoiGianKetThuc, MaPhong, MaPhim, GiaVe, MaRap);
         }
 
         public ChiTietCaChieu LayChiTietCaChieu(string maCaChieu)
