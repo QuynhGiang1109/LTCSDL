@@ -1,4 +1,5 @@
 ﻿using BUS;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QRCoder; // thêm ở đầu file
+using System.Drawing;
 
 namespace QuanLyRapChieu
 {
@@ -38,7 +41,13 @@ namespace QuanLyRapChieu
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            // Sử dụng diemDaDung đã được truyền từ constructor
+            // Tạo nội dung QR code
+            string noiDungQR = $"Thanh toán vé phim\nTổng tiền: {tienTong:N0} VND\nTiền vé: {tienVe:N0}\nTiền combo: {tienCombo:N0}\nĐiểm đã dùng: {diemDaDung:N0}\nGhế: {(selectedSeats.Any() ? string.Join(", ", selectedSeats) : "Không có ghế")}";
+
+            // Gọi hàm tạo QR
+            GenerateQRCode(noiDungQR);
+
+            // Hiện thông báo
             string thongBao = "Đặt vé thành công!\n\n";
             thongBao += $"💰 Tổng tiền: {tienTong.ToString("N3", CultureInfo.InvariantCulture)}\n";
             thongBao += $"💰 Tiền vé: {tienVe.ToString("N3", CultureInfo.InvariantCulture)}\n";
@@ -48,7 +57,7 @@ namespace QuanLyRapChieu
 
             MessageBox.Show(thongBao, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Đóng tất cả các form sau khi thanh toán thành công
+            // Đóng form sau thanh toán
             if (previousForm != null)
             {
                 if (previousForm.previousForm != null)
@@ -58,6 +67,7 @@ namespace QuanLyRapChieu
                 previousForm.Close();
             }
             this.Close();
+
         }
 
         private void btnBack2_Click(object sender, EventArgs e)
@@ -68,6 +78,23 @@ namespace QuanLyRapChieu
             }
             this.Close();
         }
+
+
+        //Tạo QRCode
+
+
+        public void GenerateQRCode(string content)
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(content, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20); // số 20 là mức độ zoom
+
+            picQRCode.Image = qrCodeImage; // Hiển thị lên PictureBox
+        }
+
+
+
 
     }
 }

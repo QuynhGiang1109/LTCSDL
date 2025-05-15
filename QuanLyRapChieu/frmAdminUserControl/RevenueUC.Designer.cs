@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+
 namespace QuanLyRapChieu.frmAdminUserControl
 {
     partial class RevenueUC
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,10 +18,6 @@ namespace QuanLyRapChieu.frmAdminUserControl
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.lblSelectMovie = new System.Windows.Forms.Label();
@@ -41,6 +31,8 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.dtmToDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnShowRevenue = new Guna.UI2.WinForms.Guna2Button();
             this.pnSelectMovie = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExportReport = new Guna.UI2.WinForms.Guna2Button();
+            this.cboExportFormat = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRevenue)).BeginInit();
             this.pnSelectMovie.SuspendLayout();
             this.SuspendLayout();
@@ -50,11 +42,9 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.lblSelectMovie.AutoSize = true;
             this.lblSelectMovie.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectMovie.ForeColor = System.Drawing.Color.DarkSlateBlue;
-
-            this.lblSelectMovie.Location = new System.Drawing.Point(30, 52);
+            this.lblSelectMovie.Location = new System.Drawing.Point(27, 42);
             this.lblSelectMovie.Name = "lblSelectMovie";
-            this.lblSelectMovie.Size = new System.Drawing.Size(158, 32);
-
+            this.lblSelectMovie.Size = new System.Drawing.Size(131, 25);
             this.lblSelectMovie.TabIndex = 39;
             this.lblSelectMovie.Text = "Chọn phim:";
             // 
@@ -63,11 +53,9 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.lblTongDoanhThu.AutoSize = true;
             this.lblTongDoanhThu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongDoanhThu.ForeColor = System.Drawing.Color.DarkSlateBlue;
-
-            this.lblTongDoanhThu.Location = new System.Drawing.Point(861, 869);
+            this.lblTongDoanhThu.Location = new System.Drawing.Point(765, 695);
             this.lblTongDoanhThu.Name = "lblTongDoanhThu";
-            this.lblTongDoanhThu.Size = new System.Drawing.Size(216, 32);
-
+            this.lblTongDoanhThu.Size = new System.Drawing.Size(181, 25);
             this.lblTongDoanhThu.TabIndex = 38;
             this.lblTongDoanhThu.Text = "Tổng doanh thu:";
             // 
@@ -76,12 +64,10 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.txtDoanhThu.Enabled = false;
             this.txtDoanhThu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoanhThu.ForeColor = System.Drawing.Color.MidnightBlue;
-
-            this.txtDoanhThu.Location = new System.Drawing.Point(1098, 858);
+            this.txtDoanhThu.Location = new System.Drawing.Point(976, 686);
             this.txtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoanhThu.Name = "txtDoanhThu";
-            this.txtDoanhThu.Size = new System.Drawing.Size(264, 40);
-
+            this.txtDoanhThu.Size = new System.Drawing.Size(235, 35);
             this.txtDoanhThu.TabIndex = 37;
             this.txtDoanhThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -90,11 +76,9 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.lblDenNgay.AutoSize = true;
             this.lblDenNgay.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDenNgay.ForeColor = System.Drawing.Color.DarkSlateBlue;
-
-            this.lblDenNgay.Location = new System.Drawing.Point(468, 119);
+            this.lblDenNgay.Location = new System.Drawing.Point(416, 95);
             this.lblDenNgay.Name = "lblDenNgay";
-            this.lblDenNgay.Size = new System.Drawing.Size(136, 32);
-
+            this.lblDenNgay.Size = new System.Drawing.Size(115, 25);
             this.lblDenNgay.TabIndex = 36;
             this.lblDenNgay.Text = "Đến ngày:";
             // 
@@ -103,11 +87,9 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-
-            this.label1.Location = new System.Drawing.Point(30, 119);
+            this.label1.Location = new System.Drawing.Point(27, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 32);
-
+            this.label1.Size = new System.Drawing.Size(103, 25);
             this.label1.TabIndex = 35;
             this.label1.Text = "Từ ngày:";
             // 
@@ -117,16 +99,12 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.dtgvRevenue.AllowUserToDeleteRows = false;
             this.dtgvRevenue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvRevenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
-            this.dtgvRevenue.Location = new System.Drawing.Point(111, 235);
-
+            this.dtgvRevenue.Location = new System.Drawing.Point(99, 269);
             this.dtgvRevenue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvRevenue.Name = "dtgvRevenue";
             this.dtgvRevenue.ReadOnly = true;
             this.dtgvRevenue.RowHeadersWidth = 51;
-
-            this.dtgvRevenue.Size = new System.Drawing.Size(1252, 592);
-
+            this.dtgvRevenue.Size = new System.Drawing.Size(1112, 393);
             this.dtgvRevenue.TabIndex = 34;
             // 
             // cboSelectMovie
@@ -143,12 +121,10 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.cboSelectMovie.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.cboSelectMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboSelectMovie.ItemHeight = 30;
-
-            this.cboSelectMovie.Location = new System.Drawing.Point(258, 31);
+            this.cboSelectMovie.Location = new System.Drawing.Point(229, 25);
             this.cboSelectMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboSelectMovie.Name = "cboSelectMovie";
-            this.cboSelectMovie.Size = new System.Drawing.Size(536, 36);
-
+            this.cboSelectMovie.Size = new System.Drawing.Size(477, 36);
             this.cboSelectMovie.TabIndex = 40;
             // 
             // dtmFromDate
@@ -160,16 +136,12 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.dtmFromDate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.dtmFromDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtmFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-
-            this.dtmFromDate.Location = new System.Drawing.Point(161, 106);
-
+            this.dtmFromDate.Location = new System.Drawing.Point(143, 85);
             this.dtmFromDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtmFromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmFromDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtmFromDate.Name = "dtmFromDate";
-
-            this.dtmFromDate.Size = new System.Drawing.Size(300, 58);
-
+            this.dtmFromDate.Size = new System.Drawing.Size(267, 46);
             this.dtmFromDate.TabIndex = 41;
             this.dtmFromDate.Value = new System.DateTime(2025, 4, 6, 18, 8, 18, 104);
             // 
@@ -182,16 +154,12 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.dtmToDate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.dtmToDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtmToDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-
-            this.dtmToDate.Location = new System.Drawing.Point(612, 106);
-
+            this.dtmToDate.Location = new System.Drawing.Point(544, 85);
             this.dtmToDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtmToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmToDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtmToDate.Name = "dtmToDate";
-
-            this.dtmToDate.Size = new System.Drawing.Size(306, 58);
-
+            this.dtmToDate.Size = new System.Drawing.Size(272, 46);
             this.dtmToDate.TabIndex = 42;
             this.dtmToDate.Value = new System.DateTime(2025, 4, 6, 18, 24, 17, 282);
             // 
@@ -200,9 +168,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnShowRevenue.AutoRoundedCorners = true;
             this.btnShowRevenue.BackColor = System.Drawing.Color.Transparent;
             this.btnShowRevenue.BorderColor = System.Drawing.Color.MidnightBlue;
-
-            this.btnShowRevenue.BorderRadius = 33;
-
+            this.btnShowRevenue.BorderRadius = 26;
             this.btnShowRevenue.BorderThickness = 2;
             this.btnShowRevenue.CustomBorderColor = System.Drawing.Color.DarkSlateGray;
             this.btnShowRevenue.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -216,9 +182,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnShowRevenue.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnShowRevenue.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnShowRevenue.IndicateFocus = true;
-
-            this.btnShowRevenue.Location = new System.Drawing.Point(939, 95);
-
+            this.btnShowRevenue.Location = new System.Drawing.Point(835, 76);
             this.btnShowRevenue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShowRevenue.Name = "btnShowRevenue";
             this.btnShowRevenue.PressedColor = System.Drawing.Color.Transparent;
@@ -227,35 +191,87 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.btnShowRevenue.ShadowDecoration.Color = System.Drawing.Color.DarkSlateBlue;
             this.btnShowRevenue.ShadowDecoration.Depth = 10;
             this.btnShowRevenue.ShadowDecoration.Enabled = true;
-
-            this.btnShowRevenue.Size = new System.Drawing.Size(176, 68);
-
+            this.btnShowRevenue.Size = new System.Drawing.Size(156, 54);
             this.btnShowRevenue.TabIndex = 43;
             this.btnShowRevenue.Text = "Thống kê";
             this.btnShowRevenue.Click += new System.EventHandler(this.btnShowRevenue_Click);
             // 
             // pnSelectMovie
             // 
+            this.pnSelectMovie.Controls.Add(this.btnExportReport);
             this.pnSelectMovie.Controls.Add(this.btnShowRevenue);
             this.pnSelectMovie.Controls.Add(this.dtmToDate);
+            this.pnSelectMovie.Controls.Add(this.cboExportFormat);
             this.pnSelectMovie.Controls.Add(this.dtmFromDate);
             this.pnSelectMovie.Controls.Add(this.label1);
             this.pnSelectMovie.Controls.Add(this.cboSelectMovie);
             this.pnSelectMovie.Controls.Add(this.lblSelectMovie);
             this.pnSelectMovie.Controls.Add(this.lblDenNgay);
-
-            this.pnSelectMovie.Location = new System.Drawing.Point(159, 22);
+            this.pnSelectMovie.Location = new System.Drawing.Point(141, 18);
             this.pnSelectMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnSelectMovie.Name = "pnSelectMovie";
-            this.pnSelectMovie.Size = new System.Drawing.Size(1144, 186);
-
+            this.pnSelectMovie.Size = new System.Drawing.Size(1017, 227);
             this.pnSelectMovie.TabIndex = 44;
+            // 
+            // btnExportReport
+            // 
+            this.btnExportReport.AutoRoundedCorners = true;
+            this.btnExportReport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExportReport.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.btnExportReport.BorderRadius = 23;
+            this.btnExportReport.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnExportReport.BorderThickness = 2;
+            this.btnExportReport.CustomBorderColor = System.Drawing.Color.White;
+            this.btnExportReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportReport.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.btnExportReport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExportReport.ForeColor = System.Drawing.Color.Black;
+            this.btnExportReport.HoverState.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnExportReport.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnExportReport.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnExportReport.Location = new System.Drawing.Point(789, 165);
+            this.btnExportReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExportReport.Name = "btnExportReport";
+            this.btnExportReport.PressedColor = System.Drawing.Color.Transparent;
+            this.btnExportReport.PressedDepth = 10;
+            this.btnExportReport.ShadowDecoration.BorderRadius = 14;
+            this.btnExportReport.ShadowDecoration.Color = System.Drawing.Color.DarkSlateBlue;
+            this.btnExportReport.ShadowDecoration.Depth = 10;
+            this.btnExportReport.ShadowDecoration.Enabled = true;
+            this.btnExportReport.Size = new System.Drawing.Size(202, 48);
+            this.btnExportReport.TabIndex = 46;
+            this.btnExportReport.Text = "Xuất Báo Cáo";
+            this.btnExportReport.Click += new System.EventHandler(this.btnExportReport_Click);
+            // 
+            // cboExportFormat
+            // 
+            this.cboExportFormat.AutoRoundedCorners = true;
+            this.cboExportFormat.BackColor = System.Drawing.Color.Transparent;
+            this.cboExportFormat.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.cboExportFormat.BorderThickness = 2;
+            this.cboExportFormat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboExportFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboExportFormat.FillColor = System.Drawing.Color.AliceBlue;
+            this.cboExportFormat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboExportFormat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboExportFormat.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.cboExportFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboExportFormat.ItemHeight = 30;
+            this.cboExportFormat.Items.AddRange(new object[] {
+            "Excel",
+            "PDF"});
+            this.cboExportFormat.Location = new System.Drawing.Point(591, 170);
+            this.cboExportFormat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboExportFormat.Name = "cboExportFormat";
+            this.cboExportFormat.Size = new System.Drawing.Size(178, 36);
+            this.cboExportFormat.TabIndex = 45;
             // 
             // RevenueUC
             // 
-
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnSelectMovie);
@@ -264,9 +280,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.Controls.Add(this.dtgvRevenue);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RevenueUC";
-
-            this.Size = new System.Drawing.Size(1491, 940);
-
+            this.Size = new System.Drawing.Size(1325, 752);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRevenue)).EndInit();
             this.pnSelectMovie.ResumeLayout(false);
             this.pnSelectMovie.PerformLayout();
@@ -274,7 +288,6 @@ namespace QuanLyRapChieu.frmAdminUserControl
             this.PerformLayout();
 
         }
-
 
         #endregion
 
@@ -289,5 +302,7 @@ namespace QuanLyRapChieu.frmAdminUserControl
         private Guna.UI2.WinForms.Guna2DateTimePicker dtmToDate;
         private Guna.UI2.WinForms.Guna2Button btnShowRevenue;
         private Guna.UI2.WinForms.Guna2Panel pnSelectMovie;
+        private Guna.UI2.WinForms.Guna2ComboBox cboExportFormat; 
+        private Guna.UI2.WinForms.Guna2Button btnExportReport;   
     }
 }

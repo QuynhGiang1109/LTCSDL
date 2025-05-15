@@ -66,12 +66,12 @@ namespace QuanLyRapChieu
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtUsername.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(20, 165);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtUsername.Location = new System.Drawing.Point(13, 107);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "Username";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(406, 58);
+            this.txtUsername.Size = new System.Drawing.Size(271, 38);
             this.txtUsername.TabIndex = 2;
             // 
             // guna2CustomGradientPanel1
@@ -85,20 +85,20 @@ namespace QuanLyRapChieu
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.WhiteSmoke;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.MediumBlue;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.AliceBlue;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(8, 14);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(5, 9);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(440, 462);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(293, 300);
             this.guna2CustomGradientPanel1.TabIndex = 3;
             // 
             // pnEye
             // 
             this.pnEye.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.pnEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnEye.Location = new System.Drawing.Point(363, 284);
-            this.pnEye.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnEye.Location = new System.Drawing.Point(242, 185);
+            this.pnEye.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnEye.Name = "pnEye";
-            this.pnEye.Size = new System.Drawing.Size(46, 44);
+            this.pnEye.Size = new System.Drawing.Size(31, 29);
             this.pnEye.TabIndex = 7;
             this.pnEye.Click += new System.EventHandler(this.pnEye_Click);
             // 
@@ -108,9 +108,10 @@ namespace QuanLyRapChieu
             this.lbPass.BackColor = System.Drawing.Color.Transparent;
             this.lbPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.White;
-            this.lbPass.Location = new System.Drawing.Point(14, 243);
+            this.lbPass.Location = new System.Drawing.Point(9, 158);
+            this.lbPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(122, 32);
+            this.lbPass.Size = new System.Drawing.Size(82, 21);
             this.lbPass.TabIndex = 6;
             this.lbPass.Text = "Password";
             // 
@@ -120,9 +121,10 @@ namespace QuanLyRapChieu
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.White;
-            this.lbUser.Location = new System.Drawing.Point(14, 127);
+            this.lbUser.Location = new System.Drawing.Point(9, 83);
+            this.lbUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(128, 32);
+            this.lbUser.Size = new System.Drawing.Size(87, 21);
             this.lbUser.TabIndex = 5;
             this.lbUser.Text = "Username";
             // 
@@ -138,10 +140,10 @@ namespace QuanLyRapChieu
             this.btnLogin.FillColor = System.Drawing.Color.DarkBlue;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(125, 361);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogin.Location = new System.Drawing.Point(83, 235);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(192, 62);
+            this.btnLogin.Size = new System.Drawing.Size(128, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -160,23 +162,23 @@ namespace QuanLyRapChieu
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtPassword.ForeColor = System.Drawing.Color.DarkBlue;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(20, 281);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.txtPassword.Location = new System.Drawing.Point(13, 183);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(405, 51);
+            this.txtPassword.Size = new System.Drawing.Size(270, 33);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(456, 491);
+            this.ClientSize = new System.Drawing.Size(304, 319);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

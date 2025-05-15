@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaff));
             this.el_TestLichChieu = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pn_LichChieuPhim = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labelX = new System.Windows.Forms.Label();
             this.el_Backgr = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gn_Backgr = new Guna.UI2.WinForms.Guna2Panel();
@@ -60,29 +58,13 @@
             // pn_LichChieuPhim
             // 
             this.pn_LichChieuPhim.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pn_LichChieuPhim.Controls.Add(this.btnClose);
             this.pn_LichChieuPhim.Controls.Add(this.labelX);
-            this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_LichChieuPhim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_LichChieuPhim.Location = new System.Drawing.Point(0, 0);
             this.pn_LichChieuPhim.Margin = new System.Windows.Forms.Padding(2);
             this.pn_LichChieuPhim.Name = "pn_LichChieuPhim";
-            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1035, 58);
+            this.pn_LichChieuPhim.Size = new System.Drawing.Size(1035, 640);
             this.pn_LichChieuPhim.TabIndex = 6;
-            // 
-            // btnClose
-            // 
-            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnClose.ImageRotate = 0F;
-            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(973, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Size = new System.Drawing.Size(62, 58);
-            this.btnClose.TabIndex = 20;
             // 
             // labelX
             // 
@@ -227,7 +209,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gn_Sidebar);
             this.Controls.Add(this.pn_LichChieuPhim);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -259,6 +241,5 @@
         private System.Windows.Forms.Label lbl_Tgian;
         private System.Windows.Forms.Button btn_ChonVe;
         private Guna.UI2.WinForms.Guna2Panel gn_Sidebar;
-        private Guna.UI2.WinForms.Guna2ImageButton btnClose;
     }
 }
