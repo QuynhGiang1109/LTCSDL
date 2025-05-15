@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace QuanLyRapChieu.frmAdminUserControl.FeatureViewUserControl
 {
-    public partial class Popcorn_UC : UserControl
+    public partial class PopcornUC : UserControl
     {
         BindingSource comboList = new BindingSource();
 

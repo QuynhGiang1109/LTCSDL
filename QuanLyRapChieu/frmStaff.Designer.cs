@@ -83,7 +83,6 @@
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnClose.Size = new System.Drawing.Size(62, 58);
             this.btnClose.TabIndex = 20;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // labelX
             // 

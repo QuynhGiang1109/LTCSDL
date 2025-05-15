@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -35,8 +36,6 @@
             this.btnUpdateGenre = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteGenre = new Guna.UI2.WinForms.Guna2Button();
             this.btnInsertGenre = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtGenreName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblGenreName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -47,8 +46,6 @@
             this.MaLoaiPhim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvGenre)).BeginInit();
@@ -180,7 +177,10 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.Controls.Add(this.txtGenreName);
             this.guna2Panel3.Controls.Add(this.txtGenreID);
+            this.guna2Panel3.Controls.Add(this.lblGenreName);
             this.guna2Panel3.Controls.Add(this.lblGenreID);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
@@ -220,6 +220,7 @@
             // guna2Panel5
             // 
             this.guna2Panel5.Controls.Add(this.dtgvGenre);
+            this.guna2Panel5.Controls.Add(this.guna2Panel3);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel5.Location = new System.Drawing.Point(0, 74);
             this.guna2Panel5.Name = "guna2Panel5";
@@ -290,15 +291,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Controls.Add(this.guna2Panel5);
-            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "GenreUC";
             this.Size = new System.Drawing.Size(1000, 611);
             this.Load += new System.EventHandler(this.GenreUC_Load);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
@@ -313,11 +310,9 @@
         private Guna.UI2.WinForms.Guna2Button btnInsertGenre;
         private Guna.UI2.WinForms.Guna2Button btnUpdateGenre;
         private Guna.UI2.WinForms.Guna2Button btnDeleteGenre;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2TextBox txtGenreID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGenreID;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2TextBox txtGenreName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGenreName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;

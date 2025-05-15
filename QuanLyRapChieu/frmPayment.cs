@@ -79,6 +79,7 @@ namespace QuanLyRapChieu
             this.Close();
         }
 
+
         //Tạo QRCode
 
 
@@ -91,6 +92,7 @@ namespace QuanLyRapChieu
 
             picQRCode.Image = qrCodeImage; // Hiển thị lên PictureBox
         }
+
 
 
 
